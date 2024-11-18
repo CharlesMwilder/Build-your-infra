@@ -4,7 +4,7 @@
 ### Matériel nécessaire :
 - Routeurs.
 - Switchs réseau.
-- Points d’accès Wi-Fi professionnels.
+- Points d’accès Wi-Fi.
 - 1 serveur pour gérer les utilisateurs (contrôleur de domaine) et les fichiers.
 - Un NAS ou un serveur avec stockage redondant.
 - Proxmox.
