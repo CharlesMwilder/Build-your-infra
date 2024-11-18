@@ -38,7 +38,7 @@ L'infrastructure actuelle est limitée : un réseau Wi-Fi basique, des PC en wor
 | **Semaine 8** | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
 | **Semaine 9** | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
 | **Semaine 10**| Rôle :          | Rôle :          | Rôle :          | Rôle :          |
-| **Semaine 11* | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
+| **Semaine 11** | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
 
 ---
 
