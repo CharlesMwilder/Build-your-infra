@@ -28,7 +28,7 @@ L'infrastructure actuelle est limitée : un réseau Wi-Fi basique, des PC en wor
 
 | Semaine       | Charles      | Nicolas      | William      | Julien       |
 |---------------|----------------|----------------|----------------|----------------|
-| **Semaine 1** | Rôle : Technicien | Rôle : Product Owner | Rôle : Technicien | Rôle : Scrum Master |
+| **Semaine 1** | Rôle : ``Technicien`` | Rôle : ``Product Owner`` | Rôle : ``Technicien`` | Rôle : ``Scrum Master`` |
 | **Semaine 2** | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
 | **Semaine 3** | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
 | **Semaine 4** | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
