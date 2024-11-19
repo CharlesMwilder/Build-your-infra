@@ -21,3 +21,6 @@
 | QHSE 🖥️                  | 10.10.2.16         | 10.10.2.23          | /29               | 4 👨‍🏫  |
 | Recrutement 🖥️           | 10.10.2.24         | 10.10.2.31          | /29               | 3 👨‍🏫  |
 | Direction 🖥️             | 10.10.2.32         | 10.10.2.39          | /29               | 3 👨‍🏫  |
+
+
+## Changement à venir selon configuration de l'architecture réseau..
