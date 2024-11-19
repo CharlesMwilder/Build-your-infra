@@ -23,4 +23,6 @@
 | Direction 🖥️             | 10.10.2.32         | 10.10.2.39          | /29               | 3 👨‍🏫  |
 
 
+---
+
 ## Changement à venir selon configuration de l'architecture réseau..
