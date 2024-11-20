@@ -42,6 +42,13 @@ L'infrastructure actuelle est limitée : un réseau Wi-Fi basique, des PC en wor
 
 ---
 
+## Mise en place du suivi des objectifs du projet
+
+Tableau d'objesctifs de groupe choisi : Template n°3
+Tableau d'objectifs individuels : Template n°2
+
+---
+
 ## Fonctionnalités
 
 - **Fonctionnalité 1** : Mise en place d’un serveur centralisé pour l’authentification (Active Directory). ``(en cours..)``
