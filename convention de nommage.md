@@ -39,7 +39,7 @@ Paris
 - Locale : `L_`
 - Globale : `G_`
 
-Exemple : `G_US_IT_Admins` (Groupe global pour les administrateurs IT)
+Exemple : `G_US_DEV_Admins` (Groupe global pour les administrateurs IT)
 
 ---
 
