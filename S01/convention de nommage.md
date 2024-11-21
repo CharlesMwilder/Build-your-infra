@@ -15,7 +15,7 @@
   - Niveau 2 : Par Département (ex. : `Finance`, `Marketing`)
   - Niveau 3 Optionnel : Par Fonction (ex. : `Admins`, `Utilisateurs`)
 
-### **Exemples de Hiérarchie** : :bookmark_tabs:
+### **Exemples de Hiérarchie** :
 - **Par Département** : 
 ```
 Paris
