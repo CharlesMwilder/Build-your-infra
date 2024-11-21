@@ -1,10 +1,4 @@
 # Projet : Mise en place d’une infrastructure réseau pour l'entreprise BillU 
-
-## Liens Utiles
-
-- [Guide d'installation](LIEN_GUIDE_INSTALLATION) ``(en cours..)``
-- [Guide utilisateur](LIEN_GUIDE_UTILISATEUR) ``(en cours..)``
-
 ---
 
 ## Description du Projet
