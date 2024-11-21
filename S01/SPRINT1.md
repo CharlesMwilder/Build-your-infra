@@ -11,7 +11,7 @@
 | **Convention de nommage** 📊     | Faire une convention de nommage.                                    |
 | **Premières réflexions** 📊     | Exploration des premières idées et solutions pour le projet.                                    |
 
-## EQUIPES ET ROLES
+## EQUIPES ET ROLES 🏢
 
 | **Nom**          | **Rôle**          | **Description**                                     |
 |-------------------|-------------------|-----------------------------------------------------|
