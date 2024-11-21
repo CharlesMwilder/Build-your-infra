@@ -1,21 +1,21 @@
-# Convention de Nommage pour l'Infrastructure
+# Convention de Nommage pour l'Infrastructure :bookmark_tabs:
 
 ---
 
-## **1. Nom de Domaine**
+## **1. Nom de Domaine** :bookmark_tabs:
 - FQDN (Nom de Domaine Entièrement Qualifié) : `billu.com`  
   Exemple pour un serveur : `srv01.billu.com`
 
 ---
 
-## **2. Unités Organisationnelles (OU)**
+## **2. Unités Organisationnelles (OU)** :bookmark_tabs:
 ### **Structure** :
 - **Niveaux** : 2 ou 3 niveaux
   - Niveau 1 : Par Localisation (ex. : `Paris`)
   - Niveau 2 : Par Département (ex. : `Finance`, `Marketing`)
   - Niveau 3 Optionnel : Par Fonction (ex. : `Admins`, `Utilisateurs`)
 
-### **Exemples de Hiérarchie** :
+### **Exemples de Hiérarchie** : :bookmark_tabs:
 - **Par Département** : 
 ```
 Paris
@@ -26,7 +26,7 @@ Paris
 
 ---
 
-## **3. Groupes de Sécurité**
+## **3. Groupes de Sécurité** :bookmark_tabs:
 ### **Convention de Nommage** :
 - Préfixe selon le **Type de Contenu** :
 - `US_` : Utilisateurs
@@ -43,7 +43,7 @@ Exemple : `G_US_DEV_Admins` (Groupe global pour les administrateurs IT)
 
 ---
 
-## **4. Ordinateurs**
+## **4. Ordinateurs** :bookmark_tabs:
 ### **Placement** :
 - Organiser les ordinateurs dans l'AD selon :
 - Localisation (ex. : `Paris\PCs`)
@@ -63,7 +63,7 @@ Exemple : `G_US_DEV_Admins` (Groupe global pour les administrateurs IT)
 
 ---
 
-## **5. Utilisateurs**
+## **5. Utilisateurs** :bookmark_tabs:
 ### **Placement** :
 - Grouper par :
 - Département (ex. : `Paris\Utilisateurs`)
@@ -76,7 +76,7 @@ Exemple : `G_US_DEV_Admins` (Groupe global pour les administrateurs IT)
 
 ---
 
-## **6. Objets de Stratégie de Groupe (GPO)**
+## **6. Objets de Stratégie de Groupe (GPO)** :bookmark_tabs:
 ### **Convention de Nommage** :
 - Préfixe selon **Cible** :
 - `USER_` : GPO spécifique aux utilisateurs
