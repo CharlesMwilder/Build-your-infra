@@ -21,8 +21,6 @@ L'infrastructure actuelle est limitée : un réseau Wi-Fi basique, des PC en wor
 
 - **Objectif 5** : Déployer une solution de gestion centralisée des ordinateurs pour assurer une sécurité optimale et simplifier la maintenance.
 
-- **Objectif 6** : Assurer la conformité aux normes de sécurité et de protection des données personnelles (ex : RGPD).
-
 - **Documentation et Support** : Fournir des guides clairs pour l'installation, l'utilisation, et la maintenance du projet, ainsi que des ressources pour le support continu.
 
 - **Collaboration et Rôles** : Définir les rôles de chaque membre du projet, clarifier les responsabilités et assurer une communication fluide au sein de l'équipe pour une gestion efficace.
