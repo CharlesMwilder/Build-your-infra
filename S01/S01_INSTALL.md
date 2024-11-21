@@ -1,6 +1,6 @@
-# Documentation d'installation et de configuration de Proxmox avec Windows Server 2022 et Windows 10
+# Documentation d'installation et de configuration de Proxmox avec Windows Server 2022 et Windows 10 :bookmark_tabs:
 
-## 1. Installation de Proxmox
+## 1. Installation de Proxmox :bookmark_tabs:
 
 ### Prérequis matériels
 - **Processeur** : 2 cœurs, compatible VT-x/AMD-V.
@@ -18,7 +18,7 @@
    - L'installation prendra quelques minutes.
    - Une fois terminée, redémarrez le serveur et connectez-vous via l'interface web de Proxmox à l'adresse `https://<IP_SERVEUR>:8006`.
 
-## 2. Création des machines virtuelles (VM)
+## 2. Création des machines virtuelles (VM) :bookmark_tabs:
 
 ### 2.1. Windows Server 2022
 1. **Téléchargez l'ISO de Windows Server 2022** depuis le site officiel de Microsoft.
@@ -40,7 +40,7 @@
 3. **Démarrez la VM** et installez Windows 10 :
    - Suivez les instructions pour configurer Windows 10.
 
-## 3. Configuration du serveur DHCP et DNS sur Windows Server 2022
+## 3. Configuration du serveur DHCP et DNS sur Windows Server 2022 :bookmark_tabs:
 
 ### 3.1. Installer le rôle DHCP et DNS
 1. Ouvrez **Gestionnaire de serveur**.
@@ -68,7 +68,7 @@
 1. Allez dans **Paramètres** > **Réseau et Internet** > **Carte réseau**.
 2. Configurez la carte réseau pour utiliser **Obtenir une adresse IP automatiquement** et **Obtenir les adresses DNS automatiquement**.
 
-## 4. Tests et vérification
+## 4. Tests et vérification :bookmark_tabs:
 
 1. **Vérification de l'adresse IP sur Windows 10** :
    - Ouvrez un terminal et tapez `ipconfig` pour vérifier que l'adresse IP reçue est dans la plage définie par le serveur DHCP (par exemple, 172.18.1.100 - 172.18.1.200).
