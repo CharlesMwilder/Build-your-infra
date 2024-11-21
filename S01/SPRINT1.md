@@ -8,6 +8,7 @@
 | **Prise de conscience** 📊      | Analyse du sujet et compréhension des attentes concrètes.         |
 | **Conception initiale** 📊      | Élaboration d’un schéma (plan) pour anticiper les besoins liés à l’infrastructure réseau.        |
 | **Table de routage** 📊     | Faire une table de routage.                                    |
+| **Convention de nommage** 📊     | Faire une convention de nommage.                                    |
 | **Premières réflexions** 📊     | Exploration des premières idées et solutions pour le projet.                                    |
 
 ## EQUIPES ET ROLES
