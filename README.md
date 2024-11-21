@@ -96,7 +96,7 @@ L'infrastructure actuelle est limitée : un réseau Wi-Fi basique, des PC en wor
     - Mémoire : 8 Go de RAM pour le serveur Proxmox.
     - Stockage : 100 Go ou plus, avec des disques séparés pour le système et les VMs.
     - Système d'exploitation : Proxmox VE 7.x ou version supérieure.
-    - Carte réseau : PONT + Interne.
+    - Carte réseau : Interne.
 
 - **Configuration réseau** :
   - **Serveur Proxmox** : 
@@ -105,7 +105,7 @@ L'infrastructure actuelle est limitée : un réseau Wi-Fi basique, des PC en wor
     - Routeur : Configuration des routes réseau si plusieurs VLANs ou sous-réseaux sont utilisés.
   - **VM Windows Server 2022** :
     - Adresse IP statique dans le même réseau interne (ex : 172.18.1.x).
-    - Accès réseau : Carte réseau PONT + Interne.
+    - Accès réseau : Carte réseau interne.
   - **Client Windows 10 Pro** :
     - Adresse IP obtenue via DHCP ou statique dans le même sous-réseau (ex : 172.18.1.x).
     - Connexion via Ethernet ou Wi-Fi stable.
