@@ -29,7 +29,7 @@
 
 # Schéma des Sous-Réseaux et Routage 📑
 
-```plaintext
+```java
                                 +------------------------+
                                 |       ROUTEUR 1        |
                                 | 10.10.1.1 (Gateway)    |
