@@ -12,80 +12,89 @@
 ### **Structure** :
 - **Niveaux** : 2 ou 3 niveaux
   - Niveau 1 : Par Localisation (ex. : `Paris`)
-  - Niveau 2 : Par Département (ex. : `Finance`, `Marketing`)
-  - Niveau 3 Optionnel : Par Fonction (ex. : `Admins`, `Utilisateurs`)
+  - Niveau 2 : Par Département (ex. : `Finance`, `Communication`, `Développement`)
+  - Niveau 3 : Optionnel pour les services ou sous-fonctions (ex. : `Relation Médias`, `Rédacteur`)
 
-### **Exemples de Hiérarchie** :
+### **Exemple de Hiérarchie** :
 - **Par Département** : 
 ```
 Paris
   ├── Direction
-  ├── DSI
-  └── IT
+  ├── DSI (IT)
+  ├── Communication
+  ├── Juridique
+  ├── Développement
+  ├── Finance
+  ├── QHSE
+  ├── Commercial
+  └── Recrutement
 ```
+
 
 ---
 
 ## **3. Groupes de Sécurité** :bookmark_tabs:
 ### **Convention de Nommage** :
-- Préfixe selon le **Type de Contenu** :
-- `US_` : Utilisateurs
-- `PC_` : Ordinateurs
-- `FN_` : Fonctionnalités
-- Ajouter un **Objectif** :
-- `US_Marketing` : Utilisateurs Marketing
-- `PC_Ventes` : PC Ventes
-- Ajouter la **Portée** :
-- Locale : `L_`
-- Globale : `G_`
+- **Format** : `[Scope]_[Type]_[Department/Function]`
+  - Scope : `L` (Local), `G` (Global)
+  - Type : `US` (Utilisateurs), `PC` (Ordinateurs), `FN` (Fonctionnalités)
+  - Department/Function : Identifier le département ou la fonction associée.
 
-Exemple : `G_US_DEV_Admins` (Groupe global pour les administrateurs IT)
+### **Exemples** :
+- `G_US_FINANCE` : Groupe global pour les utilisateurs de Finance.
+- `L_PC_DEV` : Groupe local pour les ordinateurs du département Développement.
+- `G_FN_COMMU_MAN` : Groupe global pour les fonctionnalités Manager dans Communication.
 
 ---
 
 ## **4. Ordinateurs** :bookmark_tabs:
 ### **Placement** :
 - Organiser les ordinateurs dans l'AD selon :
-- Localisation (ex. : `Paris\PCs`)
-- Département (ex. : `Finance\Laptops`)
+  - Localisation (ex. : `Paris\PCs`)
+  - Département (ex. : `Finance\Laptops`)
 
 ### **Convention de Nommage** :
-- Type Physique :
-- `LT` : Laptops
-- `DT` : Desktops
-- `SRV` : Serveurs
-- Rôle :
-- `AD` : Contrôleur de Domaine
-- `FS` : Serveur de Fichiers
-- Ajouter un ID ou localisation unique :  
-`LT-PA-001` : Laptop 1 à Paris  
-`SRV-AD-01` : Contrôleur de Domaine 1
+- **Format** : `[Brand]-[Type]-[Department]-[ID]`
+  - Brand : Marque de l’ordinateur (HP, Dell, Lenovo, etc.)
+  - Type :
+    - `LT` : Laptops
+    - `DT` : Desktops
+    - `SRV` : Serveurs
+  - Department : Département de l’appareil.
+  - ID : Numéro unique.
+
+### **Exemples** :
+- `HP-LT-COMM-001` : Laptop HP dans Communication.
+- `DELL-SRV-FS-01` : Serveur Dell (File Server).
+- `LENOVO-DT-FIN-001` : Desktop Lenovo dans Finance.
 
 ---
 
 ## **5. Utilisateurs** :bookmark_tabs:
 ### **Placement** :
 - Grouper par :
-- Département (ex. : `Paris\Utilisateurs`)
-- Fonction (ex. : `Marketing\Utilisateurs`)
+  - Département (ex. : `Paris\Utilisateurs`)
+  - Fonction (ex. : `Marketing\Utilisateurs`)
 
 ### **Convention de Nommage** :
-- Standard : `InitialePrénomNom` (ex. : `JDoe`)
-- Homonymes : Ajouter un numéro (ex. : `JDoe2`)
-- Temporaire : Préfixe `TMP_` (ex. : `TMP_JDoe`)
+- **Format** : `[FirstInitialLastName]_[Department]`
+  - Standard : `CMickleburgh_COMM` : Charles Mickleburgh dans Communication.
+  - Homonymes : Ajouter un numéro (ex. : `CMickleburgh2_DEV`).
+  - Temporaire : Préfixe `TMP_` (ex. : `TMP_RBen`).
 
 ---
 
 ## **6. Objets de Stratégie de Groupe (GPO)** :bookmark_tabs:
 ### **Convention de Nommage** :
-- Préfixe selon **Cible** :
-- `USER_` : GPO spécifique aux utilisateurs
-- `SEC_` : Paramètres de sécurité
-- `CONFIG_` : Configuration
-- Ajouter la **Portée** :
-- Domaine entier : `DOMAIN_`
-- Département spécifique : `MARKETING_`
-- Ajouter Version/Date :
-- `v1` ou `2024-01`
+- **Format** : `[Target]_[Department]_[Function]_[Version/Date]`
+  - Target : `USER` (Utilisateurs), `SEC` (Sécurité), `CONFIG` (Configuration).
+  - Department : Département associé.
+  - Function : Fonction ou objectif de la GPO.
+  - Version/Date : Révision ou version de la GPO.
 
-Exemple : `SEC_MARKETING_2024-v1`
+### **Exemples** :
+- `SEC_COMM_FIREWALL-v1` : GPO de sécurité pour le firewall dans Communication.
+- `CONFIG_DEV_TESTENV-2024` : GPO de configuration pour l’environnement de test dans Développement.
+- `USER_QHSE_COMPLIANCE-2024` : GPO utilisateur pour la conformité QHSE.
+
+
