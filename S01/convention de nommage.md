@@ -17,13 +17,13 @@
 
 ### **Exemple de Hiérarchie** :
 - **Par Département** : 
-```
+```css
 Paris
   ├── Direction
-  ├── DSI (IT)
+  ├── DSI
   ├── Communication
   ├── Juridique
-  ├── Développement
+  ├── Developpement
   ├── Finance
   ├── QHSE
   ├── Commercial
