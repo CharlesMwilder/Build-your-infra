@@ -34,15 +34,21 @@
    Allez dans **Tools** (Outils) en haut à droite et sélectionnez **Active Directory Users and Computers**.
 
 3. **Naviguer jusqu’à votre domaine** :  
-   Dans la fenêtre, localisez votre domaine (ex. : `wcs.lan`).
+   Dans la fenêtre, localisez votre domaine (ex. : `billu.com`).
 
 4. **Actions sur le domaine** :  
    Faites un clic droit sur le domaine, puis suivez les étapes nécessaires.
 
 - **Créer les OU selon vos besoins :**<br>
 
-![CREATE OU](https://github.com/user-attachments/assets/62c68a5d-4e57-4703-bfed-79985c4cb82f)<br>
-![CREATE OU1](https://github.com/user-attachments/assets/17a9a6eb-0358-4efd-ab54-af4c43ab0144)
+![CREATE OU](https://github.com/user-attachments/assets/ba802554-aeae-4276-9c36-e117aad3cef8)<br>
+![CREATE OU1](https://github.com/user-attachments/assets/c34edc7b-0720-4ebd-8302-19ab09946e5c)<br>
+![CREATE OU10](https://github.com/user-attachments/assets/39d69f68-9138-4023-bbf9-5abc9d5b0da6)<br>
+![CREATE OU11](https://github.com/user-attachments/assets/7b3d4b85-4f85-4bed-9a4d-5622d1b48fc6)<br>
+![CREATE OU2](https://github.com/user-attachments/assets/ef898ac8-8c08-4700-865d-3ea2ea6f3417)<br>
+![CREATE OU3](https://github.com/user-attachments/assets/6680e69a-5a4c-47e3-b863-e2a33bf8e4b5)<br>
+![CREATE OU4](https://github.com/user-attachments/assets/9918a89a-4cf4-4477-8e82-e0736cc0e187)<br>
+![CREATE OU6](https://github.com/user-attachments/assets/d8367669-eaf6-42aa-9bbc-719de85d9d1e)
 
 
     
@@ -55,16 +61,16 @@
    Allez dans **Tools** (Outils) en haut à droite et sélectionnez **Active Directory Users and Computers**.
 
 3. **Naviguer jusqu’à votre domaine** :  
-   Dans la fenêtre, localisez votre domaine (ex. : `wcs.lan`).
+   Dans la fenêtre, localisez votre domaine (ex. :`billu.com`).
 
 4. **Actions sur le domaine** :  
    Faites dérouler le domaine, puis suivez les étapes nécessaires.
 
 - **Choisissez votre OU puis créer les groups selon vos besoins :**<br>
 
-![CREATE GROUP](https://github.com/user-attachments/assets/4316d273-ee18-46e6-b85c-78f11f0c60cf)<br>
-![CREATE GROUP1](https://github.com/user-attachments/assets/11bbf8fe-0bd5-4830-badd-de2c756cb8ea)<br>
-![CREATE GROUP2](https://github.com/user-attachments/assets/a7e0d1a5-718e-4f71-b4c8-8dc15f63fc70)
+![CREATE OU7](https://github.com/user-attachments/assets/10899d47-663b-436e-a8e4-4e47b03540c5)<br>
+![CREATE OU8](https://github.com/user-attachments/assets/7fdedc20-2574-4f25-af71-6a2c4bba5eea)<br>
+![CREATE OU9](https://github.com/user-attachments/assets/8f11f0c9-5a18-443c-9ace-34f9bcf1db05)
 
 
 ---
