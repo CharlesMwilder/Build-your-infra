@@ -1,4 +1,4 @@
-# Configuration AD-DS sous serveur Windows 2022/core et Serveur Linux ( A COMPLETER !)
+# Configuration AD-DS sous serveur Windows 2022/core et Serveur Linux (🚨🚨🚨 A REMPLIR ! 🚨🚨🚨)
 ---
 
 ### 1.1. **AD-DS - Création d'un domaine Active Directory (AD)**
