@@ -27,15 +27,45 @@
 ### 1.2. **AD-DS - Gestion de l'arborescence AD**
 
 - **Création des Unités Organisationnelles (OU) :**
-  - **Action à réaliser :**
-    - Créer des OU pour les départements/services de l'entreprise.
-    - Description de la méthode manuelle et automatisée via script PowerShell.
+1. **Ouvrir Server Manager** :  
+   Depuis la barre des tâches ou le menu démarrer.
+
+2. **Accéder à Active Directory Users and Computers** :  
+   Allez dans **Tools** (Outils) en haut à droite et sélectionnez **Active Directory Users and Computers**.
+
+3. **Naviguer jusqu’à votre domaine** :  
+   Dans la fenêtre, localisez votre domaine (ex. : `wcs.lan`).
+
+4. **Actions sur le domaine** :  
+   Faites un clic droit sur le domaine, puis suivez les étapes nécessaires.
+
+- **Créer les OU selon vos besoins :**<br>
+
+![CREATE OU](https://github.com/user-attachments/assets/62c68a5d-4e57-4703-bfed-79985c4cb82f)<br>
+![CREATE OU1](https://github.com/user-attachments/assets/17a9a6eb-0358-4efd-ab54-af4c43ab0144)
+
+
     
 
 - **Création des groupes :**
-  - **Action à réaliser :**
-    - Créer des groupes d'utilisateurs (ex : IT, RH, Finance).
-    - Description de la méthode manuelle et automatisée via script PowerShell.
+1. **Ouvrir Server Manager** :  
+   Depuis la barre des tâches ou le menu démarrer.
+
+2. **Accéder à Active Directory Users and Computers** :  
+   Allez dans **Tools** (Outils) en haut à droite et sélectionnez **Active Directory Users and Computers**.
+
+3. **Naviguer jusqu’à votre domaine** :  
+   Dans la fenêtre, localisez votre domaine (ex. : `wcs.lan`).
+
+4. **Actions sur le domaine** :  
+   Faites dérouler le domaine, puis suivez les étapes nécessaires.
+
+- **Choisissez votre OU puis créer les groups selon vos besoins :**<br>
+
+![CREATE GROUP](https://github.com/user-attachments/assets/4316d273-ee18-46e6-b85c-78f11f0c60cf)<br>
+![CREATE GROUP1](https://github.com/user-attachments/assets/11bbf8fe-0bd5-4830-badd-de2c756cb8ea)<br>
+![CREATE GROUP2](https://github.com/user-attachments/assets/a7e0d1a5-718e-4f71-b4c8-8dc15f63fc70)
+
 
 ---
 
