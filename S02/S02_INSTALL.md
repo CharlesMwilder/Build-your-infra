@@ -25,7 +25,7 @@ Après redémarrage, nous pouvons nous connecter en administrateur sur le domain
 ![Capture d'écran 2024-11-26 160929](https://github.com/user-attachments/assets/6801ee46-6e77-4992-8244-4d143e8c1f8e)
 
 #### Installation du DHCP  
-Toujours dans l'onglet Manage > Add rôles and features :
+Toujours dans l'onglet Manage > Add rôles and features :  
 ![Capture d'écran 2024-11-26 162309](https://github.com/user-attachments/assets/bee85b73-cde5-4862-b035-d13442282b07)
 ![Capture d'écran 2024-11-26 162527](https://github.com/user-attachments/assets/90e89164-250a-48a4-b1d0-490d0d78f045)
 
