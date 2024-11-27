@@ -8,39 +8,68 @@
   - **Actions à réaliser :**  
     #### Installation de l'Active Directory (AD DS)  
 
-![Capture d'écran 2024-11-26 154954](https://github.com/user-attachments/assets/0b0e9f7e-465f-41ca-af1b-9fa67d3dc962)  
-![Capture d'écran 2024-11-26 155434](https://github.com/user-attachments/assets/9e2a476a-3cf8-403d-9818-6632501ad41c)  
-![Capture d'écran 2024-11-26 155730](https://github.com/user-attachments/assets/b2f7c97e-dd4a-44be-af1a-6ff234149680)   
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/001.png?raw=true" alt="Pictures" width="800" >
+<br>
+
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/002.png?raw=true" alt="Pictures" width="800" >
+<br>
+
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/003.png?raw=true" alt="Pictures" width="800" >
+<br> 
 
 :arrow_right: Une fois le rôle AD DS installé, il faut cliquer sur le drapeau jaune en haut, afin de créer un DC :  
-![Capture d'écran 2024-11-26 155751](https://github.com/user-attachments/assets/21291125-d110-427a-82d3-ce9814ba70df)  
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/004.png?raw=true" alt="Pictures" width="800" >
+<br>
 
 :arrow_right: Notre domaine va se nommer **`billu.com`**  
-![Capture d'écran 2024-11-26 155852](https://github.com/user-attachments/assets/cbb72235-1ae2-4503-a63b-84f567e5c1c2)  
-![Capture d'écran 2024-11-26 155931](https://github.com/user-attachments/assets/ae678d71-1604-4962-a780-ad09771530bd)
-![Capture d'écran 2024-11-26 155931](https://github.com/user-attachments/assets/8de0595b-54d0-4b74-8736-3e48ff6b73f5)
-![Capture d'écran 2024-11-26 160046](https://github.com/user-attachments/assets/c3bca927-f3e1-47e3-b60a-770f4fb055a5)
-![Capture d'écran 2024-11-26 160133](https://github.com/user-attachments/assets/ef91a9e6-1fe8-4f68-9dac-269327c6b348)
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/005.png?raw=true" alt="Pictures" width="800" >
+<br> 
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/006.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/007.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/008.png?raw=true" alt="Pictures" width="800" >
+<br>
 
 Après redémarrage, nous pouvons nous connecter en administrateur sur le domaine `billu`  
-![Capture d'écran 2024-11-26 160929](https://github.com/user-attachments/assets/6801ee46-6e77-4992-8244-4d143e8c1f8e)  
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/009.png?raw=true" alt="Pictures" width="800" >
+<br> 
 :arrow_right: **Nous avons donc 3 rôles d'installés : AD DC, DNS, DHCP**  
 Le serveur Windows 2022 GUI est donc bien sur le domaine `billu.com` et se nomme `SERVWIN01`.  
 
 #### Installation du DHCP  
 Toujours dans l'onglet Manage > Add rôles and features :  
-![Capture d'écran 2024-11-26 162309](https://github.com/user-attachments/assets/bee85b73-cde5-4862-b035-d13442282b07)
-![Capture d'écran 2024-11-26 162527](https://github.com/user-attachments/assets/90e89164-250a-48a4-b1d0-490d0d78f045)
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/010.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/011.png?raw=true" alt="Pictures" width="800" >
+<br>
 
 #### Paramétrage des plages d'addressage DHCP  
 
 :arrow_right: Nous avons décidé de paramétrer les plages de façon très serrée, en ne gardant que le nombre d'employés par département. Il sera facile d'agrandir la plage d'attribution des adresses si besoin. En ne gardant aucune adresse dispo en plus, nous évitons qu'une personne malintentionnée puisse rejoindre une des VLAN.  
 Pour la gestion des adresses, se référer au plan d'adressage IPv4.  
-![Capture d'écran 2024-11-26 163354](https://github.com/user-attachments/assets/96ff5498-cb42-47bc-8fd8-c6d9bc14803f)
-![Capture d'écran 2024-11-26 163558](https://github.com/user-attachments/assets/e2457858-48a7-4d10-8228-fbe18fb4175b)
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/012.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/013.png?raw=true" alt="Pictures" width="800" >
+<br>
 
 Les plages paramétrées sur le Windows Server GUI:
-![Capture d'écran 2024-11-27 190157](https://github.com/user-attachments/assets/9000b937-36a9-4cc3-8f09-5414a1484585)
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/014.png?raw=true" alt="Pictures" width="800" >
+<br>
 
 
 
@@ -78,14 +107,30 @@ Les plages paramétrées sur le Windows Server GUI:
 
 - **Créer les OU selon vos besoins :**<br>
 
-![CREATE OU](https://github.com/user-attachments/assets/ba802554-aeae-4276-9c36-e117aad3cef8)<br>
-![CREATE OU1](https://github.com/user-attachments/assets/c34edc7b-0720-4ebd-8302-19ab09946e5c)<br>
-![CREATE OU10](https://github.com/user-attachments/assets/39d69f68-9138-4023-bbf9-5abc9d5b0da6)<br>
-![CREATE OU11](https://github.com/user-attachments/assets/7b3d4b85-4f85-4bed-9a4d-5622d1b48fc6)<br>
-![CREATE OU2](https://github.com/user-attachments/assets/ef898ac8-8c08-4700-865d-3ea2ea6f3417)<br>
-![CREATE OU3](https://github.com/user-attachments/assets/6680e69a-5a4c-47e3-b863-e2a33bf8e4b5)<br>
-![CREATE OU4](https://github.com/user-attachments/assets/9918a89a-4cf4-4477-8e82-e0736cc0e187)<br>
-![CREATE OU6](https://github.com/user-attachments/assets/d8367669-eaf6-42aa-9bbc-719de85d9d1e)
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/015.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/016.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/017.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/018.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/019.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/020.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/021.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/022.png?raw=true" alt="Pictures" width="800" >
+<br>
 
 
     
@@ -105,9 +150,15 @@ Les plages paramétrées sur le Windows Server GUI:
 
 - **Choisissez votre OU puis créer les groups selon vos besoins :**<br>
 
-![CREATE OU7](https://github.com/user-attachments/assets/10899d47-663b-436e-a8e4-4e47b03540c5)<br>
-![CREATE OU8](https://github.com/user-attachments/assets/7fdedc20-2574-4f25-af71-6a2c4bba5eea)<br>
-![CREATE OU9](https://github.com/user-attachments/assets/8f11f0c9-5a18-443c-9ace-34f9bcf1db05)
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/023.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/024.png?raw=true" alt="Pictures" width="800" >
+<br>
+<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/025.png?raw=true" alt="Pictures" width="800" >
+<br>
 
 
 ---
