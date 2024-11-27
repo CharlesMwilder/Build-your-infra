@@ -5,10 +5,20 @@
 
 - **Serveur Windows Server 2022 GUI :**
   - **Rôles installés :** AD-DS, DHCP, DNS
-  - **Action à réaliser :**
-    - Décrire la procédure d'installation des rôles (capture d'écran ou commandes à utiliser).
-    - Vérification de la réplication et des rôles sur ce serveur.
+  - **Actions à réaliser :**
+    #### Installation de l'Active Directory (AD DS)  
+![Capture d'écran 2024-11-26 154954](https://github.com/user-attachments/assets/0b0e9f7e-465f-41ca-af1b-9fa67d3dc962)  
+![Capture d'écran 2024-11-26 155434](https://github.com/user-attachments/assets/9e2a476a-3cf8-403d-9818-6632501ad41c)  
+![Capture d'écran 2024-11-26 155730](https://github.com/user-attachments/assets/b2f7c97e-dd4a-44be-af1a-6ff234149680)  
 
+Une fois le rôle AD DS installé, il faut cliquer sur le drapeau jaune en haut, afin de créer un DC :  
+![Capture d'écran 2024-11-26 155751](https://github.com/user-attachments/assets/21291125-d110-427a-82d3-ce9814ba70df)  
+
+Notre domaine va se nommer **`billu.com`**  
+![Capture d'écran 2024-11-26 155852](https://github.com/user-attachments/assets/cbb72235-1ae2-4503-a63b-84f567e5c1c2)
+
+    - Vérification de la réplication et des rôles sur ce serveur.
+    - 
   
 - **Serveur Windows Server 2022 Core :**
   - **Rôle installé :** AD-DS
