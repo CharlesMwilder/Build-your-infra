@@ -9,7 +9,7 @@
     #### Installation de l'Active Directory (AD DS)  
 ![Capture d'écran 2024-11-26 154954](https://github.com/user-attachments/assets/0b0e9f7e-465f-41ca-af1b-9fa67d3dc962)  
 ![Capture d'écran 2024-11-26 155434](https://github.com/user-attachments/assets/9e2a476a-3cf8-403d-9818-6632501ad41c)  
-![Capture d'écran 2024-11-26 155730](https://github.com/user-attachments/assets/b2f7c97e-dd4a-44be-af1a-6ff234149680)  
+<div align="center">![Capture d'écran 2024-11-26 155730](https://github.com/user-attachments/assets/b2f7c97e-dd4a-44be-af1a-6ff234149680)</div>   
 
 :arrow_right: Une fois le rôle AD DS installé, il faut cliquer sur le drapeau jaune en haut, afin de créer un DC :  
 ![Capture d'écran 2024-11-26 155751](https://github.com/user-attachments/assets/21291125-d110-427a-82d3-ce9814ba70df)  
