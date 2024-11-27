@@ -6,7 +6,9 @@
 - **Serveur Windows Server 2022 GUI :**  
   - **Rôles installés :** AD-DS, DHCP, DNS  
   - **Actions à réaliser :**  
-    #### Installation de l'Active Directory (AD DS)  
+    #### Installation de l'Active Directory (AD DS)
+  
+
 ![Capture d'écran 2024-11-26 154954](https://github.com/user-attachments/assets/0b0e9f7e-465f-41ca-af1b-9fa67d3dc962)  
 ![Capture d'écran 2024-11-26 155434](https://github.com/user-attachments/assets/9e2a476a-3cf8-403d-9818-6632501ad41c)  
 ![Capture d'écran 2024-11-26 155730](https://github.com/user-attachments/assets/b2f7c97e-dd4a-44be-af1a-6ff234149680)   
@@ -30,6 +32,8 @@ Toujours dans l'onglet Manage > Add rôles and features :
 ![Capture d'écran 2024-11-26 162527](https://github.com/user-attachments/assets/90e89164-250a-48a4-b1d0-490d0d78f045)
 
 :arrow_right: **Nous avons donc 3 rôles d'installés : AD DC, DNS, DHCP**
+Le serveur Windows 2022 GUI est donc bien sur le domaine billu.com est se nomme SERVWIN01.
+
 
     - Vérification de la réplication et des rôles sur ce serveur.
     - 
