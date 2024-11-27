@@ -1,80 +1,54 @@
-# Configuration AD-DS sous serveur Windows 2022/core et Serveur Linux (🚨🚨🚨 A REMPLIR ! 🚨🚨🚨)
----
+# :dart: Configuration AD-DS sous serveur Windows 2022 / serveur Windows Core et Serveur Debian :dart:
 
 ### 1.1. **AD-DS - Création d'un domaine Active Directory (AD)**
 
-- **Serveur Windows Server 2022 GUI :**  
-  - **Rôles installés :** AD-DS, DHCP, DNS  
-  - **Actions à réaliser :**  
-    #### Installation de l'Active Directory (AD DS)  
+  - **Serveur Windows Server 2022 GUI :**  
+  - **Rôles installés :** AD-DS, DHCP, DNS
+     
+#### :pencil: **Installation de l'Active Directory (AD DS) :**  
 
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/001.png?raw=true" alt="Pictures" width="800" >
-<br>
-
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/002.png?raw=true" alt="Pictures" width="800" >
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/003.png?raw=true" alt="Pictures" width="800" ><br>
+ 
+:pencil: **Une fois le rôle AD DS installé, il faut cliquer sur le drapeau jaune en haut, afin de créer un DC :**
+
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/004.png?raw=true" alt="Pictures" width="800" ><br>
 <br>
 
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/003.png?raw=true" alt="Pictures" width="800" >
-<br> 
+:pencil: **Notre domaine va se nommer `billu.com`**  
 
-:arrow_right: Une fois le rôle AD DS installé, il faut cliquer sur le drapeau jaune en haut, afin de créer un DC :  
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/004.png?raw=true" alt="Pictures" width="800" >
-<br>
-
-:arrow_right: Notre domaine va se nommer **`billu.com`**  
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/005.png?raw=true" alt="Pictures" width="800" >
-<br> 
-<br>
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/005.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/006.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/007.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/008.png?raw=true" alt="Pictures" width="800" >
-<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/008.png?raw=true" alt="Pictures" width="800" ><br><br>
 
-Après redémarrage, nous pouvons nous connecter en administrateur sur le domaine `billu`  
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/009.png?raw=true" alt="Pictures" width="800" >
-<br> 
-:arrow_right: **Nous avons donc 3 rôles d'installés : AD DC, DNS, DHCP**  
+
+:pencil: **Après redémarrage, nous pouvons nous connecter en administrateur sur le domaine `billu`**  
+
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/009.png?raw=true" alt="Pictures" width="800" ><br><br>
+
+:pencil: **Nous avons donc 3 rôles d'installés : AD DC, DNS, DHCP**  
 Le serveur Windows 2022 GUI est donc bien sur le domaine `billu.com` et se nomme `SERVWIN01`.  
 
-#### Installation du DHCP  
+#### :pencil: **Installation du DHCP**  
 Toujours dans l'onglet Manage > Add rôles and features :  
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/010.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/011.png?raw=true" alt="Pictures" width="800" >
-<br>
 
-#### Paramétrage des plages d'addressage DHCP  
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/010.png?raw=true" alt="Pictures" width="800" >
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/011.png?raw=true" alt="Pictures" width="800" ><br><br>
 
-:arrow_right: Nous avons décidé de paramétrer les plages de façon très serrée, en ne gardant que le nombre d'employés par département. Il sera facile d'agrandir la plage d'attribution des adresses si besoin. En ne gardant aucune adresse dispo en plus, nous évitons qu'une personne malintentionnée puisse rejoindre une des VLAN.  
+#### :pencil: **Paramétrage des plages d'addressage DHCP**  
+
+Nous avons décidé de paramétrer les plages de façon très serrée, en ne gardant que le nombre d'employés par département. Il sera facile d'agrandir la plage d'attribution des adresses si besoin. En ne gardant aucune adresse dispo en plus, nous évitons qu'une personne malintentionnée puisse rejoindre une des VLAN.  
 Pour la gestion des adresses, se référer au plan d'adressage IPv4.  
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/012.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/013.png?raw=true" alt="Pictures" width="800" >
-<br>
 
-Les plages paramétrées sur le Windows Server GUI:
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/014.png?raw=true" alt="Pictures" width="800" >
-<br>
+<br><br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/012.png?raw=true" alt="Pictures" width="800" >
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/013.png?raw=true" alt="Pictures" width="800" ><br><br>
 
+ :pencil: **Les plages paramétrées sur le Windows Server GUI :**
+<br><br><br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/014.png?raw=true" alt="Pictures" width="800" ><br><br>
 
-
-    - Vérification de la réplication et des rôles sur ce serveur.
-    - 
+:pencil: **Vérification de la réplication et des rôles sur ce serveur.**
   
 - **Serveur Windows Server 2022 Core :**
   - **Rôle installé :** AD-DS
@@ -105,32 +79,17 @@ Les plages paramétrées sur le Windows Server GUI:
 4. **Actions sur le domaine** :  
    Faites un clic droit sur le domaine, puis suivez les étapes nécessaires.
 
-- **Créer les OU selon vos besoins :**<br>
+- **Créer les OU selon vos besoins :**<br><br>
 
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/015.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/016.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/017.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/018.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/019.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/020.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/021.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/022.png?raw=true" alt="Pictures" width="800" >
-<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/022.png?raw=true" alt="Pictures" width="800" ><br><br>
+
 
 
     
@@ -148,17 +107,11 @@ Les plages paramétrées sur le Windows Server GUI:
 4. **Actions sur le domaine** :  
    Faites dérouler le domaine, puis suivez les étapes nécessaires.
 
-- **Choisissez votre OU puis créer les groups selon vos besoins :**<br>
+- **Choisissez votre OU puis créer les groups selon vos besoins :**<br><br>
 
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/023.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/024.png?raw=true" alt="Pictures" width="800" >
-<br>
-<br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/025.png?raw=true" alt="Pictures" width="800" >
-<br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/025.png?raw=true" alt="Pictures" width="800" ><br><br>
 
 
 ---
