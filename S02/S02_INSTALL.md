@@ -3,19 +3,25 @@
 
 ### 1.1. **AD-DS - Création d'un domaine Active Directory (AD)**
 
-- **Serveur Windows Server 2022 GUI :**
-  - **Rôles installés :** AD-DS, DHCP, DNS
-  - **Actions à réaliser :**
+- **Serveur Windows Server 2022 GUI :**  
+  - **Rôles installés :** AD-DS, DHCP, DNS  
+  - **Actions à réaliser :**  
     #### Installation de l'Active Directory (AD DS)  
 ![Capture d'écran 2024-11-26 154954](https://github.com/user-attachments/assets/0b0e9f7e-465f-41ca-af1b-9fa67d3dc962)  
 ![Capture d'écran 2024-11-26 155434](https://github.com/user-attachments/assets/9e2a476a-3cf8-403d-9818-6632501ad41c)  
 ![Capture d'écran 2024-11-26 155730](https://github.com/user-attachments/assets/b2f7c97e-dd4a-44be-af1a-6ff234149680)  
 
-Une fois le rôle AD DS installé, il faut cliquer sur le drapeau jaune en haut, afin de créer un DC :  
+:arrow_right: Une fois le rôle AD DS installé, il faut cliquer sur le drapeau jaune en haut, afin de créer un DC :  
 ![Capture d'écran 2024-11-26 155751](https://github.com/user-attachments/assets/21291125-d110-427a-82d3-ce9814ba70df)  
 
-Notre domaine va se nommer **`billu.com`**  
-![Capture d'écran 2024-11-26 155852](https://github.com/user-attachments/assets/cbb72235-1ae2-4503-a63b-84f567e5c1c2)
+:arrow_right: Notre domaine va se nommer **`billu.com`**  
+![Capture d'écran 2024-11-26 155852](https://github.com/user-attachments/assets/cbb72235-1ae2-4503-a63b-84f567e5c1c2)  
+![Capture d'écran 2024-11-26 155931](https://github.com/user-attachments/assets/ae678d71-1604-4962-a780-ad09771530bd)
+![Capture d'écran 2024-11-26 155931](https://github.com/user-attachments/assets/8de0595b-54d0-4b74-8736-3e48ff6b73f5)
+![Capture d'écran 2024-11-26 160046](https://github.com/user-attachments/assets/c3bca927-f3e1-47e3-b60a-770f4fb055a5)
+![Capture d'écran 2024-11-26 160133](https://github.com/user-attachments/assets/ef91a9e6-1fe8-4f68-9dac-269327c6b348)
+
+
 
     - Vérification de la réplication et des rôles sur ce serveur.
     - 
