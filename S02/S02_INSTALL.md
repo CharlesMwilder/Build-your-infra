@@ -6,8 +6,7 @@
 - **Serveur Windows Server 2022 GUI :**  
   - **Rôles installés :** AD-DS, DHCP, DNS  
   - **Actions à réaliser :**  
-    #### Installation de l'Active Directory (AD DS)
-  
+    #### Installation de l'Active Directory (AD DS)  
 
 ![Capture d'écran 2024-11-26 154954](https://github.com/user-attachments/assets/0b0e9f7e-465f-41ca-af1b-9fa67d3dc962)  
 ![Capture d'écran 2024-11-26 155434](https://github.com/user-attachments/assets/9e2a476a-3cf8-403d-9818-6632501ad41c)  
@@ -24,16 +23,21 @@
 ![Capture d'écran 2024-11-26 160133](https://github.com/user-attachments/assets/ef91a9e6-1fe8-4f68-9dac-269327c6b348)
 
 Après redémarrage, nous pouvons nous connecter en administrateur sur le domaine `billu`  
-![Capture d'écran 2024-11-26 160929](https://github.com/user-attachments/assets/6801ee46-6e77-4992-8244-4d143e8c1f8e)
+![Capture d'écran 2024-11-26 160929](https://github.com/user-attachments/assets/6801ee46-6e77-4992-8244-4d143e8c1f8e)  
+:arrow_right: **Nous avons donc 3 rôles d'installés : AD DC, DNS, DHCP**  
+Le serveur Windows 2022 GUI est donc bien sur le domaine `billu.com` et se nomme `SERVWIN01`.  
 
 #### Installation du DHCP  
 Toujours dans l'onglet Manage > Add rôles and features :  
 ![Capture d'écran 2024-11-26 162309](https://github.com/user-attachments/assets/bee85b73-cde5-4862-b035-d13442282b07)
 ![Capture d'écran 2024-11-26 162527](https://github.com/user-attachments/assets/90e89164-250a-48a4-b1d0-490d0d78f045)
 
-:arrow_right: **Nous avons donc 3 rôles d'installés : AD DC, DNS, DHCP**
-Le serveur Windows 2022 GUI est donc bien sur le domaine billu.com est se nomme SERVWIN01.
+#### Paramétrage des plages d'addressage DHCP  
 
+:arrow_right: Nous avons décidé de paramétrer les plages de façon très serrée, en ne gardant que le nombre d'employés par département. Il sera facile d'agrandir la plage d'attribution des adresses si besoin. En ne gardant aucune adresse dispo en plus, nous évitons qu'une personne malintentionnée puisse rejoindre une des VLAN.  
+Pour la gestion des adresses, se référer au plan d'adressage IPv4.
+
+hhg
 
     - Vérification de la réplication et des rôles sur ce serveur.
     - 
