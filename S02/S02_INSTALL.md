@@ -67,16 +67,17 @@ Pour la gestion des adresses, se référer au plan d'adressage IPv4.
 ### 1.2. **AD-DS - Gestion de l'arborescence AD**
 
 - **Création des Unités Organisationnelles (OU) :**
-1. **Ouvrir Server Manager** :  
+
+:pencil: 1. **Ouvrir Server Manager** :  
    Depuis la barre des tâches ou le menu démarrer.
 
-2. **Accéder à Active Directory Users and Computers** :  
+:pencil: 2. **Accéder à Active Directory Users and Computers** :  
    Allez dans **Tools** (Outils) en haut à droite et sélectionnez **Active Directory Users and Computers**.
 
-3. **Naviguer jusqu’à votre domaine** :  
+:pencil: 3. **Naviguer jusqu’à votre domaine** :  
    Dans la fenêtre, localisez votre domaine (ex. : `billu.com`).
 
-4. **Actions sur le domaine** :  
+:pencil: 4. **Actions sur le domaine** :  
    Faites un clic droit sur le domaine, puis suivez les étapes nécessaires.
 
 - **Créer les OU selon vos besoins :**<br><br>
@@ -95,16 +96,17 @@ Pour la gestion des adresses, se référer au plan d'adressage IPv4.
     
 
 - **Création des groupes :**
-1. **Ouvrir Server Manager** :  
+
+:pencil: 1. **Ouvrir Server Manager** :  
    Depuis la barre des tâches ou le menu démarrer.
 
-2. **Accéder à Active Directory Users and Computers** :  
+:pencil: 2. **Accéder à Active Directory Users and Computers** :  
    Allez dans **Tools** (Outils) en haut à droite et sélectionnez **Active Directory Users and Computers**.
 
-3. **Naviguer jusqu’à votre domaine** :  
+:pencil: 3. **Naviguer jusqu’à votre domaine** :  
    Dans la fenêtre, localisez votre domaine (ex. :`billu.com`).
 
-4. **Actions sur le domaine** :  
+:pencil: 4. **Actions sur le domaine** :  
    Faites dérouler le domaine, puis suivez les étapes nécessaires.
 
 - **Choisissez votre OU puis créer les groups selon vos besoins :**<br><br>
