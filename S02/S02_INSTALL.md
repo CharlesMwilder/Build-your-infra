@@ -35,9 +35,14 @@ Toujours dans l'onglet Manage > Add rôles and features :
 #### Paramétrage des plages d'addressage DHCP  
 
 :arrow_right: Nous avons décidé de paramétrer les plages de façon très serrée, en ne gardant que le nombre d'employés par département. Il sera facile d'agrandir la plage d'attribution des adresses si besoin. En ne gardant aucune adresse dispo en plus, nous évitons qu'une personne malintentionnée puisse rejoindre une des VLAN.  
-Pour la gestion des adresses, se référer au plan d'adressage IPv4.
+Pour la gestion des adresses, se référer au plan d'adressage IPv4.  
+![Capture d'écran 2024-11-26 163354](https://github.com/user-attachments/assets/96ff5498-cb42-47bc-8fd8-c6d9bc14803f)
+![Capture d'écran 2024-11-26 163558](https://github.com/user-attachments/assets/e2457858-48a7-4d10-8228-fbe18fb4175b)
 
-hhg
+Les plages paramétrées sur le Windows Server GUI:
+![Capture d'écran 2024-11-27 190157](https://github.com/user-attachments/assets/9000b937-36a9-4cc3-8f09-5414a1484585)
+
+
 
     - Vérification de la réplication et des rôles sur ce serveur.
     - 
