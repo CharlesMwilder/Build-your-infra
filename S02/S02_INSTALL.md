@@ -60,6 +60,8 @@ Pour la gestion des adresses, se référer au plan d'adressage IPv4.
 
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/016.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/017.png?raw=true" alt="Pictures" width="800" >
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/018.png?raw=true" alt="Pictures" width="800" >
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/019.png?raw=true" alt="Pictures" width="800" >
 
 
 ### :pencil: **Installation du DHCP sur le Serveur Windows Core**
@@ -67,11 +69,6 @@ L'installation se fait en PowerShell :
 <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/020.png?raw=true" alt="Pictures" width="800" ><br>
 :pencil: Ajout su serveur Core
 <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/021.png?raw=true" alt="Pictures" width="800" >
-
-
-### :pencil: **Ajout du serveur DHCP du Windows Core sur le contrôleur de domaine billu.com du windows Server GUI**
-<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/018.png?raw=true" alt="Pictures" width="800" >
-<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/019.png?raw=true" alt="Pictures" width="800" >
 
 
 ### :pencil: **Création d'une réplication du DHCP de la version GUI vers la version Core :**
@@ -89,8 +86,8 @@ Paramétrage de la réplication. Le serveur Core est en standby tant que le serv
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/026.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/027.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/028.png?raw=true" alt="Pictures" width="800" >
-![Capture d'écran 2024-11-27 193618](https://github.com/user-attachments/assets/7beeac99-5bb0-4e42-b0d4-3e651c8ca37e)
-![Capture d'écran 2024-11-27 193706](https://github.com/user-attachments/assets/42969591-86d7-4459-b629-091295669431)
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/029.png?raw=true" alt="Pictures" width="800" >
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/030.png?raw=true" alt="Pictures" width="800" >
 
 
   - **Action à réaliser :**
