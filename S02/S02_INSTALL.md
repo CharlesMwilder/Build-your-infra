@@ -27,13 +27,14 @@
 
 <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/009.png?raw=true" alt="Pictures" width="800" >
 
-:pencil: **Nous avons donc 3 rôles d'installés : AD DC, DNS, DHCP**  
-Le serveur Windows 2022 GUI est donc bien sur le domaine `billu.com` et se nomme `SERVWIN01`.  
 
 #### :pencil: **Installation du DHCP**  
 Toujours dans l'onglet Manage > Add rôles and features :  
 
 <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/010.png?raw=true" alt="Pictures" width="800" ><br><br>
+
+:pencil: **Nous avons donc 3 rôles d'installés : AD DC, DNS, DHCP**  
+Le serveur Windows 2022 GUI est donc bien sur le domaine `billu.com` et se nomme `SERVWIN01`.  
 
 #### :pencil: **Paramétrage des plages d'addressage DHCP**  
 
