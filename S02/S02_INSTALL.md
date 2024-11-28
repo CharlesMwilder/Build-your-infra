@@ -7,7 +7,7 @@
      
 #### :pencil: **Installation de l'Active Directory (AD DS) :**  
 
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/001.png?raw=true" alt="Pictures" width="800" >
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/001.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/002.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/003.png?raw=true" alt="Pictures" width="800" ><br>
  
@@ -53,7 +53,7 @@ Pour la gestion des adresses, se référer au plan d'adressage IPv4.
 - **Serveur Windows Server 2022 Core :**
   - **Rôle installé :** AD-DS
 <br><br> <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/026.png?raw=true" alt="Pictures" width="800" > <br>
-Nous ajoutons le Serveur-02-Core au domaine existant donc sur le Serveur-01-Gui :<br>
+<br>:pencil: Nous ajoutons le Serveur-02-Core au domaine existant donc sur le Serveur-01-Gui :<br><br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/014.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/015.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/016.png?raw=true" alt="Pictures" width="800" >
@@ -70,13 +70,13 @@ L'installation se fait en PowerShell :
 
 ### :pencil: **Création d'une réplication du DHCP de la version GUI vers la version Core :**
 
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/020.png?raw=true" alt="Pictures" width="800" >
-Ajout su serveur Core
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/021.png?raw=true" alt="Pictures" width="800" >
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/022.png?raw=true" alt="Pictures" width="800" >
-Paramétrage de la réplication. Le serveur Core est en standby tant que le serveur GUI est actif. En cas de panne du serveur GUI, après 5mn le serveur Core prend le relai après les mêmes paramétrages d'adresses.  
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/020.png?raw=true" alt="Pictures" width="800" ><br>
+:pencil: Ajout su serveur Core
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/021.png?raw=true" alt="Pictures" width="800" >
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/022.png?raw=true" alt="Pictures" width="800" ><br>
+:pencil: Paramétrage de la réplication. Le serveur Core est en standby tant que le serveur GUI est actif. En cas de panne du serveur GUI, après 5mn le serveur Core prend le relai après les mêmes paramétrages d'adresses.  
 
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/023.png?raw=true" alt="Pictures" width="800" >
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/023.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/024.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/025.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/026.png?raw=true" alt="Pictures" width="800" >
