@@ -51,11 +51,13 @@ Pour la gestion des adresses, se référer au plan d'adressage IPv4.
 :pencil: **Vérification de la réplication et des rôles sur ce serveur.**
   
 - **Serveur Windows Server 2022 Core :**
-  - **Rôle installé :** AD-DS
+  - **Rôle installé :** AD-DS  
+
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/015.png?raw=true" alt="Pictures" width="800" >
 <br><br> <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/026.png?raw=true" alt="Pictures" width="800" > <br>
 <br>:pencil: Nous ajoutons le Serveur-02-Core au domaine existant donc sur le Serveur-01-Gui :<br><br>
 
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/015.png?raw=true" alt="Pictures" width="800" >
+
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/016.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/017.png?raw=true" alt="Pictures" width="800" >
 
