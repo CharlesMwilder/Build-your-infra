@@ -59,6 +59,11 @@ Nous ajoutons le Serveur-02-Core au domaine existant donc sur le Serveur-01-Gui 
 
 
 ### :pencil: **Installation du DHCP sur le Serveur Windows Core**
+L'installation se fait en PowerShell :  
+![Capture d'écran 2024-11-27 191219](https://github.com/user-attachments/assets/54a86448-6c56-4bfb-a026-bfe6b673249d)
+
+### :pencil: **Ajout du serveur DHCP du Windows Core sur le contrôleur de domaine billu.com du windows Server GUI**
+![Capture d'écran 2024-11-27 192449](https://github.com/user-attachments/assets/343cb8d5-c92f-415a-bd18-653fcab5d00e)
 
 
 
