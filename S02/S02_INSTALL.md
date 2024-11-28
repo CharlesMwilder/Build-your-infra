@@ -186,6 +186,13 @@ Paramétrage de la réplication. Le serveur Core est en standby tant que le serv
         <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/004.PNG?raw=true" alt="Pictures" width="800" >
 
     - Configurer l'authentification via AD.
+      1 - Se connecter au domaine avec `realm join --user=administrator billu.com`  
+      <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/005.PNG?raw=true" alt="Pictures" width="800" >  
+      2 - Renseigner le mot de passe  
+      <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/006.PNG?raw=true" alt="Pictures" width="800" >  
+      3 - Afficher le résumé avec `realm list`  
+      <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/007.PNG?raw=true" alt="Pictures" width="800" >  
+    
 
 - **Accès SSH :**
   - **Action à réaliser :**
