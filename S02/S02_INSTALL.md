@@ -52,6 +52,16 @@ Pour la gestion des adresses, se référer au plan d'adressage IPv4.
   
 - **Serveur Windows Server 2022 Core :**
   - **Rôle installé :** AD-DS
+ ![Capture d'écran 2024-11-27 164826](https://github.com/user-attachments/assets/1993f8b3-d536-4646-ba71-e6cea59e736c)
+Nous ajoutons le Serveur-02-Core au domaine existant donc sur le Serveur-01-Gui :
+![Capture d'écran 2024-11-27 164909](https://github.com/user-attachments/assets/36f667bc-fd9b-4677-99ed-2d088651ca16)
+![Capture d'écran 2024-11-27 182116](https://github.com/user-attachments/assets/9285a936-d885-44ee-8ddd-b36ee2c334a2)
+
+
+### :pencil: **Installation du DHCP sur le Serveur Windows Core**
+
+
+
   - **Action à réaliser :**
     - Décrire la procédure d'installation du rôle AD-DS sur un serveur Core (capture d'écran ou commandes à utiliser).
     - Vérification de la réplication et des rôles sur ce serveur.
