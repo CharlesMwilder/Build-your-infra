@@ -42,11 +42,11 @@ Le serveur Windows 2022 GUI est donc bien sur le domaine `billu.com` et se nomme
 Nous avons décidé de paramétrer les plages de façon très serrée, en ne gardant que le nombre d'employés par département. Il sera facile d'agrandir la plage d'attribution des adresses si besoin. En ne gardant aucune adresse dispo en plus, nous évitons qu'une personne malintentionnée puisse rejoindre une des VLAN.  
 Pour la gestion des adresses, se référer au plan d'adressage IPv4.  
 
-
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/012.png?raw=true" alt="Pictures" width="800" ><br><br>
+<br><br><br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/013.png?raw=true" alt="Pictures" width="800" ><br><br>
 
  :pencil: **Les plages paramétrées sur le Windows Server GUI :**
-<br><br><br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/013.png?raw=true" alt="Pictures" width="800" ><br><br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/014.png?raw=true" alt="Pictures" width="800" >
 
 :pencil: **Vérification de la réplication et des rôles sur ce serveur.**
   
@@ -54,7 +54,7 @@ Pour la gestion des adresses, se référer au plan d'adressage IPv4.
   - **Rôle installé :** AD-DS
 <br><br> <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/026.png?raw=true" alt="Pictures" width="800" > <br>
 <br>:pencil: Nous ajoutons le Serveur-02-Core au domaine existant donc sur le Serveur-01-Gui :<br><br>
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/014.png?raw=true" alt="Pictures" width="800" >
+
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/015.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/016.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/017.png?raw=true" alt="Pictures" width="800" >
