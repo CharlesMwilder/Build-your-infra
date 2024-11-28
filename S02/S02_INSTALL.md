@@ -18,15 +18,14 @@
 
 :pencil: **Notre domaine va se nommer `billu.com`**  
 
-<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/004.png?raw=true" alt="Pictures" width="800" >
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/005.png?raw=true" alt="Pictures" width="800" >
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/005.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/006.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/007.png?raw=true" alt="Pictures" width="800" > )<br><br>
-
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/008.png?raw=true" alt="Pictures" width="800" ><br><br>
 
 :pencil: **Après redémarrage, nous pouvons nous connecter en administrateur sur le domaine `billu`**  
 
-<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/008.png?raw=true" alt="Pictures" width="800" ><br><br>
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/009.png?raw=true" alt="Pictures" width="800" >
 
 :pencil: **Nous avons donc 3 rôles d'installés : AD DC, DNS, DHCP**  
 Le serveur Windows 2022 GUI est donc bien sur le domaine `billu.com` et se nomme `SERVWIN01`.  
