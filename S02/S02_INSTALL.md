@@ -62,18 +62,18 @@ Pour la gestion des adresses, se référer au plan d'adressage IPv4.
 
 ### :pencil: **Installation du DHCP sur le Serveur Windows Core**
 L'installation se fait en PowerShell :  
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/018.png?raw=true" alt="Pictures" width="800" >
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/018.png?raw=true" alt="Pictures" width="800" >
 
 ### :pencil: **Ajout du serveur DHCP du Windows Core sur le contrôleur de domaine billu.com du windows Server GUI**
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/019.png?raw=true" alt="Pictures" width="800" >
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/019.png?raw=true" alt="Pictures" width="800" >
 
 
 ### :pencil: **Création d'une réplication du DHCP de la version GUI vers la version Core :**
 
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/020.png?raw=true" alt="Pictures" width="800" ><br>
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/020.png?raw=true" alt="Pictures" width="800" ><br>
 :pencil: Ajout su serveur Core
 <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/021.png?raw=true" alt="Pictures" width="800" >
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/022.png?raw=true" alt="Pictures" width="800" ><br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/022.png?raw=true" alt="Pictures" width="800" ><br><br>
 :pencil: Paramétrage de la réplication. Le serveur Core est en standby tant que le serveur GUI est actif. En cas de panne du serveur GUI, après 5mn le serveur Core prend le relai après les mêmes paramétrages d'adresses.  
 
 <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/023.png?raw=true" alt="Pictures" width="800" >
@@ -178,23 +178,23 @@ L'installation se fait en PowerShell :
   
 - **Sur le domaine AD-DS :**
   - **Action à réaliser :**
-    - Joindre la machine Debian au domaine Active Directory (AD).  
+    - Joindre la machine Debian au domaine Active Directory (AD).
       1 - `apt install packagekit samba-common-bin sssd-tools sssd libnss-sss libpam-sss policykit-1 sssd ntpdate ntp realmd`  
-        <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/001.PNG?raw=true" alt="Pictures" width="800" >  
+        <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/001.PNG?raw=true" alt="Pictures" width="800" ><br>  
       2 - Modifier le fichier `resolv.conf` avec `nameserver 172.18.255.254`, `nameserver 1.1.1.1 (opt)` et `search billu.com`  
-        <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/002.PNG?raw=true" alt="Pictures" width="800" >  
+        <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/002.PNG?raw=true" alt="Pictures" width="800" ><br>  
       3 - Modifier le fichier `interfaces` avec `iface ens18 inet static`, `address 172.18.255.252/24` et `gateway 172.18.255.254`  
-        <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/003.PNG?raw=true" alt="Pictures" width="800" >  
+        <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/003.PNG?raw=true" alt="Pictures" width="800" ><br>  
       4 - Modifier le fichier `hostname` avec `SRVLX-01-CLI.billu.com`  
-        <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/004.PNG?raw=true" alt="Pictures" width="800" >  
+        <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/004.PNG?raw=true" alt="Pictures" width="800" ><br>  
 
     - Configurer l'authentification via AD.  
       1 - Se connecter au domaine avec `realm join --user=administrator billu.com`  
-      <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/005.PNG?raw=true" alt="Pictures" width="800" >  
+     <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/005.PNG?raw=true" alt="Pictures" width="800" ><br>  
       2 - Renseigner le mot de passe  
-      <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/006.PNG?raw=true" alt="Pictures" width="800" >  
+      <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/006.PNG?raw=true" alt="Pictures" width="800" ><br>  
       3 - Afficher le résumé avec `realm list`  
-      <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/007.PNG?raw=true" alt="Pictures" width="800" >  
+      <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/007.PNG?raw=true" alt="Pictures" width="800" ><br>  
     
 
 - **Accès SSH :**
