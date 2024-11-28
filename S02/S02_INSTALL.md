@@ -40,20 +40,20 @@ Le serveur Windows 2022 GUI est donc bien sur le domaine `billu.com` et se nomme
 #### :pencil: **Paramétrage des plages d'addressage DHCP**  
 
 Nous avons décidé de paramétrer les plages de façon très serrée, en ne gardant que le nombre d'employés par département. Il sera facile d'agrandir la plage d'attribution des adresses si besoin. En ne gardant aucune adresse dispo en plus, nous évitons qu'une personne malintentionnée puisse rejoindre une des VLAN.  
-Pour la gestion des adresses, se référer au plan d'adressage IPv4.<br> 
+Pour la gestion des adresses, se référer au plan d'adressage IPv4.<br><br> 
 
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/012.png?raw=true" alt="Pictures" width="800" >
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/013.png?raw=true" alt="Pictures" width="800" ><br><br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/013.png?raw=true" alt="Pictures" width="800" ><br>
 
- :pencil: **Les plages paramétrées sur le Windows Server GUI :<br>**
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/014.png?raw=true" alt="Pictures" width="800" >
+ :pencil: **Les plages paramétrées sur le Windows Server GUI :**
+<br><br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/014.png?raw=true" alt="Pictures" width="800" ><br>
 
 :pencil: **Vérification de la réplication et des rôles sur ce serveur.**
   
 - **Serveur Windows Server 2022 Core :**
   - **Rôle installé :** AD-DS<br>  
 
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/015.png?raw=true" alt="Pictures" width="800" >
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/015.png?raw=true" alt="Pictures" width="800" >
 
 <br>:pencil: Nous ajoutons le Serveur-02-Core au domaine existant donc sur le Serveur-01-Gui :<br><br>
 
@@ -74,13 +74,13 @@ L'installation se fait en PowerShell :
 ### :pencil: **Création d'une réplication du DHCP de la version GUI vers la version Core :<br>**
 
 
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/022.png?raw=true" alt="Pictures" width="800" >
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/022.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/023.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/024.png?raw=true" alt="Pictures" width="800" ><br>
 
 <br>:pencil:Paramétrage de la réplication. Le serveur Core est en standby tant que le serveur GUI est actif. En cas de panne du serveur GUI, après 5mn le serveur Core prend le relai après les mêmes paramétrages d'adresses.<br>  
 
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/025.png?raw=true" alt="Pictures" width="800" >
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/025.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/026.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/027.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/028.png?raw=true" alt="Pictures" width="800" >
