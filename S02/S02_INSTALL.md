@@ -86,6 +86,8 @@ L'installation se fait en PowerShell :
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/026.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/027.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/028.png?raw=true" alt="Pictures" width="800" >
+![Capture d'écran 2024-11-27 193618](https://github.com/user-attachments/assets/7beeac99-5bb0-4e42-b0d4-3e651c8ca37e)
+![Capture d'écran 2024-11-27 193706](https://github.com/user-attachments/assets/42969591-86d7-4459-b629-091295669431)
 
 
   - **Action à réaliser :**
