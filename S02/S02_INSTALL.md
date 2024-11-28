@@ -188,7 +188,7 @@ L'installation se fait en PowerShell :
       :pencil: 4 - Modifier le fichier `hostname` avec `SRVLX-01-CLI.billu.com`  
         <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/004.PNG?raw=true" alt="Pictures" width="800" ><br>  
 
-    - Configurer l'authentification via AD.  
+      **Configurer l'authentification via AD.<br><br>**
       :pencil: 1 - Se connecter au domaine avec `realm join --user=administrator billu.com`  
      <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/005.PNG?raw=true" alt="Pictures" width="800" ><br>  
       :pencil: 2 - Renseigner le mot de passe  
