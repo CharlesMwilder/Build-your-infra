@@ -170,7 +170,11 @@ Paramétrage de la réplication. Le serveur Core est en standby tant que le serv
 - **VM ou CT en CLI :**
   - **Action à réaliser :**
     - Créer une machine virtuelle (VM) ou un conteneur (CT) sous Debian via Proxmox.
+      - Nom  : `G1-SRVLX-01-CLI`
+      - ID   : `945`
+      - IP   : `172.18.255.252`
     - Installer Debian et les configurations de base.
+      - `apt update && apt upgrade -y`
   
 - **Sur le domaine AD-DS :**
   - **Action à réaliser :**
