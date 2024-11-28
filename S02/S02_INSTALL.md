@@ -56,6 +56,8 @@ Pour la gestion des adresses, se référer au plan d'adressage IPv4.
 Nous ajoutons le Serveur-02-Core au domaine existant donc sur le Serveur-01-Gui :
 ![Capture d'écran 2024-11-27 164909](https://github.com/user-attachments/assets/36f667bc-fd9b-4677-99ed-2d088651ca16)
 ![Capture d'écran 2024-11-27 182116](https://github.com/user-attachments/assets/9285a936-d885-44ee-8ddd-b36ee2c334a2)
+![Capture d'écran 2024-11-28 100340](https://github.com/user-attachments/assets/439daea6-b78c-456d-a702-a8a04673ea02)
+![Capture d'écran 2024-11-28 100349](https://github.com/user-attachments/assets/18b66b28-f528-4fab-a19d-3188e04d689f)
 
 
 ### :pencil: **Installation du DHCP sur le Serveur Windows Core**
@@ -65,6 +67,21 @@ L'installation se fait en PowerShell :
 ### :pencil: **Ajout du serveur DHCP du Windows Core sur le contrôleur de domaine billu.com du windows Server GUI**
 ![Capture d'écran 2024-11-27 192449](https://github.com/user-attachments/assets/343cb8d5-c92f-415a-bd18-653fcab5d00e)
 
+
+### :pencil: **Création d'une réplication du DHCP de la version GUI vers la version Core :**
+
+![Capture d'écran 2024-11-27 192652](https://github.com/user-attachments/assets/95542a2d-8ef7-467b-b642-6e311e958dd7)
+Ajout su serveur Core
+![Capture d'écran 2024-11-27 192747](https://github.com/user-attachments/assets/11b4534d-6650-4487-8b9f-bf2eff734321)
+![Capture d'écran 2024-11-27 192821](https://github.com/user-attachments/assets/cc0f53e8-1809-4000-bac4-26411e852785)
+Paramétrage de la réplication. Le serveur Core est en standby tant que le serveur GUI est actif. En cas de panne du serveur GUI, après 5mn le serveur Core prend le relai après les mêmes paramétrages d'adresses.  
+
+![Capture d'écran 2024-11-27 193331](https://github.com/user-attachments/assets/76ac6efd-f42f-4e77-af77-702b67c595b3)  
+![Capture d'écran 2024-11-27 193342](https://github.com/user-attachments/assets/b27cc4cf-4f68-4767-bf4f-3b21ce0aa299)  
+![Capture d'écran 2024-11-27 193355](https://github.com/user-attachments/assets/d45d478a-3bbe-42ff-b607-1a92aec2b47f)  
+![Capture d'écran 2024-11-27 193532](https://github.com/user-attachments/assets/291f9c03-be18-4107-8235-c980692f9680)  
+![Capture d'écran 2024-11-27 193618](https://github.com/user-attachments/assets/3e6404da-094e-4fef-a458-a0b77fd3795e)  
+![Capture d'écran 2024-11-27 193706](https://github.com/user-attachments/assets/5eb833a7-bd56-45af-bbc3-83d33eeaff93)  
 
 
   - **Action à réaliser :**
