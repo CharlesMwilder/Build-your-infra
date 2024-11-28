@@ -62,17 +62,19 @@ Pour la gestion des adresses, se référer au plan d'adressage IPv4.
 
 ### :pencil: **Installation du DHCP sur le Serveur Windows Core**
 L'installation se fait en PowerShell :  
-<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/018.png?raw=true" alt="Pictures" width="800" >
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/020.png?raw=true" alt="Pictures" width="800" ><br>
+:pencil: Ajout su serveur Core
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/021.png?raw=true" alt="Pictures" width="800" >
+
 
 ### :pencil: **Ajout du serveur DHCP du Windows Core sur le contrôleur de domaine billu.com du windows Server GUI**
+<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/018.png?raw=true" alt="Pictures" width="800" >
 <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/019.png?raw=true" alt="Pictures" width="800" >
 
 
 ### :pencil: **Création d'une réplication du DHCP de la version GUI vers la version Core :**
 
-<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/020.png?raw=true" alt="Pictures" width="800" ><br>
-:pencil: Ajout su serveur Core
-<br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/021.png?raw=true" alt="Pictures" width="800" >
+
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/022.png?raw=true" alt="Pictures" width="800" ><br><br>
 :pencil: Paramétrage de la réplication. Le serveur Core est en standby tant que le serveur GUI est actif. En cas de panne du serveur GUI, après 5mn le serveur Core prend le relai après les mêmes paramétrages d'adresses.  
 
