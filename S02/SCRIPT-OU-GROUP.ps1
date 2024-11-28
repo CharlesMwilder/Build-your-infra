@@ -1,4 +1,4 @@
-# Script PowerShell pour la création d'OU et de groupe dans l'ADDS
+# Script PowerShell pour la creation d'OU et de groupe dans l'ADDS
 
 # Creation des variables Couleurs
 $Green = "Green"
@@ -20,14 +20,14 @@ function GroupList {
     Get-ADGroup -Filter 'Name -like "*"' -Server "billu.com" | Format-Table Name, GroupScope, DistinguishedName -AutoSize
     }
     
-# Fonction pour créer un OU
+# Fonction pour creer un OU
 function CreateOu {
 
     while ($true) {
         Write-Host "`n<=== CREATION 'OU' ===>`n" -f $Green
-        Write-Host "[1] " -ForegroundColor $CYAN -NoNewline; Write-Host "Créer un OU dans la racine"
-        Write-Host "[2] " -ForegroundColor $CYAN -NoNewline; Write-Host "Créer un OU dans un chemin spécifique"
-        Write-Host "[3] " -ForegroundColor $Red -NoNewline; Write-Host "Retour au menu précédent`n"
+        Write-Host "[1] " -ForegroundColor $CYAN -NoNewline; Write-Host "Creer un OU dans la racine"
+        Write-Host "[2] " -ForegroundColor $CYAN -NoNewline; Write-Host "Creer un OU dans un chemin specifique"
+        Write-Host "[3] " -ForegroundColor $Red -NoNewline; Write-Host "Retour au menu precedent`n"
         $choix = Read-Host "Veuillez choisir une option "
 
     switch ($choix) {
@@ -36,10 +36,10 @@ function CreateOu {
         $NameOu = Read-Host "Veuillez renseigner le nom de votre OU "
         try {
             New-ADOrganizationalUnit -Name "$NameOu" -Path "DC=billu,DC=com"
-            Write-Host "`nL'OU '$NameOu' a été créé avec succès.`n" -ForegroundColor Green
+            Write-Host "`nL'OU '$NameOu' a ete cree avec succes.`n" -ForegroundColor Green
         } 
         catch {
-            Write-Host "`n[ERREUR]! L'OU '$NameOu' n'a pas été créé.`n" -ForegroundColor Red
+            Write-Host "`n[ERREUR]! L'OU '$NameOu' n'a pas ete cree.`n" -ForegroundColor Red
         }
         
         }
@@ -51,10 +51,10 @@ function CreateOu {
         $LocationOu = Read-Host "Veuillez renseigner l'emplacement de destination de votre OU "
         try {
             New-ADOrganizationalUnit -Name "$NameOu" -Path "OU=$LocationOu,DC=billu,DC=com"
-            Write-Host "`nL'OU '$NameOu' a été créé avec succès.`n" -ForegroundColor Green
+            Write-Host "`nL'OU '$NameOu' a ete cree avec succes.`n" -ForegroundColor Green
         } 
         catch {
-            Write-Host "`n[ERREUR]! L'OU '$NameOu' n'a pas été créé.`n" -ForegroundColor Red
+            Write-Host "`n[ERREUR]! L'OU '$NameOu' n'a pas ete cree.`n" -ForegroundColor Red
         }
         
         } 
@@ -69,14 +69,14 @@ function CreateOu {
     }
   }
 }
-# Fonction pour créer un groupe
+# Fonction pour creer un groupe
 function CreateGroup {
 
     while ($true) {
         Write-Host "`n<=== CREATION 'GROUPES' ===>`n" -f $Green
-        Write-Host "[1] " -ForegroundColor $CYAN -NoNewline; Write-Host "Créer un groupe dans la racine"
-        Write-Host "[2] " -ForegroundColor $CYAN -NoNewline; Write-Host "Créer un groupe dans un chemin spécifique"
-        Write-Host "[3] " -ForegroundColor $Red -NoNewline; Write-Host "Retour au menu précédent`n"
+        Write-Host "[1] " -ForegroundColor $CYAN -NoNewline; Write-Host "Creer un groupe dans la racine"
+        Write-Host "[2] " -ForegroundColor $CYAN -NoNewline; Write-Host "Creer un groupe dans un chemin specifique"
+        Write-Host "[3] " -ForegroundColor $Red -NoNewline; Write-Host "Retour au menu precedent`n"
         $choix = Read-Host "Veuillez choisir une option "
     
     switch ($choix) {
@@ -85,10 +85,10 @@ function CreateGroup {
         $NameGroup = Read-Host "Veuillez renseigner le nom de votre groupe "
         try {
             New-ADGroup -Name "$NameGroup" -Path "DC=billu,DC=com" -GroupScope Global -GroupCategory Security
-            Write-Host "`nLe groupe '$NameGroup' a été créé avec succès.`n" -ForegroundColor Green
+            Write-Host "`nLe groupe '$NameGroup' a ete cree avec succes.`n" -ForegroundColor Green
          }
         catch {
-            Write-Host "`n[ERREUR]! Le groupe '$NameGroup' n'a pas été créé.`n" -ForegroundColor Red
+            Write-Host "`n[ERREUR]! Le groupe '$NameGroup' n'a pas ete cree.`n" -ForegroundColor Red
         }
             }
 
@@ -99,10 +99,10 @@ function CreateGroup {
         $LocationGroup = Read-Host "Veuillez renseigner l'emplacement de destination de votre OU "
             try {
             New-ADGroup -Name "$NameGroup" -Path "OU=$LocationGroup,DC=billu,DC=com" -GroupScope Global -GroupCategory Security
-            Write-Host "`nLe groupe '$NameGroup' a été créé avec succès.`n" -ForegroundColor Green
+            Write-Host "`nLe groupe '$NameGroup' a ete cree avec succes.`n" -ForegroundColor Green
          }
         catch {
-            Write-Host "`n[ERREUR]! Le groupe '$NameGroup' n'a pas été créé.`n" -ForegroundColor Red
+            Write-Host "`n[ERREUR]! Le groupe '$NameGroup' n'a pas ete cree.`n" -ForegroundColor Red
         }
             }         
         "3" {
@@ -120,8 +120,8 @@ while ($true) {
     Write-Host "`n<=== MENU GESTION ACTIVE DIRECOTRY ===>`n" -f $Green
     Write-Host "[1] " -ForegroundColor $CYAN -NoNewline; Write-Host "Liste des OU"
     Write-Host "[2] " -ForegroundColor $CYAN -NoNewline; Write-Host "Liste des Groupes"
-    Write-Host "[3] " -ForegroundColor $Yellow -NoNewline; Write-Host "Créer un OU"
-    Write-Host "[4] " -ForegroundColor $Yellow -NoNewline; Write-Host "Créer un groupe"
+    Write-Host "[3] " -ForegroundColor $Yellow -NoNewline; Write-Host "Creer un OU"
+    Write-Host "[4] " -ForegroundColor $Yellow -NoNewline; Write-Host "Creer un groupe"
     Write-Host "[x] " -ForegroundColor $Red -NoNewline; Write-Host "Sortir`n"
     $choix = Read-Host "Veuillez choisir une option "
 
