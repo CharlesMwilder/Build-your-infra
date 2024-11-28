@@ -179,6 +179,7 @@ Paramétrage de la réplication. Le serveur Core est en standby tant que le serv
 - **Sur le domaine AD-DS :**
   - **Action à réaliser :**
     - Joindre la machine Debian au domaine Active Directory (AD).
+      - `apt install packagekit samba-common-bin sssd-tools sssd libnss-sss libpam-sss policykit-1 sssd ntpdate ntp realmd`
     - Configurer l'authentification via AD.
 
 - **Accès SSH :**
