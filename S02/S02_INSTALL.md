@@ -35,13 +35,14 @@ Toujours dans l'onglet Manage > Add rôles and features :
 
 :pencil: **Nous avons donc 3 rôles d'installés : AD DC, DNS, DHCP**  
 Le serveur Windows 2022 GUI est donc bien sur le domaine `billu.com` et se nomme `SERVWIN01`.  
+<br><br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/011.png?raw=true" alt="Pictures" width="800" >
 
 #### :pencil: **Paramétrage des plages d'addressage DHCP**  
 
 Nous avons décidé de paramétrer les plages de façon très serrée, en ne gardant que le nombre d'employés par département. Il sera facile d'agrandir la plage d'attribution des adresses si besoin. En ne gardant aucune adresse dispo en plus, nous évitons qu'une personne malintentionnée puisse rejoindre une des VLAN.  
 Pour la gestion des adresses, se référer au plan d'adressage IPv4.  
 
-<br><br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/011.png?raw=true" alt="Pictures" width="800" >
+
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/ADDS/012.png?raw=true" alt="Pictures" width="800" ><br><br>
 
  :pencil: **Les plages paramétrées sur le Windows Server GUI :**
