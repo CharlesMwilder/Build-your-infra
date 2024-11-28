@@ -21,7 +21,7 @@
 <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/005.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/006.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/007.png?raw=true" alt="Pictures" width="800" >
-<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/008.png?raw=true" alt="Pictures" width="800" ><br><br>
+<img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/008.png?raw=true" alt="Pictures" width="800" > )<br><br>
 
 
 :pencil: **Après redémarrage, nous pouvons nous connecter en administrateur sur le domaine `billu`**  
@@ -52,8 +52,8 @@ Pour la gestion des adresses, se référer au plan d'adressage IPv4.
   
 - **Serveur Windows Server 2022 Core :**
   - **Rôle installé :** AD-DS
-<br><br> <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/026.png?raw=true" alt="Pictures" width="800" >
-Nous ajoutons le Serveur-02-Core au domaine existant donc sur le Serveur-01-Gui :
+<br><br> <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/026.png?raw=true" alt="Pictures" width="800" > <br>
+Nous ajoutons le Serveur-02-Core au domaine existant donc sur le Serveur-01-Gui :<br>
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/027.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/028.png?raw=true" alt="Pictures" width="800" >
 <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/029.png?raw=true" alt="Pictures" width="800" >
