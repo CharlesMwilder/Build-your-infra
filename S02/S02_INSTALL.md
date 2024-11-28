@@ -178,11 +178,14 @@ Paramétrage de la réplication. Le serveur Core est en standby tant que le serv
   
 - **Sur le domaine AD-DS :**
   - **Action à réaliser :**
-    - Joindre la machine Debian au domaine Active Directory (AD).
-      - `apt install packagekit samba-common-bin sssd-tools sssd libnss-sss libpam-sss policykit-1 sssd ntpdate ntp realmd`
+    - Joindre la machine Debian au domaine Active Directory (AD).  
+      1 - `apt install packagekit samba-common-bin sssd-tools sssd libnss-sss libpam-sss policykit-1 sssd ntpdate ntp realmd`  
         <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/001.PNG?raw=true" alt="Pictures" width="800" >
+      2 - Modifier le fichier `resolv.conf` avec `nameserver 172.18.255.254`, `nameserver 1.1.1.1(opt)` et `search billu.com`  
         <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/002.PNG?raw=true" alt="Pictures" width="800" >
+      3 - Modifier le fichier `interfaces` avec `iface ens18 inet static`, `address 172.18.255.252/24` et `gateway 172.18.255.254`  
         <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/003.PNG?raw=true" alt="Pictures" width="800" >
+      4 - Modifier le fichier `hostname` avec `SRVLX-01-CLI.billu.com`  
         <img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/004.PNG?raw=true" alt="Pictures" width="800" >
 
     - Configurer l'authentification via AD.
