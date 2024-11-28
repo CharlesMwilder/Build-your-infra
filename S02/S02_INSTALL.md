@@ -179,21 +179,21 @@ L'installation se fait en PowerShell :
 - **Sur le domaine AD-DS :**
   - **Action à réaliser :**
     - Joindre la machine Debian au domaine Active Directory (AD).
-      1 - `apt install packagekit samba-common-bin sssd-tools sssd libnss-sss libpam-sss policykit-1 sssd ntpdate ntp realmd`  
+      :pencil: 1 - `apt install packagekit samba-common-bin sssd-tools sssd libnss-sss libpam-sss policykit-1 sssd ntpdate ntp realmd`  
         <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/001.PNG?raw=true" alt="Pictures" width="800" ><br>  
-      2 - Modifier le fichier `resolv.conf` avec `nameserver 172.18.255.254`, `nameserver 1.1.1.1 (opt)` et `search billu.com`  
+      :pencil: 2 - Modifier le fichier `resolv.conf` avec `nameserver 172.18.255.254`, `nameserver 1.1.1.1 (opt)` et `search billu.com`  
         <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/002.PNG?raw=true" alt="Pictures" width="800" ><br>  
-      3 - Modifier le fichier `interfaces` avec `iface ens18 inet static`, `address 172.18.255.252/24` et `gateway 172.18.255.254`  
+      :pencil: 3 - Modifier le fichier `interfaces` avec `iface ens18 inet static`, `address 172.18.255.252/24` et `gateway 172.18.255.254`  
         <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/003.PNG?raw=true" alt="Pictures" width="800" ><br>  
-      4 - Modifier le fichier `hostname` avec `SRVLX-01-CLI.billu.com`  
+      :pencil: 4 - Modifier le fichier `hostname` avec `SRVLX-01-CLI.billu.com`  
         <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/004.PNG?raw=true" alt="Pictures" width="800" ><br>  
 
     - Configurer l'authentification via AD.  
-      1 - Se connecter au domaine avec `realm join --user=administrator billu.com`  
+      :pencil: 1 - Se connecter au domaine avec `realm join --user=administrator billu.com`  
      <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/005.PNG?raw=true" alt="Pictures" width="800" ><br>  
-      2 - Renseigner le mot de passe  
+      :pencil: 2 - Renseigner le mot de passe  
       <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/006.PNG?raw=true" alt="Pictures" width="800" ><br>  
-      3 - Afficher le résumé avec `realm list`  
+      :pencil: 3 - Afficher le résumé avec `realm list`  
       <br><img src="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/RESSOURCES/Debian_AD/007.PNG?raw=true" alt="Pictures" width="800" ><br>  
     
 
