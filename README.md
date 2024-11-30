@@ -49,8 +49,8 @@ L'infrastructure actuelle est limitée : un réseau Wi-Fi basique, des PC en wor
 
 ## Mise en place du suivi des objectifs du projet :bookmark_tabs:
 
-* Tableau d'objectifs de groupe choisi : **Template n°3**  
-* Tableau d'objectifs individuels : **Template n°2**  
+* Tableau d'objectifs de groupe choisi : **Template n°2**  
+* Tableau d'objectifs individuels : **Template n°3**  
 
 ---
 
