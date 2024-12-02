@@ -1,6 +1,6 @@
-## Documentation
+## 🎯 Documentation
 
-### GPO de Sécurité (si choisie)
+### 🎯 GPO de Sécurité (si choisie)
 - **Nom de la GPO** :  
 - **Description** :  
 - **Étapes de configuration** :  
@@ -11,7 +11,7 @@
 
 ---
 
-### GPO Standard (si choisie)
+### 🎯 GPO Standard (si choisie)
 - **Nom de la GPO** :  
 - **Description** :  
 - **Étapes de configuration** :  
@@ -22,7 +22,7 @@
 
 ---
 
-### Serveur de Gestion de Parc (GLPI)
+### 🎯 Serveur de Gestion de Parc (GLPI)
 - **Description du serveur** :  
 - **Étapes d'installation et de configuration** :  
   1.  
@@ -32,7 +32,7 @@
 
 ---
 
-### Automatisation par Script Shell
+### 🎯 Automatisation par Script Shell
 - **Description du script** :  
 - **Contenu du fichier de configuration utilisé** :  
 - **Étapes pour exécuter le script** :  
@@ -43,7 +43,7 @@
 
 ---
 
-### Automatisation par Script PowerShell
+### 🎯 Automatisation par Script PowerShell
 - **Description du script** :  
 - **Contenu du fichier de configuration utilisé** :  
 - **Étapes pour exécuter le script** :  
