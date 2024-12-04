@@ -11,6 +11,7 @@ $DNSalternative = "172.18.255.254"                    # DNS adresse alternative
 $DomainName = "Billu.com"                             # Nom de domaine
 $OUmain = "Domain Controllers,DC=Billu,DC=com"        # Nom de l'OU
 
+
 # Paramétrage du nom de l'hôte :
 Rename-Computer -ComputerName $ServerName
 
