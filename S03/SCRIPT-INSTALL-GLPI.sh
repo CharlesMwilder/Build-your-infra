@@ -47,9 +47,9 @@ expect eof
 # Connexion à MySQL pour configurer la base de données GLPI
 echo "Creation de la base de donnees GLPI et utilisateur..."
 mysql -u root -prootpassword <<EOF
-CREATE DATABASE DB_NAME;
-CREATE USER 'DB_USER'@'DB_HOST' IDENTIFIED BY '$PASSWORD';
-GRANT ALL PRIVILEGES ON glpi.* TO 'DB_USER'@'DB_HOST' WITH GRANT OPTION;
+CREATE DATABASE $DB_NAME;
+CREATE USER '$DB_USER'@'$DB_HOST' IDENTIFIED BY '$DB_PASSWORD';
+GRANT ALL PRIVILEGES ON glpi.* TO '$DB_USER'@'$DB_HOST' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 EXIT;
 EOF
