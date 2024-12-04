@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Charger le fichier de configuration
+source /root/config.txt
+
 # Mise a jour des paquets Debian
 apt update && apt upgrade -y
 
@@ -44,9 +47,9 @@ expect eof
 # Connexion à MySQL pour configurer la base de données GLPI
 echo "Creation de la base de donnees GLPI et utilisateur..."
 mysql -u root -prootpassword <<EOF
-CREATE DATABASE glpi;
-CREATE USER 'billu'@'localhost' IDENTIFIED BY 'Azerty1*';
-GRANT ALL PRIVILEGES ON glpi.* TO 'billu'@'localhost' WITH GRANT OPTION;
+CREATE DATABASE DB_NAME;
+CREATE USER 'DB_USER'@'DB_HOST' IDENTIFIED BY '$PASSWORD';
+GRANT ALL PRIVILEGES ON glpi.* TO 'DB_USER'@'DB_HOST' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 EXIT;
 EOF
