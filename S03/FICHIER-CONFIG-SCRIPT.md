@@ -1,7 +1,8 @@
 # Configuration pour script install GLPI
 
-#Variables :
+## Variables
 
+```bash
 DB_NAME=glpi
 DB_USER=billu
 DB_PASSWORD=Azerty1*
