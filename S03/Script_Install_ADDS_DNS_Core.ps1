@@ -11,6 +11,20 @@ $DNSalternative = "172.18.255.254"                    # DNS adresse alternative
 $DomainName = "Billu.com"                             # Nom de domaine
 $OUmain = "Domain Controllers,DC=Billu,DC=com"        # Nom de l'OU
 
+# Récupérer le nom de l'hôte
+$hostname = (Get-ComputerInfo).CsName
+
+Write-Output "Nous allons réinstaller ADD-DS + DNS + ajout au domaine sur votre serveur Core selon les caractéristiques suivantes :`n"
+Write-Output "Nom de la machine : $ServerName"
+Write-Output "Nom de la carte réseau à paramétrer $NetCardAD"
+Write-Output "Adresse IPv4 du serveur Core : $IPAddress, masque sous réseau : $IPmask"
+Write-Output "Adresse du DNS : $DNSIP"
+Write-Output "Adresse alternative du DNS : $DNSalternative"
+Write-Output "Nom de domaine : $DomainName"
+Write-Output "Format LDAP de l'OU : $OUmain"
+Write-Output "`n"
+Write-Output "Dans le cas d'une modification d'un paramètre, modifier la ou les variables en début de script"
+
 
 # Paramétrage du nom de l'hôte :
 Rename-Computer -ComputerName $ServerName
