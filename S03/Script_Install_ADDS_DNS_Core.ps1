@@ -73,7 +73,7 @@ if ( $choice -eq "yes" )
         Add-Computer -DomainName $DomainName -Credential administrator@billu.com -OUPath $OUmain
 
         # Redémarrage
-        write-output "Redémarrage du PC..."
+        write-output "Redémarrage du serveur $ServerName..."
         Start-Sleep -Seconds 3
         Restart-Computer -Force
 }
