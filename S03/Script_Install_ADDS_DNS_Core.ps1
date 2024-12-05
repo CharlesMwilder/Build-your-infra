@@ -7,7 +7,7 @@ $NetCardAD = "Ethernet"                                # Carte réseau pour la c
 $InterfaceIndex = (Get-NetAdapter -Name $NetCardAD).ifIndex  # Récupérer le numéro de l'interface dans $NetCardAD
 $IPAddress = "172.18.255.253"                         # IP serveur Core
 $IPmask = "16"                                        # Masque réseau
-$DNSIP = ""172.18.255.254""                                  # DNS adresse
+$DNSIP = "172.18.255.254""                                  # DNS adresse
 $DNSalternative = "127.0.0.1"                    # DNS adresse alternative
 $DomainName = "Billu.com"                             # Nom de domaine
 $OUmain = "OU=Domain Controllers,DC=Billu,DC=com"        # Nom de l'OU
