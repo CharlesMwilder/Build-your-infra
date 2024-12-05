@@ -64,7 +64,6 @@ if ( $choice -eq "yes" )
         
         # Ajout de la machine au domaine existant :
         Write-Output "Ajout de la machine au domaine $DomainName :"
-        $credential = Get-Credential -Message "Entrez les identifiants avec les permissions nécessaires pour rejoindre le domaine."
         Add-Computer -DomainName $DomainName -Credential administrator@billu.com -OUPath OU=$OUmain
 
         # Redémarrage
