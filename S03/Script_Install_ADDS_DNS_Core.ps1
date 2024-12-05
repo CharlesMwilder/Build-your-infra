@@ -36,7 +36,7 @@ if ( $choice -eq "yes" )
                     Write-Output "L'ordinateur va redémarrer après le changement de nom, merci de relancer le script au redémarrage"
                     Start-Sleep -Seconds 5
                     # Paramétrage du nom de l'hôte :
-                    Rename-Computer -ComputerName $ServerName
+                    Rename-Computer -NewName $ServerName
                     
                     # Besoin de redémarrer pour prendre en compte le nom.
                     Restart-Computer -Force
@@ -64,7 +64,11 @@ if ( $choice -eq "yes" )
         
         # Ajout de la machine au domaine existant :
         Write-Output "Ajout de la machine au domaine $DomainName :"
-        Add-Computer -DomainName $DomainName -DomainCredential administrator@$DomainName -OUPath OU=$OUmain
+        $credential = Get-Credential -Message "Entrez les identifiants avec les permissions nécessaires pour rejoindre le domaine."
+        Add-Computer -DomainName $DomainName -Credential -Credential $credential -OUPath OU=$OUmain
+
+        # Redémarrage
+        Restart-Computer -Force
 }
 
 
