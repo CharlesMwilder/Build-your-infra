@@ -1,6 +1,6 @@
 ## 🎯 Documentation
 
-### 🎯 GPO de Sécurité (si choisie)
+### 🎯 GPO de Sécurité
 - **Nom de la GPO** :  
 - **Description** :  
 - **Étapes de configuration** :  
@@ -11,7 +11,7 @@
 
 ---
 
-### 🎯 GPO Standard (si choisie)
+### 🎯 GPO Standard
 - **Nom de la GPO** :  
 - **Description** :  
 - **Étapes de configuration** :  
