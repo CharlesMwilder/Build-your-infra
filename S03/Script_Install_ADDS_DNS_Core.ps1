@@ -10,7 +10,7 @@ $IPmask = "16"                                        # Masque réseau
 $DNSIP = ""172.18.255.254""                                  # DNS adresse
 $DNSalternative = "127.0.0.1"                    # DNS adresse alternative
 $DomainName = "Billu.com"                             # Nom de domaine
-$OUmain = "Domain Controllers,DC=Billu,DC=com"        # Nom de l'OU
+$OUmain = "OU=Domain Controllers,DC=Billu,DC=com"        # Nom de l'OU
 
 # Récupérer le nom de l'hôte
 $hostname = (Get-ComputerInfo).CsName
@@ -64,7 +64,7 @@ if ( $choice -eq "yes" )
         
         # Ajout de la machine au domaine existant :
         Write-Output "Ajout de la machine au domaine $DomainName :"
-        Add-Computer -DomainName $DomainName -Credential administrator@billu.com -OUPath OU=$OUmain
+        Add-Computer -DomainName $DomainName -Credential administrator@billu.com -OUPath $OUmain
 
         # Redémarrage
         Restart-Computer -Force
