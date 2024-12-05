@@ -45,28 +45,36 @@ if ( $choice -eq "yes" )
         
         # Paramétrage adresse IP :
         Write-Output "Paramétrage adresse IP + masque sous réseau :"
+        Start-Sleep -Seconds 3
         New-NetIPAddress -IPAddress $IPAddress -PrefixLength $IPmask -InterfaceIndex $InterfaceIndex
         
         # Paramétrage de l’adresse DNS :
         Write-Output "Paramétrage des adresses DNS :"
+        Start-Sleep -Seconds 3
         Set-DnsClientServerAddress -InterfaceIndex $InterfaceIndex -ServerAddresses $DNSIP, $DNSalternative
         
         # Installation des rôles AD-DS, DNS et outils graphiques :
         Write-Output "Installation des outils graphiques pour l'AD-DS :"
+        Start-Sleep -Seconds 3
         Add-WindowsFeature -Name "RSAT-AD-Tools" -IncludeManagementTools -IncludeAllSubFeature
         
         Write-Output "Installation de l'AD-DS :"
+        Start-Sleep -Seconds 3
         Add-WindowsFeature -Name "AD-Domain-Services" -IncludeManagementTools -IncludeAllSubFeature
         
         Write-Output "Installation du rôle DNS :"
+        Start-Sleep -Seconds 3
         Add-WindowsFeature -Name "DNS" -IncludeManagementTools -IncludeAllSubFeature
         
         
         # Ajout de la machine au domaine existant :
         Write-Output "Ajout de la machine au domaine $DomainName :"
+        Start-Sleep -Seconds 3
         Add-Computer -DomainName $DomainName -Credential administrator@billu.com -OUPath $OUmain
 
         # Redémarrage
+        write-output "Redémarrage du PC..."
+        Start-Sleep -Seconds 3
         Restart-Computer -Force
 }
 
