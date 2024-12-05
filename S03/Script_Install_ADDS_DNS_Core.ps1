@@ -33,7 +33,7 @@ if ( $choice -eq "yes" )
                 if ( $hostname -ne $ServerName )
                 {
                     Write-Output "Nous allons renommer la machine en $ServerName"
-                    Write-Output "L'ordinateur va redémarrer après le changement de nom, merci de relancer le script"
+                    Write-Output "L'ordinateur va redémarrer après le changement de nom, merci de relancer le script au redémarrage"
                     
                     # Paramétrage du nom de l'hôte :
                     Rename-Computer -ComputerName $ServerName
