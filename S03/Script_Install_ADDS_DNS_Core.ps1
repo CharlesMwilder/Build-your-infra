@@ -40,20 +40,45 @@ if ( $hostname -ne $ServerName )
 
 
 
-
-
-
-
 # Paramétrage adresse IP :
+Write-Output "Paramétrage adresse IP + masque sous réseau :"
 New-NetIPAddress -IPAddress $IPAddress -PrefixLength $IPmask -InterfaceIndex $InterfaceIndex
 
 # Paramétrage de l’adresse DNS :
+Write-Output "Paramétrage des adresses DNS :"
 Set-DnsClientServerAddress -InterfaceIndex $InterfaceIndex -ServerAddresses $DNSIP, $DNSalternative
 
 # Installation des rôles AD-DS, DNS et outils graphiques :
+Write-Output "Installation des outils graphiques pour l'AD-DS :"
 Add-WindowsFeature -Name "RSAT-AD-Tools" -IncludeManagementTools -IncludeAllSubFeature
+
+Write-Output "Installation de l'AD-DS :"
 Add-WindowsFeature -Name "AD-Domain-Services" -IncludeManagementTools -IncludeAllSubFeature
+
+Write-Output "Installation du rôle DNS :"
 Add-WindowsFeature -Name "DNS" -IncludeManagementTools -IncludeAllSubFeature
 
+
 # Ajout de la machine au domaine existant :
+Write-Output "Ajout de la machine au domaine $DomainName :"
 Add-Computer -DomainName $DomainName -DomainCredential administrator@$DomainName -OUPath OU=$OUmain
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
