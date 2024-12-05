@@ -1,4 +1,4 @@
-## 🎯 Documentation GPO
+## 🎯 Documentation : Installation et configuration de GPO
 
 ### 🎯 GPO de Sécurité
 - **Nom de la GPO** :  
