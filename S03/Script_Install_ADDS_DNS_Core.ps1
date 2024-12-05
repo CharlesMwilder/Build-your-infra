@@ -33,14 +33,16 @@ if ( $hostname -ne $ServerName )
     
     # Paramétrage du nom de l'hôte :
     Rename-Computer -ComputerName $ServerName
+    
+    # Besoin de redémarrer pour prendre en compte le nom.
+    Restart-Computer -Force
 }
 
 
 
 
 
-# Besoin de redémarrer pour prendre en compte le nom.
-Restart-Computer -Force
+
 
 # Paramétrage adresse IP :
 New-NetIPAddress -IPAddress $IPAddress -PrefixLength $IPmask -InterfaceIndex $InterfaceIndex
