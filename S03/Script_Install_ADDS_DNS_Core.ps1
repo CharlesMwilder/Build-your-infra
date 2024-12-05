@@ -7,8 +7,8 @@ $NetCardAD = "Ethernet"                                # Carte réseau pour la c
 $InterfaceIndex = (Get-NetAdapter -Name $NetCardAD).ifIndex  # Récupérer le numéro de l'interface dans $NetCardAD
 $IPAddress = "172.18.255.253"                         # IP serveur Core
 $IPmask = "16"                                        # Masque réseau
-$DNSIP = "127.0.0.1"                                  # DNS adresse
-$DNSalternative = "172.18.255.254"                    # DNS adresse alternative
+$DNSIP = ""172.18.255.254""                                  # DNS adresse
+$DNSalternative = "127.0.0.1"                    # DNS adresse alternative
 $DomainName = "Billu.com"                             # Nom de domaine
 $OUmain = "Domain Controllers,DC=Billu,DC=com"        # Nom de l'OU
 
@@ -65,11 +65,12 @@ if ( $choice -eq "yes" )
         # Ajout de la machine au domaine existant :
         Write-Output "Ajout de la machine au domaine $DomainName :"
         $credential = Get-Credential -Message "Entrez les identifiants avec les permissions nécessaires pour rejoindre le domaine."
-        Add-Computer -DomainName $DomainName -Credential -Credential $credential -OUPath OU=$OUmain
+        Add-Computer -DomainName $DomainName -Credential administrator@billu.com -OUPath OU=$OUmain
 
         # Redémarrage
         Restart-Computer -Force
 }
+
 
 
 
