@@ -26,8 +26,18 @@ Write-Output "`n"
 Write-Output "Dans le cas d'une modification d'un paramètre, modifier la ou les variables en début de script"
 
 
-# Paramétrage du nom de l'hôte :
-Rename-Computer -ComputerName $ServerName
+if ( $hostname -ne $ServerName )
+{
+    Write-Output "Nous allons renommer la machine en $ServerName"
+    Write-Output "L'ordinateur va redémarrer après le changement de nom, merci de relancer le script"
+    # Paramétrage du nom de l'hôte :
+    Rename-Computer -ComputerName $ServerName
+
+}
+
+
+
+
 
 # Besoin de redémarrer pour prendre en compte le nom.
 Restart-Computer -Force
