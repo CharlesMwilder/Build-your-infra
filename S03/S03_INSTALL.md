@@ -135,3 +135,11 @@ Tout est installé et la machine est ajoutée au domaine. Un redémarrage est n�
 ---
 ![Capture d'écran 2024-12-05 124430](https://github.com/user-attachments/assets/8c70ccb8-39d7-4aa2-ae35-fe4f64299856)
 ---
+Après redémarrage, nous voyons la machine avec le nouveau nom et l'association au domaine  
+![Capture d'écran 2024-12-05 124525](https://github.com/user-attachments/assets/276bbb6c-6af2-4a93-be4c-cb1b363e792c)
+---
+Nous pouvons nous connecter au serveur graphique pour visualiser le serveur core et finaliser l'installation
+![Capture d'écran 2024-12-05 124139](https://github.com/user-attachments/assets/eb654e32-7769-4cf1-b820-26d43eda2300)
+![Capture d'écran 2024-12-05 130249](https://github.com/user-attachments/assets/301f6937-87c3-4076-bafc-a94d3eb4f4c1)
+---
+
