@@ -202,8 +202,8 @@ gpupdate /force
 </details>
 
 ---
-
-# 🎯 Documentation : Installation et Configuration de GLPI sur un Serveur Debian
+<details>
+<summary><h1># 🎯 Documentation : Installation et Configuration de GLPI sur un Serveur Debian</h1></summary>
 
 
 ## 🎯 Prérequis
@@ -284,6 +284,7 @@ gpupdate /force
 ---
 ![016](https://github.com/user-attachments/assets/727f4b31-1bfb-4279-a855-5f1910002970)<br>
 ---
+</details>
 
 ## 🎯 Documentation : Installation et configuration AD DS sur serveur Windows Core via script POWERSHELL
 
