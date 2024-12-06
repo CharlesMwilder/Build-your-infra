@@ -2,8 +2,6 @@
 <summary><h1> 🎯 Installation et configuration de GPO<h1></summary>
 <br>
 
-## 🎯 Documentation : Installation et configuration de GPO
-
 Suivez les étapes ci-dessous pour créer et configurer des Group Policy Objects (GPOs)
 
 GPOs configurés dans ce guide :
