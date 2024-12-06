@@ -287,7 +287,10 @@ gpupdate /force
 ---
 </details>
 
-## 🎯 Documentation : Installation et configuration AD DS sur serveur Windows Core via script POWERSHELL
+---
+
+<details>
+<summary><h1>🎯 Installation et configuration ADDS sur Win Core via script PS</h1></summary>
 
 Le script, créé en PowerShell, permet de paramétrer la bonne adresse IP + masque ainsi que les adresses DNS, puis d'installer les rôles AD-DS, DNS et outils graphiques sur le serveur Core. La dernière étape consiste à ajouter le Serveur Core au domaine `Billu.com` en se connectant avec le compte administrator du domaine.
 
@@ -329,4 +332,4 @@ Nous pouvons nous connecter au serveur graphique pour visualiser le serveur core
 ![Capture d'écran 2024-12-05 124139](https://github.com/user-attachments/assets/eb654e32-7769-4cf1-b820-26d43eda2300)
 ![Capture d'écran 2024-12-05 130249](https://github.com/user-attachments/assets/301f6937-87c3-4076-bafc-a94d3eb4f4c1)
 ---
-
+</details>
