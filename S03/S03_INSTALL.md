@@ -217,12 +217,12 @@ gpupdate /force
 ## 🎯 1. Installation de GLPI sur le Serveur Debian en CLI via script BASH et fichier de configuration
 
 ``📑 Fichier config.txt``
-
+---
 ![config 1](https://github.com/user-attachments/assets/4326e919-a1d2-4ef2-9217-50d211771e95)<br>
 ---
 
 ``📑 Script installation GLPI``
-
+---
 ![script 1](https://github.com/user-attachments/assets/681b8f1b-b354-4f2f-9896-2683f26ad4d5)<br>
 ---
 ![script 2](https://github.com/user-attachments/assets/6c49ccf4-c45c-486a-b442-558d469106db)<br>
@@ -231,14 +231,14 @@ gpupdate /force
 ---
 
 ``📑 Lancement du script``
-
+---
 ![017](https://github.com/user-attachments/assets/fbfe3fcd-ba70-4121-8ebd-4e1a0516ac94)<br>
 ---
 ![018](https://github.com/user-attachments/assets/eb8ec1df-e6ce-4db6-af08-e9218074268b)<br>
 ---
 
 ``📑 Connexion sur le compte admin (billu)``
-
+---
 ![001](https://github.com/user-attachments/assets/99c60c91-80e5-4bce-a74d-69b85e29e6be)<br>
 ---
 ![002](https://github.com/user-attachments/assets/3ff82d21-aeb8-4909-9ed3-524b1166acbd)<br>
