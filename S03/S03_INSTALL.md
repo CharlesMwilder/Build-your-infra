@@ -105,3 +105,10 @@
 ---
 
 ## 🎯 Documentation : Installation et configuration AD DS sur serveur Windows Core via script POWERSHELL
+
+Le script, créé en PowerShell, permet de paramétrer la bonne adresse IP + masque ainsi que les adresses DNS, puis d'installer les rôles ADD-DS, DNS et outils graphiques sur le serveur Core. La dernière étape consiste à ajouter le Serveur Core au domaine Billu.com en se connectant avec le compte administrator du domaine
+
+
+
+
+
