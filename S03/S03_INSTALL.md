@@ -123,22 +123,26 @@ Ensuite le script va installer:
 * Le rôle AD-DS  
 * Le rôle DNS  
   
-![Capture d'écran 2024-12-05 121232](https://github.com/user-attachments/assets/26963fec-1ea5-4748-ba5b-7848d808f91d)  
+
 ---
 ![Capture d'écran 2024-12-05 121318](https://github.com/user-attachments/assets/fd14847a-4315-4069-b189-be1b7cd5f838)
 ---
 La dernière étape est l'ajout de la machine au domaine `Billu.com`. Le script nous demande de nous connecter au domaine avec des droits élevés :  
+
 ![Capture d'écran 2024-12-05 131356](https://github.com/user-attachments/assets/d909f97b-5c3c-467a-a3da-211bc64045c1)
 ---
 Tout est installé et la machine est ajoutée au domaine. Un redémarrage est nécéssaire pour prendre en compte les nouveaux paramètres :  
+
 ![Capture d'écran 2024-12-05 124103](https://github.com/user-attachments/assets/f59ae564-3061-406c-ba14-675794dbda46)
 ---
 ![Capture d'écran 2024-12-05 124430](https://github.com/user-attachments/assets/8c70ccb8-39d7-4aa2-ae35-fe4f64299856)
 ---
 Après redémarrage, nous voyons la machine avec le nouveau nom et l'association au domaine  
+
 ![Capture d'écran 2024-12-05 124525](https://github.com/user-attachments/assets/276bbb6c-6af2-4a93-be4c-cb1b363e792c)
 ---
-Nous pouvons nous connecter au serveur graphique pour visualiser le serveur core et finaliser l'installation
+Nous pouvons nous connecter au serveur graphique pour visualiser le serveur core et finaliser l'installation  
+
 ![Capture d'écran 2024-12-05 124139](https://github.com/user-attachments/assets/eb654e32-7769-4cf1-b820-26d43eda2300)
 ![Capture d'écran 2024-12-05 130249](https://github.com/user-attachments/assets/301f6937-87c3-4076-bafc-a94d3eb4f4c1)
 ---
