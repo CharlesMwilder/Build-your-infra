@@ -1,5 +1,5 @@
 <details>
-<summary><h2> 🎯 Documentation : Installation et configuration de GPO<h1></summary>
+<summary><h1> 🎯 Documentation : Installation et configuration de GPO<h1></summary>
 <br>
 
 
