@@ -113,9 +113,23 @@ Le script, créé en PowerShell, permet de paramétrer la bonne adresse IP + mas
 Lorsque nous lançons le script, il nous rappelle les paramètres qu'il va appliquer avant le lancement. Dans le cas d'un besoin de changer un paramètre, il suffit de modifier la bonne variable. Toutes les variables des paramètres sont en début de script.  
 ![Capture d'écran 2024-12-05 120342](https://github.com/user-attachments/assets/40df7883-5635-451b-9191-e658cc8dbf5f)
 
-Le script attend la réponse de l'utilisateur pour continuer, il faut tapper `[yes]` pour continuer (Si on tape [non], on sort du script) :  
-![Capture d'écran 2024-12-05 121232](https://github.com/user-attachments/assets/26963fec-1ea5-4748-ba5b-7848d808f91d)
+Le script attend la réponse de l'utilisateur pour continuer, il faut tapper `[yes]` pour continuer (Si on tape [non], on sort du script).
 
 La première étape est le changement de nom de l'hôte. Ceci nécéssite un redémarrage et le relancement du script. Si l'hôte comporte le bon nom, l'étape n'est pas appliquée, ce qui permet d'éviter un redémarrage...
 ![Capture d'écran 2024-12-05 120400](https://github.com/user-attachments/assets/a0edffda-30b6-47a2-851f-48e8a6561494)
+
+Ensuite le script va installer:  
+* Les outils graphiques  
+* Le rôle AD-DS  
+* Le rôle DNS  
+![Capture d'écran 2024-12-05 121232](https://github.com/user-attachments/assets/26963fec-1ea5-4748-ba5b-7848d808f91d)
+
+![Capture d'écran 2024-12-05 121318](https://github.com/user-attachments/assets/fd14847a-4315-4069-b189-be1b7cd5f838)
+
+La dernière étape est l'ajout de la machine au domaine `Billu.com`. Le script nous demande de nous connecter au domaine avec des droits élevés :  
+![Capture d'écran 2024-12-05 131356](https://github.com/user-attachments/assets/d909f97b-5c3c-467a-a3da-211bc64045c1)
+
+Tout est installé et la machine est ajoutée au domaine. Un redémarrage est nécéssaire pour prendre en compte les nouveaux paramètres :
+![Capture d'écran 2024-12-05 124103](https://github.com/user-attachments/assets/d141ee2e-5ea0-44cb-84a1-f514d7ce6e19)
+![Capture d'écran 2024-12-05 124430](https://github.com/user-attachments/assets/8c70ccb8-39d7-4aa2-ae35-fe4f64299856)
 
