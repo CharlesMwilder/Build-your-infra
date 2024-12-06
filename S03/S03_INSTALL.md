@@ -55,7 +55,7 @@ GPOs configurés dans ce guide :
 
 ### 🎯 **Etape 4 : Configurer les paramètres de la GPO**
 
-#### **Exemple : Politique de mot de passe**
+#### **Exemple : GPO de Sécurité : Security Politique de mot de passe**
 1. Dans le **Group Policy Management Editor**, naviguez jusqu'à :
 Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy
 
@@ -64,10 +64,11 @@ Computer Configuration → Policies → Windows Settings → Security Settings �
 - **Longueur minimale du mot de passe** : Définir à `12`.
 - Complexité du mot de passe** : Enable.
 - **Age maximum du mot de passe** : Fixé à `90 jours`.
-
-![AD-5](https://github.com/user-attachments/assets/411331cd-a0d4-4043-bb44-619abec094d2)
-![AD-6](https://github.com/user-attachments/assets/96d7e7cf-35af-41e2-b9e3-292d2fcab432)
-![AD-7](https://github.com/user-attachments/assets/6fa02976-2de4-4cdd-bf5a-8170d05cf56e)
+  
+![AD-5](https://github.com/user-attachments/assets/411331cd-a0d4-4043-bb44-619abec094d2)  
+![AD-6](https://github.com/user-attachments/assets/96d7e7cf-35af-41e2-b9e3-292d2fcab432)  
+![AD-7](https://github.com/user-attachments/assets/6fa02976-2de4-4cdd-bf5a-8170d05cf56e)  
+  
 
 ---
 
@@ -79,62 +80,124 @@ Computer Configuration → Policies → Windows Settings → Security Settings �
   2. Configurer les paramètres de verrouillage
   - Durée du blocage du compte : Réglée sur 15 minutes.
   - Seuil de verrouillage du compte : Réglé sur 3.
-  - Réinitialiser le compteur de blocage de compte après : Régler sur 15 minutes.
+  - Réinitialiser le compteur de blocage de compte après : Régler sur 15 minutes.  
+
+![AD-9](https://github.com/user-attachments/assets/74b06d96-595f-4ace-9bf2-0cdf7106edb7)
+
+---
+
+### 🎯 GPO de Sécurité
+- **Nom de la GPO** : Software Installation Restrictions
+- **Description** : Empêcher les utilisateurs non administrateurs d'installer des logiciels non autorisés
+- **Étapes de configuration** :  
+  1.  Créer un nouveau GPO : 'Software Restrictions'
+  2.  Modifier le GPO
+  3.  Créer une nouvelle 'Software Restriction Policy'  
+clique droit Software Restriction Policies → Create New Policies  
+  
+![AD-12](https://github.com/user-attachments/assets/2b39f37f-2764-492a-832a-eb80de4ddb6a)  
+![AD-13](https://github.com/user-attachments/assets/b1f0b238-8eb7-44c7-a18a-2cf55451f497)
+
+---
+
+### 🎯 GPO de Sécurité
+- **Nom de la GPO** : Windows Update Management
+- **Description** : Programmation des mises à jour de Windows et contrôle de l'installation
+- **Étapes de configuration** :  
+  1. Créer un nouveau GPO : Windows Update Management
+  2. Modifier le GPO : Computer Configuration → Policies → Administrative Templates → Windows Components → Windows Update
+  3. Configurer les paramètres : Configurer les mises à jour automatiques
+
+![AD-17](https://github.com/user-attachments/assets/a418ea67-0b3b-43a5-925b-0d695630505f)   
+![AD-18](https://github.com/user-attachments/assets/9daac085-1107-4872-b3f8-9471c08f8cc8)
+
+---
+
+### 🎯 GPO de Sécurité
+- **Nom de la GPO** : Restrict Removable Devices
+- **Description** : Bloquer l'accès USB sauf autorisation 
+- **Étapes de configuration** :  
+  1. Créer un nouveau GPO : Restrict USB Access.
+  2. Modifier le GPO : Computer Configuration → Policies → Administrative Templates → System → Removable Storage Access
+  3. Configurer les paramètres :  
+  All Removable Storage Classes: Deny All Access → Enable
+  Computer Configuration → Policies → Administrative Templates → System → Device Installation → Device Installation Restrictions
+
+![AD-23](https://github.com/user-attachments/assets/7b5f342e-b8a4-4953-9171-844e83352aff)  
+![AD-22](https://github.com/user-attachments/assets/b095d56b-ed10-4bed-9d4a-2100e0fcfc23)
 
 ---
 
 ### 🎯 GPO Standard
-- **Nom de la GPO** :  
-- **Description** :  
+- **Nom de la GPO** : Drive Mapping
+- **Description** : Lier les lecteurs partagés pour les départements
 - **Étapes de configuration** :  
-  1.  
-  2.  
-  3.  
-- **Autres remarques** :  
+  1. Créer un nouveau GPO : Drive Mapping
+  2. Modifier le GPO : User Configuration → Preferences → Windows Settings → Drive Maps
+  3. Créer une Drive Map : Clique droit Drive Maps → New → Mapped Drive
+  4. Configure settings:
+Location: e.g., \\Server\Finance.
+Label as: e.g., Finance Drive.
+Reconnect: Check this box.
+  
+![AD-27](https://github.com/user-attachments/assets/09cdfd8a-b689-465d-a8a7-c9e3499772aa)  
+![AD-28](https://github.com/user-attachments/assets/894ddea6-6417-4543-9dd2-fa15b181aa42)
+
 
 ---
 
 ### 🎯 GPO Standard
-- **Nom de la GPO** :  
-- **Description** :  
+- **Nom de la GPO** : Screen Background
+- **Description** : Définir un Wallpaper unifié pour l'entreprise
 - **Étapes de configuration** :  
-  1.  
-  2.  
-  3.  
-- **Autres remarques** :  
+  1. Créer un nouveau GPO : Screen Background
+  2. Modifier le GPO : User Configuration → Policies → Administrative Templates → Desktop → Desktop
+  3. Configurer la politique : Desktop Wallpaper → Enabled.  
+  Indiquer le chemin d'accès complet au fichier image (e.g., \\Server\Wallpapers\BillU.png).  
+  
+![AD-30](https://github.com/user-attachments/assets/bbf4e485-c097-493e-bf76-94df0c3626ea)  
+![AD-31](https://github.com/user-attachments/assets/951cafe7-b37c-4aff-88fc-37c09ca2018d)
 
----
 
 ### 🎯 GPO Standard
-- **Nom de la GPO** :  
-- **Description** :  
+- **Nom de la GPO** : Folder Redirection
+- **Description** : Rediriger les dossiers Desktop et Documents vers un emplacement de serveur partagé.
 - **Étapes de configuration** :  
-  1.  
-  2.  
-  3.  
-- **Autres remarques** :  
+  1. Créer un nouveau GPO : Folder Redirection
+  2. Modifier le GPO : User Configuration → Policies → Windows Settings → Folder Redirection
+  3. Configurer la redirection : clique droit Documents → Properties.
+Définir l'emplacement du dossier cible sur Rediriger vers l'emplacement suivant.
+Saisissez le chemin d'accès (par exemple, \Server\RedirectedFolders\%USERNAME\%Documents).  
+  
+![AD-34](https://github.com/user-attachments/assets/b516f61a-5658-47e7-bc52-84a1243d3dff)
 
----
 
 ### 🎯 GPO Standard
-- **Nom de la GPO** :  
-- **Description** :  
+- **Nom de la GPO** : Software Deployment
+- **Description** : Forcer l'installation de logiciels spécifiques sur les utilisateurs
 - **Étapes de configuration** :  
-  1.  
-  2.  
-  3.  
-- **Autres remarques** :  
+  1. Naviguer vers : Computer Configuration → Policies → Software Settings → Software Installation
+  2. Ajouter des logiciels pour la publication ou l'affectation.
 
----
+![AD-39](https://github.com/user-attachments/assets/7fdde4f2-fdc0-4818-97c7-cd78fea67c84)  
+![AD-40](https://github.com/user-attachments/assets/88b23090-a24c-4e7d-abe3-44dfef526834)  
+
 
 ### 🎯 GPO Standard
-- **Nom de la GPO** :  
-- **Description** :  
+- **Nom de la GPO** : Power Management
+- **Description** : Exiger un mot de passe lorsque l'ordinateur sort du mode veille.
 - **Étapes de configuration** :  
-  1.  
-  2.  
-  3.  
-- **Autres remarques** :
+  1. Naviguer vers : Computer Configuration → Policies → Administrative Templates → System → Power Management
+  2. Configurer les paramètres de veille et d'alimentation.
+
+![AD-35](https://github.com/user-attachments/assets/141167fe-49a7-4a00-9c23-e433b1897dc1)  
+![AD-38](https://github.com/user-attachments/assets/ecc6505c-2e36-455c-9c5f-a15169ef049f)  
+
+### 🎯 **Étape 5 : Forcer la mise à jour de la GPO**
+1. Exécutez la commande suivante sur un ordinateur client ou un serveur pour appliquer immédiatement la nouvelle stratégie :
+```powershell
+gpupdate /force
+```
 
 </details>
 
