@@ -2,10 +2,24 @@
 <summary><h1> 🎯 Documentation : Installation et configuration de GPO<h1></summary>
 <br>
 
-
 ## 🎯 Documentation : Installation et configuration de GPO
 
 Suivez les étapes ci-dessous pour créer et configurer des Group Policy Objects (GPOs)
+
+GPOs configurés dans ce guide :
+1. GPOs de sécurité  
+1.1 Politique de mot de passe  
+1.2 Verrouillage des comptes  
+1.3 Restrictions d'installation de logiciels  
+1.4 Gestion des mises à jour de Windows  
+1.5 Restreindre les périphériques amovibles  
+
+2. GPO standard  
+2.1 Mappage des lecteurs  
+2.2 Fond d'écran  
+2.3 Redirection des dossiers  
+2.4 Gestion de l'énergie   
+2.5 Déploiement de logiciels   
 
 ---
 
@@ -62,9 +76,10 @@ Computer Configuration → Policies → Windows Settings → Security Settings �
 - **Description** : Verrouiller les comptes après 5 tentatives infructueuses
 - **Étapes de configuration** :  
   1. Ouvrir la GPO Stratégie du mot de passe pour l'éditer
-  2.  
-  3.  
-- **Autres remarques** :  
+  2. Configurer les paramètres de verrouillage
+  - Durée du blocage du compte : Réglée sur 15 minutes.
+  - Seuil de verrouillage du compte : Réglé sur 3.
+  - Réinitialiser le compteur de blocage de compte après : Régler sur 15 minutes.
 
 ---
 
