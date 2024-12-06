@@ -1,5 +1,5 @@
 <details>
-<summary><h1> 🎯 Documentation : Installation et configuration de GPO<h1></summary>
+<summary><h1> 🎯 Installation et configuration de GPO<h1></summary>
 <br>
 
 ## 🎯 Documentation : Installation et configuration de GPO
@@ -204,7 +204,7 @@ gpupdate /force
 ---
 
 <details>
-<summary><h1>🎯 Documentation : Installation et Configuration GLPI sur Debian<h1></summary>
+<summary><h1>🎯 Installation et Configuration GLPI sur Debian<h1></summary>
 
 
 ## 🎯 Prérequis
