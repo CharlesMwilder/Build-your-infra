@@ -1,6 +1,74 @@
+<details>
+<summary><h2> 🎯 Documentation : Installation et configuration de GPO<h1></summary>
+<br>
+
+
 ## 🎯 Documentation : Installation et configuration de GPO
 
+Suivez les étapes ci-dessous pour créer et configurer des Group Policy Objects (GPOs)
+
+---
+
+### 🎯 **Étape 1 : Ouvrir la gestion des stratégies de groupe**
+1. Recherchez **Group Policy Management** dans le menu Démarrer.
+2. Ouvrez **Group Policy Management Console (GPMC)**.
+
+![AD-1](https://github.com/user-attachments/assets/bc94d2bc-0de2-4779-9ec2-bc383ff2b965)
+
+---
+
+### 🎯 **Étape 2 : Créer un nouveau GPO**
+1. Dans la **Group Policy Management**, développez votre domaine (par exemple, `billu.com`).
+2. Faites un clic droit sur votre domaine (`billu.com`) ou sur une unité d'organisation (OU) spécifique, telle que **Paris**.
+3. Sélectionnez **Create a GPO in this domain, and Link it here...**.
+
+![AD-2](https://github.com/user-attachments/assets/896c5331-ec5b-4d0a-bc56-7207d9026d2c)
+
+4. Nommez la nouvelle GPO en fonction de son objectif (par exemple, `Password Policy`, `Drive Mapping`, etc.)
+5. Cliquez sur **OK** pour enregistrer.
+
+![AD-3](https://github.com/user-attachments/assets/7ea9b951-c33a-4228-b926-f4fc700fe443)
+
+---
+
+### 🎯 **Étape 3 : Modifier la GPO**
+1. Cliquez avec le bouton droit de la souris sur la GPO nouvellement créée et sélectionnez **Edit**.
+2. La fenêtre **Group Policy Management Editor** s'ouvre.
+
+![AD-4](https://github.com/user-attachments/assets/14aabf60-a547-4284-b05a-b1569546799b)
+
+---
+
+### 🎯 **Etape 4 : Configurer les paramètres de la GPO**
+
+#### **Exemple : Politique de mot de passe**
+1. Dans le **Group Policy Management Editor**, naviguez jusqu'à :
+Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy
+
+2. Double-cliquez sur chaque paramètre pour le configurer :
+- **Enforcer l'historique des mots de passe** : Régler à `5`.
+- **Longueur minimale du mot de passe** : Définir à `12`.
+- Complexité du mot de passe** : Enable.
+- **Age maximum du mot de passe** : Fixé à `90 jours`.
+
+![AD-5](https://github.com/user-attachments/assets/411331cd-a0d4-4043-bb44-619abec094d2)
+![AD-6](https://github.com/user-attachments/assets/96d7e7cf-35af-41e2-b9e3-292d2fcab432)
+![AD-7](https://github.com/user-attachments/assets/6fa02976-2de4-4cdd-bf5a-8170d05cf56e)
+
+---
+
 ### 🎯 GPO de Sécurité
+- **Nom de la GPO** : Account Lockout
+- **Description** : Verrouiller les comptes après 5 tentatives infructueuses
+- **Étapes de configuration** :  
+  1. Ouvrir la GPO Stratégie du mot de passe pour l'éditer
+  2.  
+  3.  
+- **Autres remarques** :  
+
+---
+
+### 🎯 GPO Standard
 - **Nom de la GPO** :  
 - **Description** :  
 - **Étapes de configuration** :  
@@ -19,6 +87,41 @@
   2.  
   3.  
 - **Autres remarques** :  
+
+---
+
+### 🎯 GPO Standard
+- **Nom de la GPO** :  
+- **Description** :  
+- **Étapes de configuration** :  
+  1.  
+  2.  
+  3.  
+- **Autres remarques** :  
+
+---
+
+### 🎯 GPO Standard
+- **Nom de la GPO** :  
+- **Description** :  
+- **Étapes de configuration** :  
+  1.  
+  2.  
+  3.  
+- **Autres remarques** :  
+
+---
+
+### 🎯 GPO Standard
+- **Nom de la GPO** :  
+- **Description** :  
+- **Étapes de configuration** :  
+  1.  
+  2.  
+  3.  
+- **Autres remarques** :
+
+</details>
 
 ---
 
