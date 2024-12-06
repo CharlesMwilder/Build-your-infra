@@ -202,8 +202,8 @@ gpupdate /force
 </details>
 
 ---
-<details>
-<summary><h1># 🎯 Documentation : Installation et Configuration de GLPI sur un Serveur Debian</h1></summary>
+
+<details><summary><h1># 🎯 Documentation : Installation et Configuration de GLPI sur un Serveur Debian</h1></summary>
 
 
 ## 🎯 Prérequis
