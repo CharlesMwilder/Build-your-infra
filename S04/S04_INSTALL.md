@@ -1,1 +1,31 @@
+<details>
+<summary><h1>🎯 Simulation de switch par utilisation de tag de vlan<h1></summary>
 
+---
+![PFSENSE1](https://github.com/user-attachments/assets/757b8746-e1e9-477e-a45d-4f7b523c60fa)
+---
+![PFSENSE2](https://github.com/user-attachments/assets/43747cb3-9f86-4f0f-9c74-ba7c009be7d7)
+---
+![PFSENSE3](https://github.com/user-attachments/assets/71fa628c-6038-4c24-9f6f-4f3f32064d66)
+---
+![PFSENSE4](https://github.com/user-attachments/assets/daa0646e-6ce2-4ddd-937e-cd45d3540f2d)
+---
+![PFSENSE5](https://github.com/user-attachments/assets/81095162-e2df-4e3c-99a2-369d9725ca67)
+---
+![PFSENSE6](https://github.com/user-attachments/assets/6aa0195a-feeb-4894-9196-aeccf0993e4b)
+---
+![PFSENSE7](https://github.com/user-attachments/assets/7374e826-2912-4ff0-a296-6bc02b052840)
+---
+![PFSENSE8](https://github.com/user-attachments/assets/17cc758b-f590-44d3-b4db-e9e1e0e1be9f)
+---
+![PFSENSE9](https://github.com/user-attachments/assets/5514aaed-426d-4414-9686-26e3a61ca51b)
+---
+![PFSENSE10](https://github.com/user-attachments/assets/4bade0d8-20c7-4471-974a-f9150c761f59)
+---
+![PFSENSE11](https://github.com/user-attachments/assets/d7d5acd1-197d-45ac-a225-22c1943147e9)
+---
+![PFSENSE12](https://github.com/user-attachments/assets/a9754820-66d9-4005-a3bf-8fcba4d981fe)
+---
+![PFSENSE13](https://github.com/user-attachments/assets/2731e93c-3440-40ae-88dc-f519f4fc6922)
+---
+</details>
