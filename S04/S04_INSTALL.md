@@ -2,21 +2,21 @@
 <summary><h1>🎯 Gestion d'un firewall pfSense<h1></summary>
 
 ---
-``📑 Création d'une régle pare-feu pour une VLAN (Autorisation du port "53" pour le proctocole "DNS" via uniquement le serveur)``
+``📑 Etape 1 : Création d'une régle pare-feu pour une VLAN (Autorisation du port "53" pour le proctocole "DNS" via uniquement le serveur)``
 ---
 ![RULES 1](https://github.com/user-attachments/assets/38b26943-5267-4fb2-850e-3295f03a7f4a)
 ---
-``📑 Remplir les champs suivant :``
+``📑 Etape 2 : Remplir les champs suivant``
 ---
 ![RULES 2](https://github.com/user-attachments/assets/6b7a2b4c-f9a4-41e8-9917-96b110594ff4)
 ---
 ![RULES 3](https://github.com/user-attachments/assets/552e8fa0-46e3-4b6d-a7d8-ac2f4661ec97)
 ---
-``📑 Appliquez les changements via "Apply Changes"``
+``📑 Etape 3 : Appliquez les changements via "Apply Changes"``
 ---
 ![RULES 4](https://github.com/user-attachments/assets/fefd485d-82d4-4f8d-8797-c93aa378a873)
 ---
-``📑 La règles est maintenant validé et fonctionnelle``
+``📑 Etape 4 : La règles est maintenant validé et fonctionnelle``
 ---
 ![RULES 5](https://github.com/user-attachments/assets/e91a17ff-5aba-4126-a91f-7e51bec64376)
 
