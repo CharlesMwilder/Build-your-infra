@@ -55,3 +55,17 @@
 ![PFSENSE 7](https://github.com/user-attachments/assets/9249d161-d793-4cfb-b4c4-c3bc4ca96bc3)
 ---
 </details>
+
+---
+
+<details>
+<summary><h1>🎯 Gestion de la télémétrie sur les clients Windows 10/11<h1></summary>
+
+---
+``📑 Script pour la gestion de télémétrie``
+---
+![SCRIPT1](https://github.com/user-attachments/assets/e8361921-919f-450a-a283-675a61aef27c)
+---
+![SCRIPT2](https://github.com/user-attachments/assets/266e8128-ea58-4368-8e67-d1149f189686)
+---
+</details>
