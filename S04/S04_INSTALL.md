@@ -65,7 +65,6 @@
 ``📑 Script pour la gestion de télémétrie``
 ---
 ![SCRIPT1](https://github.com/user-attachments/assets/e8361921-919f-450a-a283-675a61aef27c)
----
 ![SCRIPT2](https://github.com/user-attachments/assets/266e8128-ea58-4368-8e67-d1149f189686)
 ---
 </details>
