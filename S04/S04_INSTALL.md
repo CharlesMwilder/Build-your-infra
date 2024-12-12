@@ -14,12 +14,11 @@
 ---
 ``📑 Etape 3 : Appliquez les changements via "Apply Changes"``
 ---
-![RULES 4](https://github.com/user-attachments/assets/fefd485d-82d4-4f8d-8797-c93aa378a873)
+![RULES 4](https://github.com/user-attachments/assets/e7f4982a-6b23-432c-a6fe-f83ffdc834ba)
 ---
 ``📑 Etape 4 : La règles est maintenant validé et fonctionnelle``
 ---
-![RULES 5](https://github.com/user-attachments/assets/e91a17ff-5aba-4126-a91f-7e51bec64376)
-
+![RULES 5](https://github.com/user-attachments/assets/e8f725b7-85eb-408a-9a2a-7419c1ae0616)
 ---
 </details>
 
