@@ -48,10 +48,10 @@
 ---
 ``📑 Etape 12 : Appliquer les changements en cliquant sur "Apply Changes"``
 ---
-![PFSENSE 5](https://github.com/user-attachments/assets/a3c71efc-6a10-4c76-9290-a376b68ec0da)
+![PFSENSE 6](https://github.com/user-attachments/assets/06f0d232-aa7f-43bb-ba6b-e984d0efc27b)
 ---
 ``📑 Etape 13 : Bravo tout est bon ! 👏``
 ---
-![PFSENSE 6](https://github.com/user-attachments/assets/06f0d232-aa7f-43bb-ba6b-e984d0efc27b)
+![PFSENSE 7](https://github.com/user-attachments/assets/9249d161-d793-4cfb-b4c4-c3bc4ca96bc3)
 ---
 </details>
