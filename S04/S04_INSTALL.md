@@ -10,7 +10,7 @@
 ---
 ![RULES 2](https://github.com/user-attachments/assets/6b7a2b4c-f9a4-41e8-9917-96b110594ff4)
 ---
-![RULES 3](https://github.com/user-attachments/assets/552e8fa0-46e3-4b6d-a7d8-ac2f4661ec97)
+![RULES 3](https://github.com/user-attachments/assets/3b49ec7e-58d2-4c93-88dd-d7417953da50)
 ---
 ``📑 Etape 3 : Appliquez les changements via "Apply Changes"``
 ---
