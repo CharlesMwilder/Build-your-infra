@@ -28,6 +28,55 @@
 <summary><h1>🎯 Gestion de la télémétrie sur les clients Windows 10/11<h1></summary>
 
 ---
+
+## Guide manuel pour la configuration de la télémétrie sous Windows 10/11
+
+Ce guide explique comment configurer manuellement les paramètres de télémétrie sur Windows 10/11 pour améliorer la sécurité et réduire la collecte de données.
+
+---
+
+## **1. Ouvrir la gestion de la stratégie de groupe**
+
+1. Ouvrez la **console de gestion des stratégies de groupe (GPMC)**.
+2. Naviguez jusqu'à votre domaine dans le panneau de gauche (par exemple, `billu.com`).
+3. Cliquez avec le bouton droit de la souris sur votre domaine ou sur l'unité d'organisation (OU) cible où la politique sera appliquée.
+4. Sélectionnez **Créer une GPO dans ce domaine, et la lier ici...**.
+5. Nommez le GPO (par exemple, **Telemetry Management**) et cliquez sur **OK**.
+
+![AD-1](https://github.com/user-attachments/assets/2662bccf-2570-4f56-aa21-9a00241519d0)
+
+---
+
+## **2. Modifier le GPO**
+
+1. Cliquez avec le bouton droit de la souris sur le GPO nouvellement créé et sélectionnez **Editer**.
+2. L'**Éditeur de gestion des stratégies de groupe** s'ouvre.
+
+---
+
+## **3. Configurer les paramètres de télémétrie**
+
+1. Dans l'**Éditeur de gestion des stratégies de groupe**, accédez à :
+Computer Configuration → Policies → Administrative Templates → Windows Components → Data Collection and Preview Builds
+
+2. Localisez le paramètre **Allow Diagnostic Data**.
+
+![AD-2](https://github.com/user-attachments/assets/60e480f4-5b6e-40b8-8fb5-1d9a0f874363)
+
+3. Double-cliquez sur ***Allow Diagnostic Data** pour ouvrir sa fenêtre de configuration.
+
+![AD-3](https://github.com/user-attachments/assets/f7e13bd6-286a-4e6d-b3c7-23d4c7e124d6)
+
+4. Configurez le paramètre :
+- Réglez-le sur **Enabled**.
+- Dans le menu déroulant, sélectionnez :
+  - **Diagnostic data off (non recommandé)** pour désactiver complètement la télémétrie (si elle est prise en charge).
+  - Ou **Envoyer les données de diagnostic requises** pour une télémétrie minimale.
+
+5. Cliquez sur **OK** pour enregistrer les modifications.
+
+![AD-4](https://github.com/user-attachments/assets/ff4bf318-0399-45dd-ad1e-c823f9ec574c)
+
 ``📑 Script pour la gestion de télémétrie``
 ---
 ![SCRIPT1](https://github.com/user-attachments/assets/e8361921-919f-450a-a283-675a61aef27c)
