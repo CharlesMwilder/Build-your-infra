@@ -20,7 +20,7 @@
 | **Nom**          | **Rôle**          | **Description**                                     |
 |-------------------|-------------------|-----------------------------------------------------|
 | NICOLAS | Product Owner 🎯  | Responsable de définir les besoins et priorités du projet. |
-| JUELIEN | Scrum Master 🧑‍🤝‍🧑    | Garant du respect de la méthodologie Agile et facilitateur.|
+| JULIEN | Scrum Master 🧑‍🤝‍🧑    | Garant du respect de la méthodologie Agile et facilitateur.|
 | CHARLES | Technicien  💻    | Responsable des aspects techniques et de la mise en œuvre. |
 | WILLIAM | Technicien 💻     | Responsable des aspects techniques et de la mise en œuvre. |
 
