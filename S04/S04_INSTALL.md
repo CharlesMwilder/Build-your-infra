@@ -16,7 +16,7 @@
 ---
 ![RULES 4](https://github.com/user-attachments/assets/e7f4982a-6b23-432c-a6fe-f83ffdc834ba)
 ---
-``📑 Etape 4 : La règles est maintenant validé et fonctionnelle``
+``📑 Etape 4 : La règles est maintenant validé``
 ---
 ![RULES 5](https://github.com/user-attachments/assets/e8f725b7-85eb-408a-9a2a-7419c1ae0616)
 ---
