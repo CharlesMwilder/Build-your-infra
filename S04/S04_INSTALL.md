@@ -29,13 +29,13 @@
 
 ---
 
-## Guide manuel pour la configuration de la télémétrie sous Windows 10/11
+## 📑 Guide manuel pour la configuration de la télémétrie sous Windows 10/11
 
 Ce guide explique comment configurer manuellement les paramètres de télémétrie sur Windows 10/11 pour améliorer la sécurité et réduire la collecte de données.
 
 ---
 
-## **1. Ouvrir la gestion de la stratégie de groupe**
+## **📑 1. Ouvrir la gestion de la stratégie de groupe**
 
 1. Ouvrez la **console de gestion des stratégies de groupe (GPMC)**.
 2. Naviguez jusqu'à votre domaine dans le panneau de gauche (par exemple, `billu.com`).
@@ -47,14 +47,14 @@ Ce guide explique comment configurer manuellement les paramètres de télémétr
 
 ---
 
-## **2. Modifier le GPO**
+## **📑 2. Modifier le GPO**
 
 1. Cliquez avec le bouton droit de la souris sur le GPO nouvellement créé et sélectionnez **Editer**.
 2. L'**Éditeur de gestion des stratégies de groupe** s'ouvre.
 
 ---
 
-## **3. Configurer les paramètres de télémétrie**
+## **📑 3. Configurer les paramètres de télémétrie**
 
 1. Dans l'**Éditeur de gestion des stratégies de groupe**, accédez à :
 Computer Configuration → Policies → Administrative Templates → Windows Components → Data Collection and Preview Builds
