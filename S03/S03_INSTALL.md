@@ -345,6 +345,8 @@ gpupdate /force
 
 ---
 ![Capture d'écran 2024-12-05 121318](https://github.com/user-attachments/assets/fd14847a-4315-4069-b189-be1b7cd5f838)
+![Capture d'écran 2024-12-14 142357](https://github.com/user-attachments/assets/1b9bb212-82bf-4d5d-b512-e1a4bdb0ca76)
+
 ---
 ``📑 La dernière étape est l'ajout de la machine au domaine `Billu.com`. Le script nous demande de nous connecter au domaine avec des droits élevés :``  
 ---
