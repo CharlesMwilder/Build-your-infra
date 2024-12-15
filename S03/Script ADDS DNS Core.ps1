@@ -15,7 +15,7 @@ $OUmain = "OU=Domain Controllers,DC=Billu,DC=com"        # Nom de l'OU
 # Récupérer le nom de l'hôte
 $hostname = (Get-ComputerInfo).CsName
 
-Write-Output "Nous allons réinstaller ADD-DS + DNS + ajout au domaine sur votre serveur Core selon les caractéristiques suivantes :`n"
+Write-Output "Nous allons réinstaller ADD-DS + DNS + DHCP + ajout au domaine sur votre serveur Core selon les caractéristiques suivantes :`n"
 Write-Output "Nom de la machine : $ServerName"
 Write-Output "Nom de la carte réseau à paramétrer $NetCardAD"
 Write-Output "Adresse IPv4 du serveur Core : $IPAddress, masque sous réseau : $IPmask"
