@@ -53,7 +53,7 @@ if ( $choice -eq "yes" )
         Start-Sleep -Seconds 3
         Set-DnsClientServerAddress -InterfaceIndex $InterfaceIndex -ServerAddresses $DNSIP, $DNSalternative
         
-        # Installation des rôles AD-DS, DNS et outils graphiques :
+        # Installation des rôles AD-DS, DNS, DHCP et outils graphiques :
         Write-Output "Installation des outils graphiques pour l'AD-DS :"
         Start-Sleep -Seconds 3
         Add-WindowsFeature -Name "RSAT-AD-Tools" -IncludeManagementTools -IncludeAllSubFeature
@@ -65,7 +65,10 @@ if ( $choice -eq "yes" )
         Write-Output "Installation du rôle DNS :"
         Start-Sleep -Seconds 3
         Add-WindowsFeature -Name "DNS" -IncludeManagementTools -IncludeAllSubFeature
-        
+
+        Write-Output "Installation du DHCP :"
+        Start-Sleep -Seconds 3
+        Add-WindowsFeature -Name "DHCP" -IncludeManagementTools -IncludeAllSubFeature
         
         # Ajout de la machine au domaine existant :
         Write-Output "Ajout de la machine au domaine $DomainName :"
