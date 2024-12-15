@@ -340,6 +340,7 @@ gpupdate /force
 ``* Les outils graphiques``  
 ``* Le rôle AD-DS``  
 ``* Le rôle DNS``  
+``* Le rôle DHCP``  
  --- 
 
 ---
