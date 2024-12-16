@@ -2,29 +2,71 @@
 
 ## 1. Prérequis matériel/logiciel 📦
 - **Matériel requis :**
-  - Processeur : [min 1.4 GHz 64-bit]
-  - Mémoire RAM : [min 2 Go]
-  - Espace disque : [min 32 Go]
+  - Processeur : ``1 sockets, 1 core``
+  - Mémoire RAM : ``4 Go``
+  - Espace disque : ``32 Go``
   - Carte réseau compatible Ethernet
 - **Logiciels requis :**
   - **Windows Server 2022 Core Edition**
   - **.NET Framework 4.8 ou supérieur** (pour certains outils de gestion)
 - **Version d'OS et logiciels :**
-  - **OS** : Windows Server 2022 Core Edition (version [x.x.x])
-  - **Services** : DHCP, DNS, Active Directory Domain Services (AD DS)
+  - **OS** : ``Windows Server 2022 Core Edition``
+  - **Services** : ``Active Directory Domain Services (AD DS), DHCP, DNS``
 
 ## 2. Installation ⚙️
 
 ### Étapes d'installation 🚀
 1. **Téléchargement de Windows Server Core :**  
-   - Télécharger l'ISO de **Windows Server 2022 Core Edition** depuis [Microsoft](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server).
+   - Télécharger l'ISO de **Windows Server 2022 Core Edition** depuis (https://drive.google.com/file/d/1Y0J_vJhhiFI5QOPVOlTMcLxs3ERTij-e/view).
 2. **Préparation de l'environnement :**  
    - Créer une machine virtuelle ou utiliser un serveur physique avec les spécifications matérielles recommandées.
-3. **Installation pas-à-pas :**
+  
+    ---
+   
+<details>
+<summary><h1>⚙️ Installation Windows Server 2022</h1></summary>
+
+- 📸 **Étape 1 :** Choisir la langue du système, le format horaire et la langue du clavier (French = AZERTY)
+
+![WIN1](https://github.com/user-attachments/assets/7160fc6b-a5c0-49e8-b4e1-3dfd097ce5e9)<br>
+
+- 📸 **Étape 2 :** Lancez l'installation
+
+![WIN2](https://github.com/user-attachments/assets/73cd5edd-8de7-40cf-956c-7ebc0bb8774a)<br>
+
+- 📸 **Étape 3 :** Choisir la version ``Standard Evaluation`` puis cliquer sur ``Next``
+
+ ![WINCORE1](https://github.com/user-attachments/assets/2d840349-dd6f-46ad-91aa-90df768d6d0e)<br>
+
+- 📸 **Étape 4 :** Accepter puis cliquer sur ``Next``
+ 
+![WINCORE2](https://github.com/user-attachments/assets/416b6e1f-ccd7-461a-a8a8-c56b09f0790b)<br>
+
+- 📸 **Étape 5 :** Apuuyer sur la touche ``Entrée``
+
+![WINCORE3](https://github.com/user-attachments/assets/4f8e1a87-6e43-4c43-9a93-cf6716f15a60)<br>
+
+- 📸 **Étape 6 :** Veuillez choisir un mot de passe pour le compte Administrateur puis appuyer sur la touche ``Entrée``
+
+![WINCORE4](https://github.com/user-attachments/assets/67f9c9fa-65d1-46a8-9eb5-50b2148da1a8)<br>
+
+- 📸 **Étape 7 :** Apuuyer sur la touche ``Entrée``
+
+![WINCORE5](https://github.com/user-attachments/assets/5aeec4ab-82a5-482a-a719-0061973e8ada)<br>
+
+- 📸 **Étape 8 :** Vous êtes maintenant connecté 👍
+
+![WINCORE6](https://github.com/user-attachments/assets/6d403ce8-abe0-4e6a-b723-a4501ed65ecf)<br>
+
+</details>
+
+---
+   
+4. **Installation pas-à-pas :**
    - 📸 **Étape 1 :** Démarrer à partir du support d'installation et choisir "Windows Server 2022 Core Edition".
    - 📸 **Étape 2 :** Configurer les paramètres de base (partitions de disque, réseau, etc.) pendant l'installation via l'interface texte.
    - 📸 **Étape 3 :** Une fois l'installation terminée, redémarrer le serveur et accéder à l'invite de commande.
-4. **Vérification du résultat :**
+5. **Vérification du résultat :**
    - 📸 **Résultat attendu :** Le serveur doit démarrer en mode Core, avec une invite de commande et une connexion réseau valide.
 
 ## 3. Configuration/Utilisation ⚙️
