@@ -26,7 +26,7 @@
 <details>
 <summary><h1>⚙️ Installation Windows Server 2022</h1></summary>
 
-- 📸 **Étape 1 :** Choisir la langue du système, le format horaire et la langue du clavier (French = AZERTY)
+- 📸 **Étape 1 :** Choisir la langue du système, le format horaire et la langue du clavier (French = AZERTY) puis cliquer sur ``Next``
 
 ![WIN1](https://github.com/user-attachments/assets/7160fc6b-a5c0-49e8-b4e1-3dfd097ce5e9)<br>
 
