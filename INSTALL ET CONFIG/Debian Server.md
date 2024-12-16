@@ -156,11 +156,3 @@
      rsync -avz /path/to/backup/glpi /var/www/html/
      mysql -u root -p glpi < /path/to/backup/glpi_db_backup.sql
      ```
-
-### Documentation à jour 📜
-- La documentation doit être mise à jour après chaque mise à jour majeure de GLPI, de la base de données, ou de Debian pour s'assurer qu'elle reflète correctement la configuration actuelle.
-  - **Exemple de mise à jour :** Après une mise à jour de GLPI ou de PHP, mettez à jour les instructions d'installation et de configuration pour inclure les nouvelles options.
-
----
-
-Merci de maintenir cette documentation à jour pour garantir une gestion efficace de l'infrastructure. 📅
