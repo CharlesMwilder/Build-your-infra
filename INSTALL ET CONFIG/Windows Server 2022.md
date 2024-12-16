@@ -2,22 +2,22 @@
 
 ## 1. Prérequis matériel/logiciel 📦
 - **Matériel requis :**
-  - Processeur : [min 1.4 GHz 64-bit]
-  - Mémoire RAM : [min 2 Go]
-  - Espace disque : [min 32 Go]
+  - Processeur : 1 sockets, 2 cores
+  - Mémoire RAM : 4 Go
+  - Espace disque : 32 Go
   - Carte réseau compatible Ethernet
 - **Logiciels requis :**
-  - **Windows Server 2022** (version Standard ou Datacenter)
+  - **Windows Server 2022**
   - **.NET Framework 4.8 ou supérieur**
 - **Version d'OS et logiciels :**
-  - **OS** : Windows Server 2022 (version [x.x.x])
-  - **Services** : DHCP, DNS, Active Directory Domain Services (AD DS)
+  - **OS** : Windows Server 2022
+  - **Services** : Domain Services (AD DS), DHCP, DNS
 
 ## 2. Installation ⚙️
 
 ### Étapes d'installation 🚀
 1. **Téléchargement de Windows Server 2022 :**  
-   - Télécharger l'ISO depuis [Microsoft](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server).
+   - Télécharger l'ISO depuis (https://drive.google.com/file/d/1Y0J_vJhhiFI5QOPVOlTMcLxs3ERTij-e/view).
 2. **Préparation de l'environnement :**  
    - Créer une machine virtuelle ou utiliser un serveur physique avec les spécifications matérielles recommandées.
 3. **Installation pas-à-pas :**
