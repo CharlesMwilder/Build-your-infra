@@ -204,8 +204,7 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 
 #### 3.4. Finalisation de l'installation via l'interface Web 🌐
 1. **Accéder à l'interface web de GLPI :**
-   - Ouvrez un navigateur et accédez à `http://glpi.example.com`.
-   - Suivez les étapes de l'assistant d'installation en sélectionnant la base de données MariaDB que vous avez configurée et en créant un compte administrateur pour GLPI.
+   - Ouvrez un navigateur et accédez à `http://<ip-du-serveur-GLPI>ou<nom-du-serveur-si-DNS>/glpi`.
 
 2. **Vérification du résultat :**
    - 📸 **Résultat attendu :** L'interface web de GLPI doit être accessible et vous pouvez vous connecter avec le compte administrateur créé.
