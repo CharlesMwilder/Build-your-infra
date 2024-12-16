@@ -21,7 +21,50 @@
 2. **Préparation de l'environnement :**  
    - Créer une machine virtuelle ou utiliser un serveur physique avec les spécifications matérielles recommandées.
 
+---
 
+<details>
+<summary><h1>⚙️ Installation Windows Server 2022</h1></summary>
+
+- 📸 **Étape 1 :** Choisir la langue du système, le format horaire et la langue du clavier (French = AZERTY)
+
+![WIN1](https://github.com/user-attachments/assets/e9f47a4b-1897-474d-bb3e-b1e0c566b210)<br>
+
+- 📸 **Étape 2 :** Lancez l'installation
+
+![WIN2](https://github.com/user-attachments/assets/d5371526-c8dd-4564-88d8-82d1844f18f0)<br>
+
+- 📸 **Étape 3 :** Choisir la version ``Standard Evaluation`` avec ``Desktop``
+
+![WIN3](https://github.com/user-attachments/assets/0ed24558-eb68-4e30-8d7d-9afeffd6f176)<br>
+
+- 📸 **Étape 4 :** Accepter puis cliquer sur ``Next``
+
+![WIN4](https://github.com/user-attachments/assets/6e8aa230-a05e-4374-b79d-afb753d3b969)<br>
+
+- 📸 **Étape 5 :** Choisissez l'install ``Custom``
+
+![WIN5](https://github.com/user-attachments/assets/0b84f22b-1bb7-404b-811e-2a8649c61448)<br>
+
+- 📸 **Étape 6 :** Prendre votre disque principal puis cliquer sur ``Next``
+
+![WIN6](https://github.com/user-attachments/assets/d3bb0123-4722-4718-bcd6-90a8bd338722)<br>
+
+- 📸 **Étape 7 :** Laissez l'installation se faire
+
+![WIN7](https://github.com/user-attachments/assets/7edd7ee6-f72d-4d3f-a28b-5d67e447b600)<br>
+
+- 📸 **Étape 8 :** Veuillez rentrer un mot de passe pour le compte Administrateur puis cliquer sur ``Finish``
+
+![WIN8](https://github.com/user-attachments/assets/79bd6f48-4bfe-45ca-93b7-59ed3a1799be)<br>
+
+- 📸 **Étape 9 :** Vous pouvez maintenant vous connecter avec votre compte Administrateur
+
+![WIN9](https://github.com/user-attachments/assets/dde18228-d5af-4ad0-ad4e-e4a5ac460070)  
+
+</details>
+
+---
 
 ## 3. Configuration/Utilisation ⚙️
 
