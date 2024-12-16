@@ -1,4 +1,4 @@
-# Documentation de l'Infrastructure Windows Server 2022 🖥️
+# Documentation de l'Infrastructure Windows Server 2022 (serveur principal avec AD DS, DHCP et DNS) 🖥️
 
 ## 1. Prérequis matériel/logiciel 📦
 - **Matériel requis :**
