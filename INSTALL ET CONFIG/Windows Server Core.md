@@ -62,6 +62,12 @@
 
 ---
 
+## ⚙️ CONFIGURATION DHCP ET DNS VOIR DIRECTEMENT SUR LE SERVEUR PRINCIPAL ===>
+
+https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/INSTALL%20ET%20CONFIG/Windows%20Server%202022.md
+
+---
+
 ## 4. FAQ ❓
 - **Problème : Le service DHCP ne distribue pas d'adresses IP.**
   - **Solution :** Vérifiez si l'étendue DHCP est correctement configurée et si le service DHCP est bien démarré.
