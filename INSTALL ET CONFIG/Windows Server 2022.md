@@ -34,7 +34,7 @@
 
 ![WIN2](https://github.com/user-attachments/assets/d5371526-c8dd-4564-88d8-82d1844f18f0)<br>
 
-- 📸 **Étape 3 :** Choisir la version ``Standard Evaluation`` avec ``Desktop``
+- 📸 **Étape 3 :** Choisir la version ``Standard Evaluation`` avec ``Desktop`` puis cliquer sur ``Next``
 
 ![WIN3](https://github.com/user-attachments/assets/0ed24558-eb68-4e30-8d7d-9afeffd6f176)<br>
 
