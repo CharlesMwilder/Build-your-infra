@@ -122,7 +122,7 @@
 ---
 
 <details>
-<summary><h1>⚙️ Configuration DHCP</h1></summary>
+<summary><h1>⚙️ Configuration du rôle DHCP</h1></summary>
 
 - 📸 **Étape 1 :** Cliquer sur le drapeau puis sur ``Complete DHCP configuration``
 
@@ -207,27 +207,34 @@
 
 ---
 
+<details>
+<summary><h1>⚙️ Configuration du rôle DNS</h1></summary>
 
-- 📸 **Étape 1 :** Cliquer sur le menu Windows puis sur ``Server Manager``
-#### 3.2. Configuration du rôle DNS 🌐
-1. **Ajout du rôle DNS :**  
-   - Ouvrir le "Server Manager" → Sélectionner "Add Roles and Features".
-   - 📸 **Étape 1 :** Sélectionner "DNS Server" et cliquer sur "Next".
-   - 📸 **Étape 2 :** Configurer le serveur DNS pour résoudre les noms de domaine internes et externes.
-   - 📸 **Étape 3 :** Créer les zones DNS nécessaires pour l'environnement réseau (zone primaire, zone inverse, etc.).
+- 📸 **Étape 1 :** Faites un clique droit sur votre serveur puis cliquer sur ``DNS Manager``
 
-2. **Vérification du service DNS :**  
-   - 📸 **Résultat attendu :** Le serveur DNS doit résoudre les noms de domaine et fournir les services DNS à travers le réseau.
+![WINDNS1](https://github.com/user-attachments/assets/36e650f9-7e74-40de-a0e8-c7271311ec54)<br>
 
-#### 3.3. Configuration de Active Directory Domain Services (AD DS) 🔑
-1. **Installation d'Active Directory :**  
-   - Ouvrir "Server Manager" → Sélectionner "Add Roles and Features".
-   - 📸 **Étape 1 :** Choisir "Active Directory Domain Services".
-   - 📸 **Étape 2 :** Promouvoir le serveur en contrôleur de domaine via l'assistant AD DS.
-   - 📸 **Étape 3 :** Configurer le nom du domaine (ex. : `billu.com`).
-   
-2. **Vérification du service AD DS :**  
-   - 📸 **Résultat attendu :** Le serveur devient contrôleur de domaine, et les utilisateurs peuvent être gérés via "Active Directory Users and Computers".
+- 📸 **Étape 2 :** Faites défiler votre serveur puis faites défiler ``Forward Lookup Zones`` puis faites un clic droit sur ``billu.com`` puis cliquer sur ``New Host (A or AAAA)``
+
+![WINDNS2](https://github.com/user-attachments/assets/7b62faae-8e35-4e5b-9c9f-3293571d823b)<br>
+
+- 📸 **Étape 3 :** Renseignez le nom et l'adresse IP puis cocher la case ``Create PTR`` puis cliquer sur ``ADD Host``
+
+![WINDNS3](https://github.com/user-attachments/assets/f5938364-64f3-465c-96ff-6186a1c95249)<br>
+
+- 📸 **Étape 4 :** Cliquer sur ``Ok``
+
+![WINDNS4](https://github.com/user-attachments/assets/693cb81b-a4e4-496f-9ec2-7ccbed7b1e4a)<br>
+
+- 📸 **Étape 5 :** Bravo tout est bon 👍
+
+![WINDNS5](https://github.com/user-attachments/assets/c606532c-17a7-4378-95ab-86ad08b19eab)
+
+
+</details>
+
+---
+
 
 ## 4. FAQ ❓
 - **Problème : Le service DHCP ne distribue pas les adresses IP.**
