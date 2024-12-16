@@ -31,7 +31,7 @@
 <details>
 <summary><h1>⚙️ Installation Debian Server</h1></summary>
 
-- 📸 ** Cliquer sur ``Install`` puis suivre en fonction des screens** 
+- 📸 Cliquer sur ``Install`` puis suivre l'installation en fonction des screens 
 
 ![DEBIAN1](https://github.com/user-attachments/assets/9a6bd875-a12a-448e-92ed-d0570af5d208)<br>
 
@@ -43,11 +43,15 @@
 
 ![DEBIAN5](https://github.com/user-attachments/assets/0a9ec1ff-a4f7-4b54-9907-03ae7e00ce7a)<br>
 
+- 📸 Choisissez un mot de passe pour le compte Administrateur et cliquer sur ``Continuer``
+
 ![DEBIAN6](https://github.com/user-attachments/assets/a413f1ca-f2ed-499e-8518-6c1394df8d3a)<br>
 
 ![DEBIAN7](https://github.com/user-attachments/assets/1c6e024c-76a9-42c0-9824-d82a2f7eb4ca)<br>
 
 ![DEBIAN8](https://github.com/user-attachments/assets/54da7a81-96dc-4008-8392-5d4f0a743ae7)<br>
+
+- 📸 Choisissez un mot de passe pour le compte ``Utilisateur`` et cliquer sur ``Continuer``
 
 ![DEBIAN9](https://github.com/user-attachments/assets/c9f9a2c9-9c1f-4997-b31c-831ddd260609)<br>
 
@@ -71,6 +75,8 @@
 
 ![DEBIAN19](https://github.com/user-attachments/assets/70c19a80-dcce-4339-95f3-619ec543e508)<br>
 
+- 📸 Cocher seulement ``Serveur SSH et les utilitaires`` puis cliquer sur ``Continuer``
+
 ![DEBIAN20](https://github.com/user-attachments/assets/d71c2bbb-da84-4b82-9588-457a6e8fe727)<br>
 
 ![DEBIAN21](https://github.com/user-attachments/assets/82d7833f-c298-4f30-83e0-02545c971d52)<br>
@@ -78,6 +84,8 @@
 ![DEBIAN22](https://github.com/user-attachments/assets/86dd475a-9779-4849-ad3e-960882f5bad9)<br>
 
 ![DEBIAN23](https://github.com/user-attachments/assets/b8280f79-e3b5-4c96-9f09-dfffffb9d4e9)<br>
+
+- 📸 Une fois que le serveur à redémarrer, connecter vous et tout est bon 👍
 
 ![DEBIAN24](https://github.com/user-attachments/assets/5b69ce07-6922-4ca3-b34d-3e9e9586551b)
 
