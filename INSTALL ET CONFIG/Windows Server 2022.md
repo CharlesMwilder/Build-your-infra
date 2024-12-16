@@ -171,7 +171,7 @@
 
 ### Choix du hardware 💻
 - Pour un serveur Windows Server 2022 avec DHCP, DNS et AD DS, il est recommandé :
-  - Processeur : Xeon ou équivalent, avec au moins 4 cœurs.
+  - Processeur :  minimum 4 cœurs.
   - RAM : 8 Go minimum pour de petites installations, 16 Go ou plus pour de plus grandes infrastructures.
   - Disque : SSD de 100 Go ou plus pour de meilleures performances.
 
