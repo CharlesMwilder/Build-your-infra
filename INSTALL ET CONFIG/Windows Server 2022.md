@@ -66,6 +66,69 @@
 
 ---
 
+<details>
+<summary><h1>⚙️ Installation AD DS, DHCP, DNS sur Windows Server 2022</h1></summary>
+
+- 📸 **Étape 1 :** Cliquer sur le menu Windows puis sur ``Server Manager``
+
+![WIN10](https://github.com/user-attachments/assets/53929007-6fbf-49fc-a779-19a952630a45)<br>
+
+- 📸 **Étape 2 :** Cliquer sur ``Manage`` puis sur ``Add Rôles and Features``
+
+![WIN11](https://github.com/user-attachments/assets/7523740c-8659-4c8e-8c58-e8bd6a225c51)<br>
+
+- 📸 **Étape 2 :** Cliquer sur ``Next``
+
+![WIN12](https://github.com/user-attachments/assets/bbd98be8-8f67-4d59-bfbc-e2921c57f529)<br>
+
+- 📸 **Étape 4 :** Cliquer sur ``Next``
+
+![WIN13](https://github.com/user-attachments/assets/a073a52d-12a3-4b1b-a58b-7e0ce3e8a3ac)<br>
+
+- 📸 **Étape 5 :** Choisissez bien votre serveur et cliquer sur ``Next``
+
+![WIN15](https://github.com/user-attachments/assets/6e5f36b2-6682-415c-b890-e804ac18c24b)<br>
+
+- 📸 **Étape 6 :** Cocher les 3 features ``(AD DS, DHCP et DNS)`` puis cliquer sur ``Next``
+
+![WIN14](https://github.com/user-attachments/assets/46784eec-5d2b-4ba5-b651-2ec204c55ab0)<br>
+
+- 📸 **Étape 7 :** Cliquer sur ``Next``
+
+![WIN14](https://github.com/user-attachments/assets/558b0e74-5573-4377-b2f1-77d88ad9a077)<br>
+
+- 📸 **Étape 8 :** Cliquer sur ``Next``
+
+![WIN15](https://github.com/user-attachments/assets/cba56712-becc-4d3c-bbed-986a2fcee201)<br>
+
+- 📸 **Étape 9 :** Cliquer sur ``Next``
+
+![WIN16](https://github.com/user-attachments/assets/ae346b48-5888-4ee1-9b02-983ddf2bd4bd)<br>
+
+- 📸 **Étape 10 :** Cliquer sur ``Next``
+
+![WIN17](https://github.com/user-attachments/assets/552b14cd-2573-4195-b500-a3a7259c87af)<br>
+
+- 📸 **Étape 11 :** Cliquer sur ``Next``
+
+![WIN18](https://github.com/user-attachments/assets/5f2ff3ff-12f9-40dc-8fee-20f1f2871394)<br>
+
+- 📸 **Étape 12 :** Cliquer sur ``Next``
+
+![WIN19](https://github.com/user-attachments/assets/e9e42fa6-b40a-48fe-a24a-ef0a35c4ff35)<br>
+
+- 📸 **Étape 13 :** Cliquer sur ``Install``
+
+![WIN20](https://github.com/user-attachments/assets/2d4b816d-fd00-42b5-9d10-aa4406b5429d)<br>
+
+- 📸 **Étape 14 :** Une fois l'installation terminée cliquer sur ``Close``
+
+![WIN21](https://github.com/user-attachments/assets/b30e2206-0ff9-4905-b106-0ecb35370c3b)
+
+</details>
+
+---
+
 ## 3. Configuration/Utilisation ⚙️
 
 ### Cible 🎯
