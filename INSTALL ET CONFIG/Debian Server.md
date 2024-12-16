@@ -21,7 +21,7 @@
 
 ### Étapes d'installation 🚀
 1. **Téléchargement de Debian :**  
-   - Télécharger l'ISO de **Debian 11** depuis [Debian officiel](https://www.debian.org/distrib/).
+   - Télécharger l'ISO de **Debian 11** depuis (https://drive.google.com/file/d/13ZibGJ5vX_446PvBADNQ_M4zILJtSIA8/view).
 2. **Préparation de l'environnement :**  
    - Créer une machine virtuelle ou utiliser un serveur physique avec les spécifications matérielles recommandées.
    - Installer Debian avec une configuration de base sans interface graphique (serveur minimal).
