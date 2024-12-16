@@ -183,14 +183,6 @@
 ## 6. Restauration rapide en cas de défaillance 🔄
 
 ### Clone miroir 💾
-1. **Créer un clone miroir avec Hyper-V :**
-   - Utiliser Hyper-V pour créer un snapshot ou un clone complet de la machine virtuelle Windows Server 2022.
-   - 📸 **Procédure :** Sélectionner "Export" dans Hyper-V Manager pour sauvegarder une copie complète du serveur.
-   
-2. **Utiliser des outils comme Veeam ou Windows Server Backup pour sauvegarder l'état de la machine virtuelle.**
+1. **Créer un clone miroir :**
 
-### Script de restauration OS 🖥️
-- **Script de restauration complet :**
-  ```bash
-  # Exemple de commande PowerShell pour restaurer une image système
-  wbAdmin start recovery -version:MM/DD/YYYY-HH:MM -itemType:Volume -items:C: -recoveryTarget:C:
+A REMPLIR !
