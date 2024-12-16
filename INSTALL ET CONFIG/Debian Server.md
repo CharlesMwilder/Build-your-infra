@@ -242,11 +242,12 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 1. **Créer un clone miroir avec `rsync` :**
    - Utiliser `rsync` pour sauvegarder les fichiers de GLPI et la base de données MariaDB.
 
-     rsync -avz /var/www/html/glpi /path/to/backup/
-     mysqldump -u root -p glpi > /path/to/backup/glpi_db_backup.sql
+    `` rsync -avz /var/www/html/glpi /path/to/backup/``
+     ``mysqldump -u root -p glpi > /path/to/backup/glpi_db_backup.sql``
 
 
 2. **Sauvegarde et restauration des fichiers de GLPI :**
    - Utiliser `rsync` pour restaurer les fichiers de GLPI et la base de données à partir du clone miroir.
-     rsync -avz /path/to/backup/glpi /var/www/html/
-     mysql -u root -p glpi < /path/to/backup/glpi_db_backup.sql
+   
+     ``rsync -avz /path/to/backup/glpi /var/www/html/``
+     ``mysql -u root -p glpi < /path/to/backup/glpi_db_backup.sql``
