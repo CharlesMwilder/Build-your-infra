@@ -2,16 +2,16 @@
 
 ## 1. Prérequis matériel/logiciel 📦
 - **Matériel requis :**
-  - Processeur : 1 sockets, 2 cores
-  - Mémoire RAM : 4 Go
-  - Espace disque : 32 Go
+  - Processeur : ``1 sockets, 2 cores``
+  - Mémoire RAM : ``4 Go``
+  - Espace disque : ``32 Go``
   - Carte réseau compatible Ethernet
 - **Logiciels requis :**
   - **Windows Server 2022**
   - **.NET Framework 4.8 ou supérieur**
 - **Version d'OS et logiciels :**
-  - **OS** : Windows Server 2022
-  - **Services** : Domain Services (AD DS), DHCP, DNS
+  - **OS** : ``Windows Server 2022``
+  - **Services** : ``Domain Services (AD DS), DHCP, DNS``
 
 ## 2. Installation ⚙️
 
@@ -20,13 +20,19 @@
    - Télécharger l'ISO depuis (https://drive.google.com/file/d/1Y0J_vJhhiFI5QOPVOlTMcLxs3ERTij-e/view).
 2. **Préparation de l'environnement :**  
    - Créer une machine virtuelle ou utiliser un serveur physique avec les spécifications matérielles recommandées.
-3. **Installation pas-à-pas :**
-   - 📸 **Étape 1 :** Sélectionner la langue et la région lors de l'installation de Windows Server.
-   - 📸 **Étape 2 :** Choisir l'édition (Standard ou Datacenter) et démarrer l'installation.
-   - 📸 **Étape 3 :** Suivre les instructions pour l'installation complète (partitionnement du disque, configuration réseau, etc.).
-   - 📸 **Étape 4 :** Après le redémarrage, effectuer les configurations initiales (choix du mot de passe administrateur, etc.).
-4. **Vérification du résultat :**
-   - 📸 **Résultat attendu :** L'écran d'accueil de Windows Server avec un accès au "Server Manager" pour configurer les rôles.
+
+<details>
+  <summary><h1>3. **Installation pas-à-pas :**</h1></summary>
+![WIN1](https://github.com/user-attachments/assets/e9f47a4b-1897-474d-bb3e-b1e0c566b210)
+![WIN2](https://github.com/user-attachments/assets/d5371526-c8dd-4564-88d8-82d1844f18f0)
+![WIN3](https://github.com/user-attachments/assets/0ed24558-eb68-4e30-8d7d-9afeffd6f176)
+![WIN4](https://github.com/user-attachments/assets/6e8aa230-a05e-4374-b79d-afb753d3b969)
+![WIN5](https://github.com/user-attachments/assets/0b84f22b-1bb7-404b-811e-2a8649c61448)
+![WIN6](https://github.com/user-attachments/assets/d3bb0123-4722-4718-bcd6-90a8bd338722)
+![WIN7](https://github.com/user-attachments/assets/7edd7ee6-f72d-4d3f-a28b-5d67e447b600)
+![WIN8](https://github.com/user-attachments/assets/79bd6f48-4bfe-45ca-93b7-59ed3a1799be)
+![WIN9](https://github.com/user-attachments/assets/dde18228-d5af-4ad0-ad4e-e4a5ac460070)  
+</details>
 
 ## 3. Configuration/Utilisation ⚙️
 
