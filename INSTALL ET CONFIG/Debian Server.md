@@ -93,82 +93,114 @@
 
 ---
 
-## 3. Installation et Configuration de GLPI ⚙️
 
-### Cible 🎯
-- Serveur Debian avec GLPI installé pour la gestion du parc informatique.
+<details>
+<summary><h1>⚙️ Installation et Configuration de GLPI via script</h1></summary>
 
-### Étapes de configuration/utilisation 🔧
+- 📸 Configurer le fichier de config.txt puis lancer l'installation et la configuration de façon autonome grâce au script
 
-#### 3.1. Installation des dépendances nécessaires 🔄
-1. **Mettre à jour les paquets Debian :**
-   - Connectez-vous en tant que root ou avec un utilisateur ayant des privilèges sudo et mettez à jour les paquets de votre serveur :
-     ```bash
-     apt update && apt upgrade -y
-     ```
+# Configuration pour script install GLPI
 
-2. **Installer Apache, PHP et les modules nécessaires :**
-   - Installez le serveur web Apache et PHP avec les modules nécessaires pour GLPI :
-     ```bash
-     apt install apache2 mariadb-server php php-cli php-mysql php-xml php-curl php-mbstring php-json php-ldap php-zip unzip -y
-     ```
+```
+## Variables modifiables en fonction de votre configuration
+DB_NAME=glpi
+DB_USER=billu
+DB_PASSWORD=Azerty1*
+DB_HOST=localhost
+```
 
-3. **Installer GLPI :**
-   - Télécharger la dernière version stable de GLPI depuis [le site officiel de GLPI](https://glpi-project.org/download/).
-     ```bash
-     cd /tmp
-     wget https://github.com/glpi-project/glpi/releases/download/$(curl -s https://api.github.com/repos/glpi-project/glpi/releases/latest | jq -r .tag_name)/glpi-$(curl -s https://api.github.com/repos/glpi-project/glpi/releases/latest | jq -r .tag_name).tgz
-     tar -xvzf glpi-*.tgz
-     mv glpi /var/www/html/
-     chown -R www-data:www-data /var/www/html/glpi
-     ```
+- 📸 Puis lancer l'installation et la configuration de façon autonome grâce au script
 
-#### 3.2. Configuration de la base de données MariaDB 🔑
-1. **Sécuriser MariaDB :**
-   - Exécuter la commande suivante pour sécuriser l'installation de MariaDB :
-     ```bash
-     mysql_secure_installation
-     ```
+```
+#!/bin/bash
 
-2. **Créer une base de données pour GLPI :**
-   - Connectez-vous à MariaDB et créez la base de données et l'utilisateur pour GLPI :
-     ```bash
-     mysql -u root -p
-     CREATE DATABASE glpi;
-     CREATE USER 'glpiuser'@'localhost' IDENTIFIED BY 'password';
-     GRANT ALL PRIVILEGES ON glpi.* TO 'glpiuser'@'localhost';
-     FLUSH PRIVILEGES;
-     EXIT;
-     ```
+# Charger le fichier de configuration
+source /root/config.txt
 
-#### 3.3. Configuration d'Apache pour GLPI 🖥️
-1. **Configurer le fichier de configuration Apache :**
-   - Créez un fichier de configuration pour GLPI dans `/etc/apache2/sites-available/glpi.conf` :
-     ```bash
-     nano /etc/apache2/sites-available/glpi.conf
-     ```
-   - Ajoutez la configuration suivante :
-     ```apache
-     <VirtualHost *:80>
-         ServerAdmin webmaster@localhost
-         DocumentRoot /var/www/html/glpi
-         ServerName glpi.example.com
-         ErrorLog ${APACHE_LOG_DIR}/error.log
-         CustomLog ${APACHE_LOG_DIR}/access.log combined
+# Mise a jour des paquets Debian
+apt update && apt upgrade -y
 
-         <Directory /var/www/html/glpi>
-             AllowOverride All
-             Require all granted
-         </Directory>
-     </VirtualHost>
-     ```
-2. **Activer le site GLPI et redémarrer Apache :**
-   - Activer le site et le module de réécriture :
-     ```bash
-     a2ensite glpi.conf
-     a2enmod rewrite
-     systemctl restart apache2
-     ```
+# Installation du serveur LAMP (Linux Apache MariaDB PHP)
+echo "Installation d'Apache2..."
+apt install -y apache2
+
+echo "Installation de PHP et des modules necessaires..."
+apt install -y php libapache2-mod-php
+
+# Redémarrage d'Apache pour appliquer les changements
+systemctl restart apache2
+
+# Installation de MariaDB (serveur MySQL)
+echo "Installation de MariaDB..."
+apt install -y mariadb-server
+
+# Sécurisation de MariaDB - automatisée avec expect
+echo "Securisation de MariaDB..."
+export DEBIAN_FRONTEND=noninteractive
+expect -c "
+spawn mysql_secure_installation
+expect \"Enter current password for root (enter for none):\"
+send \"\r\"
+expect \"Set root password?\"
+send \"y\r\"
+expect \"New password:\"
+send \"rootpassword\r\"
+expect \"Re-enter new password:\"
+send \"rootpassword\r\"
+expect \"Remove anonymous users?\"
+send \"y\r\"
+expect \"Disallow root login remotely?\"
+send \"y\r\"
+expect \"Remove test database and access to it?\"
+send \"y\r\"
+expect \"Reload privilege tables now?\"
+send \"y\r\"
+expect eof
+"
+
+# Connexion à MySQL pour configurer la base de données GLPI
+echo "Creation de la base de donnees GLPI et utilisateur..."
+mysql -u root -prootpassword <<EOF
+CREATE DATABASE $DB_NAME;
+CREATE USER '$DB_USER'@'$DB_HOST' IDENTIFIED BY '$DB_PASSWORD';
+GRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER'@'$DB_HOST' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EXIT;
+EOF
+
+# Téléchargement et installation de GLPI
+echo "Telechargement de GLPI..."
+wget https://github.com/glpi-project/glpi/releases/download/10.0.10/glpi-10.0.10.tgz
+
+# Extraction de l'archive
+echo "Extraction de GLPI..."
+tar xvf glpi-10.0.10.tgz
+
+# Déplacement de GLPI dans le répertoire web
+echo "Deplacement de GLPI dans /var/www/html/"
+mv glpi /var/www/html/glpi
+
+# Installation des modules PHP nécessaires pour GLPI
+echo "Installation des modules PHP requis pour GLPI..."
+apt install -y php8.2-curl php8.2-gd php8.2-mbstring php8.2-zip php8.2-xml php8.2-ldap php8.2-intl php8.2-mysql php8.2-dom php8.2-simplexml php-json php8.2-phpdbg php8.2-cgi
+
+# Changement des permissions pour Apache
+echo "Changement des permissions pour Apache..."
+chown -R www-data:www-data /var/www/html/glpi/
+chmod -R 755 /var/www/html/glpi/
+
+# Redémarrage d'Apache pour appliquer tous les changements
+systemctl restart apache2
+
+echo "L'installation du serveur LAMP et de GLPI est terminee."
+
+# Connexion à GLPI (via navigateur web)
+echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
+```
+
+</details>
+
+---
 
 #### 3.4. Finalisation de l'installation via l'interface Web 🌐
 1. **Accéder à l'interface web de GLPI :**
@@ -206,14 +238,12 @@
 ### Clone miroir 💾
 1. **Créer un clone miroir avec `rsync` :**
    - Utiliser `rsync` pour sauvegarder les fichiers de GLPI et la base de données MariaDB.
-     ```bash
+
      rsync -avz /var/www/html/glpi /path/to/backup/
      mysqldump -u root -p glpi > /path/to/backup/glpi_db_backup.sql
-     ```
+
 
 2. **Sauvegarde et restauration des fichiers de GLPI :**
    - Utiliser `rsync` pour restaurer les fichiers de GLPI et la base de données à partir du clone miroir.
-     ```bash
      rsync -avz /path/to/backup/glpi /var/www/html/
      mysql -u root -p glpi < /path/to/backup/glpi_db_backup.sql
-     ```
