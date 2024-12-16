@@ -78,6 +78,7 @@
 ![WINCOREF3](https://github.com/user-attachments/assets/62aa6bdf-815f-45e6-a9c2-37170f2a896e)<br>
 
 - 📸 **Étape 4 :** Installation de la feature ``DNS``
+  
 ![WINCOREF4](https://github.com/user-attachments/assets/047bb5f2-ad42-4753-861b-f44d9a3dbd2b)<br>
 
 - 📸 **Étape 5 :** Ajout du serveur core au domaine ``billu.com``
