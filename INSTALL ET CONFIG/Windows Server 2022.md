@@ -123,7 +123,7 @@
 
 ## 3. Configuration/Utilisation ⚙️
 
-### Cible 🎯
+### Cible 🎯 (A REMPLIR !)
 - Serveur pour fournir des services DHCP, DNS et AD DS dans un environnement Windows.
 
 ### Étapes de configuration/utilisation 🔧
