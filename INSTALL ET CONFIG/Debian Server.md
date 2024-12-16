@@ -2,20 +2,20 @@
 
 ## 1. Prérequis matériel/logiciel 📦
 - **Matériel requis :**
-  - Processeur : [min 1.4 GHz 64-bit]
-  - Mémoire RAM : [min 2 Go]
-  - Espace disque : [min 20 Go]
+  - Processeur : ``1 sockets, 1 cores``
+  - Mémoire RAM : ``2 Go``
+  - Espace disque : ``32 Go``
   - Carte réseau compatible Ethernet
 - **Logiciels requis :**
-  - **Système d'exploitation** : Debian 11 (ou version stable plus récente)
-  - **Serveur Web** : Apache 2.x
-  - **Base de données** : MySQL 5.7 ou MariaDB
-  - **PHP** : PHP 7.4 ou supérieur
-  - **GLPI** : Dernière version stable de GLPI
+  - **Système d'exploitation** : ``Debian 11 (ou version stable plus récente)``
+  - **Serveur Web** : ``Apache 2``
+  - **Base de données** : ``MariaDB``
+  - **PHP** : ``PHP 7.4 ou supérieur``
+  - **GLPI** : ``Dernière version stable de GLPI``
 - **Version d'OS et logiciels :**
-  - **OS** : Debian 11 (Bullseye) (version [x.x.x])
-  - **GLPI** : Version [x.x.x] (dernière version stable)
-  - **PHP** : Version [7.4/8.0]
+  - **OS** : ``Debian 12``
+  - **GLPI** : ``glpi-10.0.10.tgz``
+  - **PHP** : ``PHP 8.2``
 
 ## 2. Installation ⚙️
 
