@@ -87,41 +87,33 @@
 
 - 📸 **Étape 5 :** Choisissez bien votre serveur et cliquer sur ``Next``
 
-![WIN15](https://github.com/user-attachments/assets/6e5f36b2-6682-415c-b890-e804ac18c24b)<br>
+![WIN14](https://github.com/user-attachments/assets/46784eec-5d2b-4ba5-b651-2ec204c55ab0)<br>
 
 - 📸 **Étape 6 :** Cocher les 3 features ``(AD DS, DHCP et DNS)`` puis cliquer sur ``Next``
 
-![WIN14](https://github.com/user-attachments/assets/46784eec-5d2b-4ba5-b651-2ec204c55ab0)<br>
+![WIN15](https://github.com/user-attachments/assets/6e5f36b2-6682-415c-b890-e804ac18c24b)<br>
 
 - 📸 **Étape 7 :** Cliquer sur ``Next``
 
-![WIN14](https://github.com/user-attachments/assets/558b0e74-5573-4377-b2f1-77d88ad9a077)<br>
+![WIN16](https://github.com/user-attachments/assets/ae346b48-5888-4ee1-9b02-983ddf2bd4bd)<br>
 
 - 📸 **Étape 8 :** Cliquer sur ``Next``
 
-![WIN15](https://github.com/user-attachments/assets/cba56712-becc-4d3c-bbed-986a2fcee201)<br>
+![WIN17](https://github.com/user-attachments/assets/552b14cd-2573-4195-b500-a3a7259c87af)<br>
 
 - 📸 **Étape 9 :** Cliquer sur ``Next``
 
-![WIN16](https://github.com/user-attachments/assets/ae346b48-5888-4ee1-9b02-983ddf2bd4bd)<br>
+![WIN18](https://github.com/user-attachments/assets/5f2ff3ff-12f9-40dc-8fee-20f1f2871394)<br>
 
 - 📸 **Étape 10 :** Cliquer sur ``Next``
 
-![WIN17](https://github.com/user-attachments/assets/552b14cd-2573-4195-b500-a3a7259c87af)<br>
-
-- 📸 **Étape 11 :** Cliquer sur ``Next``
-
-![WIN18](https://github.com/user-attachments/assets/5f2ff3ff-12f9-40dc-8fee-20f1f2871394)<br>
-
-- 📸 **Étape 12 :** Cliquer sur ``Next``
-
 ![WIN19](https://github.com/user-attachments/assets/e9e42fa6-b40a-48fe-a24a-ef0a35c4ff35)<br>
 
-- 📸 **Étape 13 :** Cliquer sur ``Install``
+- 📸 **Étape 11 :** Cliquer sur ``Install``
 
 ![WIN20](https://github.com/user-attachments/assets/2d4b816d-fd00-42b5-9d10-aa4406b5429d)<br>
 
-- 📸 **Étape 14 :** Une fois l'installation terminée cliquer sur ``Close``
+- 📸 **Étape 12 :** Une fois l'installation terminée cliquer sur ``Close``
 
 ![WIN21](https://github.com/user-attachments/assets/b30e2206-0ff9-4905-b106-0ecb35370c3b)
 
