@@ -207,7 +207,11 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
    - Ouvrez un navigateur et accédez à `http://<ip-du-serveur-GLPI>ou<nom-du-serveur-si-DNS>/glpi`.
 
 2. **Vérification du résultat :**
-   - 📸 **Résultat attendu :** L'interface web de GLPI doit être accessible et vous pouvez vous connecter avec le compte administrateur créé.
+
+![392963490-99c60c91-80e5-4bce-a74d-69b85e29e6be](https://github.com/user-attachments/assets/0ba0b1eb-a36f-4670-9df3-081111f22f50)<br>
+![392963512-3ff82d21-aeb8-4909-9ed3-524b1166acbd](https://github.com/user-attachments/assets/c3b0ff78-24e0-4f29-aee9-636a081574af)
+
+---
 
 ## 4. FAQ ❓
 - **Problème : GLPI n'arrive pas à se connecter à la base de données.**
