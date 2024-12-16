@@ -152,7 +152,7 @@
    - Ouvrir "Server Manager" → Sélectionner "Add Roles and Features".
    - 📸 **Étape 1 :** Choisir "Active Directory Domain Services".
    - 📸 **Étape 2 :** Promouvoir le serveur en contrôleur de domaine via l'assistant AD DS.
-   - 📸 **Étape 3 :** Configurer le nom du domaine (ex. : `example.local`).
+   - 📸 **Étape 3 :** Configurer le nom du domaine (ex. : `billu.com`).
    
 2. **Vérification du service AD DS :**  
    - 📸 **Résultat attendu :** Le serveur devient contrôleur de domaine, et les utilisateurs peuvent être gérés via "Active Directory Users and Computers".
