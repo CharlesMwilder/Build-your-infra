@@ -63,7 +63,7 @@
 ---
 
 <details>
-<summary><h1>⚙️ Installation des ``features`` sur Windows Server Core</h1></summary>
+<summary><h1>⚙️ Installation des features sur Windows Server Core</h1></summary>
 
 - 📸 **Étape 1 :** Installation de la feature ``RSAT-AD-Tools``
   
