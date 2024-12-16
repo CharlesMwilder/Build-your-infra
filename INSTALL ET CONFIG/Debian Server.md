@@ -25,12 +25,65 @@
 2. **Préparation de l'environnement :**  
    - Créer une machine virtuelle ou utiliser un serveur physique avec les spécifications matérielles recommandées.
    - Installer Debian avec une configuration de base sans interface graphique (serveur minimal).
-3. **Installation pas-à-pas :**
-   - 📸 **Étape 1 :** Démarrer à partir du support d'installation de Debian.
-   - 📸 **Étape 2 :** Sélectionner l'option d'installation minimale (serveur sans interface graphique).
-   - 📸 **Étape 3 :** Configurer les paramètres de base comme la langue, le partitionnement du disque et les paramètres réseau.
-4. **Vérification du résultat :**
-   - 📸 **Résultat attendu :** Serveur Debian installé et accessible via SSH (si configuré) ou directement à la console.
+
+---
+
+<details>
+<summary><h1>⚙️ Installation Debian Server</h1></summary>
+
+- 📸 ** Cliquer sur ``Install`` puis suivre en fonction des screens** 
+
+![DEBIAN1](https://github.com/user-attachments/assets/9a6bd875-a12a-448e-92ed-d0570af5d208)<br>
+
+![DEBIAN2](https://github.com/user-attachments/assets/b3fb1183-ffdd-4947-aba8-2098b8682170)<br>
+
+![DEBIAN3](https://github.com/user-attachments/assets/978bae33-f439-4f62-a970-08b9b3491002)<br>
+
+![DEBIAN4](https://github.com/user-attachments/assets/2e6268e5-c33f-4f26-8d21-a35f906d4611)<br>
+
+![DEBIAN5](https://github.com/user-attachments/assets/0a9ec1ff-a4f7-4b54-9907-03ae7e00ce7a)<br>
+
+![DEBIAN6](https://github.com/user-attachments/assets/a413f1ca-f2ed-499e-8518-6c1394df8d3a)<br>
+
+![DEBIAN7](https://github.com/user-attachments/assets/1c6e024c-76a9-42c0-9824-d82a2f7eb4ca)<br>
+
+![DEBIAN8](https://github.com/user-attachments/assets/54da7a81-96dc-4008-8392-5d4f0a743ae7)<br>
+
+![DEBIAN9](https://github.com/user-attachments/assets/c9f9a2c9-9c1f-4997-b31c-831ddd260609)<br>
+
+![DEBIAN10](https://github.com/user-attachments/assets/ba6a5a4d-5102-4e00-b473-a0e6fc13f8ca)<br>
+
+![DEBIAN11](https://github.com/user-attachments/assets/4ff12fe9-53e6-4aec-9c71-400040e0ebd5)<br>
+
+![DEBIAN12](https://github.com/user-attachments/assets/61370b17-f00f-4a16-b0a9-ea6f27ee9118)<br>
+
+![DEBIAN13](https://github.com/user-attachments/assets/027f6a68-13b5-473c-b90a-e4f94ee6aa49)<br>
+
+![DEBIAN14](https://github.com/user-attachments/assets/febc00de-748f-46e5-a880-87aa9fc6c86b)<br>
+
+![DEBIAN15](https://github.com/user-attachments/assets/20dd3d09-3b62-481f-bf1f-0fdb3c606747)<br>
+
+![DEBIAN16](https://github.com/user-attachments/assets/00d6c650-25ff-44f8-9ad6-2d765854b2dd)<br>
+
+![DEBIAN17](https://github.com/user-attachments/assets/9af1e23f-f5e4-4912-8d02-4896906f6375)<br>
+
+![DEBIAN18](https://github.com/user-attachments/assets/1a3f1976-0b77-4286-9ead-f81b7fe630d3)<br>
+
+![DEBIAN19](https://github.com/user-attachments/assets/70c19a80-dcce-4339-95f3-619ec543e508)<br>
+
+![DEBIAN20](https://github.com/user-attachments/assets/d71c2bbb-da84-4b82-9588-457a6e8fe727)<br>
+
+![DEBIAN21](https://github.com/user-attachments/assets/82d7833f-c298-4f30-83e0-02545c971d52)<br>
+
+![DEBIAN22](https://github.com/user-attachments/assets/86dd475a-9779-4849-ad3e-960882f5bad9)<br>
+
+![DEBIAN23](https://github.com/user-attachments/assets/b8280f79-e3b5-4c96-9f09-dfffffb9d4e9)<br>
+
+![DEBIAN24](https://github.com/user-attachments/assets/5b69ce07-6922-4ca3-b34d-3e9e9586551b)
+
+</details>
+
+---
 
 ## 3. Installation et Configuration de GLPI ⚙️
 
