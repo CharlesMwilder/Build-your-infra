@@ -24,7 +24,7 @@
     ---
    
 <details>
-<summary><h1>⚙️ Installation Windows Server 2022</h1></summary>
+<summary><h1>⚙️ Installation Windows Server Core</h1></summary>
 
 - 📸 **Étape 1 :** Choisir la langue du système, le format horaire et la langue du clavier (French = AZERTY) puis cliquer sur ``Next``
 
@@ -61,17 +61,10 @@
 </details>
 
 ---
-   
-4. **Installation pas-à-pas :**
-   - 📸 **Étape 1 :** Démarrer à partir du support d'installation et choisir "Windows Server 2022 Core Edition".
-   - 📸 **Étape 2 :** Configurer les paramètres de base (partitions de disque, réseau, etc.) pendant l'installation via l'interface texte.
-   - 📸 **Étape 3 :** Une fois l'installation terminée, redémarrer le serveur et accéder à l'invite de commande.
-5. **Vérification du résultat :**
-   - 📸 **Résultat attendu :** Le serveur doit démarrer en mode Core, avec une invite de commande et une connexion réseau valide.
 
 ## 3. Configuration/Utilisation ⚙️
 
-### Cible 🎯
+### Cible 🎯 (A REMPLIR !)
 - Serveur **Windows Server Core** configuré avec **DHCP**, **DNS** et **Active Directory Domain Services (AD DS)**, relié à un domaine existant pour la redondance.
 
 ### Étapes de configuration/utilisation 🔧
@@ -86,7 +79,7 @@
 2. **Configurer le serveur DHCP :**
    - **Définir une étendue d'adresses IP :**
      ```powershell
-     Add-DhcpServerv4Scope -Name "MainScope" -StartRange 192.168.1.100 -EndRange 192.168.1.200 -SubnetMask 255.255.255.0
+     Add-DhcpServerv4Scope -Name "MainScope" -StartRange 172.18.1.100 -EndRange 172.18.1.200 -SubnetMask 255.255.255.0
      ```
    - **Activer le serveur DHCP :**
      ```powershell
@@ -95,8 +88,8 @@
      ```
    - **Configurer les options DHCP (par exemple, passerelle, DNS) :**
      ```powershell
-     Set-DhcpServerv4OptionValue -OptionId 3 -Value 192.168.1.1  # Passerelle
-     Set-DhcpServerv4OptionValue -OptionId 6 -Value 192.168.1.2  # Serveur DNS
+     Set-DhcpServerv4OptionValue -OptionId 3 -Value 172.18.255.254  # Passerelle
+     Set-DhcpServerv4OptionValue -OptionId 6 -Value 172.18.255.254 # Serveur DNS
      ```
 
 3. **Vérification du service DHCP :**
@@ -111,7 +104,7 @@
 2. **Configurer DNS pour joindre le domaine principal :**
    - Ajouter le serveur DNS du domaine existant dans la configuration DNS du serveur Core :
      ```powershell
-     Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 192.168.1.2
+     Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 172.18.255.252
      ```
 3. **Vérification du service DNS :**
    - 📸 **Résultat attendu :** Le serveur DNS doit résoudre les noms internes du domaine et diriger les requêtes vers le serveur DNS primaire du domaine.
@@ -125,7 +118,7 @@
 2. **Promouvoir le serveur en contrôleur de domaine secondaire :**
    - Exécuter la commande PowerShell suivante pour rejoindre un domaine existant :
      ```powershell
-     Install-ADDSDomainController -DomainName "example.local" -Credential (Get-Credential) -InstallDns:$true -NoGlobalCatalog:$false
+     Install-ADDSDomainController -DomainName "billu.com" -Credential (Get-Credential) -InstallDns:$true -NoGlobalCatalog:$false
      ```
    - **Rejoindre le domaine existant (réplication et redondance) :** 
      Le serveur Core va se promouvoir en tant que **contrôleur de domaine secondaire**, ce qui permet de créer une redondance pour l'Active Directory.
@@ -147,7 +140,7 @@
 
 ### Choix du hardware 💻
 - Pour un serveur **Windows Server Core** avec DHCP, DNS et AD DS :
-  - Processeur : Xeon ou équivalent, avec au moins 4 cœurs.
+  - Processeur : minimum 4 cœurs.
   - RAM : 8 Go minimum.
   - Disque : SSD de 100 Go ou plus pour de meilleures performances.
 
@@ -160,13 +153,5 @@
 
 ### Clone miroir 💾
 1. **Créer un clone miroir de Windows Server Core :**
-   - Utiliser des outils comme **Windows Server Backup** ou des solutions tierces pour créer une image complète du serveur Core.
-   - 📸 **Procédure :** Utiliser la commande PowerShell pour exporter une image système :
-     ```powershell
-     wbAdmin start backup -backuptarget:D: -include:C: -allcritical -quiet
-     ```
 
-### Script de restauration OS 🖥️
-- **Restauration complète via PowerShell :**
-  ```powershell
-  wbAdmin start recovery -version:MM/DD/YYYY-HH:MM -itemType:Volume -items:C: -recoveryTarget:C:
+A REMPLIR !
