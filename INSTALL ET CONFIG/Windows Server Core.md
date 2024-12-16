@@ -1,4 +1,4 @@
-# Documentation de l'Infrastructure Windows Server Core 🖥️
+# Documentation de l'Infrastructure Windows Server Core (Serveur secondaire pour redondance AD DS, DHCP, DNS et backup du serveur principal) 🖥️
 
 ## 1. Prérequis matériel/logiciel 📦
 - **Matériel requis :**
