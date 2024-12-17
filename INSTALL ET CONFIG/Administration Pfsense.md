@@ -23,7 +23,7 @@
 
 ---
 
-## 2. Configuration/Utilisation ⚙️
+## 2. Configuration/Utilisation ⚙️ EN COURS !
 
 ### Cible 🎯
 Poste administrateur pour PFsense configuré comme routeur et firewall sur le réseau `192.168.10.0/24`. Il gère les VLANs suivants :
