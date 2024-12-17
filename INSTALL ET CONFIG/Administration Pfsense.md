@@ -23,33 +23,69 @@
 
 ---
 
-## 2. Configuration/Utilisation ⚙️ EN COURS !
+<details>
+<summary><h1>⚙️ Configuration/Utilisation Pfsense</h1></summary>
 
-### Cible 🎯
-Poste administrateur pour PFsense configuré comme routeur et firewall sur le réseau `192.168.10.0/24`. Il gère les VLANs suivants :
-- **VLAN10** à **VLAN100** pour divers sous-réseaux.
-- **VLAN255** réservé aux serveurs (plage d'adresses `192.168.255.1` à `192.168.255.254`).
+🎯 Création de VLAN
 
-### Étapes de configuration/utilisation 🔧
+- 📸 **Étape 1 :** Cliquez sur ``Interfaces``
 
-#### 📸 Configuration initiale :
-1. Créez les VLANs dans l’interface Web de PFsense :
-   - Allez dans `Interfaces > Assignments > VLANs`.
-   - Ajoutez un VLAN pour chaque ID (10, 20, ... jusqu'à 255).
+![PFSENSE1](https://github.com/user-attachments/assets/757b8746-e1e9-477e-a45d-4f7b523c60fa)
 
-#### 📸 Réglages supplémentaires :
-- **Firewall Rules** :
-  - Allez dans `Firewall > Rules` et ajoutez des règles pour autoriser le trafic entre les VLANs ou le limiter selon les besoins.
-- **DHCP** :
-  - Configurez un service DHCP pour chaque VLAN dans `Services > DHCP Server`.
+- 📸 **Étape 1 :** Puis sur ``Assignments``
 
-#### 📸 Utilisation quotidienne :
-- Supervisez les logs via `Status > System Logs`.
-- Ajoutez ou modifiez des règles de pare-feu ou NAT en fonction des besoins.
+![PFSENSE 8](https://github.com/user-attachments/assets/39f1cc48-24eb-447e-9057-714610a8d9c1)
+
+- 📸 **Étape 1 :** Puis sur ``VLANs``
+
+![PFSENSE 9](https://github.com/user-attachments/assets/615131f4-16b7-4770-8cb5-f9f3f12f3438)
+
+- 📸 **Étape 1 :** Cliquez sur ``Add``
+
+![PFSENSE4](https://github.com/user-attachments/assets/daa0646e-6ce2-4ddd-937e-cd45d3540f2d)
+
+- 📸 **Étape 1 :** Choisir l'interface ``emb2``
+
+![PFSENSE5](https://github.com/user-attachments/assets/81095162-e2df-4e3c-99a2-369d9725ca67)
+
+- 📸 **Étape 1 :** Renseignez le ``VLAN Tag`` et mettre une description (optionnelle) puis cliquer sur ``Save``
+
+![PFSENSE6](https://github.com/user-attachments/assets/6aa0195a-feeb-4894-9196-aeccf0993e4b)
+
+- 📸 **Étape 1 :** Allez dans ``Interface Assignments``
+
+![PFSENSE 1](https://github.com/user-attachments/assets/1146bf4d-81ed-460d-9ee6-b20f922e015b)
+
+- 📸 **Étape 1 :** Choisissez le ``network ports`` que vous venez de créer puis de cliquer sur ``Add``
+
+![PFSENSE 2](https://github.com/user-attachments/assets/37faec32-3e25-4bd6-9111-9ab98e2b0d07)
+
+- 📸 **Étape 1 :** Cliquez sur ``OPT12`` pour configurer
+
+![PFSENSE 3](https://github.com/user-attachments/assets/02fdd156-933a-4381-bbbc-0412edc1ab17)
+
+- 📸 **Étape 1 :** Cochez la case ``Enable interface`` puis remplir la "Description" avec le nom de votre VLAN, sélectionner également l'IPv4
+
+![PFSENSE 4](https://github.com/user-attachments/assets/70a2f3ef-b61c-4012-8702-05682dfd91e9)
+
+- 📸 **Étape 1 :** Remplir l'adresse ``IPv4`` correspondante puis préciser le ``CIDR`` et cliquer sur ``Save``
+
+![PFSENSE11](https://github.com/user-attachments/assets/d7d5acd1-197d-45ac-a225-22c1943147e9)
+
+- 📸 **Étape 1 :** Appliquer les changements en cliquant sur ``Apply Changes``
+
+![PFSENSE 6](https://github.com/user-attachments/assets/06f0d232-aa7f-43bb-ba6b-e984d0efc27b)
+
+- 📸 **Étape 1 :** Bravo tout est bon ! 👏
+
+![PFSENSE 7](https://github.com/user-attachments/assets/9249d161-d793-4cfb-b4c4-c3bc4ca96bc3)
+
+
+</details>
 
 ---
 
-## 3. FAQ ❓
+## 2. FAQ ❓
 
 - **Problème** : Impossible d'accéder à l'interface Web.  
   **Solution** : Assurez-vous que votre PC est dans le réseau `192.168.10.0/24` et que l'adresse IP est correctement configurée.
@@ -62,7 +98,7 @@ Poste administrateur pour PFsense configuré comme routeur et firewall sur le r�
 
 ---
 
-## 4. Optimisation 🏎️
+## 3. Optimisation 🏎️
 
 ### Améliorations matérielles 💻
 - **CPU** : Ajouter un processeur plus performant avec plusieurs cœurs pour une meilleure gestion des flux.
@@ -80,7 +116,7 @@ Poste administrateur pour PFsense configuré comme routeur et firewall sur le r�
 
 ---
 
-## 5. Restauration rapide en cas de défaillance 🔄
+## 4. Restauration rapide en cas de défaillance 🔄
 
 ### Clone miroir 💾
 
