@@ -51,7 +51,7 @@ Poste administrateur pour PFsense configuré comme routeur et firewall sur le r�
   **Solution** : Assurez-vous que votre PC est dans le réseau `192.168.10.0/24` et que l'adresse IP est correctement configurée.
 
 - **Problème** : Les VLANs ne fonctionnent pas correctement.  
-  **Solution** : Vérifiez que les ports correspondants sur le switch sont configurés en mode *tagged* pour les VLANs.
+  **Solution** : Vérifiez que les ports correspondants sur le switch sont configurés pour les VLANs.
 
 - **Problème** : Les règles de pare-feu ne s'appliquent pas.  
   **Solution** : Assurez-vous que les règles sont bien assignées à l'interface correcte (VLAN ou LAN).
