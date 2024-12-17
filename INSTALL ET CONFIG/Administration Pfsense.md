@@ -22,7 +22,8 @@
 - **Logiciel** : Aucune application supplémentaire nécessaire sur PFsense.
 
 ---
-
+## 2. Configuration Pfsense 🔧
+---
 <details>
 <summary><h1>⚙️ Création de VLAN</h1></summary>
 
@@ -84,7 +85,7 @@
 
 ---
 
-## 2. FAQ ❓
+## 3. FAQ ❓
 
 - **Problème** : Impossible d'accéder à l'interface Web.  
   **Solution** : Assurez-vous que votre PC est dans le réseau `192.168.10.0/24` et que l'adresse IP est correctement configurée.
@@ -97,7 +98,7 @@
 
 ---
 
-## 3. Optimisation 🏎️
+## 4. Optimisation 🏎️
 
 ### Améliorations matérielles 💻
 - **CPU** : Ajouter un processeur plus performant avec plusieurs cœurs pour une meilleure gestion des flux.
@@ -115,7 +116,7 @@
 
 ---
 
-## 4. Restauration rapide en cas de défaillance 🔄
+## 5. Restauration rapide en cas de défaillance 🔄
 
 ### Clone miroir 💾
 
