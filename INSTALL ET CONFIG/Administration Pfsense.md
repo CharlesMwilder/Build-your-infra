@@ -24,9 +24,8 @@
 ---
 
 <details>
-<summary><h1>⚙️ Configuration/Utilisation Pfsense</h1></summary>
+<summary><h1>⚙️ Création de VLAN</h1></summary>
 
-🎯 Création de VLAN
 
 - 📸 **Étape 1 :** Cliquez sur ``Interfaces``
 
