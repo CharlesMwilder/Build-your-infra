@@ -21,9 +21,21 @@
 - **OS** : PFsense CE (basé sur FreeBSD 13).
 - **Logiciel** : Aucune application supplémentaire nécessaire sur PFsense.
 
----
+
 ## 2. Configuration Pfsense 🔧
 
+<details>
+<summary><h1>⚙️ Connexion à Pfsense</h1></summary>
+
+
+- 📸 **Étape 1 :** Dans un navigateur web mettre l'ip de votre serveur ``Pfsense`` puis se connecter avec vos identifiants
+
+![CONFIGPFSENSE1](https://github.com/user-attachments/assets/c6e12d02-1970-4e0d-9b5e-b505fd7f71b2)
+
+</details>
+
+---
+<br>
 <details>
 <summary><h1>⚙️ Création de VLAN</h1></summary>
 
@@ -85,52 +97,57 @@
 
 ---
 
+<br>
 <details>
-<summary><h1>⚙️ Gestion du pare-feu / Création de règle</h1></summary>
+<summary><h1>⚙️ Gestion du pare-feu / Création de règle</h1></summary><br>
+ 
 
-
-- 📸 **Étape 1 :** Connexion à Pfsense depuis le poste d'administration
-
-![CONFIGPFSENSE1](https://github.com/user-attachments/assets/c6e12d02-1970-4e0d-9b5e-b505fd7f71b2)
-
-- 📸 **Étape 2 :** Cliquez sur ``Firewall`` puis sur ``Rules`` pour créer une règle
+ ⭐ ``Règle pour autoriser la communication entre VLAN`` ⭐
+ <br><br>
+- 📸 **Étape 1 :** Cliquez sur ``Firewall`` puis sur ``Rules`` pour créer une règle
 
 ![CONFIGPFSENSE2](https://github.com/user-attachments/assets/755a15d5-b152-49c3-9d3f-0a9fb26e671c)
 
-- 📸 **Étape 3 :** Choisissez la VLAN à configurer puis cliquer sur ``Add``
+- 📸 **Étape 2 :** Choisissez la VLAN à configurer puis cliquer sur ``Add``
 
 ![CONFIGPFSENSE3](https://github.com/user-attachments/assets/6f1fa555-d21c-44af-948c-75695531eacb)
 
-- 📸 **Étape 4 :** Suivre les étapes de remplissage
+- 📸 **Étape 3 :** Suivre les étapes de remplissage
 
 ![CONFIGPFSENSE4](https://github.com/user-attachments/assets/8bc05f6a-8e23-48fc-86b4-d06fee7dbd1a)
 
-- 📸 **Étape 5 :** Suivre les étapes de remplissage puis cliquer sur ``Save``
+- 📸 **Étape 4 :** Suivre les étapes de remplissage puis cliquer sur ``Save``
 
 ![CONFIGPFSENSE5](https://github.com/user-attachments/assets/610905b1-b0fa-4493-934b-8106aab7b083)
 
-- 📸 **Étape 6 :** Appliquer les changements en cliquant sur ``Apply Changes``
+- 📸 **Étape 5 :** Appliquer les changements en cliquant sur ``Apply Changes``
 
 ![CONFIGPFSENSE6](https://github.com/user-attachments/assets/2d5af13e-6233-4b6e-836e-115c86e16adc)
 
 
-- 📸 **Étape 7 :** La règle pour permettre la communication entre VLAN est bien ajouté 👍
+- 📸 **Étape 6 :** La règle pour permettre la communication entre VLAN est bien ajouté 👍
 
 ![CONFIGPFSENSE7](https://github.com/user-attachments/assets/b8277b70-d14e-476b-bb97-4f4f2de69806)
 
-- 📸 **Étape 8 :** Créer une autre règle en suivant la configuration affiché
+---
+
+
+
+⭐ ``Règle pour autoriser la communication sur internet`` ⭐<br>
+<br><br>
+- 📸 **Étape 7 :** Créer une autre règle en suivant la configuration affiché
 
 ![CONFIGPFSENSE8](https://github.com/user-attachments/assets/dc9dcfce-c136-444f-8a71-5a629433dd9f)
 
-- 📸 **Étape 9 :** Suivre les étapes de remplissage puis cliquer sur ``Save``
+- 📸 **Étape 8 :** Suivre les étapes de remplissage puis cliquer sur ``Save``
 
 ![CONFIGPFSENSE9](https://github.com/user-attachments/assets/a9e21b2a-a013-49f9-9000-7228eb3b62fc)
 
-- 📸 **Étape 10 :** Appliquer les changements en cliquant sur ``Apply Changes``
+- 📸 **Étape 9 :** Appliquer les changements en cliquant sur ``Apply Changes``
 
 ![CONFIGPFSENSE10](https://github.com/user-attachments/assets/453aff85-2132-4dd4-b65d-9fd429acb1bd)
 
-- 📸 **Étape 11 :** La règle pour permettre un accès à internet est bien ajouté 👍
+- 📸 **Étape 10 :** La règle pour permettre un accès à internet est bien ajouté 👍
 
 ![CONFIGPFSENSE11](https://github.com/user-attachments/assets/e2b965f9-e76b-4d27-82d7-8d70bb368138)
 
