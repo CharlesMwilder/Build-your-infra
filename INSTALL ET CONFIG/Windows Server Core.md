@@ -61,7 +61,7 @@
 </details>
 
 ---
-
+<br>
 <details>
 <summary><h1>⚙️ Installation des features sur Windows Server Core</h1></summary>
 
@@ -85,7 +85,7 @@
 </details>
 
 ---
-
+<br>
 <details>
 <summary><h1>⚙️ Ajout du Windows Server Core au domaine billu.com</h1></summary>
   
@@ -123,8 +123,9 @@
 </details>
 
 ---
+<br>
 
-## ⭐ CONFIGURATION DHCP ET DNS VOIR DIRECTEMENT SUR LE SERVEUR PRINCIPAL ⭐
+### ⭐ CONFIGURATION DHCP ET DNS VOIR DIRECTEMENT SUR LE SERVEUR PRINCIPAL ⭐
 
 https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/INSTALL%20ET%20CONFIG/Windows%20Server%202022.md
 
