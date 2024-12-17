@@ -81,32 +81,40 @@
   
 ![WINCOREF4](https://github.com/user-attachments/assets/047bb5f2-ad42-4753-861b-f44d9a3dbd2b)<br>
 
-- 📸 **Étape 5 :** Ajout du serveur core au domaine ``billu.com``
+
+</details>
+
+---
+
+<details>
+<summary><h1>⚙️ Ajout du Windows Server Core au domaine billu.com</h1></summary>
+  
+- 📸 **Étape 1 :** Ajout du serveur core au domaine ``billu.com``
 
 ![WINCOREF5](https://github.com/user-attachments/assets/74c5116b-2f68-4938-b2b3-585e30e0d495)<br>
 
 
-- 📸 **Étape 6 :** Connexion au domaine via le compte ``Administrateur du domaine billu.com``
+- 📸 **Étape 2 :** Connexion au domaine via le compte ``Administrateur du domaine billu.com``
 
 ![WINCOREF6](https://github.com/user-attachments/assets/277faa22-b51a-412b-9f13-a6908ec2f28e)<br>
 
-- 📸 **Étape 7 :** Redémarrage pour validation de l'ajout du serveur core au domaine ``billu.com``
+- 📸 **Étape 3 :** Redémarrage pour validation de l'ajout du serveur core au domaine ``billu.com``
 
 ![WINCOREF7](https://github.com/user-attachments/assets/830de9f6-244e-4b42-98ef-8a7dd6edb02c)<br>
 
-- 📸 **Étape 8 :** Après redémarrage choisir ``l'option 12`` pour changer de compte
+- 📸 **Étape 4 :** Après redémarrage choisir ``l'option 12`` pour changer de compte
 
 ![WINCOREF8](https://github.com/user-attachments/assets/f0551182-5d9d-4fde-ac39-ef43ce383c09)<br>
 
-- 📸 **Étape 9 :** Choisir ``Other user`` puis faites entrer
+- 📸 **Étape 5 :** Choisir ``Other user`` puis faites entrer
 
 ![WINCOREF9](https://github.com/user-attachments/assets/fd87bbc6-8d7a-48bb-b499-a97716217967)<br>
 
-- 📸 **Étape 10 :** Renseignez le nom du compte Administrateur avec le nom de domaine ``billu.com`` ainsi que le mot de passe puis faites entrer
+- 📸 **Étape 6 :** Renseignez le nom du compte Administrateur avec le nom de domaine ``billu.com`` ainsi que le mot de passe puis faites entrer
 
 ![WINCOREF10](https://github.com/user-attachments/assets/7f393ae9-9c62-4198-ac32-ce397420cf6d)<br>
 
-- 📸 **Étape 11 :** Tout est bon, vous voila connecter sur le domaine ``billu.com``
+- 📸 **Étape 7 :** Tout est bon, vous voila connecter sur le domaine ``billu.com``
 
 ![WINCOREF11](https://github.com/user-attachments/assets/cd4d7048-be8a-4b73-a23a-aa3aed3041c9)
 
