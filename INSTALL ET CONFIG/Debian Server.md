@@ -202,13 +202,15 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 
 ---
 
-#### Finalisation de l'installation via l'interface Web 🌐
-1. **Accéder à l'interface web de GLPI :**
-   - Ouvrez un navigateur et accédez à `http://<ip-du-serveur-GLPI>ou<nom-du-serveur-si-DNS>/glpi`.
+<details>
+<summary><h1>⚙️ Connexion et Configuration de GLPI</h1></summary>
 
-2. **Vérification du résultat :**
+- 📸 Connexion à GLPI via un navigateur web en rentrant soit l'ip du serveur ou alors le nom de domaine via ``DNS``
 
 ![392963490-99c60c91-80e5-4bce-a74d-69b85e29e6be](https://github.com/user-attachments/assets/0ba0b1eb-a36f-4670-9df3-081111f22f50)<br>
+
+- 📸 Après avoir rentré vos identifiants vous voilà connecté 👍
+
 ![392963512-3ff82d21-aeb8-4909-9ed3-524b1166acbd](https://github.com/user-attachments/assets/c3b0ff78-24e0-4f29-aee9-636a081574af)
 
 ---
