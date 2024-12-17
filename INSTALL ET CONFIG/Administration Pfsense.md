@@ -11,12 +11,17 @@
 - **PFsense Community Edition**, version 2.7.0 ou supérieure.
 - Navigateur Web pour accéder à l'interface (Firefox, Chrome ou Edge).
 
+### Performances minimales recommandées :
+- **Processeur** : 1 socket, 1 cœur.
+- **Mémoire RAM** : 4 Go.
+- **Espace disque** : 32 Go.
+- **Carte réseau** : Compatible Ethernet.
+
 ### Version d'OS et logiciels :
 - **OS** : PFsense CE (basé sur FreeBSD 13).
 - **Logiciel** : Aucune application supplémentaire nécessaire sur PFsense.
 
 ---
-
 
 ## 2. Configuration/Utilisation ⚙️
 
@@ -60,19 +65,18 @@ Poste administrateur pour PFsense configuré comme routeur et firewall sur le r�
 
 ## 4. Optimisation 🏎️
 
-### Choix du hardware 💻
--  Processeur : ``1 sockets, 1 cores``
--  Mémoire RAM : ``4 Go``
-- Espace disque : ``32 Go``
-- Carte réseau compatible Ethernet
+### Améliorations matérielles 💻
+- **CPU** : Ajouter un processeur plus performant avec plusieurs cœurs pour une meilleure gestion des flux.
+- **RAM** : Étendre la mémoire à 8 Go ou plus pour un traitement plus fluide.
+- **Espace disque** : Passer à un SSD pour des temps d'accès plus rapides.
+- **Réseau** : Ajouter des interfaces réseau pour des connexions dédiées aux VLANs critiques.
 
-- **Version d'OS :**
-  - **OS** : ``Windows 10 ou plus et/ou Ubuntu 22 ou 24``
-
+### Recommandations générales :
+- **Espace physique** : Installez PFsense dans un environnement aéré pour éviter les surchauffes.
+- **Gestion des câbles** : Utilisez des câbles Ethernet de haute qualité et bien organisés.
 
 ### Mise à jour régulière du système 🔄
-#### Recommandations :
-- Mettez à jour PFsense tous les 6 mois en passant par `System > Update`.
+- Mettez à jour PFsense tous les 6 mois via `System > Update`.
 - Sauvegardez la configuration avant chaque mise à jour via `Diagnostics > Backup/Restore`.
 
 ---
@@ -80,5 +84,9 @@ Poste administrateur pour PFsense configuré comme routeur et firewall sur le r�
 ## 5. Restauration rapide en cas de défaillance 🔄
 
 ### Clone miroir 💾
+Préparez une solution de sauvegarde avec :
+1. Une clé USB ou un disque externe contenant un clone de la configuration PFsense.
+2. Un guide rapide pour réimporter cette sauvegarde en cas de panne :
+   - Accédez à `Diagnostics > Backup/Restore`.
+   - Chargez le fichier de configuration sauvegardé.
 
-A REMPLIR !
