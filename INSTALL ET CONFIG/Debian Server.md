@@ -202,7 +202,7 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 
 ---
 
-#### 3.4. Finalisation de l'installation via l'interface Web 🌐
+#### Finalisation de l'installation via l'interface Web 🌐
 1. **Accéder à l'interface web de GLPI :**
    - Ouvrez un navigateur et accédez à `http://<ip-du-serveur-GLPI>ou<nom-du-serveur-si-DNS>/glpi`.
 
@@ -213,7 +213,7 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 
 ---
 
-## 4. FAQ ❓
+## 3. FAQ ❓
 - **Problème : GLPI n'arrive pas à se connecter à la base de données.**
   - **Solution :** Vérifiez que les paramètres de connexion à la base de données dans le fichier de configuration de GLPI sont corrects et que le service MariaDB fonctionne correctement.
   
@@ -223,7 +223,7 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 - **Problème : Les pages de GLPI sont lentes à charger.**
   - **Solution :** Vérifiez les logs d'Apache et activez le cache dans la configuration de PHP pour améliorer les performances.
 
-## 5. Optimisation 🏎️
+## 4. Optimisation 🏎️
 
 ### Choix du hardware 💻
 - Pour un serveur **Debian avec GLPI** :
@@ -236,7 +236,7 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
   - Configurer **apt** pour effectuer des mises à jour automatiques des paquets de sécurité.
   - Vérifier les mises à jour de GLPI chaque mois et les installer dès qu'une nouvelle version est disponible.
 
-## 6. Restauration rapide en cas de défaillance 🔄
+## 5. Restauration rapide en cas de défaillance 🔄
 
 ### Clone miroir 💾
 1. **Créer un clone miroir avec `rsync` :**
