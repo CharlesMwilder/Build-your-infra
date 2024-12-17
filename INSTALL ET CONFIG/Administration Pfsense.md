@@ -22,7 +22,7 @@
 
 ### Cible 🎯
 Poste administrateur pour PFsense configuré comme routeur et firewall sur le réseau `192.168.10.0/24`. Il gère les VLANs suivants :
-- **VLAN10** à **VLAN100** pour divers sous-réseaux.
+- **VLAN10** à **VLAN100** pour divers sous-réseaux (plage d'adresses `192.168.255.1` à `192.168.255.254`).
 - **VLAN255** réservé aux serveurs (plage d'adresses `192.168.255.1` à `192.168.255.254`).
 
 ### Étapes de configuration/utilisation 🔧
