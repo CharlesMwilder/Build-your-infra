@@ -93,13 +93,13 @@
 
 ---
 
-
+<br>
 <details>
 <summary><h1>⚙️ Installation et Configuration de GLPI via script</h1></summary>
 
 - 📸 Configurer le fichier de config.txt puis lancer l'installation et la configuration de façon autonome grâce au script
 
-# Configuration pour script install GLPI
+## Configuration pour script install GLPI
 
 ```
 ## Variables modifiables en fonction de votre configuration
@@ -201,7 +201,7 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 </details>
 
 ---
-
+<br>
 <details>
 <summary><h1>⚙️ Connexion et Configuration de GLPI</h1></summary>
 
@@ -213,8 +213,15 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 
 ![392963512-3ff82d21-aeb8-4909-9ed3-524b1166acbd](https://github.com/user-attachments/assets/c3b0ff78-24e0-4f29-aee9-636a081574af)
 
+</details>
 
-- 📸 Récupération de l'annuaire LDAP (domaine billu)
+---
+
+<br>
+<details>
+<summary><h1>⚙️ Configuration LDAP</h1></summary>
+
+- 📸 Récupération de l'annuaire LDAP (domaine billu.com)
 
 ![ADDS 1](https://github.com/user-attachments/assets/52c67a29-deff-4821-9a78-84050113913e)<br>
 
@@ -225,7 +232,7 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 ![ADDS 4](https://github.com/user-attachments/assets/273f4cd9-16da-4118-926d-f8984484ffa1)<br>
 
 
-- 📸 Ajouts des utilisateurs sur GLPI via LDAP (domaine billu)
+- 📸 Ajouts des utilisateurs sur GLPI via LDAP (domaine billu.com)
 
 ![ADDUSER1](https://github.com/user-attachments/assets/5bf17ac1-1652-4218-9380-0876c00efd41)<br>
 
@@ -244,7 +251,7 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 ![ADDUSER8](https://github.com/user-attachments/assets/fc7ca479-47b3-4b84-ac75-1b0ba7f4d258)<br>
 
 
-- 📸 Ajouts des groupes sur GLPI via LDAP (domaine billu)
+- 📸 Ajouts des groupes sur GLPI via LDAP (domaine billu.com)
 
 
 ![ADDGROUP1](https://github.com/user-attachments/assets/2d5e1690-c20f-4ddc-b9f7-04f41e492236)<br>
@@ -260,7 +267,7 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 ![ADDGROUP6](https://github.com/user-attachments/assets/14d8aa27-dc5a-4dfe-b11a-9eb3702aa819)<br>
 
 
-- 📸 Synchronisation des utilisateurs à leurs groupes sur GLPI via LDAP (domaine billu)
+- 📸 Synchronisation des utilisateurs à leurs groupes sur GLPI via LDAP (domaine billu.com)
 
 ![SYNC1](https://github.com/user-attachments/assets/d0ba0ebe-9bb5-4a48-8269-8834531e703f)<br>
 
@@ -272,8 +279,15 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 
 ![SYNC5](https://github.com/user-attachments/assets/b2e64cd4-841c-4d7b-af4c-beb7be70a3a0)<br>
 
+</details>
 
-- 📸 Réception, traitement et clos du ticket d'un utilisateur sur le compte admin (billu)
+---
+
+<br>
+<details>
+<summary><h1>⚙️ Ticketing GLPI</h1></summary>
+  
+- 📸 Réception, traitement et clos du ticket d'un utilisateur sur le compte admin (billu.com)
 
 
 ![009](https://github.com/user-attachments/assets/9fec810e-85d2-4e94-b099-19908a7b579c)<br>
