@@ -86,7 +86,7 @@
 ---
 
 <details>
-<summary><h1>⚙️ Gestion du pare-feu</h1></summary>
+<summary><h1>⚙️ Gestion du pare-feu / Création de règle</h1></summary>
 
 
 - 📸 **Étape 1 :** Connexion à Pfsense depuis le poste d'administration
