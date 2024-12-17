@@ -122,7 +122,7 @@ https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/mai
 
 ---
 
-## 4. FAQ ❓
+## 3. FAQ ❓
 - **Problème : Le service DHCP ne distribue pas d'adresses IP.**
   - **Solution :** Vérifiez si l'étendue DHCP est correctement configurée et si le service DHCP est bien démarré.
   
@@ -132,7 +132,7 @@ https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/mai
 - **Problème : Impossible de rejoindre le domaine.**
   - **Solution :** Vérifiez que le serveur Core peut communiquer avec le contrôleur de domaine principal et que les informations d'identification sont correctes.
 
-## 5. Optimisation 🏎️
+## 4. Optimisation 🏎️
 
 ### Choix du hardware 💻
 - Pour un serveur **Windows Server Core** avec DHCP, DNS et AD DS :
@@ -145,7 +145,7 @@ https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/mai
   - Configurer Windows Update pour effectuer des mises à jour automatiques.
   - Vérifiez les mises à jour de sécurité tous les mois et après chaque mise à jour majeure de Windows Server.
 
-## 6. Restauration rapide en cas de défaillance 🔄
+## 5. Restauration rapide en cas de défaillance 🔄
 
 ### Clone miroir 💾
 1. **Créer un clone miroir de Windows Server Core :**
