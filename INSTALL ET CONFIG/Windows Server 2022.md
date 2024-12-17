@@ -236,7 +236,7 @@
 ---
 
 
-## 4. FAQ ❓
+## 3. FAQ ❓
 - **Problème : Le service DHCP ne distribue pas les adresses IP.**
   - **Solution :** Vérifiez la configuration de l'étendue et assurez-vous que le service DHCP est bien démarré. Réinitialisez l'étendue si nécessaire.
   
@@ -246,7 +246,7 @@
 - **Problème : Impossible de joindre le domaine via AD DS.**
   - **Solution :** Vérifiez que le serveur AD DS est bien promu et que le client utilise le serveur DNS correct pour résoudre le domaine.
 
-## 5. Optimisation 🏎️
+## 4. Optimisation 🏎️
 
 ### Choix du hardware 💻
 - Pour un serveur Windows Server 2022 avec DHCP, DNS et AD DS, il est recommandé :
@@ -259,7 +259,7 @@
   - Configurer Windows Update pour effectuer des mises à jour automatiques.
   - Effectuer des mises à jour de sécurité chaque mois et après chaque mise à jour majeure de Windows Server.
 
-## 6. Restauration rapide en cas de défaillance 🔄
+## 5. Restauration rapide en cas de défaillance 🔄
 
 ### Clone miroir 💾
 1. **Créer un clone miroir :**
