@@ -36,7 +36,6 @@ Poste administrateur pour PFsense configuré comme routeur et firewall sur le r�
 1. Créez les VLANs dans l’interface Web de PFsense :
    - Allez dans `Interfaces > Assignments > VLANs`.
    - Ajoutez un VLAN pour chaque ID (10, 20, ... jusqu'à 255).
-   - Assignez ces VLANs à l'interface LAN physique.
 
 #### 📸 Réglages supplémentaires :
 - **Firewall Rules** :
