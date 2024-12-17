@@ -65,7 +65,7 @@
 </details>
 
 ---
-
+<br>
 <details>
 <summary><h1>⚙️ Installation AD DS, DHCP, DNS sur Windows Server 2022</h1></summary>
 
@@ -120,7 +120,7 @@
 </details>
 
 ---
-
+<br>
 <details>
 <summary><h1>⚙️ Configuration du rôle DHCP</h1></summary>
 
@@ -206,7 +206,7 @@
 </details>
 
 ---
-
+<br>
 <details>
 <summary><h1>⚙️ Configuration du rôle DNS</h1></summary>
 
