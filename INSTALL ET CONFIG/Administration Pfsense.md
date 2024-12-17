@@ -61,7 +61,14 @@ Poste administrateur pour PFsense configuré comme routeur et firewall sur le r�
 ## 4. Optimisation 🏎️
 
 ### Choix du hardware 💻
-- Privilégiez un processeur multi-cœurs (**Intel i3** ou supérieur) avec au moins **8 Go de RAM** pour gérer de multiples VLANs et un trafic élevé.
+-  Processeur : ``1 sockets, 1 cores``
+-  Mémoire RAM : ``4 Go``
+- Espace disque : ``32 Go``
+- Carte réseau compatible Ethernet
+
+- **Version d'OS :**
+  - **OS** : ``Windows 10 ou plus et/ou Ubuntu 22 ou 24``
+
 
 ### Mise à jour régulière du système 🔄
 #### Recommandations :
