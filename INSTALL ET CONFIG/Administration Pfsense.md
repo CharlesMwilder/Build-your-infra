@@ -84,9 +84,5 @@ Poste administrateur pour PFsense configuré comme routeur et firewall sur le r�
 ## 5. Restauration rapide en cas de défaillance 🔄
 
 ### Clone miroir 💾
-Préparez une solution de sauvegarde avec :
-1. Une clé USB ou un disque externe contenant un clone de la configuration PFsense.
-2. Un guide rapide pour réimporter cette sauvegarde en cas de panne :
-   - Accédez à `Diagnostics > Backup/Restore`.
-   - Chargez le fichier de configuration sauvegardé.
 
+A REMPLIR
