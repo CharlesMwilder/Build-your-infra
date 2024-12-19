@@ -156,7 +156,4 @@ https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/mai
 
 ## 5. Restauration rapide en cas de défaillance 🔄
 
-### Clone miroir 💾
-1. **Créer un clone miroir de Windows Server Core :**
-
-A REMPLIR !
+EN COURS..
