@@ -289,11 +289,11 @@
 
 ![GPO MAPPING2](https://github.com/user-attachments/assets/f7412619-a78e-48aa-af3c-b478bf35e93c)<br>
 
-</details
+</details>
 
 ---
 
-details>
+<details>
 <summary><h1>⚙️ Mise en place de RAID 1 pour les dossiers partagés<h1></summary>
 
  # ▶️ Nous avons mis en place un RAID 1 sur le dossier partagé global de l'entreprise qui contient tous les fichiers des utilisateurs, de leurs services et de leurs départements.  
