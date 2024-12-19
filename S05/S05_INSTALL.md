@@ -31,4 +31,22 @@
 <details>
 <summary><h1>🎯 Mise en place de RAID 1 pour les dossiers partagés<h1></summary>
 
+
+![Capture d'écran 2024-12-19 124151](https://github.com/user-attachments/assets/a82dca85-29b4-4beb-9064-f73ad3a57388)
+![Capture d'écran 2024-12-19 124442](https://github.com/user-attachments/assets/b8c1b47d-fcfc-4170-930b-e577e9c556ab)
+![Capture d'écran 2024-12-19 124511](https://github.com/user-attachments/assets/738e0517-559c-4a9c-9ef3-2c3716bb9551)
+![Capture d'écran 2024-12-19 124618](https://github.com/user-attachments/assets/c593b9e9-456d-4564-a039-4dbeecf20daa)
+![Capture d'écran 2024-12-19 124627](https://github.com/user-attachments/assets/fba1e53b-8ad7-49a3-a977-31520fe12840)
+![Capture d'écran 2024-12-19 124647](https://github.com/user-attachments/assets/f20cc8af-fb91-4369-9141-6ea8823d895e)
+![Capture d'écran 2024-12-19 124756](https://github.com/user-attachments/assets/a8d650ff-db97-4fcc-ab2e-dc0d73422165)
+![Capture d'écran 2024-12-19 124940](https://github.com/user-attachments/assets/1568ad12-5fd9-4650-a4f1-dae5dd1ecabb)
+![Capture d'écran 2024-12-19 135133](https://github.com/user-attachments/assets/39cde198-6361-472e-a0fd-686cb6067ef1)
+
+
+
+
+
+
+
+
 </details>
