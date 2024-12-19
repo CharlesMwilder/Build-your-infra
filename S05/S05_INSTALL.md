@@ -22,6 +22,6 @@
 ---
 
 <details>
-<summary><h1>🎯 Création GPO pour mapping sur les utilisateurs du domaine (billu.com)<h1></summary>
+<summary><h1>🎯 Création GPO pour mapping sur les utilisateurs du domaine<h1></summary>
 
 </details
