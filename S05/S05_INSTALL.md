@@ -33,10 +33,10 @@
 
  # ▶️ Nous avons mis en place un RAID 1 sur le dossier partagé global de l'entreprise qui contient tous les fichiers des utilisateurs, de leurs services et de leurs départements.  
 
-### 🎯 Première étape, créer un nouveau disque d'une taille au moins égale au disque d'origine, sur Proxmox  
+### 🎯 Première étape, créer un nouveau disque d'une taille au moins égale au disque d'origine, sur Proxmox.  
 ![Capture d'écran 2024-12-19 124151](https://github.com/user-attachments/assets/a82dca85-29b4-4beb-9064-f73ad3a57388)
 
-### 🎯
+### 🎯 Démarrer la machine puis aller dans `Disk Management`, c'est là que se fait le paramétrage.   
 ![Capture d'écran 2024-12-19 124442](https://github.com/user-attachments/assets/b8c1b47d-fcfc-4170-930b-e577e9c556ab)
 ![Capture d'écran 2024-12-19 124511](https://github.com/user-attachments/assets/738e0517-559c-4a9c-9ef3-2c3716bb9551)
 ![Capture d'écran 2024-12-19 124618](https://github.com/user-attachments/assets/c593b9e9-456d-4564-a039-4dbeecf20daa)
