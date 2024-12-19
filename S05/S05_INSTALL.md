@@ -1,6 +1,9 @@
 <details>
 <summary><h1>🎯 Création d'un nouveau volume<h1></summary>
 
+![CREATE VOLUME1](https://github.com/user-attachments/assets/e784d2a4-650a-4d93-ac1c-9f6883c1d19c)<br>
+
+![CREATE VOLUME2](https://github.com/user-attachments/assets/c8e2fec5-4944-4b9f-88d9-4beb0deaba75)
 
 </details>
 
@@ -8,6 +11,30 @@
 
 <details>
 <summary><h1>🎯 Création d'un dossier partagé<h1></summary>
+ 
+![STORAGE1](https://github.com/user-attachments/assets/a51a5c5a-8ed1-4581-b46a-8298b0f51ba2)<br>
+
+![STORAGE2](https://github.com/user-attachments/assets/fab61929-9bd7-4d28-954f-b0046d4431e3)<br>
+
+![STORAGE3](https://github.com/user-attachments/assets/7436aabb-38db-4d7d-abaf-863f3c6e854e)<br>
+
+![STORAGE4](https://github.com/user-attachments/assets/fd51e5a4-bb35-400d-a870-f68418b24d2f)<br>
+
+![STORAGE5](https://github.com/user-attachments/assets/e72fa7fe-d404-4fbf-8cf4-9dece273e118)<br>
+
+![STORAGE6](https://github.com/user-attachments/assets/5192f7e1-6582-4d41-adf6-607f161a3e20)<br>
+
+![STORAGE7](https://github.com/user-attachments/assets/171fd2e1-6847-469a-b626-fb7254e4a604)<br>
+
+![STORAGE8](https://github.com/user-attachments/assets/53cdd72a-5599-4303-84f6-de45b6f43731)<br>
+
+![STORAGE9](https://github.com/user-attachments/assets/343ff38a-bfc0-4c63-a6ac-061a0ab3b383)<br>
+
+![STORAGE10](https://github.com/user-attachments/assets/814cff46-7fb2-4769-a381-b7b70b4888d8)<br>
+
+![STORAGE11](https://github.com/user-attachments/assets/369d410f-a352-4ee9-b44a-e82d152e2446)
+
+
 
 </details>
 
@@ -22,6 +49,12 @@
 
 <details>
 <summary><h1>🎯 Création GPO pour mapping sur les utilisateurs du domaine<h1></summary>
+
+![GPO MAPPING1](https://github.com/user-attachments/assets/bc516bee-7dfe-439f-b3ab-beed9b77051a)<br>
+
+![GPO MAPPING2](https://github.com/user-attachments/assets/f7412619-a78e-48aa-af3c-b478bf35e93c)<br>
+
+
 
 </details>
 
@@ -62,12 +95,6 @@
 ![Capture d'écran 2024-12-19 200756](https://github.com/user-attachments/assets/1a38c352-1a73-4fbb-b237-b7c9ffbe14f2)<br>
 
 ![Capture d'écran 2024-12-19 200818](https://github.com/user-attachments/assets/1c959951-36d2-4244-8236-2841eab2392c)
-
-
-
-
-
-
 
 
 </details>
