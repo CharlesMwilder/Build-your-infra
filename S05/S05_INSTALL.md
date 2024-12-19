@@ -31,6 +31,7 @@
 <details>
 <summary><h1>🎯 Mise en place de RAID 1 pour les dossiers partagés<h1></summary>
 
+Nous avons mis en place un RAID 1 sur le dossier partagé global de l'entreprise qui contient tous les fichiers des utilisateurs, de leurs services et de leurs départements.  
 
 ![Capture d'écran 2024-12-19 124151](https://github.com/user-attachments/assets/a82dca85-29b4-4beb-9064-f73ad3a57388)
 ![Capture d'écran 2024-12-19 124442](https://github.com/user-attachments/assets/b8c1b47d-fcfc-4170-930b-e577e9c556ab)
