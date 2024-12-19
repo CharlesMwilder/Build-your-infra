@@ -191,6 +191,4 @@
 
 ## 5. Restauration rapide en cas de défaillance 🔄
 
-### Clone miroir 💾
-
-A REMPLIR
+EN COURS...
