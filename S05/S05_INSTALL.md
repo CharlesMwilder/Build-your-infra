@@ -24,10 +24,10 @@
 <details>
 <summary><h1>🎯 Création GPO pour mapping sur les utilisateurs du domaine<h1></summary>
 
-</details
-
+</details>
 
 ---
+
 
 <details>
 <summary><h1>🎯 Mise en place de RAID 1 pour les dossiers partagés<h1></summary>
