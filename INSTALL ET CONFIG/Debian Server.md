@@ -203,7 +203,7 @@ echo "Accedez a GLPI via un navigateur : http://localhost/glpi"
 ---
 <br>
 <details>
-<summary><h1>⚙️ Connexion et Configuration de GLPI</h1></summary>
+<summary><h1>⚙️ Connexion GLPI</h1></summary>
 
 - 📸 Connexion à GLPI via un navigateur web en rentrant soit l'ip du serveur ou alors le nom de domaine via ``DNS``
 
