@@ -216,12 +216,12 @@ gpupdate /force
 
 ## 🎯 1. Installation de GLPI sur le Serveur Debian en CLI via script BASH et fichier de configuration
 
-``📑 Fichier config.txt``
+📑 Fichier config.txt
 ---
 ![config 1](https://github.com/user-attachments/assets/4326e919-a1d2-4ef2-9217-50d211771e95)<br>
 ---
 
-``📑 Script installation GLPI``
+📑 Script installation GLPI
 ---
 ![script 1](https://github.com/user-attachments/assets/681b8f1b-b354-4f2f-9896-2683f26ad4d5)<br>
 ---
@@ -230,21 +230,21 @@ gpupdate /force
 ![script 3](https://github.com/user-attachments/assets/f3c09379-6f0d-414b-8335-9734957bea93)<br>
 ---
 
-``📑 Lancement du script``
+📑 Lancement du script
 ---
 ![017](https://github.com/user-attachments/assets/fbfe3fcd-ba70-4121-8ebd-4e1a0516ac94)<br>
 ---
 ![018](https://github.com/user-attachments/assets/eb8ec1df-e6ce-4db6-af08-e9218074268b)<br>
 ---
 
-``📑 Connexion sur le compte admin (billu)``
+📑 Connexion sur le compte admin (billu)
 ---
 ![001](https://github.com/user-attachments/assets/99c60c91-80e5-4bce-a74d-69b85e29e6be)<br>
 ---
 ![002](https://github.com/user-attachments/assets/3ff82d21-aeb8-4909-9ed3-524b1166acbd)<br>
 ---
 
-``📑 Récupération de l'annuaire LDAP (domaine billu)``
+📑 Récupération de l'annuaire LDAP (domaine billu)
 ---
 ![ADDS 1](https://github.com/user-attachments/assets/52c67a29-deff-4821-9a78-84050113913e)<br>
 ---
@@ -255,7 +255,7 @@ gpupdate /force
 ![ADDS 4](https://github.com/user-attachments/assets/273f4cd9-16da-4118-926d-f8984484ffa1)<br>
 ---
 
-``📑 Ajouts des utilisateurs sur GLPI via LDAP (domaine billu)``
+📑 Ajouts des utilisateurs sur GLPI via LDAP (domaine billu)
 ---
 ![ADDUSER1](https://github.com/user-attachments/assets/5bf17ac1-1652-4218-9380-0876c00efd41)<br>
 ---
@@ -274,7 +274,7 @@ gpupdate /force
 ![ADDUSER8](https://github.com/user-attachments/assets/fc7ca479-47b3-4b84-ac75-1b0ba7f4d258)<br>
 ---
 
-``📑 Ajouts des groupes sur GLPI via LDAP (domaine billu)``
+📑 Ajouts des groupes sur GLPI via LDAP (domaine billu)
 ---
 ![ADDGROUP1](https://github.com/user-attachments/assets/2d5e1690-c20f-4ddc-b9f7-04f41e492236)<br>
 ---
@@ -290,7 +290,7 @@ gpupdate /force
 ---
 
 
-``📑 Synchronisation des utilisateurs à leurs groupes sur GLPI via LDAP (domaine billu)``
+📑 Synchronisation des utilisateurs à leurs groupes sur GLPI via LDAP (domaine billu)
 ---
 ![SYNC1](https://github.com/user-attachments/assets/d0ba0ebe-9bb5-4a48-8269-8834531e703f)<br>
 ---
@@ -303,7 +303,7 @@ gpupdate /force
 ![SYNC5](https://github.com/user-attachments/assets/b2e64cd4-841c-4d7b-af4c-beb7be70a3a0)<br>
 ---
 
-``📑 Réception, traitement et clos du ticket d'un utilisateur sur le compte admin (billu)``
+📑 Réception, traitement et clos du ticket d'un utilisateur sur le compte admin (billu)
 ---
 ![009](https://github.com/user-attachments/assets/9fec810e-85d2-4e94-b099-19908a7b579c)<br>
 ---
@@ -322,25 +322,25 @@ gpupdate /force
 <details>
 <summary><h1>🎯 Installation et configuration ADDS sur Win Core via script PS</h1></summary>
 
-``📑 Le script, créé en PowerShell, permet de paramétrer la bonne adresse IP + masque ainsi que les adresses DNS, puis d'installer les rôles AD-DS, DNS, DHCP et outils graphiques sur le serveur Core. La dernière étape consiste à ajouter le Serveur Core au domaine `Billu.com` en se connectant avec le compte "administrator" du domaine.``
+📑 Le script, créé en PowerShell, permet de paramétrer la bonne adresse IP + masque ainsi que les adresses DNS, puis d'installer les rôles AD-DS, DNS, DHCP et outils graphiques sur le serveur Core. La dernière étape consiste à ajouter le Serveur Core au domaine `Billu.com` en se connectant avec le compte "administrator" du domaine.
 ---
 [Script ADDS Serveur Core](https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra/blob/main/S03/Script_Install_ADDS_DNS_Core.ps1)<br>
 
-``📑 Lorsque nous lançons le script, il nous rappelle les paramètres qu'il va appliquer avant le lancement. Dans le cas d'un besoin de changer un paramètre, il suffit de modifier la bonne variable. Toutes les variables des paramètres sont en début de script.``  
+📑 Lorsque nous lançons le script, il nous rappelle les paramètres qu'il va appliquer avant le lancement. Dans le cas d'un besoin de changer un paramètre, il suffit de modifier la bonne variable. Toutes les variables des paramètres sont en début de script.  
 ---
 ![Capture d'écran 2024-12-05 120342](https://github.com/user-attachments/assets/40df7883-5635-451b-9191-e658cc8dbf5f)<br>
 
-``📑 Le script attend la réponse de l'utilisateur pour continuer, il faut tapper `[yes]` pour continuer (Si on tape [non], on sort du script).``
+📑 Le script attend la réponse de l'utilisateur pour continuer, il faut tapper `[yes]` pour continuer (Si on tape [non], on sort du script).
 ---
-``📑 La première étape est le changement de nom de l'hôte. Ceci nécéssite un redémarrage et le relancement du script. Si l'hôte comporte le bon nom, l'étape n'est pas appliquée, ce qui permet d'éviter un redémarrage...<br>``
+📑 La première étape est le changement de nom de l'hôte. Ceci nécéssite un redémarrage et le relancement du script. Si l'hôte comporte le bon nom, l'étape n'est pas appliquée, ce qui permet d'éviter un redémarrage...<br>
 ---
 ![Capture d'écran 2024-12-05 120400](https://github.com/user-attachments/assets/a0edffda-30b6-47a2-851f-48e8a6561494)
 
-``📑 Ensuite le script va installer:``  
-``* Les outils graphiques``  
-``* Le rôle AD-DS``  
-``* Le rôle DNS``  
-``* Le rôle DHCP``  
+📑 Ensuite le script va installer:  
+* Les outils graphiques  
+* Le rôle AD-DS  
+* Le rôle DNS  
+* Le rôle DHCP  
  --- 
 
 ---
@@ -348,21 +348,21 @@ gpupdate /force
 ![Capture d'écran 2024-12-14 142357](https://github.com/user-attachments/assets/1b9bb212-82bf-4d5d-b512-e1a4bdb0ca76)
 
 ---
-``📑 La dernière étape est l'ajout de la machine au domaine `Billu.com`. Le script nous demande de nous connecter au domaine avec des droits élevés :``  
+📑 La dernière étape est l'ajout de la machine au domaine `Billu.com`. Le script nous demande de nous connecter au domaine avec des droits élevés :  
 ---
 ![Capture d'écran 2024-12-05 131356](https://github.com/user-attachments/assets/d909f97b-5c3c-467a-a3da-211bc64045c1)
 ---
-``📑 Tout est installé et la machine est ajoutée au domaine. Un redémarrage est nécéssaire pour prendre en compte les nouveaux paramètres :``  
+📑 Tout est installé et la machine est ajoutée au domaine. Un redémarrage est nécéssaire pour prendre en compte les nouveaux paramètres :  
 ---
 ![Capture d'écran 2024-12-05 124103](https://github.com/user-attachments/assets/f59ae564-3061-406c-ba14-675794dbda46)
 ---
 ![Capture d'écran 2024-12-05 124430](https://github.com/user-attachments/assets/8c70ccb8-39d7-4aa2-ae35-fe4f64299856)
 ---
-``📑 Après redémarrage, nous voyons la machine avec le nouveau nom et l'association au domaine``  
+📑 Après redémarrage, nous voyons la machine avec le nouveau nom et l'association au domaine  
 ---
 ![Capture d'écran 2024-12-05 124525](https://github.com/user-attachments/assets/276bbb6c-6af2-4a93-be4c-cb1b363e792c)
 ---
-``📑 Nous pouvons nous connecter au serveur graphique pour visualiser le serveur core et finaliser l'installation``  
+📑 Nous pouvons nous connecter au serveur graphique pour visualiser le serveur core et finaliser l'installation  
 ---
 ![Capture d'écran 2024-12-05 124139](https://github.com/user-attachments/assets/eb654e32-7769-4cf1-b820-26d43eda2300)
 ![Capture d'écran 2024-12-05 130249](https://github.com/user-attachments/assets/301f6937-87c3-4076-bafc-a94d3eb4f4c1)
