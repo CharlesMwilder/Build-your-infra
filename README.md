@@ -37,12 +37,12 @@ L'infrastructure actuelle est limitée : un réseau Wi-Fi basique, des PC en wor
 | **Semaine 3** | Rôle : ``Technicien 💻``         | Rôle : ``Scrum Master 🧑‍🤝‍🧑``         | Rôle : ``Technicien 💻``         | Rôle : ``Product Owner 🎯``          |
 | **Semaine 4** | Rôle : ``Scrum Master 🧑‍🤝‍🧑``         | Rôle : ``Technicien 💻``         | Rôle : ``Product Owner 🎯``         | Rôle : ``Technicien 💻``          |
 | **Semaine 5** | Rôle : ``Technicien 💻``         | Rôle : ``Product Owner 🎯``         | Rôle : ``Technicien 💻``         | Rôle : ``Scrum Master 🧑‍🤝‍🧑``         |
-| **Semaine 6** | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
-| **Semaine 7** | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
-| **Semaine 8** | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
-| **Semaine 9** | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
-| **Semaine 10** | Rôle :          | Rôle :          | Rôle :          | Rôle :          |
-| **Semaine 11**| Rôle :          | Rôle :          | Rôle :          | Rôle :          |
+| **Semaine 6** | Rôle : ``Product Owner 🎯``         | Rôle :          | Rôle : ``Scrum Master 🧑‍🤝‍🧑``         | Rôle : ``Technicien 💻``         |
+| **Semaine 7** | Rôle : ``Technicien 💻``         | Rôle : ``Scrum Master 🧑‍🤝‍🧑``         | Rôle : ``Technicien 💻``         | Rôle :``Product Owner 🎯``          |
+| **Semaine 8** | Rôle : ``Scrum Master 🧑‍🤝‍🧑``         | Rôle : ``Technicien 💻``         | Rôle : ``Product Owner 🎯``         | Rôle : ``Technicien 💻``         |
+| **Semaine 9** | Rôle : ``Technicien 💻``         | Rôle : ``Product Owner 🎯``         | Rôle : ``Technicien 💻``         | Rôle : ``Scrum Master 🧑‍🤝‍🧑``         |
+| **Semaine 10** | Rôle :``Product Owner 🎯``          | Rôle : ``Technicien 💻``         | Rôle : ``Scrum Master 🧑‍🤝‍🧑``         | Rôle : ``Technicien 💻``         |
+| **Semaine 11**| Rôle : ``Technicien 💻``         | Rôle : ``Scrum Master 🧑‍🤝‍🧑``         | Rôle : ``Technicien 💻``         | Rôle :``Product Owner 🎯``          |
 
 ---
 
