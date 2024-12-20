@@ -82,9 +82,11 @@
 
 ![Capture d'écran 2024-12-19 124618](https://github.com/user-attachments/assets/c593b9e9-456d-4564-a039-4dbeecf20daa)<br>
 
-### 🎯 Clique droit sur le disque d'origine, puis Convert to Dynamic Disk.  
+### 🎯 Choisir le nouveau disque comme mirroir.  
 
 ![Capture d'écran 2024-12-19 124627](https://github.com/user-attachments/assets/fba1e53b-8ad7-49a3-a977-31520fe12840)<br>
+
+### 🎯 La copie est en cours sur le nouveau disque.  
 
 ![Capture d'écran 2024-12-19 124647](https://github.com/user-attachments/assets/f20cc8af-fb91-4369-9141-6ea8823d895e)<br>
 
