@@ -74,11 +74,15 @@
 
 ![Capture d'écran 2024-12-19 124442](https://github.com/user-attachments/assets/b8c1b47d-fcfc-4170-930b-e577e9c556ab)<br>
 
-### 🎯 Clique droit sur le disque d'origine, puis Convert to Dynamic Disk.
+### 🎯 Clique droit sur le disque d'origine, puis Convert to Dynamic Disk. Même opération sur le nouveau disque.  
 
 ![Capture d'écran 2024-12-19 124511](https://github.com/user-attachments/assets/738e0517-559c-4a9c-9ef3-2c3716bb9551)<br>
 
+### 🎯 Une fois les disque dynamiques paramétrées, clique droit sur le disque d'origine et sélectioner `Add Mirror...`.  
+
 ![Capture d'écran 2024-12-19 124618](https://github.com/user-attachments/assets/c593b9e9-456d-4564-a039-4dbeecf20daa)<br>
+
+### 🎯 Clique droit sur le disque d'origine, puis Convert to Dynamic Disk.  
 
 ![Capture d'écran 2024-12-19 124627](https://github.com/user-attachments/assets/fba1e53b-8ad7-49a3-a977-31520fe12840)<br>
 
