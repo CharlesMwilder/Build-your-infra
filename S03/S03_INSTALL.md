@@ -350,7 +350,6 @@ gpupdate /force
 * Le rôle DNS  
 * Le rôle DHCP
   
- --- 
 
 ---
 ![Capture d'écran 2024-12-05 121318](https://github.com/user-attachments/assets/fd14847a-4315-4069-b189-be1b7cd5f838)
