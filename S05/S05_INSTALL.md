@@ -64,7 +64,7 @@
 <details>
 <summary><h1>🎯 Mise en place de RAID 1 pour les dossiers partagés<h1></summary>
 
- # ▶️ Nous avons mis en place un RAID 1 sur le dossier partagé global de l'entreprise qui contient tous les fichiers des utilisateurs, de leurs services et de leurs départements.  
+ ## ▶️ Nous avons mis en place un RAID 1 sur le dossier partagé global de l'entreprise qui contient tous les fichiers des utilisateurs, de leurs services et de leurs départements.  
 
 ### 🎯 Première étape, créer un nouveau disque d'une taille au moins égale au disque d'origine, sur Proxmox.  
 
