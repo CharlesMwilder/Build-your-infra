@@ -110,7 +110,11 @@
 
 ![Capture d'écran 2024-12-19 200705](https://github.com/user-attachments/assets/e0f8a9c0-6a2e-4064-b92a-d1fe08e04d62)<br>
 
+### 🎯 La synchronisation s'effectue.  
+
 ![Capture d'écran 2024-12-19 200756](https://github.com/user-attachments/assets/1a38c352-1a73-4fbb-b237-b7c9ffbe14f2)<br>
+
+### 🎯 Synchronisation terminée et fonctionnelle.  
 
 ![Capture d'écran 2024-12-19 200818](https://github.com/user-attachments/assets/1c959951-36d2-4244-8236-2841eab2392c)
 
