@@ -233,16 +233,6 @@
 
 </details>
 
----
-
-<details>
-<summary><h1>⚙️ Création d'un nouveau volume<h1></summary>
-  
-![CREATE VOLUME1](https://github.com/user-attachments/assets/e784d2a4-650a-4d93-ac1c-9f6883c1d19c)<br>
-
-![CREATE VOLUME2](https://github.com/user-attachments/assets/c8e2fec5-4944-4b9f-88d9-4beb0deaba75)
-
-</details>
 
 ---
 
@@ -273,23 +263,7 @@
 
 </details>
 
----
 
-<details>
-<summary><h1>⚙️ Gestion permission d'un dossier partagé<h1></summary>
-
-</details>
-
----
-
-<details>
-<summary><h1>⚙️ Création GPO pour mapping sur les utilisateurs du domaine<h1></summary>
-
-![GPO MAPPING1](https://github.com/user-attachments/assets/bc516bee-7dfe-439f-b3ab-beed9b77051a)<br>
-
-![GPO MAPPING2](https://github.com/user-attachments/assets/f7412619-a78e-48aa-af3c-b478bf35e93c)<br>
-
-</details>
 
 ---
 
