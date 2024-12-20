@@ -90,19 +90,23 @@
 
 ![Capture d'écran 2024-12-19 124647](https://github.com/user-attachments/assets/f20cc8af-fb91-4369-9141-6ea8823d895e)<br>
 
-### 🎯 Nous allons tester le fonctionnement du RAID 1. Nous avons débranché l'ancien disque dans Proxmox.  
+### 🎯 La copie est terminée sur le nouveau disque.
 
 ![Capture d'écran 2024-12-19 124756](https://github.com/user-attachments/assets/a8d650ff-db97-4fcc-ab2e-dc0d73422165)<br>
 
-### 🎯 Après redémarrage, nous avons toujours notre dossier partagé "Share Folder" et son contenu.  
+### 🎯 Nous allons tester le fonctionnement du RAID 1. Nous avons débranché l'ancien disque dans Proxmox.  
 
 ![Capture d'écran 2024-12-19 124940](https://github.com/user-attachments/assets/1568ad12-5fd9-4650-a4f1-dae5dd1ecabb)<br>
 
-### 🎯 .  
+### 🎯 Après redémarrage, nous avons toujours notre dossier partagé "Share Folder" et son contenu.  
 
 ![Capture d'écran 2024-12-19 135133](https://github.com/user-attachments/assets/39cde198-6361-472e-a0fd-686cb6067ef1)<br>
 
+### 🎯 Rebrancher le disque, démarrer la VM, aller dans `Disk Management`, on voit un message "Failed Redundancy".  
+
 ![Capture d'écran 2024-12-19 200600](https://github.com/user-attachments/assets/b208d898-17df-4626-b633-2fcd2f02cc0c)<br>
+
+### 🎯 Clique droit sur un des disques et `Reactivate Voume`.  
 
 ![Capture d'écran 2024-12-19 200705](https://github.com/user-attachments/assets/e0f8a9c0-6a2e-4064-b92a-d1fe08e04d62)<br>
 
