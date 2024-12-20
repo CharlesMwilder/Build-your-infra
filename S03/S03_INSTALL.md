@@ -323,6 +323,7 @@ gpupdate /force
 <summary><h1>🎯 Installation et configuration ADDS sur Win Core via script PS</h1></summary>
 
 📑 Le script, créé en PowerShell, permet de paramétrer la bonne adresse IP + masque ainsi que les adresses DNS, puis d'installer les rôles AD-DS, DNS, DHCP et outils graphiques sur le serveur Core. La dernière étape consiste à ajouter le Serveur Core au domaine `Billu.com` en se connectant avec le compte "administrator" du domaine.
+
 ---
 ![SCRIPT1](https://github.com/user-attachments/assets/373d43fc-a6c4-4ae8-8642-490033de8015)<br>
 
@@ -330,12 +331,16 @@ gpupdate /force
 
 
 📑 Lorsque nous lançons le script, il nous rappelle les paramètres qu'il va appliquer avant le lancement. Dans le cas d'un besoin de changer un paramètre, il suffit de modifier la bonne variable. Toutes les variables des paramètres sont en début de script.  
+
 ---
 ![Capture d'écran 2024-12-05 120342](https://github.com/user-attachments/assets/40df7883-5635-451b-9191-e658cc8dbf5f)<br>
 
 📑 Le script attend la réponse de l'utilisateur pour continuer, il faut tapper `[yes]` pour continuer (Si on tape [non], on sort du script).
+
 ---
+
 📑 La première étape est le changement de nom de l'hôte. Ceci nécéssite un redémarrage et le relancement du script. Si l'hôte comporte le bon nom, l'étape n'est pas appliquée, ce qui permet d'éviter un redémarrage...<br>
+
 ---
 ![Capture d'écran 2024-12-05 120400](https://github.com/user-attachments/assets/a0edffda-30b6-47a2-851f-48e8a6561494)
 
@@ -343,7 +348,8 @@ gpupdate /force
 * Les outils graphiques  
 * Le rôle AD-DS  
 * Le rôle DNS  
-* Le rôle DHCP  
+* Le rôle DHCP
+  
  --- 
 
 ---
@@ -351,21 +357,29 @@ gpupdate /force
 ![Capture d'écran 2024-12-14 142357](https://github.com/user-attachments/assets/1b9bb212-82bf-4d5d-b512-e1a4bdb0ca76)
 
 ---
+
 📑 La dernière étape est l'ajout de la machine au domaine `Billu.com`. Le script nous demande de nous connecter au domaine avec des droits élevés :  
+
 ---
 ![Capture d'écran 2024-12-05 131356](https://github.com/user-attachments/assets/d909f97b-5c3c-467a-a3da-211bc64045c1)
 ---
+
 📑 Tout est installé et la machine est ajoutée au domaine. Un redémarrage est nécéssaire pour prendre en compte les nouveaux paramètres :  
+
 ---
 ![Capture d'écran 2024-12-05 124103](https://github.com/user-attachments/assets/f59ae564-3061-406c-ba14-675794dbda46)
 ---
 ![Capture d'écran 2024-12-05 124430](https://github.com/user-attachments/assets/8c70ccb8-39d7-4aa2-ae35-fe4f64299856)
 ---
+
 📑 Après redémarrage, nous voyons la machine avec le nouveau nom et l'association au domaine  
+
 ---
 ![Capture d'écran 2024-12-05 124525](https://github.com/user-attachments/assets/276bbb6c-6af2-4a93-be4c-cb1b363e792c)
 ---
+
 📑 Nous pouvons nous connecter au serveur graphique pour visualiser le serveur core et finaliser l'installation  
+
 ---
 ![Capture d'écran 2024-12-05 124139](https://github.com/user-attachments/assets/eb654e32-7769-4cf1-b820-26d43eda2300)
 ![Capture d'écran 2024-12-05 130249](https://github.com/user-attachments/assets/301f6937-87c3-4076-bafc-a94d3eb4f4c1)
