@@ -123,6 +123,14 @@
 </details>
 
 ---
+
+<details>
+<summary><h1>⚙️ Configurer la gateway</h1></summary>
+
+``` New-NetRoute -DestinationPrefix "0.0.0.0/0" -IfIndex 6 -NextHop "172.18.255.1"```
+</details>
+
+---
 <br>
 
 ### ⭐ CONFIGURATION DHCP ET DNS VOIR DIRECTEMENT SUR LE SERVEUR PRINCIPAL ⭐
