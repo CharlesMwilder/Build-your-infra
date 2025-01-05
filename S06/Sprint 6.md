@@ -27,7 +27,7 @@
 
 ## OBJECTIS GLOBAL ET PERSO 🥇
 
-GLOBAL :
+GLOBAL : https://docs.google.com/spreadsheets/d/1gD5fyAN9Olu2De5SCk6L1eNOps8n7Q6Vp1-fZeFyTuI/edit?gid=1139712684#gid=1139712684
 
 
-PERSO :
+PERSO : https://docs.google.com/spreadsheets/d/1gD5fyAN9Olu2De5SCk6L1eNOps8n7Q6Vp1-fZeFyTuI/edit?gid=16002314#gid=16002314
