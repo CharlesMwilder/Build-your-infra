@@ -109,13 +109,17 @@ systemctl enable zabbix-server zabbix-agent nginx php8.2-fpm
 
 ## Étape 3 - 📑 Configuration de ZABBIX via l'interface web
 
-Connexion à ZABBIX depuis un site web via son nom de DNS (zabbix.billu.com:8080):
+Connexion à ZABBIX depuis un site web via son nom de DNS ``(zabbix.billu.com:8080)``:
 
 ![CONNEXION ZABBIX](https://github.com/user-attachments/assets/50a47582-2e63-4373-9cf8-9d267077f40b)<br>
+
+Création de groupes d'hôtes (suivre les étapes) :
 
 ![CONFIG ZABBIX 1](https://github.com/user-attachments/assets/43a3bbed-6544-43c7-a4bf-613a887c9142)<br>
 
 ![CONFIG ZABBIX 2](https://github.com/user-attachments/assets/9f07bddc-7ae0-4917-84da-08a8ca323188)<br>
+
+Ajout des hôtes (suivre les étapes) :
 
 ![CONFIG ZABBIX 3](https://github.com/user-attachments/assets/882914fe-62d1-4ea6-a74f-ca69d0745d74)<br>
 
@@ -123,7 +127,13 @@ Connexion à ZABBIX depuis un site web via son nom de DNS (zabbix.billu.com:8080
 
 ![CONFIG ZABBIX 5](https://github.com/user-attachments/assets/537679a7-14c3-44a6-84fd-6d6c70b3035f)<br>
 
+
+Activer les rapports des problèmes :
+
 ![CONFIG ZABBIX 6](https://github.com/user-attachments/assets/22fd961a-3ed9-4e43-bb3b-9b3d1d3fb597)<br>
+
+
+Créer et configurer le "media type" (suivre les étapes) :
 
 ![CONFIG ZABBIX 7](https://github.com/user-attachments/assets/cb514acb-37dd-48a2-b611-6f9aa18ad5c6)<br>
 
@@ -131,9 +141,15 @@ Connexion à ZABBIX depuis un site web via son nom de DNS (zabbix.billu.com:8080
 
 ![CONFIG ZABBIX 9](https://github.com/user-attachments/assets/5bdbbdb4-60b4-4de0-898a-c5aa4ded604a)<br>
 
+
+Ajouter au compte admin (billu) le media créer juste avant pour les rapports de problèmes (suivre les étapes) :
+
 ![CONFIG ZABBIX 10](https://github.com/user-attachments/assets/9164f71a-cf73-4022-a210-e2ea3da8a948)<br>
 
 ![CONFIG ZABBIX 11](https://github.com/user-attachments/assets/dc963dd5-86ff-43cf-b951-5dcefe845fcf)<br>
+
+
+Création de notification pour rapport d'alerte sur l'utilisation de la mémoire de la machine cliente (suivre les étapes) :
 
 ![CONFIG ZABBIX 12](https://github.com/user-attachments/assets/89ffb3b4-c7c3-4cea-827b-4bbe79d98e9b)<br>
 
