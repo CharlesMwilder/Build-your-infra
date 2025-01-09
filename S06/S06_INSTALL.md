@@ -2,8 +2,8 @@
 <details>
 <summary><h1>🎯 Journalisation des scripts PowerShell dans Event Viewer<h1></summary>
 
-▶️ Nous avons 
-
+## ▶️ Création du journal d'évènements sur la machine locale 
+Lorsque l'on va dans "Event viewer" ou `eventvwr` dans PowerShell, nous accédons aux journaux par défaut.  
 ![Capture d'écran 2025-01-08 164224](https://github.com/user-attachments/assets/8c7f8dff-fe88-4631-88fc-28fdfe5c8592)  
 
 ![Capture d'écran 2025-01-08 181013](https://github.com/user-attachments/assets/155c2d9c-5638-4779-98ab-886273150476)  
