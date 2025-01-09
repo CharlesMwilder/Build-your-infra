@@ -200,7 +200,7 @@ Création de notification pour rapport d'alerte sur l'utilisation de la mémoire
 <details>
 <summary><h1>🎯 Installation de GRAYLOG<h1></summary>
 
-# 🛠️ III. Installation pas à pas de Graylog
+# 🛠️ I. Installation pas à pas de Graylog
 
 ## 🚀 Préparation initiale
 Mettez à jour le cache des paquets et installez les outils nécessaires :
