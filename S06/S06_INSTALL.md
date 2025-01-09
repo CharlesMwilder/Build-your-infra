@@ -29,6 +29,7 @@
 
 ![Capture d'écran 2025-01-08 171341](https://github.com/user-attachments/assets/7510d066-1298-4bc2-b61c-6142c486550c)  
 
+**Il est possible de récupérer un journal d'évènement directement dans la console.**  
 ![Capture d'écran 2025-01-08 171626](https://github.com/user-attachments/assets/dceac9b5-1a33-4be3-80fe-7b4a0fab74ac)  
 
 
