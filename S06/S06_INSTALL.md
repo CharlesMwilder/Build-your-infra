@@ -21,6 +21,7 @@
 **Si on veut supprimer le journal d'évènements, voici la commande.**  
 ![Capture d'écran 2025-01-09 090527](https://github.com/user-attachments/assets/5d59607a-046c-4f5a-9b34-79ffcb51d682)  
 
+---
 ## ▶️ 2) Génération de logs depuis différentes sources.  
 
 **Depuis une source (un script), paramétrage d'un évènement.**  
@@ -33,6 +34,7 @@ Il existe 4 valeurs acceptées pour les "-EntryType" : Error, Information, Failu
 **Il est possible de récupérer un journal d'évènement directement dans la console.**  
 ![Capture d'écran 2025-01-08 171626](https://github.com/user-attachments/assets/dceac9b5-1a33-4be3-80fe-7b4a0fab74ac)  
 
+---
 ## ▶️ 3) Exportation des évènements aux formats ``.csv`` et ``.xml``.  
 ### * **Format `.csv`**  
 ![Capture d'écran 2025-01-09 092752](https://github.com/user-attachments/assets/e101d296-0116-46c2-a099-8194e8ede3f6)  
@@ -42,6 +44,7 @@ Il existe 4 valeurs acceptées pour les "-EntryType" : Error, Information, Failu
 ![Capture d'écran 2025-01-09 092759](https://github.com/user-attachments/assets/fedb5186-9842-42b5-8828-20e6a0dee08f)  
 ![Capture d'écran 2025-01-09 093243](https://github.com/user-attachments/assets/df3391ed-fd97-498a-b8d0-11abba18a1f7)  
 
+---
 </details>
 
 ---
