@@ -12,6 +12,8 @@
 
 ![Capture d'écran 2025-01-08 181013](https://github.com/user-attachments/assets/155c2d9c-5638-4779-98ab-886273150476)  
 
+** Après exécution de la commande nous voyons que le journal a été créé. Il est pour le moment vierge.**  
+
 ![Capture d'écran 2025-01-08 164430](https://github.com/user-attachments/assets/28b1bf64-e297-433a-8235-58fe4c32bbf4)  
 
 ![Capture d'écran 2025-01-08 164658](https://github.com/user-attachments/assets/699f1cf5-b4db-460a-a2bc-474cacdab74a)  
