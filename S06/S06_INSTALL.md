@@ -259,7 +259,7 @@ Mise à jour et installation avec mot de passe admin :
 
 ```
 sudo apt-get update
-sudo env OPENSEARCH_INITIAL_ADMIN_PASSWORD=IT-Connect2024! apt-get install opensearch
+sudo env OPENSEARCH_INITIAL_ADMIN_PASSWORD=(choisir un mot de passe fort!) apt-get install opensearch
 ```
 
 Configuration de base dans opensearch.yml :
