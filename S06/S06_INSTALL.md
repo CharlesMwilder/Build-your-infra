@@ -2,7 +2,7 @@
 <details>
 <summary><h1>🎯 Journalisation des scripts PowerShell dans Event Viewer<h1></summary>
 
-## ▶️ Création du journal d'évènements sur la machine locale  
+## ▶️ 1) Création du journal d'évènements sur la machine locale  
 
 **Lorsque l'on va dans "Event viewer" ou `eventvwr` dans PowerShell, nous accédons aux journaux par défaut.**  
 
@@ -12,11 +12,16 @@
 
 ![Capture d'écran 2025-01-08 181013](https://github.com/user-attachments/assets/155c2d9c-5638-4779-98ab-886273150476)  
 
-** Après exécution de la commande nous voyons que le journal a été créé. Il est pour le moment vierge.**  
+**Après exécution de la commande nous voyons que le journal a été créé. Il est pour le moment vierge.**  
 
 ![Capture d'écran 2025-01-08 164430](https://github.com/user-attachments/assets/28b1bf64-e297-433a-8235-58fe4c32bbf4)  
 
 ![Capture d'écran 2025-01-08 164658](https://github.com/user-attachments/assets/699f1cf5-b4db-460a-a2bc-474cacdab74a)  
+
+**Si on veut supprimer le journal d'évènements, voici la commande**  
+![Capture d'écran 2025-01-09 090527](https://github.com/user-attachments/assets/5d59607a-046c-4f5a-9b34-79ffcb51d682)  
+
+## ▶️ 2) Génération de logs depuis différentes sources.     
 
 ![Capture d'écran 2025-01-08 171257](https://github.com/user-attachments/assets/ca503be5-6c25-4887-9754-d7d3bfe7919f)  
 
