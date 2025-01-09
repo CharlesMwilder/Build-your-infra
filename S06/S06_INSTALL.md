@@ -18,10 +18,12 @@
 
 ![Capture d'écran 2025-01-08 164658](https://github.com/user-attachments/assets/699f1cf5-b4db-460a-a2bc-474cacdab74a)  
 
-**Si on veut supprimer le journal d'évènements, voici la commande**  
+**Si on veut supprimer le journal d'évènements, voici la commande.**  
 ![Capture d'écran 2025-01-09 090527](https://github.com/user-attachments/assets/5d59607a-046c-4f5a-9b34-79ffcb51d682)  
 
-## ▶️ 2) Génération de logs depuis différentes sources.     
+## ▶️ 2) Génération de logs depuis différentes sources.  
+
+**Depuis une source (un script), paramétrage d'un évènement.**  
 
 ![Capture d'écran 2025-01-08 171257](https://github.com/user-attachments/assets/ca503be5-6c25-4887-9754-d7d3bfe7919f)  
 
