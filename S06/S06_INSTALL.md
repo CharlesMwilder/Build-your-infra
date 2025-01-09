@@ -35,11 +35,11 @@
 ## ▶️ 3) Exportation des évènements aux formats ``.csv`` et ``.xml``.  
 ### * **Format `.csv`**  
 ![Capture d'écran 2025-01-09 092752](https://github.com/user-attachments/assets/e101d296-0116-46c2-a099-8194e8ede3f6)  
-![Capture d'écran 2025-01-09 093141](https://github.com/user-attachments/assets/e9a5c8fa-dab0-479a-ae79-081bcd2c4206)
+![Capture d'écran 2025-01-09 093141](https://github.com/user-attachments/assets/e9a5c8fa-dab0-479a-ae79-081bcd2c4206)  
 
 ### * **Format `.xml`**  
 ![Capture d'écran 2025-01-09 092759](https://github.com/user-attachments/assets/fedb5186-9842-42b5-8828-20e6a0dee08f)  
-![Capture d'écran 2025-01-09 093243](https://github.com/user-attachments/assets/df3391ed-fd97-498a-b8d0-11abba18a1f7)
+![Capture d'écran 2025-01-09 093243](https://github.com/user-attachments/assets/df3391ed-fd97-498a-b8d0-11abba18a1f7)  
 
 </details>
 
