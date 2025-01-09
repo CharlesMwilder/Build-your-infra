@@ -343,5 +343,10 @@ Mot de passe : configuré dans server.conf.<br>
 
 🎉 Bienvenue dans Graylog !
 
+![GRAYLOG CONNEXION 1](https://github.com/user-attachments/assets/118bd11f-1416-4820-ac10-c727be528c4f)<br>
+
+![GRAYLOG CONNEXION 2](https://github.com/user-attachments/assets/b5916004-90b1-4d27-ad44-ae73e4d90622)
+
+
 
 </details>
