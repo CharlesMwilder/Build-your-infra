@@ -337,9 +337,9 @@ sudo systemctl enable --now graylog-server
 
 Connexion :
 
-Accédez à Graylog via le navigateur à l'adresse : http://<IP_du_serveur>:9000.<br>
-Identifiant : admin<br>
-Mot de passe : configuré dans server.conf.<br>
+Accédez à Graylog via le navigateur à l'adresse : http://<IP_du_serveur_ou_nom_DNS>:9000.<br>
+Identifiant : Admin (dans notre cas Billu)<br> 
+Mot de passe : configuré dans server.conf. (dans notre cas mot de passe créer avec le compte Billu sur Graylog)<br>
 
 🎉 Bienvenue dans Graylog !
 
