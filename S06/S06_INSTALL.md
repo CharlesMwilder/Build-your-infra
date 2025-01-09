@@ -26,6 +26,7 @@
 **Depuis une source (un script), paramétrage d'un évènement.**  
 
 ![Capture d'écran 2025-01-08 171257](https://github.com/user-attachments/assets/ca503be5-6c25-4887-9754-d7d3bfe7919f)  
+Il existe 4 valeurs acceptées pour les "-EntryType" : Error, Information, FailureAudit, SuccessAudit, Warning.  
 
 ![Capture d'écran 2025-01-08 171341](https://github.com/user-attachments/assets/7510d066-1298-4bc2-b61c-6142c486550c)  
 
