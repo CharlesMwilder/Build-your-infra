@@ -302,7 +302,7 @@ Téléchargement et installation de Graylog :
 wget https://packages.graylog2.org/repo/packages/graylog-6.1-repository_latest.deb
 dpkg -i graylog-6.1-repository_latest.deb
 apt-get update
-apt-get install graylog-server
+apt-get install -y graylog-server
 ```
 
 Configuration initiale :
