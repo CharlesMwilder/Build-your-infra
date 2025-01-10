@@ -206,60 +206,60 @@ Création de notification pour rapport d'alerte sur l'utilisation de la mémoire
 Mettez à jour le cache des paquets et installez les outils nécessaires :
 
 ```
-sudo apt-get update
-sudo apt-get install curl lsb-release ca-certificates gnupg2 pwgen
+apt-get update
+apt-get install curl lsb-release ca-certificates gnupg2 pwgen
 ```
 
 🍃 A. Installation de MongoDB
 Ajout de la clé GPG pour MongoDB :
 
 ```
-curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg --dearmor
+curl -fsSL https://www.mongodb.org/static/pgp/server-6.0.asc | gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg --dearmor
 ```
 
 Ajout du dépôt MongoDB 6 :
 
 ```
-echo "deb [signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg] http://repo.mongodb.org/apt/debian bullseye/mongodb-org/8.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+echo "deb [signed-by=/usr/share/keyrings/mongodb-server-6.0.gpg] http://repo.mongodb.org/apt/debian bullseye/mongodb-org/6.0 main" | tee /etc/apt/sources.list.d/mongodb-org-6.0.list
 ```
 
 Mise à jour et installation de MongoDB :
 
 ```
-sudo apt-get update
-sudo apt-get install -y mongodb-org
+apt-get update
+apt-get install -y mongodb-org
 ```
 
 ⚠️ Si l’installation échoue pour cause de dépendance manquante (libssl1.1), téléchargez et installez ce paquet manuellement :
 
 ```
 wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
-sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
+dpkg -i libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
 ```
 
 Relancez l'installation et configurez MongoDB :
 
 ```
-sudo apt-get install -y mongodb-org
-sudo systemctl daemon-reload
-sudo systemctl enable mongod.service
-sudo systemctl restart mongod.service
-sudo systemctl --type=service --state=active | grep mongod
+apt-get install -y mongodb-org
+systemctl daemon-reload
+systemctl enable mongod.service
+systemctl restart mongod.service
+systemctl --type=service --state=active | grep mongod
 ```
 
 🔍 B. Installation d'OpenSearch
 Ajout de la clé et du dépôt OpenSearch :
 
 ```
-curl -o- https://artifacts.opensearch.org/publickeys/opensearch.pgp | sudo gpg --dearmor --batch --yes -o /usr/share/keyrings/opensearch-keyring
-echo "deb [signed-by=/usr/share/keyrings/opensearch-keyring] https://artifacts.opensearch.org/releases/bundle/opensearch/2.x/apt stable main" | sudo tee /etc/apt/sources.list.d/opensearch-2.x.list
+curl -o- https://artifacts.opensearch.org/publickeys/opensearch.pgp | gpg --dearmor --batch --yes -o /usr/share/keyrings/opensearch-keyring
+echo "deb [signed-by=/usr/share/keyrings/opensearch-keyring] https://artifacts.opensearch.org/releases/bundle/opensearch/2.x/apt stable main" | tee /etc/apt/sources.list.d/opensearch-2.x.list
 ```
 
 Mise à jour et installation avec mot de passe admin :
 
 ```
-sudo apt-get update
-sudo env OPENSEARCH_INITIAL_ADMIN_PASSWORD=(choisir un mot de passe fort!) apt-get install opensearch
+apt-get update
+env OPENSEARCH_INITIAL_ADMIN_PASSWORD=(choisir un mot de passe fort!) apt-get install opensearch
 ```
 
 Configuration de base dans opensearch.yml :
@@ -278,7 +278,7 @@ plugins.security.disabled: true
 Configuration de Java et des paramètres système :
 
 ```
-sudo nano /etc/opensearch/jvm.options
+nano /etc/opensearch/jvm.options
 ```
 
 Changez ``-Xms1g`` et ``-Xmx1g`` par :
@@ -289,10 +289,10 @@ Changez ``-Xms1g`` et ``-Xmx1g`` par :
 ```
 
 ```
-sudo sysctl -w vm.max_map_count=262144
-sudo systemctl daemon-reload
-sudo systemctl enable opensearch
-sudo systemctl restart opensearch
+sysctl -w vm.max_map_count=262144
+systemctl daemon-reload
+systemctl enable opensearch
+systemctl restart opensearch
 ```
 
 🌟 C. Installation de Graylog
@@ -300,9 +300,9 @@ Téléchargement et installation de Graylog :
 
 ```
 wget https://packages.graylog2.org/repo/packages/graylog-6.1-repository_latest.deb
-sudo dpkg -i graylog-6.1-repository_latest.deb
-sudo apt-get update
-sudo apt-get install graylog-server
+dpkg -i graylog-6.1-repository_latest.deb
+apt-get update
+apt-get install graylog-server
 ```
 
 Configuration initiale :
@@ -332,7 +332,7 @@ Lancez Graylog :
 
 
 ```
-sudo systemctl enable --now graylog-server
+systemctl enable --now graylog-server
 ```
 
 Connexion :
