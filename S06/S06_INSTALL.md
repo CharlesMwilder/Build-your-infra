@@ -207,7 +207,7 @@ Mettez à jour le cache des paquets et installez les outils nécessaires :
 
 ```
 apt-get update
-apt-get install curl lsb-release ca-certificates gnupg2 pwgen
+apt-get install -y curl lsb-release ca-certificates gnupg2 pwgen
 ```
 
 🍃 A. Installation de MongoDB
