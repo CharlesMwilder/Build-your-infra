@@ -3,7 +3,7 @@ Import-Module ActiveDirectory
 Import-Module ImportExcel
 
 # Define the path to the Excel file
-$excelFilePath = "C:\Path of s01_BillU.xlsx"
+$excelFilePath = "C:\Users\Administrator\Documents\s01_BillU.xlsx"  # Chemin vers le fichier Excel
 
 # Import the data from the Excel file
 $employees = Import-Excel -Path $excelFilePath
@@ -17,8 +17,8 @@ $departmentMapping = @{
     "DSI"                               = "DSI"
     "Département Juridique"             = "Juridique"
     "QHSE"                              = "QHSE"
-    "Service Commercial"                = "Service Commercial"
-    "Service recrutement"               = "Service recrutement"
+    "Service Commercial"                = "Commercial"
+    "Service Recrutement"               = "Recrutement"
 }
 
 # Iterate through each employee in the file
@@ -40,7 +40,7 @@ foreach ($employee in $employees) {
 
     # Define the OU paths
     $userOUPath = "OU=Utilisateurs,OU=$department,OU=Departements,OU=Paris,DC=billu,DC=com"
-    $groupOUPath = "OU=Service,OU=$department,OU=Departements,OU=Paris,DC=billu,DC=com"
+    $serviceGroupOUPath = "OU=Service,OU=$department,OU=Departements,OU=Paris,DC=billu,DC=com"
 
     # Define user details for creation
     $userPrincipalName = "$username@billu.lan"
@@ -61,7 +61,10 @@ foreach ($employee in $employees) {
 
             Write-Host "User $firstName $lastName created in OU: $userOUPath" -ForegroundColor Green
         } catch {
-            Write-Host "Error creating user $firstName $lastName in OU $userOUPath $($_.Exception.Message)" -ForegroundColor Red
+            $exceptionMessage = $_.Exception.Message
+            Write-Host "Error creating user $firstName $lastName in OU $userOUPath $exceptionMessage" -ForegroundColor Red
+
+
         }
     } else {
         Write-Host "User $username already exists. Skipping." -ForegroundColor Yellow
@@ -69,9 +72,21 @@ foreach ($employee in $employees) {
 
     # Attempt to add user to their service group
     try {
+        # Ensure the service group exists
+        $serviceGroup = Get-ADGroup -Filter "Name -eq '$service'" -SearchBase $serviceGroupOUPath -ErrorAction SilentlyContinue
+        if (-not $serviceGroup) {
+            # Create the group if it doesn't exist
+            New-ADGroup -Name $service -GroupScope Global -Path $serviceGroupOUPath -Verbose
+            Write-Host "Service group $service created in OU: $serviceGroupOUPath" -ForegroundColor Green
+        }
+
+        # Add the user to the service group
         Add-ADGroupMember -Identity $service -Members $username
         Write-Host "User $username added to group: $service" -ForegroundColor Green
     } catch {
-        Write-Host "Error adding user $username to group $service $($_.Exception.Message)" -ForegroundColor Red
+        $exceptionMessage = $_.Exception.Message
+        Write-Host "Error adding user $username to group $service $exceptionMessage" -ForegroundColor Red
+
+
     }
 }
