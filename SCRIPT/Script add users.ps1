@@ -1,4 +1,4 @@
-# Import Active Directory module and ImportExcel module
+# Import Active Directory module and ImportExcel module (Install-Module -Name ImportExcel -Force)
 Import-Module ActiveDirectory
 Import-Module ImportExcel
 
