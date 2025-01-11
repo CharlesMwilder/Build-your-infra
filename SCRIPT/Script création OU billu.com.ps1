@@ -6,7 +6,7 @@ $Red = "Red"
 $Cyan = "Cyan"
 
 # Fonction pour créer une hiérarchie spécifique d'OU
-function CreateSpecificOuHierarchy {
+function CreerHierarchieOU {
     Write-Host "`n<=== CREATION AUTOMATIQUE D'UNE HIERARCHIE D'OU ===>`n" -f $Green
 
     $ouParis = "OU=Paris,DC=billu,DC=com"
