@@ -9,8 +9,8 @@ $Cyan = "Cyan"
 function CreateSpecificOuHierarchy {
     Write-Host "`n<=== CREATION AUTOMATIQUE D'UNE HIERARCHIE D'OU ===>`n" -f $Green
 
-    $rootOu = "OU=Paris,DC=billu,DC=com"
-    $departmentsOu = "OU=Departements,$rootOu"
+    $ouParis = "OU=Paris,DC=billu,DC=com"
+    $ouDepartements = "OU=Departements,$ouParis"
     $subOus = @("Commercial", "Communication", "Developpement", "Direction", "DSI", "Finance", "Juridique", "QHSE", "Recrutement")
     $subSubOus = @("Service", "Utilisateurs")
 
