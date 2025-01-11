@@ -20,7 +20,7 @@ function CreateSpecificOuHierarchy {
         Write-Host "`nL'OU 'Paris' a été créée avec succès.`n" -ForegroundColor Green
 
         # Création de l'OU Departements
-        New-ADOrganizationalUnit -Name "Departements" -Path $rootOu -ErrorAction Stop
+        New-ADOrganizationalUnit -Name "Departements" -Path $ouParis -ErrorAction Stop
         Write-Host "`nL'OU 'Departements' a été créée avec succès.`n" -ForegroundColor Green
 
         # Création des sous-OUs (Commercial, Communication, Finance)
