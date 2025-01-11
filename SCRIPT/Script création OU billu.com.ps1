@@ -25,7 +25,7 @@ function CreateSpecificOuHierarchy {
 
         # Création des sous-OUs (Commercial, Communication, Finance)
         foreach ($ou in $subOus) {
-            $currentOuPath = "OU=$ou,$departmentsOu"
+            $currentOuPath = "OU=$ou,$ouDepartements"
             New-ADOrganizationalUnit -Name $ou -Path $departmentsOu -ErrorAction Stop
             Write-Host "`nL'OU '$ou' a été créée avec succès.`n" -ForegroundColor Green
 
