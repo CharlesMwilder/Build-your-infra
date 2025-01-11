@@ -203,139 +203,199 @@ Création de notification pour rapport d'alerte sur l'utilisation de la mémoire
 # 🛠️ I. Installation pas à pas de Graylog
 
 ## 🚀 Préparation initiale
-Mettez à jour le cache des paquets et installez les outils nécessaires :
+. Mettez à jour le cache des paquets et installez les outils nécessaires :
 
 ```
-apt-get update
-apt-get install -y curl lsb-release ca-certificates gnupg2 pwgen
+apt update
+apt install curl lsb-release ca-certificates gnupg2 pwgen -y
 ```
 
-🍃 A. Installation de MongoDB
-Ajout de la clé GPG pour MongoDB :
+🛠️ II. Installation de Java (OpenJDK17)
+1. Installez OpenJDK 17 :
 
 ```
-curl -fsSL https://www.mongodb.org/static/pgp/server-6.0.asc | gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg --dearmor
+apt install openjdk-17-jre-headless -y
 ```
 
-Ajout du dépôt MongoDB 6 :
+2. Vérifiez que Java est installé correctement :
 
 ```
-echo "deb [signed-by=/usr/share/keyrings/mongodb-server-6.0.gpg] http://repo.mongodb.org/apt/debian bullseye/mongodb-org/6.0 main" | tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+java -version
 ```
 
-Mise à jour et installation de MongoDB :
+🛠️ III. Installation de MongoDB
+1. Ajouter la clé GPG du dépôt MongoDB :
 
 ```
-apt-get update
-apt-get install -y mongodb-org
+curl -fsSL https://www.mongodb.org/static/pgp/server-6.0.asc |  gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg --dearmor
 ```
 
-⚠️ Si l’installation échoue pour cause de dépendance manquante (libssl1.1), téléchargez et installez ce paquet manuellement :
+2. Ajouter le dépôt MongoDB :
+
+```
+echo "deb [signed-by=/usr/share/keyrings/mongodb-server-6.0.gpg] http://repo.mongodb.org/apt/debian bullseye/mongodb-org/6.0 main" > /etc/apt/sources.list.d/mongodb-org-6.0.list
+```
+
+3. Installer MongoDB :
+. Mettez à jour la liste des paquets et installez MongoDB :
 
 ```
 wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
 dpkg -i libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
+apt update
+apt install -y mongodb-org
 ```
 
-Relancez l'installation et configurez MongoDB :
+4. Activer et démarrer MongoDB :
 
 ```
-apt-get install -y mongodb-org
 systemctl daemon-reload
 systemctl enable mongod.service
-systemctl restart mongod.service
+systemctl start mongod.service
 systemctl --type=service --state=active | grep mongod
+systemctl status mongod.service
 ```
 
-🔍 B. Installation d'OpenSearch
-Ajout de la clé et du dépôt OpenSearch :
+MongoDB est maintenant installé et fonctionnel.
+
+III. Installation d’Elasticsearch
+1. Ajouter la clé GPG d'Elasticsearch :
 
 ```
-curl -o- https://artifacts.opensearch.org/publickeys/opensearch.pgp | gpg --dearmor --batch --yes -o /usr/share/keyrings/opensearch-keyring
-echo "deb [signed-by=/usr/share/keyrings/opensearch-keyring] https://artifacts.opensearch.org/releases/bundle/opensearch/2.x/apt stable main" | tee /etc/apt/sources.list.d/opensearch-2.x.list
+curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
 ```
 
-Mise à jour et installation avec mot de passe admin :
+2. Ajouter le dépôt Elasticsearch :
 
 ```
-apt-get update
-env OPENSEARCH_INITIAL_ADMIN_PASSWORD=(choisir un mot de passe fort!) apt-get install opensearch
+echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main" > /etc/apt/sources.list.d/elasticsearch-7.x.list
 ```
 
-Configuration de base dans opensearch.yml :
+3. Installer Elasticsearch :
+
+```
+apt update
+apt install -y elasticsearch
+```
+
+4. Configurer Elasticsearch :
+. Modifiez le fichier de configuration :
+
+```
+nano /etc/elasticsearch/elasticsearch.yml
+```
+
+. Ajoutez ou modifiez les lignes suivantes :
 
 ```
 cluster.name: graylog
 node.name: ${HOSTNAME}
-path.data: /var/lib/opensearch
-path.logs: /var/log/opensearch
 discovery.type: single-node
 network.host: 127.0.0.1
-action.auto_create_index: false
-plugins.security.disabled: true
 ```
 
-Configuration de Java et des paramètres système :
+5. Configurer la JVM :
+. Modifiez le fichier de configuration :
 
 ```
-nano /etc/opensearch/jvm.options
+nano /etc/elasticsearch/jvm.options
 ```
 
-Changez ``-Xms1g`` et ``-Xmx1g`` par :
+. Adaptez les paramètres mémoire selon votre machine (exemple : 4 Go de RAM) :
 
 ```
 -Xms4g
 -Xmx4g
 ```
 
+6. Démarrer Elasticsearch :
+
 ```
-sysctl -w vm.max_map_count=262144
-systemctl daemon-reload
-systemctl enable opensearch
-systemctl restart opensearch
+systemctl enable elasticsearch
+systemctl start elasticsearch
 ```
 
-🌟 C. Installation de Graylog
-Téléchargement et installation de Graylog :
+🛠️ IV. Installation de Graylog
+1. Ajouter le dépôt Graylog :
 
 ```
 wget https://packages.graylog2.org/repo/packages/graylog-6.1-repository_latest.deb
-dpkg -i graylog-6.1-repository_latest.deb
-apt-get update
-apt-get install -y graylog-server
+apt install ./graylog-6.1-repository_latest.deb
+apt update
 ```
 
-Configuration initiale :
+2. Installer Graylog :
 
-Générez une clé pour password_secret :
+```
+apt install -y graylog-server
+```
+
+3. Configurer Graylog :
+. Générez une clé secrète pour le stockage des mots de passe :
 
 ```
 pwgen -N 1 -s 96
 ```
 
-Définissez le mot de passe admin (hashé) :
-
-```
-echo -n "PuitsDeLogs@" | shasum -a 256
-```
-
-Modifiez le fichier ``/etc/graylog/server/server.conf`` :
-
-```
-password_secret=<votre_clé_générée>
-root_password_sha2=<votre_hash>
-http_bind_address=0.0.0.0:9000
-elasticsearch_hosts=http://127.0.0.1:9200
-```
-
-Lancez Graylog :
+. Copiez la clé générée, puis modifiez le fichier de configuration :
 
 
 ```
-systemctl enable --now graylog-server
+nano /etc/graylog/server/server.conf
 ```
 
-Connexion :
+. Configurez les options suivantes :
+
+```
+password_secret = VOTRE_CLÉ_GÉNÉRÉE
+```
+
+. Pour générer le hash du mot de passe admin :
+
+```
+echo -n "VotreMotDePasse" | shasum -a 256
+```
+
+. Copiez le hash obtenu dans root_password_sha2 et compléter:
+
+```
+nano /etc/graylog/server/server.conf
+```
+
+. Configurez les options suivantes :
+
+```
+root_password_sha2 = HASH_SHA256_DE_VOTRE_MOT_DE_PASSE
+http_bind_address = 0.0.0.0:9000
+elasticsearch_hosts = http://127.0.0.1:9200
+```
+
+4. Démarrer Graylog :
+
+```
+systemctl enable graylog-server
+systemctl start graylog-server
+```
+
+V. Vérifications Finales
+. Assurez-vous que tous les services fonctionnent correctement :
+
+```
+systemctl status mongod
+systemctl status elasticsearch
+systemctl status graylog-server
+```
+
+. Consultez les journaux pour déboguer si nécessaire :
+
+```
+tail -f /var/log/graylog-server/server.log
+```
+
+. Graylog est maintenant installé et fonctionnel sur votre serveur Debian 12 avec Elasticsearch !
+
+
+🌟 Connexion :
 
 Accédez à Graylog via le navigateur à l'adresse : ``http://<IP_du_serveur_ou_nom_DNS>:9000.``<br>
 Identifiant : ``Admin (dans notre cas Billu)``<br> 
