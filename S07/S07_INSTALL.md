@@ -229,15 +229,15 @@ gpg --batch --no-tty --gen-key <<EOF
   Key-Length: 2048
   Subkey-Type: default
   Subkey-Length: 2048
-  Name-Real: John Doe
-  Name-Email: email@domain.tld
+  Name-Real: billu
+  Name-Email: wcs.wilder@mailo.com
   Expire-Date: 0
   %no-protection
   %commit
 EOF
 ```
 
-Remplacez John Doe et email@domain.tld par vos informations.
+Remplacez Billu et wcs.wilder@mailo.com par vos informations.
 
 ## Étape 4 : Configuration du serveur SMTP
 Entrez les informations de votre serveur SMTP (hôte, port, utilisateur, mot de passe) et testez la configuration avec l’option "Send test email".
