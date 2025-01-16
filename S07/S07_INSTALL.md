@@ -92,7 +92,7 @@ Choisissez des composants optionnels :
 
 ![INSTALL IREDMAIL 9](https://github.com/user-attachments/assets/3b91d32c-1a7e-4912-9d6a-4413ca0ff2f9)<br>
 
-Après avoir répondu aux questions ci-dessus, l'installateur iRedMail vous demandera de confirmer pour commencer l'installation. Il installera et configurera les paquets requis automatiquement. Type ``y`` ou ``Y`` et presse ``Enter`` pour commencer :
+Après avoir répondu aux questions ci-dessus, l'installateur iRedMail vous demandera de confirmer pour commencer l'installation. Il installera et configurera les paquets requis automatiquement. Rentre ``y`` ou ``Y`` et presse ``Enter`` pour commencer :
 
 ![INSTALL IREDMAIL 10](https://github.com/user-attachments/assets/cbff53f5-0778-4faa-bb71-44e5cd9109fe)<br>
 
