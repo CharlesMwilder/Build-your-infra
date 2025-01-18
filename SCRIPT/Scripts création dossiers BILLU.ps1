@@ -23,6 +23,8 @@ function Create-Folders {
     }
 }
 
+Install-Module -Name ImportExcel -Force
+
 # Liste des services et des utilisateurs extraits du fichier Excel
 # Remplacez les appels suivants par vos propres extractions depuis Excel si nécessaire
 $Services = Import-Excel -Path "C:\Users\Administrator\Documents\s01_BillU.xlsx" | Where-Object { $_.Service -ne $null } | Select-Object -ExpandProperty Service -Unique
