@@ -17,34 +17,34 @@ function Create-Folders {
             New-Item -ItemType Directory -Path $FolderPath -Force | Out-Null
             Write-Output "Dossier créé : $FolderPath"
 
-            # Désactiver l'héritage
+            # Désactiver l'héritage et supprimer toutes les règles existantes
             $Acl = Get-Acl -Path $FolderPath
-            $Acl.SetAccessRuleProtection($True, $False)  # Désactiver l'héritage et ne pas propager les règles existantes
-            Set-Acl -Path $FolderPath -AclObject $Acl
+            $Acl.SetAccessRuleProtection($True, $False)  # Désactiver l'héritage sans propagation
+            $Acl.Access | ForEach-Object { $Acl.RemoveAccessRule($_) }  # Supprimer toutes les règles existantes
 
-            # Ajouter les administrateurs en Full Control
+            # Ajouter les administrateurs avec Full Control
             $AdminGroup = "Administrators"
             $AdminAccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule(
                 $AdminGroup,
-                "FullControl",
+                "FullControl",  # Full Control pour les administrateurs
                 "ContainerInherit,ObjectInherit",
                 "None",
                 "Allow"
             )
             $Acl.AddAccessRule($AdminAccessRule)
 
-            # Ajouter un groupe spécifique avec des permissions (tout sauf Full Control)
-            $GroupName = "$Name"  # Le nom du groupe correspond au nom du dossier
-            $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule(
+            # Ajouter le groupe de service avec des permissions "Modify" mais sans "Full Control"
+            $GroupName = "$Name"  # Le nom du groupe est le même que le nom du dossier
+            $GroupAccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule(
                 $GroupName,
-                "Modify",
+                "Modify",  # Modifier les fichiers sans gérer les permissions
                 "ContainerInherit,ObjectInherit",
                 "None",
                 "Allow"
             )
 
-            # Ajouter la règle d'accès pour le groupe
-            $Acl.AddAccessRule($AccessRule)
+            # Ajouter la règle d'accès pour le groupe de service
+            $Acl.AddAccessRule($GroupAccessRule)
 
             # Appliquer les modifications de sécurité
             Set-Acl -Path $FolderPath -AclObject $Acl
@@ -56,7 +56,6 @@ function Create-Folders {
     }
 }
 
-Install-Module -Name ImportExcel -Force
 
 # Liste des services extraits du fichier Excel
 $Services = Import-Excel -Path "C:\Users\Administrator\Documents\s01_BillU.xlsx" | Where-Object { $_.Service -ne $null } | Select-Object -ExpandProperty Service -Unique
