@@ -1,3 +1,14 @@
+# Fonction pour supprimer les caractères spéciaux et normaliser les noms
+function Normalize-UserName {
+    param ([string]$UserName)
+
+    # Suppression des accents et conversion des caractères spéciaux
+    $Normalized = $UserName -replace '[\p{M}]', ''       # Supprime les accents
+    $Normalized = $Normalized -replace "[-' ]", ''      # Supprime tirets, apostrophes, espaces
+    $Normalized = $Normalized -replace '[^a-zA-Z0-9]', '' # Supprime tout caractère non alphanumérique
+    return $Normalized.ToLower()
+}
+
 # Fonction pour créer des dossiers utilisateurs et configurer la sécurité
 function Create-UserFoldersWithPermissions {
     param (
@@ -11,8 +22,8 @@ function Create-UserFoldersWithPermissions {
     }
 
     foreach ($User in $Users) {
-        # Formatage du nom d'utilisateur (initiale_prenomnom)
-        $FormattedName = ($User -replace ' ', '').ToLower()
+        # Normaliser le nom d'utilisateur
+        $FormattedName = Normalize-UserName -UserName $User
         $FolderPath = Join-Path -Path $BasePath -ChildPath $FormattedName
 
         try {
