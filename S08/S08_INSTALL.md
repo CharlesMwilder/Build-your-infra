@@ -21,7 +21,8 @@
 <details>
 <summary><h1>🎯 VPN Site-to-Site IPsec entre deux Pfsense<h1></summary>  
   
-### ▶️ Suite à un partenariat entre Billu et SpaceZede, il a été décidé d'un commun accord de créer un VPN site-to-site avec IPSEC (Internet Protocol Security).  
+### ▶️ Suite à un partenariat entre Billu et SpaceZede, il a été décidé d'un commun accord de créer un VPN site-to-site.  
+Nous avons utilisé IPSEC (Internet Protocol Security) sur notre routeur firewall PfSense.  
 
 
 
