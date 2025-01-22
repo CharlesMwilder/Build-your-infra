@@ -22,6 +22,7 @@
 <summary><h1>🎯 VPN Site-to-Site IPsec entre deux Pfsense<h1></summary>  
   
 ### ▶️ Suite à un partenariat entre Billu et SpaceZede, il a été décidé d'un commun accord de créer un VPN site-to-site. Nous avons utilisé IPSEC (Internet Protocol Security) sur notre routeur firewall PfSense.  
+### ▶️ Phase 1  
 ![Capture d'écran 2025-01-22 165317](https://github.com/user-attachments/assets/35a18a7a-d2fe-4a3e-8d4d-942806e216c2)  
 ![Capture d'écran 2025-01-22 165626](https://github.com/user-attachments/assets/6045aab4-2667-42d9-86ca-15f925a34167)  
 ![Capture d'écran 2025-01-22 165707](https://github.com/user-attachments/assets/d968f45e-99ca-4fab-986f-05cb8e5e7edb)  
@@ -30,12 +31,17 @@
 ![Capture d'écran 2025-01-22 170350](https://github.com/user-attachments/assets/e6302ce0-45d6-4d70-a723-3e68de11a2e8)  
 ![Capture d'écran 2025-01-22 170434](https://github.com/user-attachments/assets/139b4f9f-0216-4fee-85cc-991e8fa524a5)  
 ![Capture d'écran 2025-01-22 170631](https://github.com/user-attachments/assets/9bd9b6d0-b992-4df1-b29e-2767db26f11d)  
+
+---
+### ▶️ Phase 2  
 ![Capture d'écran 2025-01-22 172146](https://github.com/user-attachments/assets/c2a0f8f1-094c-4ece-9941-4a17acd17337)  
 ![Capture d'écran 2025-01-22 172652](https://github.com/user-attachments/assets/a2e14284-0171-48ad-a80d-f1594ca7984e)  
 ![Capture d'écran 2025-01-22 173231](https://github.com/user-attachments/assets/5fcf2176-df85-4361-8766-f49c9de5faca)  
 
-
-
+---
+### ▶️ Paramétrage d'une règle  
+![Capture d'écran 2025-01-22 175211](https://github.com/user-attachments/assets/b6416cac-cb4e-44e5-b04e-891865387fb0)
+![Capture d'écran 2025-01-22 175234](https://github.com/user-attachments/assets/878d5698-cc80-48f4-a696-c5aa5f1c916f)
 
   
 </details>
