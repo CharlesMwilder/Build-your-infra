@@ -1,8 +1,6 @@
 <details>
 <summary><h1>🎯 Mise en place un serveur de gestion des mises à jour WSUS<h1></summary>
 
-
-
 ![Capture d'écran 2025-01-22 150019](https://github.com/user-attachments/assets/9fce6d9c-9cbe-4ebe-a72e-ca04f4a03020)  
 ![Capture d'écran 2025-01-22 150032](https://github.com/user-attachments/assets/fde0d1a5-bbee-44c1-a340-6e1223b68fe6)  
 ![Capture d'écran 2025-01-22 150041](https://github.com/user-attachments/assets/d287e546-1e60-4fc9-9ca6-b0600efc90ac)  
@@ -18,5 +16,15 @@
 **Cette étape est très longue, le serveur se synchronise**  
 ![Capture d'écran 2025-01-22 154151](https://github.com/user-attachments/assets/397d255c-3cdb-485a-86f3-3bf5f2380925)  
 
+</details>
+
+<details>
+<summary><h1>🎯 VPN Site-to-Site IPsec entre deux Pfsense<h1></summary>  
+  
+### ▶️ Suite à un partenariat entre Billu et SpaceZede, il a été décidé d'un commun accord de créer un VPN site-to-site avec IPSEC (Internet Protocol Security).  
 
 
+
+
+  
+</details>
