@@ -7,6 +7,7 @@ L'objectif est de mettre en place un **VPN site-à-site** entre les deux réseau
 2. **Tests de connectivité** : Vérification de la stabilité et de la sécurité de la connexion VPN.
 3. **Surveillance** : Mise en place de mécanismes de surveillance pour assurer la continuité et la sécurité de la connexion.
 
+## ``pfSense : 10.0.0.4/29``
 ---
 
 # 🎯 PARTENARIAT D'ENTREPRISE - STOCKAGE
