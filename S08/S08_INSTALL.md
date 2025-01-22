@@ -16,7 +16,7 @@
 ![Capture d'écran 2025-01-22 151052](https://github.com/user-attachments/assets/a1f44a20-f0ab-4ddb-804b-b13ad86a4ab6)  
 ![Capture d'écran 2025-01-22 151221](https://github.com/user-attachments/assets/cbad9fb7-af77-41dd-abc5-d9657482ba9c)  
 **Cette étape est très longue, le serveur se synchronise**  
-![Capture d'écran 2025-01-22 154151](https://github.com/user-attachments/assets/397d255c-3cdb-485a-86f3-3bf5f2380925)
+![Capture d'écran 2025-01-22 154151](https://github.com/user-attachments/assets/397d255c-3cdb-485a-86f3-3bf5f2380925)  
 
 
 
