@@ -74,5 +74,9 @@
 
 ![Capture d'écran 2025-01-22 175234](https://github.com/user-attachments/assets/878d5698-cc80-48f4-a696-c5aa5f1c916f)<br><br>   
 
+### ▶️ VERIFICATION CONNECTIVITE :  
+
+![Capture d'écran 2025-01-23 083122](https://github.com/user-attachments/assets/8dd10afc-1571-41bd-973d-ef57deaf5c43)
+
   
 </details>
