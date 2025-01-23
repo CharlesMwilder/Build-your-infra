@@ -47,14 +47,10 @@
 
 ![Capture d'écran 2025-01-22 165317](https://github.com/user-attachments/assets/35a18a7a-d2fe-4a3e-8d4d-942806e216c2)<br><br>     
 
-![Capture d'écran 2025-01-22 165626](https://github.com/user-attachments/assets/6045aab4-2667-42d9-86ca-15f925a34167)<br><br>     
-
 ![Capture d'écran 2025-01-22 165707](https://github.com/user-attachments/assets/d968f45e-99ca-4fab-986f-05cb8e5e7edb)<br><br>     
 
 ![Capture d'écran 2025-01-22 170139](https://github.com/user-attachments/assets/83a768cd-41dd-473c-b3c8-6f63e599397d)<br><br>     
-
-![Capture d'écran 2025-01-22 170324](https://github.com/user-attachments/assets/0dc93e18-33fa-4f21-8b99-46ef703ad5fb)<br><br>     
-
+  
 ![Capture d'écran 2025-01-22 170350](https://github.com/user-attachments/assets/e6302ce0-45d6-4d70-a723-3e68de11a2e8)<br><br>     
 
 ![Capture d'écran 2025-01-22 170434](https://github.com/user-attachments/assets/139b4f9f-0216-4fee-85cc-991e8fa524a5)<br><br>     
