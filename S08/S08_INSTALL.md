@@ -68,11 +68,11 @@
 
 ---
 
-### ▶️ PARAMÉTRAGE D'UNE RÈGLE : 
+### ▶️ PARAMÉTRAGE D'UNE RÈGLE :  
 
-![Capture d'écran 2025-01-22 175211](https://github.com/user-attachments/assets/b6416cac-cb4e-44e5-b04e-891865387fb0)<br><br>   
+![Capture d'écran 2025-01-24 123625](https://github.com/user-attachments/assets/acab50ea-f3cb-4852-afe6-0a445423ccbc)<br><br>   
 
-![Capture d'écran 2025-01-22 175234](https://github.com/user-attachments/assets/878d5698-cc80-48f4-a696-c5aa5f1c916f)<br><br>   
+![Capture d'écran 2025-01-24 123742](https://github.com/user-attachments/assets/18188c9e-8441-4d6f-8939-594302034740)<br><br>   
 
 ### ▶️ VERIFICATION CONNECTIVITE :  
 
