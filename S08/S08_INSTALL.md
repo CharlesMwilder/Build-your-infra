@@ -21,8 +21,6 @@
 
 ![Capture d'écran 2025-01-22 151007](https://github.com/user-attachments/assets/8d260261-8f28-45b1-8462-c0cff5fcea42)<br><br>   
 
-jhrghhhhhhhhhhh
-
 ![Capture d'écran 2025-01-22 151026](https://github.com/user-attachments/assets/394e20aa-8098-4c73-9f97-a39070fb34be)<br><br>     
 
 ![Capture d'écran 2025-01-22 151052](https://github.com/user-attachments/assets/a1f44a20-f0ab-4ddb-804b-b13ad86a4ab6)<br><br>     
@@ -51,8 +49,8 @@ jhrghhhhhhhhhhh
 
 ![Capture d'écran 2025-01-22 165707](https://github.com/user-attachments/assets/d968f45e-99ca-4fab-986f-05cb8e5e7edb)<br><br>     
 
-![Capture d'écran 2025-01-22 170139](https://github.com/user-attachments/assets/83a768cd-41dd-473c-b3c8-6f63e599397d)<br><br>     
-  
+![Capture d'écran 2025-01-24 122833](https://github.com/user-attachments/assets/b56533df-3b70-4367-838a-1a1690df229f)<br><br>     
+
 ![Capture d'écran 2025-01-22 170350](https://github.com/user-attachments/assets/e6302ce0-45d6-4d70-a723-3e68de11a2e8)<br><br>     
 
 ![Capture d'écran 2025-01-22 170434](https://github.com/user-attachments/assets/139b4f9f-0216-4fee-85cc-991e8fa524a5)<br><br>     
