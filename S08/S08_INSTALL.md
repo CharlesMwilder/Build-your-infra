@@ -84,21 +84,21 @@
 <details>
 <summary><h1>🎯 Distribution des rôles FSMO<h1></summary>  
 
-### **Vérification des rôles sur le serveur principal**  
+### ▶️ **Vérification des rôles sur le serveur principal**  
 ![Capture d'écran 2025-01-24 101917](https://github.com/user-attachments/assets/a4db6424-558d-43d4-a4b4-627c53b836e1)  
-### **Lancement de l'outil de répartition des rôles : ``ntdsutils.exe``**  
+### ▶️ **Lancement de l'outil de répartition des rôles : ``ntdsutils.exe``**  
 ![Capture d'écran 2025-01-24 103228](https://github.com/user-attachments/assets/6b715976-a955-4567-9485-b3329e9ba08d)  
-### **Activation du mode maintenance pour attribuer les rôles FSMO :**  
+### ▶️ **Activation du mode maintenance pour attribuer les rôles FSMO :**  
 ![Capture d'écran 2025-01-24 103658](https://github.com/user-attachments/assets/a3c8e94b-a485-4c04-aea5-c44d8385531c)  
-### **Connection au nouveau serveur sur lequel on va envoyer 2 nouveaux rôles, SRVWIN-05-GUI par exemple :**  
+### ▶️ **Connection au nouveau serveur sur lequel on va envoyer 2 nouveaux rôles, SRVWIN-05-GUI par exemple :**  
 ![Capture d'écran 2025-01-24 105428](https://github.com/user-attachments/assets/b71b6689-730e-4323-8cdf-363bda191c32)  
-### **Envoi du rôle `Emulateur PDC` :**  
+### ▶️ **Envoi du rôle `Emulateur PDC` :**  
 ![Capture d'écran 2025-01-24 105737](https://github.com/user-attachments/assets/f5284764-c50a-402a-b649-239aae0a9f68)  
 ![Capture d'écran 2025-01-24 105755](https://github.com/user-attachments/assets/632782e0-0702-4abf-8cc2-e97c34dfcb46)  
-### **Envoi du rôle `Maître Infrastructure` sur ce même serveur :**  
+### ▶️ **Envoi du rôle `Maître Infrastructure` sur ce même serveur :**  
 ![Capture d'écran 2025-01-24 115925](https://github.com/user-attachments/assets/af839f19-e109-402f-8cdd-531840e3b085)  
 ![Capture d'écran 2025-01-24 115939](https://github.com/user-attachments/assets/df50e86e-3386-4f60-965a-10847bf4b116)  
-### **Vérification des 5 rôles attribués et des machines :**  
+### ▶️ **Vérification des 5 rôles attribués et des machines :**  
 ![Capture d'écran 2025-01-24 120107](https://github.com/user-attachments/assets/212c4fd8-16b9-466a-bc8f-2811b19c3cc8)  
 
 
