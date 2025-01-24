@@ -60,7 +60,7 @@
 ---
 
 ### ▶️ PHASE 2 : 
-![Capture d'écran 2025-01-22 172146](https://github.com/user-attachments/assets/c2a0f8f1-094c-4ece-9941-4a17acd17337)<br><br>     
+![Capture d'écran 2025-01-24 123201](https://github.com/user-attachments/assets/b89bc1cb-f48d-4829-a41f-50bb4e9ba21a)<br><br>     
 
 ![Capture d'écran 2025-01-22 172652](https://github.com/user-attachments/assets/a2e14284-0171-48ad-a80d-f1594ca7984e)<br><br>     
 
