@@ -78,11 +78,14 @@
 
 ![Capture d'écran 2025-01-23 083122](https://github.com/user-attachments/assets/8dd10afc-1571-41bd-973d-ef57deaf5c43)
 
-  
 </details>
+
 
 <details>
 <summary><h1>🎯 Distribution des rôles FSMO<h1></summary>
+![Capture d'écran 2025-01-24 101917](https://github.com/user-attachments/assets/a4db6424-558d-43d4-a4b4-627c53b836e1)
+
+
 
 </details>
 
