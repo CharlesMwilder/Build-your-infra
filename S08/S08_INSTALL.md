@@ -76,7 +76,8 @@
 
 ### ▶️ VERIFICATION CONNECTIVITE :  
 
-![Capture d'écran 2025-01-23 083122](https://github.com/user-attachments/assets/8dd10afc-1571-41bd-973d-ef57deaf5c43)
+![Capture d'écran 2025-01-24 123855](https://github.com/user-attachments/assets/f071ebb1-6d69-4669-985d-47f425b075b7)  
+
 
 </details>
 
