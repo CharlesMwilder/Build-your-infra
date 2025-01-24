@@ -91,6 +91,10 @@
 ### **Activation du mode maintenance pour attribuer les rôles FSMO :**  
 ![Capture d'écran 2025-01-24 103658](https://github.com/user-attachments/assets/a3c8e94b-a485-4c04-aea5-c44d8385531c)  
 
+![Capture d'écran 2025-01-24 105428](https://github.com/user-attachments/assets/b71b6689-730e-4323-8cdf-363bda191c32)  
+![Capture d'écran 2025-01-24 105737](https://github.com/user-attachments/assets/f5284764-c50a-402a-b649-239aae0a9f68)  
+![Capture d'écran 2025-01-24 105755](https://github.com/user-attachments/assets/632782e0-0702-4abf-8cc2-e97c34dfcb46)  
+
 
 
 </details>
