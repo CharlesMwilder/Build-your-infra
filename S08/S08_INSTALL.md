@@ -80,3 +80,12 @@
 
   
 </details>
+
+<details>
+<summary><h1>🎯 Distribution des rôles FSMO<h1></summary>
+
+</details>
+
+
+
+
