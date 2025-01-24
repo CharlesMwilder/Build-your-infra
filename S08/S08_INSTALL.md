@@ -62,9 +62,9 @@
 ### ▶️ PHASE 2 : 
 ![Capture d'écran 2025-01-24 123201](https://github.com/user-attachments/assets/b89bc1cb-f48d-4829-a41f-50bb4e9ba21a)<br><br>     
 
-![Capture d'écran 2025-01-22 172652](https://github.com/user-attachments/assets/a2e14284-0171-48ad-a80d-f1594ca7984e)<br><br>     
+![Capture d'écran 2025-01-24 123345](https://github.com/user-attachments/assets/1e243751-e3f3-4b75-a8a5-1d05bb13cc54)<br><br>     
 
-![Capture d'écran 2025-01-22 173231](https://github.com/user-attachments/assets/5fcf2176-df85-4361-8766-f49c9de5faca)<br><br>    
+![Capture d'écran 2025-01-24 123445](https://github.com/user-attachments/assets/abfde8de-98ed-43a5-acc7-f519df80aa16)<br><br>    
 
 ---
 
