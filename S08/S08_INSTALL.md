@@ -91,6 +91,8 @@
 ![Capture d'écran 2025-01-24 103228](https://github.com/user-attachments/assets/6b715976-a955-4567-9485-b3329e9ba08d)  
 ### ▶️ **Activation du mode maintenance pour attribuer les rôles FSMO :**  
 ![Capture d'écran 2025-01-24 103658](https://github.com/user-attachments/assets/a3c8e94b-a485-4c04-aea5-c44d8385531c)  
+### ▶️ **Activation de la connection au serveur distant :**  
+![Capture d'écran 2025-01-24 124332](https://github.com/user-attachments/assets/fd707c42-83bf-43dd-a7e8-a9b083306805)  
 ### ▶️ **Connection au nouveau serveur sur lequel on va envoyer 2 nouveaux rôles, SRVWIN-05-GUI par exemple :**  
 ![Capture d'écran 2025-01-24 105428](https://github.com/user-attachments/assets/b71b6689-730e-4323-8cdf-363bda191c32)  
 ### ▶️ **Envoi du rôle `Emulateur PDC` :**  
