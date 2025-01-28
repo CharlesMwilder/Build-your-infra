@@ -227,6 +227,23 @@ EOF
             font-size: 1.5rem;
             margin-top: 0;
         }
+        .button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #218838;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -243,6 +260,7 @@ EOF
     <div class="welcome-container">
         <h1>Welcome to BILLU</h1>
         <p>The future of invoicing</p>
+        <a href="next.html" class="button">Enter</a>
     </div>
 </body>
 </html>
@@ -259,47 +277,54 @@ EOF
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Make your choice</title>
+    <title>Make Your Choice</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920') no-repeat center center fixed;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            color: white;
         }
         .container {
             text-align: center;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px 80px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
         }
         h1 {
-            color: #333;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
         }
         .button {
             display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
+            margin: 15px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
             color: white;
             background-color: #007BFF;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
             text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
         }
         .button:hover {
             background-color: #0056b3;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Choose a Site to Visit</h1>
+        <h1>Make Your Choice</h1>
         <a href="https://www.google.com" class="button">Google</a>
         <a href="https://www.wikipedia.org" class="button">Wikipedia</a>
         <a href="https://www.wildcodeschool.com" class="button">WCS</a>
