@@ -1,5 +1,5 @@
 <details>
-<summary><h1>🎯 Mise en place un serveur de gestion des mises à jour WSUS<h1></summary>
+<summary><h1>🎯 Mise en place d'un serveur de gestion des mises à jour WSUS<h1></summary>
 
 ## 📑 Voici les étapes : 
 
