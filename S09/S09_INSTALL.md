@@ -202,7 +202,7 @@ EOF
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920') no-repeat center center fixed;
+            background: url('https://images6.alphacoders.com/120/1201406.jpg') no-repeat center center fixed;
             background-size: cover;
             display: flex;
             justify-content: center;
@@ -273,64 +273,94 @@ EOF
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Make Your Choice</title>
+    <title>Présentation de BillU</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920') no-repeat center center fixed;
+            background: url('https://images8.alphacoders.com/120/1201407.jpg') no-repeat center center fixed;
             background-size: cover;
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            color: white;
+            overflow: hidden;
         }
+
         .container {
             text-align: center;
             background: rgba(0, 0, 0, 0.7);
-            padding: 50px 80px;
+            padding: 30px;
             border-radius: 15px;
+            animation: fadeIn 2s ease-in-out;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
         }
+
         h1 {
             font-size: 3rem;
-            margin-bottom: 30px;
-            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
         }
-        .button {
-            display: inline-block;
-            margin: 15px;
-            padding: 15px 30px;
+
+        p {
             font-size: 1.2rem;
-            color: white;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            text-decoration: none;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
+            line-height: 1.6;
+            margin: 10px 0;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
         }
-        .button:hover {
-            background-color: #0056b3;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: url('https://svgshare.com/i/tHx.svg') repeat-x;
+            animation: waveAnimation 10s linear infinite;
+        }
+
+        @keyframes waveAnimation {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-1600px);
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Make Your Choice</h1>
-        <a href="https://www.google.com" class="button">Google</a>
-        <a href="https://www.wikipedia.org" class="button">Wikipedia</a>
-        <a href="https://www.wildcodeschool.com" class="button">WCS</a>
-        <a href="https://doompdf.pages.dev/doom.pdf" class="button">DOOM</a>
-        <a href="index.html" class="button">Home</a>
+        <h1>Bienvenue chez BillU</h1>
+        <p>BillU, filiale du groupe international <span class="highlight">RemindMe</span>,
+            est spécialisée dans le développement de logiciels innovants, notamment de facturation.</p>
+        <p>Avec <span class="highlight">167 collaborateurs</span> et un siège situé dans le 20e arrondissement de Paris,
+            notre mission est de simplifier les processus financiers et d'augmenter l'efficacité opérationnelle de nos clients.</p>
+        <p>Répartie en <span class="highlight">9 départements</span>, notre équipe talentueuse mêle expertise en finance et en développement
+            logiciel pour fournir des solutions de pointe.</p>
     </div>
+    <div class="wave"></div>
 </body>
 </html>
 ```
