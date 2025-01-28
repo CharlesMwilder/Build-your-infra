@@ -333,14 +333,14 @@ EOF
 
 - **Créer un nom de domaine dynamique sur ``no-ip``** :
 
-- **Connecte-toi sur ``no-ip`` et créer un hostname** :
+- **Connectez-vous sur ``no-ip`` et créer un hostname** :
 
-``Hostname : BilluServer``
-``Domain : Sélectionne un domaine, ex. tssr.net``
-``Record Type : A``
+``Hostname : BilluServer``<br>
+``Domain : Sélectionne un domaine, ex. tssr.net``<br>
+``Record Type : A``<br>
 ``IPV4 Address : Ton adresse IP publique``.
 
-- ** Accèder à votre site via le domaine** :
+- **Accèder à votre site via le domaine** :
 
 ``Exemple : http://BilluServer.tssr.net:22545``.
 
@@ -364,7 +364,7 @@ a2enmod lbmethod_byrequests
 
 ``cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default.conf.bak``
 
-- **Édite ``/etc/apache2/sites-available/000-default.conf``** :
+- **Éditer ``/etc/apache2/sites-available/000-default.conf``** :
 
 ```bash
 <VirtualHost *:22545>
@@ -406,6 +406,8 @@ systemctl restart apache2
 
 ``Exemple : http://HomeHomeWCS.webhop.me``.
 
-Le serveur web est maintenant fonctionnel, sécurisé et accessible depuis l’extérieur grâce à un reverse proxy. 🎉
+---
+
+## **Le serveur web est maintenant fonctionnel, sécurisé et accessible depuis l’extérieur grâce à un reverse proxy**. 🎉
 
 </details>
