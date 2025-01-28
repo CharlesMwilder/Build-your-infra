@@ -1,5 +1,5 @@
 <details>
-<summary><h1>🎯 Mise en place d'un serveur de téléphonie sur IP avec FREEPBX (Debian 12)<h1></summary>
+<summary><h1>🎯 Mise en place d'un serveur de téléphonie sur IP avec FREEPBX<h1></summary>
 
 ## 📑 Installation de FREEPBX via script : 
 
@@ -158,7 +158,7 @@ EOF
 ---
 
 <details>
-<summary><h1>🎯 Mise en place d'un serveur web avec APACHE (Debian 12)<h1></summary>
+<summary><h1>🎯 Mise en place d'un serveur web avec APACHE<h1></summary>
   
 # 📑 Installation et Configuration :
 
