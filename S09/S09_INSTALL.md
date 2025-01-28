@@ -160,7 +160,7 @@ EOF
 <details>
 <summary><h1>🎯 Mise en place d'un serveur web avec APACHE (Debian 12)<h1></summary>
   
-## 📑 Installation et Configuration :
+# 📑 Installation et Configuration :
 
 ## 📑 Étape 1 : Préparation de la VM webserver
 
