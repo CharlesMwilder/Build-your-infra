@@ -1,5 +1,5 @@
 <details>
-<summary><h1>🎯 Mise en place d'un serveur de téléphonie sur IP avec FREEPBX<h1></summary>
+<summary><h1>🎯 Mise en place d'un serveur de téléphonie sur IP avec FREEPBX (Debian 12)<h1></summary>
 
 ## 📑 Installation de FREEPBX via script : 
 
@@ -152,5 +152,260 @@ EOF
 
 ![FREEPBX1](https://github.com/user-attachments/assets/3620a205-9864-48ca-8a42-a571a498134e)
 
+
+</details>
+
+---
+
+<details>
+<summary><h1>🎯 Mise en place d'un serveur web avec APACHE (Debian 12)<h1></summary>
+  
+## 📑 Installation et Configuration :
+
+## 📑 Étape 1 : Préparation de la VM webserver
+
+- **Mettre à jour le système et installer Apache** :
+   
+   ```bash
+   apt update && apt upgrade -y
+   apt install apache2 -y
+  ```
+   
+- **Vérifier le statut du service Apache** :
+
+``systemctl status apache2``
+
+- **Trouver l’adresse IP de la carte réseau "Accès par pont"** :
+
+- **Utiliser la commande suivante** :
+
+``ip a``
+
+- **Tester l’accès à Apache depuis la machine hôte** :
+
+- **Ouvrir un navigateur et se connecter via ``http://Adresse_IP_privée``**.
+
+## 📑 Étape 2 : Configuration de la Page d’Accueil
+
+- **Modifier la page d’accueil par défaut** :
+
+- **Édite le fichier ``/var/www/html/index.html``** :
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BILLU !</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to BILLU !</h1>
+        <a href="next.html" class="button">ENTER</a>
+    </div>
+</body>
+</html>
+```
+---
+
+- **Ajouter un fichier ``next.html`` dans le dossier ``/var/www/html/``** :
+
+---
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make your choice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose a Site to Visit</h1>
+        <a href="https://www.google.com" class="button">Google</a>
+        <a href="https://www.wikipedia.org" class="button">Wikipedia</a>
+        <a href="https://www.wildcodeschool.com" class="button">WCS</a>
+        <a href="https://doompdf.pages.dev/doom.pdf" class="button">DOOM</a>
+        <a href="index.html" class="button">Home</a>
+    </div>
+</body>
+</html>
+```
+---
+
+- **Redémarrer Apache** :
+
+``systemctl restart apache2``
+
+## 📑Étape 3 : Configuration de la Box Internet
+
+- **Configurer la redirection de port** :
+
+- **Rediriger le port externe ``80`` de la box vers le port interne ``80`` de la VM**.
+
+- **Tester l’accès depuis un appareil connecté en 4G** :
+
+- **Utiliser l’adresse IP publique de la box : ``http://Adresse_IP_Publique``**.
+  
+- **Sécuriser la connexion** :
+
+- **Modifier la règle NAT/PAT pour rediriger un autre port externe, comme ``22545``, vers le port interne ``80``**.
+  
+- **Tester avec le port personnalisé** :
+
+``Exemple : http://Adresse_IP_Publique:22545``
+
+## 📑Étape 4 : Enregistrement d’un Nom de Domaine
+
+- **Créer un nom de domaine dynamique sur ``no-ip``** :
+
+- **Connecte-toi sur ``no-ip`` et créer un hostname** :
+
+``Hostname : BilluServer``
+``Domain : Sélectionne un domaine, ex. tssr.net``
+``Record Type : A``
+``IPV4 Address : Ton adresse IP publique``.
+
+- ** Accèder à votre site via le domaine** :
+
+``Exemple : http://BilluServer.tssr.net:22545``.
+
+## 📑 Étape 5 : Mise en Place d’un Reverse Proxy
+
+- **Installer Apache sur la VM proxy** :
+
+```bash
+apt install apache2 -y
+a2enmod proxy
+a2enmod proxy_http
+a2enmod proxy_balancer
+a2enmod lbmethod_byrequests
+```
+
+``systemctl restart apache2``
+
+- **Configure le fichier ``VirtualHost``** :
+
+- **Sauvegarde ``/etc/apache2/sites-available/000-default.conf``** :
+
+``cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default.conf.bak``
+
+- **Édite ``/etc/apache2/sites-available/000-default.conf``** :
+
+```bash
+<VirtualHost *:22545>
+    ServerName BilluServer.tssr.net
+
+    ProxyPreserveHost On
+    ProxyPass / http://<Adresse_IP_Du_Serveur>:80/
+    ProxyPassReverse / http://<Adresse_IP_Du_Serveur>:80/
+
+    <Location />
+        Order allow,deny
+        Allow from all
+    </Location>
+</VirtualHost>
+```
+
+- **Configurer le port d’écoute** :
+
+- **Éditer ``/etc/apache2/ports.conf`` et ajouter** :
+
+``Listen 22545``
+
+- **Activer la configuration et redémarrer Apache** :
+
+```bash
+a2ensite 000-default.conf
+systemctl restart apache2
+```
+
+- **Configurer la box pour rediriger le port externe ``22545`` vers la VM proxy**.
+
+- **Tester l’accès via le reverse proxy** :
+
+``Exemple : http://HomeHomeWCS.webhop.me:22545``.
+
+- **Basculer vers le port ``80``** :
+
+- **Modifie le VirtualHost pour écouter sur le port ``80``**.
+
+``Exemple : http://HomeHomeWCS.webhop.me``.
+
+Le serveur web est maintenant fonctionnel, sécurisé et accessible depuis l’extérieur grâce à un reverse proxy. 🎉
 
 </details>
