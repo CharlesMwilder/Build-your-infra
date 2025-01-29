@@ -277,7 +277,7 @@ EOF
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation de BillU</title>
+    <title>Présentation de BILLU</title>
     <style>
         body {
             margin: 0;
@@ -375,7 +375,7 @@ EOF
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenue chez BillU</h1>
+        <h1>Bienvenue chez BILLU</h1>
         <p>BillU, filiale du groupe international <span class="highlight">RemindMe</span>,
             est spécialisée dans le développement de logiciels innovants, notamment de facturation.</p>
         <p>Avec <span class="highlight">167 collaborateurs</span> et un siège situé dans le 20e arrondissement de Paris,
@@ -497,7 +497,6 @@ systemctl restart apache2
 
 ![WEB1](https://github.com/user-attachments/assets/ad358a8b-7293-42da-afeb-3af5321688d7)<br>
 
-![WEB2](https://github.com/user-attachments/assets/3d7c1f6c-9069-4272-b4f8-5d204067fc89)
-
+![WEB2](https://github.com/user-attachments/assets/8b8961d5-1380-4638-a6cc-0e1d25783564)
 
 </details>
