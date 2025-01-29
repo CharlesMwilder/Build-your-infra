@@ -469,4 +469,10 @@ systemctl restart apache2
 
 ## **Le serveur web est maintenant fonctionnel, sécurisé et accessible depuis l’extérieur grâce à un reverse proxy**. 🎉
 
+![WEB1](https://github.com/user-attachments/assets/cb4f315b-a727-4026-847a-17d2394bea04)
+
+
+![WEB2](https://github.com/user-attachments/assets/a174cb87-99eb-4288-a08e-ef19a81a2664)
+
+
 </details>
