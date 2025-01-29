@@ -197,7 +197,7 @@ EOF
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to BILLU</title>
+    <title>BILLU</title>
     <style>
         body {
             margin: 0;
@@ -211,7 +211,7 @@ EOF
             color: white;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
-        .welcome-container {
+        .container {
             text-align: center;
             background: rgba(0, 0, 0, 0.6);
             padding: 40px 60px;
@@ -257,9 +257,9 @@ EOF
     </style>
 </head>
 <body>
-    <div class="welcome-container">
-        <h1>Welcome to BILLU</h1>
-        <p>The future of invoicing</p>
+    <div class="container">
+        <h1>Bienvenue chez BILLU !</h1>
+        <p>L'avenir de la facturation</p>
         <a href="next.html" class="button">Enter</a>
     </div>
 </body>
@@ -290,6 +290,7 @@ EOF
             align-items: center;
             height: 100vh;
             overflow: hidden;
+            flex-direction: column;
         }
 
         .container {
@@ -348,6 +349,28 @@ EOF
                 transform: translateX(-1600px);
             }
         }
+
+        /* Style du bouton */
+        .back-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #ffd700;
+            color: black;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #ffa500;
+            transform: scale(1.1);
+        }
+
+        .back-button:active {
+            transform: scale(1);
+        }
     </style>
 </head>
 <body>
@@ -359,6 +382,9 @@ EOF
             notre mission est de simplifier les processus financiers et d'augmenter l'efficacité opérationnelle de nos clients.</p>
         <p>Répartie en <span class="highlight">9 départements</span>, notre équipe talentueuse mêle expertise en finance et en développement
             logiciel pour fournir des solutions de pointe.</p>
+
+        <!-- Bouton pour retourner à la page index.html -->
+        <button class="back-button" onclick="window.location.href='index.html';">Retour à l'index</button>
     </div>
     <div class="wave"></div>
 </body>
@@ -469,10 +495,9 @@ systemctl restart apache2
 
 ## **Le serveur web est maintenant fonctionnel, sécurisé et accessible depuis l’extérieur grâce à un reverse proxy**. 🎉
 
-![WEB1](https://github.com/user-attachments/assets/cb4f315b-a727-4026-847a-17d2394bea04)
+![WEB1](https://github.com/user-attachments/assets/ad358a8b-7293-42da-afeb-3af5321688d7)<br>
 
-
-![WEB2](https://github.com/user-attachments/assets/a174cb87-99eb-4288-a08e-ef19a81a2664)
+![WEB2](https://github.com/user-attachments/assets/3d7c1f6c-9069-4272-b4f8-5d204067fc89)
 
 
 </details>
