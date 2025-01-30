@@ -548,8 +548,8 @@ http://<Adresse IP>:8080/guacamole/
 
 ### 📑 A. Créer un nouveau compte admin
 
-**1. Accédez aux paramètres > Utilisateurs > Nouvel utilisateur**.
-**2. Créez un nouvel administrateur avec un mot de passe sécurisé**.
+**1. Accédez aux paramètres > Utilisateurs > Nouvel utilisateur**.<br>
+**2. Créez un nouvel administrateur avec un mot de passe sécurisé**.<br>
 **3. Supprimez ou désactivez `guacadmin`**.
 
 ![BASTION2](https://github.com/user-attachments/assets/14d9c876-2f39-48d1-80b0-c164ebefce64)
@@ -562,8 +562,8 @@ http://<Adresse IP>:8080/guacamole/
 
 ### 📑 B. Ajouter une connexion RDP
 
-**1. Créez un groupe de connexions : **Paramètres > Connexion > Nouveau groupe****.
-**2. Ajoutez une nouvelle connexion RDP avec l'IP et les identifiants**.
+**1. Créez un groupe de connexions : **Paramètres > Connexion > Nouveau groupe****.<br>
+**2. Ajoutez une nouvelle connexion RDP avec l'IP et les identifiants**.<br>
 **3. Activez `Ignorer le certificat du serveur` si nécessaire**.
 
 ![BASTION4](https://github.com/user-attachments/assets/8c18369d-ac8b-4a53-933b-3cb0986affa3)
@@ -597,7 +597,7 @@ juin 14 20:15:29 srv-guacamole guacd[31120]: Certificate validation failed
 juin 14 20:15:29 srv-guacamole guacd[31120]: RDP server closed/refused connection: SSL/TLS connection failed (untrusted/self-signed certificate?)
 ```
 
-- **Si le certificat RDP ne peut pas être vérifié (auto-signé par exemple) et que l'option "Ignorer le certificat du serveur" n'est pas cochée dans les paramètres de la connexion Guacamole, alors cette erreur se produira.**
+- **Si le certificat RDP ne peut pas être vérifié (auto-signé par exemple) et que l'option ``Ignorer le certificat du serveur`` n'est pas cochée dans les paramètres de la connexion Guacamole, alors cette erreur se produira.**
 
 - **Une autre erreur que vous pourriez rencontrer si vous avez besoin d'établir des connexions en RDP, c'est celle-ci** :
 
