@@ -373,7 +373,7 @@ cd guacamole-server-1.5.5/
 ./configure --with-systemd-dir=/etc/systemd/system/
 ```
 
-- **En cas d'erreur liée à "guacenc_video_alloc"** :
+- **En cas d'erreur liée à ``guacenc_video_alloc``** :
 
 ```
 ./configure --with-systemd-dir=/etc/systemd/system/ --disable-guacenc
