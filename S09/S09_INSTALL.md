@@ -78,7 +78,7 @@ bash /tmp/sng_freepbx_debian_install.sh
   
 # 📑 Installation et Configuration :
 
-## 📑 Étape 1 : Préparation de la VM webserver
+## 📑 Étape 1 : Installation de Apache
 
 - **Mettre à jour le système et installer Apache** :
    
