@@ -91,15 +91,7 @@ bash /tmp/sng_freepbx_debian_install.sh
 
 ``systemctl status apache2``
 
-- **Trouver l’adresse IP de la carte réseau "Accès par pont"** :
-
-- **Utiliser la commande suivante** :
-
-``ip a``
-
-- **Tester l’accès à Apache depuis la machine hôte** :
-
-- **Ouvrir un navigateur et se connecter via ``http://Adresse_IP_privée``**.
+---
 
 ## 📑 Étape 2 : Configuration de la Page d’Accueil
 
