@@ -311,3 +311,11 @@ bash /tmp/sng_freepbx_debian_install.sh
 ![WEB2](https://github.com/user-attachments/assets/8b8961d5-1380-4638-a6cc-0e1d25783564)
 
 </details>
+
+
+
+<details>
+<summary><h1>🎯 Mise en place d'un serveur RDP<h1></summary>
+</h1>
+</h1>details>  
+
