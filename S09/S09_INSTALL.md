@@ -65,7 +65,7 @@ bash /tmp/sng_freepbx_debian_install.sh
 
 - L'utilisateur ``Lucas Duval`` arrive bien, à joindre l'utilisateur ``Valentin Bonnet" et inversement :
 
-![3CX1](https://github.com/user-attachments/assets/4a44a830-5606-45e3-a888-484510864238)
+![3CX1](https://github.com/user-attachments/assets/4a44a830-5606-45e3-a888-484510864238)<br>
 
 ![3CX2](https://github.com/user-attachments/assets/e29ff2bc-da2c-471f-a250-226183aaed53)
 
