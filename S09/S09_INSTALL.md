@@ -63,7 +63,7 @@ bash /tmp/sng_freepbx_debian_install.sh
 
 - Renseigner le numéro de l'utilisateur que nous voulons contacter et lancer l'appel.
 
-- L'utilisateur ``Lucas Duval`` arrive bien, a contacte l'utilisateur ``Valentin Bonnet" et inversement :
+- L'utilisateur ``Lucas Duval`` arrive bien, à joindre l'utilisateur ``Valentin Bonnet" et inversement :
 
 ![3CX1](https://github.com/user-attachments/assets/4a44a830-5606-45e3-a888-484510864238)
 
