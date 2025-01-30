@@ -312,10 +312,16 @@ bash /tmp/sng_freepbx_debian_install.sh
 
 </details>
 
-
+---
 
 <details>
-<summary><h1>🎯 Mise en place d'un serveur RDP<h1></summary>
+<summary><h1>🎯 Mise en place d'un serveur RDP<h1></summary>  
+  
+**Activation de la connexion à distance**  
+![Capture d'écran 2025-01-30 150308](https://github.com/user-attachments/assets/3a4f7f2b-039f-478d-9376-db26d1638896)  
+![Capture d'écran 2025-01-30 150334](https://github.com/user-attachments/assets/8f2dd4e6-d2cd-4934-9e67-1183d3e6d01d)  
+
+  
 </h1>
 </details>  
 
