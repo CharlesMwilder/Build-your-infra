@@ -57,6 +57,13 @@ bash /tmp/sng_freepbx_debian_install.sh
 ---
 
 <details>
+<summary><h1>🎯 Test de communication entre différent utilisateurs via 3CX<h1></summary>
+
+</details>
+
+---
+
+<details>
 <summary><h1>🎯 Mise en place d'un serveur web avec APACHE<h1></summary>
   
 # 📑 Installation et Configuration :
