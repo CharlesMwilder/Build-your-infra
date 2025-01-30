@@ -317,5 +317,5 @@ bash /tmp/sng_freepbx_debian_install.sh
 <details>
 <summary><h1>🎯 Mise en place d'un serveur RDP<h1></summary>
 </h1>
-</h1>details>  
+</details>  
 
