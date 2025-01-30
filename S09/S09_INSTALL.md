@@ -88,7 +88,7 @@ bash /tmp/sng_freepbx_debian_install.sh
 
 - **Modifier la page d’accueil par défaut** :
 
-- **Édite le fichier ``/var/www/html/index.html``** :
+- **Édite le fichier ``/var/www/html/index.html``** (exemple ci-dessous) :
 
 ```html
 <!DOCTYPE html>
@@ -166,7 +166,7 @@ bash /tmp/sng_freepbx_debian_install.sh
 ```
 ---
 
-- **Ajouter un fichier ``next.html`` dans le dossier ``/var/www/html/``** :
+- **Ajouter un fichier ``next.html`` dans le dossier ``/var/www/html/``** (exemple ci-dessous) :
 
 ---
 
@@ -294,103 +294,6 @@ bash /tmp/sng_freepbx_debian_install.sh
 - **Redémarrer Apache** :
 
 ``systemctl restart apache2``
-
-## 📑Étape 3 : Configuration de la Box Internet
-
-- **Configurer la redirection de port** :
-
-- **Rediriger le port externe ``80`` de la box vers le port interne ``80`` de la VM**.
-
-- **Tester l’accès depuis un appareil connecté en 4G** :
-
-- **Utiliser l’adresse IP publique de la box : ``http://Adresse_IP_Publique``**.
-  
-- **Sécuriser la connexion** :
-
-- **Modifier la règle NAT/PAT pour rediriger un autre port externe, comme ``22545``, vers le port interne ``80``**.
-  
-- **Tester avec le port personnalisé** :
-
-``Exemple : http://Adresse_IP_Publique:22545``
-
-## 📑Étape 4 : Enregistrement d’un Nom de Domaine
-
-- **Créer un nom de domaine dynamique sur ``no-ip``** :
-
-- **Connectez-vous sur ``no-ip`` et créer un hostname** :
-
-``Hostname : BilluServer``<br>
-``Domain : Sélectionne un domaine, ex. tssr.net``<br>
-``Record Type : A``<br>
-``IPV4 Address : Ton adresse IP publique``.
-
-- **Accèder à votre site via le domaine** :
-
-``Exemple : http://BilluServer.tssr.net:22545``.
-
-## 📑 Étape 5 : Mise en Place d’un Reverse Proxy
-
-- **Installer Apache sur la VM proxy** :
-
-```bash
-apt install apache2 -y
-a2enmod proxy
-a2enmod proxy_http
-a2enmod proxy_balancer
-a2enmod lbmethod_byrequests
-```
-
-``systemctl restart apache2``
-
-- **Configure le fichier ``VirtualHost``** :
-
-- **Sauvegarde ``/etc/apache2/sites-available/000-default.conf``** :
-
-``cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default.conf.bak``
-
-- **Éditer ``/etc/apache2/sites-available/000-default.conf``** :
-
-```bash
-<VirtualHost *:22545>
-    ServerName BilluServer.tssr.net
-
-    ProxyPreserveHost On
-    ProxyPass / http://<Adresse_IP_Du_Serveur>:80/
-    ProxyPassReverse / http://<Adresse_IP_Du_Serveur>:80/
-
-    <Location />
-        Order allow,deny
-        Allow from all
-    </Location>
-</VirtualHost>
-```
-
-- **Configurer le port d’écoute** :
-
-- **Éditer ``/etc/apache2/ports.conf`` et ajouter** :
-
-``Listen 22545``
-
-- **Activer la configuration et redémarrer Apache** :
-
-```bash
-a2ensite 000-default.conf
-systemctl restart apache2
-```
-
-- **Configurer la box pour rediriger le port externe ``22545`` vers la VM proxy**.
-
-- **Tester l’accès via le reverse proxy** :
-
-``Exemple : http://HomeHomeWCS.webhop.me:22545``.
-
-- **Basculer vers le port ``80``** :
-
-- **Modifie le VirtualHost pour écouter sur le port ``80``**.
-
-``Exemple : http://HomeHomeWCS.webhop.me``.
-
----
 
 ## **Le serveur web est maintenant fonctionnel, sécurisé et accessible depuis l’extérieur grâce à un reverse proxy**. 🎉
 
