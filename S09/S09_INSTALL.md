@@ -59,6 +59,12 @@ bash /tmp/sng_freepbx_debian_install.sh
 <details>
 <summary><h1>🎯 Test de communication entre différent utilisateurs via 3CX<h1></summary>
 
+- Installation de ``3CX`` sur tout les utilisateurs graçe à une GPO.
+
+- Renseigner le numéro de l'utilisateur que nous voulons contacter et lancer l'appel.
+  
+![3CX1](https://github.com/user-attachments/assets/4a44a830-5606-45e3-a888-484510864238)
+
 </details>
 
 ---
