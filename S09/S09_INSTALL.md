@@ -61,7 +61,7 @@ bash /tmp/sng_freepbx_debian_install.sh
 
 - Installation du logiciel ``3CX`` sur tout les utilisateurs via une GPO.
 
-- Renseigner le numéro de l'utilisateur que nous voulons contacter et lancer l'appel.
+- Renseigner le numéro de l'utilisateur que vous voulez contacter et lancer l'appel.
 
 - L'utilisateur ``Lucas Duval`` arrive bien, à joindre l'utilisateur ``Valentin Bonnet" et inversement :
 
