@@ -338,9 +338,9 @@ bash /tmp/sng_freepbx_debian_install.sh
 <details>
 <summary><h1>🎯 Installation et configuration d'un serveur bastion GUACAMOLE<h1></summary>
 
-# Installation d'Apache Guacamole sur Debian 12
+# 📑 Installation d'Apache Guacamole sur Debian 12
 
-## A. Installer les prérequis d'Apache Guacamole
+## 📑 A. Installer les prérequis d'Apache Guacamole
 
 - **Avant de commencer, mettez à jour la liste des paquets** :
 
@@ -356,7 +356,7 @@ apt-get install build-essential libcairo2-dev libjpeg62-turbo-dev libpng-dev lib
 
 ---
 
-### B. Compiler et installer Apache Guacamole "Server"
+### 📑 B. Compiler et installer Apache Guacamole "Server"
 
 - **Téléchargez et extrayez les sources** :
 
@@ -397,7 +397,7 @@ systemctl status guacd
 
 ---
 
-### C. Créer le répertoire de configuration
+### 📑 C. Créer le répertoire de configuration
 
 ```
 sudo mkdir -p /etc/guacamole/{extensions,lib}
@@ -405,7 +405,7 @@ sudo mkdir -p /etc/guacamole/{extensions,lib}
 
 ---
 
-### D. Installer Guacamole Client (Web App)
+### 📑 D. Installer Guacamole Client (Web App)
 
 - **Ajoutez le dépôt de Debian 11 pour installer Tomcat 9** :
 
@@ -442,7 +442,7 @@ systemctl restart tomcat9 guacd
 
 ---
 
-### E. Base de données MariaDB pour l'authentification
+### 📑 E. Base de données MariaDB pour l'authentification
 
 - **Installez MariaDB** :
 
@@ -529,7 +529,7 @@ systemctl restart tomcat9 guacd mariadb
 
 ---
 
-## IV. Premiers pas avec Apache Guacamole
+## 📑 IV. Premiers pas avec Apache Guacamole
 
 - **Accédez à l'interface** :
 
@@ -546,7 +546,7 @@ http://<Adresse IP>:8080/guacamole/
 
 ---
 
-### A. Créer un nouveau compte admin
+### 📑 A. Créer un nouveau compte admin
 
 **1. Accédez aux paramètres > Utilisateurs > Nouvel utilisateur**.
 **2. Créez un nouvel administrateur avec un mot de passe sécurisé**.
@@ -560,7 +560,7 @@ http://<Adresse IP>:8080/guacamole/
 
 ---
 
-### B. Ajouter une connexion RDP
+### 📑 B. Ajouter une connexion RDP
 
 **1. Créez un groupe de connexions : **Paramètres > Connexion > Nouveau groupe****.
 **2. Ajoutez une nouvelle connexion RDP avec l'IP et les identifiants**.
@@ -580,7 +580,7 @@ http://<Adresse IP>:8080/guacamole/
 
 ---
 
-## C. Apache Guacamole : erreur de connexion en RDP
+## 📑 C. Apache Guacamole : erreur de connexion en RDP
 
 - **Que faire si la connexion RDP ne se lance pas ou qu'elle affiche une erreur ?**
 
