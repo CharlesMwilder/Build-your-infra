@@ -322,9 +322,12 @@ bash /tmp/sng_freepbx_debian_install.sh
 ![Capture d'écran 2025-01-30 150334](https://github.com/user-attachments/assets/8f2dd4e6-d2cd-4934-9e67-1183d3e6d01d)  
 ![Capture d'écran 2025-01-30 150356](https://github.com/user-attachments/assets/0410647c-16ad-4d2f-bdaa-462ff7ed1110)  
 ![Capture d'écran 2025-01-30 150635](https://github.com/user-attachments/assets/1c7a660b-5d3a-4a92-9a03-01ccaef6966e)  
+
+**Il suffit de taper `mstsc` dans la zone de recherche pour lancer la fe^tre de configuration**  
 ![Capture d'écran 2025-01-30 150718](https://github.com/user-attachments/assets/87eec76f-669b-4ca2-99d0-f8cb716d40e2)  
 
-  
+
 </h1>
 </details>  
 
+---
