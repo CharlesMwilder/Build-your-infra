@@ -69,11 +69,11 @@
 <details>
 <summary><h1>🎯 Installation et test de Purple Knight<h1></summary>  
 
-  ### Il faut remplir un formulaire pour recevoir un lien de téléchargement. Ensuite il faut autoriser l'ouverture du dossier zip (avant de le dézipper) :  
+- **Il faut remplir un formulaire pour recevoir un lien de téléchargement. Ensuite il faut autoriser l'ouverture du dossier zip (avant de le dézipper)** :  
   
 ![Capture d'écran 2025-02-05 180622](https://github.com/user-attachments/assets/036bf37a-98a3-4259-9b22-e222878a3edd)  
 
-### Lancer ensuite l'exécutable :  **``PurpleKnight.exe``**
+- **Lancer ensuite l'exécutable** :  **``PurpleKnight.exe``**
 
 ![Capture d'écran 2025-02-05 171100](https://github.com/user-attachments/assets/b7aa4c50-cfd9-4403-9f4a-8d6eb5fc5793)<br> 
 
@@ -87,7 +87,7 @@
 
 ---
 
-### Désactivation du service ``Spooler`` sur nos 2 contrôleurs de domaines :
+- **Désactivation du service ``Spooler`` sur nos 2 contrôleurs de domaines** :
 
 ![Capture d'écran 2025-02-05 174209](https://github.com/user-attachments/assets/4778c455-5138-45e2-965c-b278305a7fc4)<br> 
 
