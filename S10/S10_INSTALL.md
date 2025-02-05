@@ -154,9 +154,14 @@
 ![LYNIS11](https://github.com/user-attachments/assets/9198af09-091e-4376-b4d3-290116f5e75c)<br>
 
 
-🚨🚨🚨 *Détails du scan avec SCORE* 🚨🚨🚨 :
+🚨🚨🚨 *Détails du scan avec SCORE avant modification* 🚨🚨🚨 :
 
 ![LYNIS12](https://github.com/user-attachments/assets/85e722a2-8427-42f9-ba73-fb3a918a5a1a)
+
+
+🚨🚨🚨 *Détails du scan avec SCORE après quelques modifications* 🚨🚨🚨 :
+
+![LYNIS13](https://github.com/user-attachments/assets/50d82d12-045e-4bfc-9c9b-a5879d8d2f76)
 
 
 </details>
