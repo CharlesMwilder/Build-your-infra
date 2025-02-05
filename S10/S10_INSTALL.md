@@ -174,10 +174,10 @@
 
 ``apt-get install debsums apt-listbugs needrestart apt-show-versions fail2ban unattended-upgrades clamav clamav-daemon rkhunter``
 
-- *Clamav : Antivirus.*
-- *unattend-upgrades : Mises à jour automatiques.*
-- *rkhunter : Anti-rootkit.*
-- *Fail2ban : Sécurise SSH contre les attaques par brute force.*
+- *Clamav : ``Antivirus``.*
+- *unattend-upgrades : ``Mises à jour automatiques``.*
+- *rkhunter : ``Anti-rootkit``.*
+- *Fail2ban : ``Sécurise SSH contre les attaques par brute force``.*
 
 
 - **Recommandations pour SSH** :
