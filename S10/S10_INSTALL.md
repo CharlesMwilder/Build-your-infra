@@ -100,5 +100,65 @@
   
 </details>
 
+---
+
+<details>
+<summary><h1>🎯 Installation et test de LYNIS<h1></summary>
+
+## 📑 Installation de LYNIS : 
+
+- **Télécharger le paquet depuis le github** :
+
+``wget https://github.com/CISOfy/lynis/archive/refs/tags/3.1.4.tar.gz``
+
+- **Extraire le paquet** :
+
+ ``tar -zxf 3.1.4.tar.gz``
+
+- **Ce déplacer dans le dossier ``lynis-3.1.4``** :
+
+``cd lynis-3.1.4/``
+
+- **Voir les infos de ``lynis``** :
+
+``./lynis update info``
+
+![LYNIS0](https://github.com/user-attachments/assets/a9f64e41-bec5-4fe0-8492-7c40e524ffba)
+
+- **Puis lancer un audit du système** :
+
+``lynis audit system``
+
+---
+
+![LYNIS1](https://github.com/user-attachments/assets/0df438d0-6c26-4053-8f2d-783eb9b2cf52)<br>
+
+![LYNIS2](https://github.com/user-attachments/assets/722a8ebe-aa08-4f80-874d-97f6691e3d24)<br>
+
+![LYNIS3](https://github.com/user-attachments/assets/a1ff55d1-4212-4fcc-90cc-e88ce245bdb7)<br>
+
+![LYNIS4](https://github.com/user-attachments/assets/d5f1a946-8fc7-4269-8b28-6ec1241b812f)<br>
+
+![LYNIS5](https://github.com/user-attachments/assets/564fe06b-9316-4321-9867-91a3aaddc5fb)<br>
+
+![LYNIS6](https://github.com/user-attachments/assets/d76a55fe-46b5-42ff-aa39-d1b512bcf7e4)<br>
+
+![LYNIS7](https://github.com/user-attachments/assets/cf625c8e-93c3-4c12-b245-f0cf1b759141)<br>
+
+![LYNIS8](https://github.com/user-attachments/assets/ddf58d26-c64d-44b6-b9e8-9b20b61fdcd2)<br>
+
+![LYNIS9](https://github.com/user-attachments/assets/374176e7-138c-4c4a-a39f-fc9a8fc3ed15)<br>
+
+![LYNIS10](https://github.com/user-attachments/assets/043f48b5-d635-425b-b159-11ac56eabf7e)<br>
+
+![LYNIS11](https://github.com/user-attachments/assets/9198af09-091e-4376-b4d3-290116f5e75c)<br>
+
+
+🚨🚨🚨 *Détails du scan avec SCORE* 🚨🚨🚨 :
+
+![LYNIS12](https://github.com/user-attachments/assets/85e722a2-8427-42f9-ba73-fb3a918a5a1a)
+
+
+</details>
 
 
