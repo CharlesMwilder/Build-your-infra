@@ -168,9 +168,9 @@
 
 🚨🚨🚨 *Recommandations pour améliorer le score* 🚨🚨🚨 :
 
-## Installation de paquets recommandés
+## 📑 Installation de paquets recommandés
 
-📑 Installez les paquets suivants pour renforcer la sécurité de votre système :
+- **Installez les paquets suivants pour renforcer la sécurité de votre système** :
 
 ``apt-get install debsums apt-listbugs needrestart apt-show-versions fail2ban unattended-upgrades clamav clamav-daemon rkhunter``
 
