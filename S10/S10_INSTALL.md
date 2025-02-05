@@ -74,6 +74,9 @@
 ![Capture d'écran 2025-02-05 171216](https://github.com/user-attachments/assets/cc7d58d2-f6d9-4a92-b4fa-d4a87b976f5e)  
 ![Capture d'écran 2025-02-05 175504](https://github.com/user-attachments/assets/44fde063-390b-4371-a42a-2e91f9948bd0)  
 
+---
+
+### Désactivation du service "Spooler" sur nos 2 contrôleurs de domaines :
 ![Capture d'écran 2025-02-05 174209](https://github.com/user-attachments/assets/4778c455-5138-45e2-965c-b278305a7fc4)  
 ![Capture d'écran 2025-02-05 175157](https://github.com/user-attachments/assets/8cc3f9a1-5daf-42d3-b0e7-9aa333feb619)  
 ![Capture d'écran 2025-02-05 174903](https://github.com/user-attachments/assets/c1a22477-3ba5-4b72-b8eb-2875270c50dc)  
