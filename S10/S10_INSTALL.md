@@ -65,6 +65,9 @@
   ### Il faut remplir un formulaire pour recevoir un lien de téléchargement. Ensuite il faut autoriser l'ouverture du dossier zip (avant de le dézipper) :  
   
 ![Capture d'écran 2025-02-05 180622](https://github.com/user-attachments/assets/036bf37a-98a3-4259-9b22-e222878a3edd)  
+
+### Lancer ensuite l'exécutable :  **``PurpleKnight.exe``**
+
 ![Capture d'écran 2025-02-05 171100](https://github.com/user-attachments/assets/b7aa4c50-cfd9-4403-9f4a-8d6eb5fc5793)  
 ![Capture d'écran 2025-02-05 171115](https://github.com/user-attachments/assets/0b66a956-80d6-4df0-b7a6-1d852c0acf76)  
 ![Capture d'écran 2025-02-05 171128](https://github.com/user-attachments/assets/7a0d32a1-f01d-4591-a1cd-fd126514b56b)  
