@@ -184,18 +184,19 @@
 
 - **Modifiez le fichier ``/etc/ssh/sshd_config`` avec les réglages suivants** :
 
-- Changez le port ``SSH`` (autre que 22).
-- Augmentez les logs à ``VERBOSE``.
-- Réglez LoginGraceTime à ``2`` minutes.
-- Activez ``strictModes`` (contrôle des fichiers utilisateurs).
-- Limitez les tentatives à ``3`` avec ``MaxAuthtries``.
-- Limitez les sessions simultanées à ``2`` avec ``MaxSessions``.
-- Activez ``PubkeyAuthentication yes`` et ``PasswordAuthentication yes``.
-- Désactivez ``PermitEmptyPasswords no`` et ``PermitRootLogin no``.
-- Désactivez ``AllowTcpForwarding no`` et ``X11Forwarding no``.
-- Réglez ``ClientAliveInterval 300`` et ``ClientAliveCountMax 0``.
-- Désactivez le ``PrintMotd no`` et ``Banner none`` pour éviter la divulgation d'informations.
-
+```java
+- Changez le port "SSH" (autre que 22).
+- Augmentez les logs à "VERBOSE".
+- Réglez LoginGraceTime à "2" minutes.
+- Activez "strictModes" (contrôle des fichiers utilisateurs).
+- Limitez les tentatives à "3" avec "MaxAuthtries".
+- Limitez les sessions simultanées à "2" avec "MaxSessions".
+- Activez "PubkeyAuthentication yes" et "PasswordAuthentication yes".
+- Désactivez "PermitEmptyPasswords no" et "PermitRootLogin no".
+- Désactivez "AllowTcpForwarding no" et "X11Forwarding no".
+- Réglez "ClientAliveInterval 300" et "ClientAliveCountMax 0".
+- Désactivez le "PrintMotd no" et "Banner none" pour éviter la divulgation d'informations.<br>
+```
   
 *Ces réglages permettront d'augmenter la sécurité de votre serveur SSH*.
 
