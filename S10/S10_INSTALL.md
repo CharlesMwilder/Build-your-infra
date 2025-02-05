@@ -75,18 +75,25 @@
 
 ### Lancer ensuite l'exécutable :  **``PurpleKnight.exe``**
 
-![Capture d'écran 2025-02-05 171100](https://github.com/user-attachments/assets/b7aa4c50-cfd9-4403-9f4a-8d6eb5fc5793)  
-![Capture d'écran 2025-02-05 171115](https://github.com/user-attachments/assets/0b66a956-80d6-4df0-b7a6-1d852c0acf76)  
-![Capture d'écran 2025-02-05 171128](https://github.com/user-attachments/assets/7a0d32a1-f01d-4591-a1cd-fd126514b56b)  
-![Capture d'écran 2025-02-05 171216](https://github.com/user-attachments/assets/cc7d58d2-f6d9-4a92-b4fa-d4a87b976f5e)  
+![Capture d'écran 2025-02-05 171100](https://github.com/user-attachments/assets/b7aa4c50-cfd9-4403-9f4a-8d6eb5fc5793)<br> 
+
+![Capture d'écran 2025-02-05 171115](https://github.com/user-attachments/assets/0b66a956-80d6-4df0-b7a6-1d852c0acf76)<br>
+
+![Capture d'écran 2025-02-05 171128](https://github.com/user-attachments/assets/7a0d32a1-f01d-4591-a1cd-fd126514b56b)<br> 
+
+![Capture d'écran 2025-02-05 171216](https://github.com/user-attachments/assets/cc7d58d2-f6d9-4a92-b4fa-d4a87b976f5e)<br> 
+
 ![Capture d'écran 2025-02-05 175504](https://github.com/user-attachments/assets/44fde063-390b-4371-a42a-2e91f9948bd0)  
 
 ---
 
-### Désactivation du service "Spooler" sur nos 2 contrôleurs de domaines :
-![Capture d'écran 2025-02-05 174209](https://github.com/user-attachments/assets/4778c455-5138-45e2-965c-b278305a7fc4)  
-![Capture d'écran 2025-02-05 175157](https://github.com/user-attachments/assets/8cc3f9a1-5daf-42d3-b0e7-9aa333feb619)  
-![Capture d'écran 2025-02-05 174903](https://github.com/user-attachments/assets/c1a22477-3ba5-4b72-b8eb-2875270c50dc)  
+### Désactivation du service ``Spooler`` sur nos 2 contrôleurs de domaines :
+
+![Capture d'écran 2025-02-05 174209](https://github.com/user-attachments/assets/4778c455-5138-45e2-965c-b278305a7fc4)<br> 
+
+![Capture d'écran 2025-02-05 175157](https://github.com/user-attachments/assets/8cc3f9a1-5daf-42d3-b0e7-9aa333feb619)<br>  
+
+![Capture d'écran 2025-02-05 174903](https://github.com/user-attachments/assets/c1a22477-3ba5-4b72-b8eb-2875270c50dc)<br>  
 
 ![Capture d'écran 2025-02-05 184956](https://github.com/user-attachments/assets/27b8d287-4b5d-4b30-883e-761d30ceda95)  
 
