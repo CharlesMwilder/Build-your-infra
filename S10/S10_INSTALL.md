@@ -60,7 +60,7 @@
 ---
 
 <details>
-<summary><h1>🎯 Installation et test de Purple Kngight<h1></summary>  
+<summary><h1>🎯 Installation et test de Purple Knight<h1></summary>  
 
   ### Il faut remplir un formulaire pour recevoir un lien de téléchargement. Ensuite il faut autoriser l'ouverture du dossier zip (avant de le dézipper) :  
   
