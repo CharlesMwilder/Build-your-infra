@@ -23,12 +23,12 @@
 
 ---
 
-- ** 9 erreurs detecté avant correction** :
+- **9 erreurs detecté avant correction** :
 
 ![NIKTO1](https://github.com/user-attachments/assets/3f43b25c-b5f0-4385-aa76-36d9c7677f84)<br>
 
 
-- ** 3 erreurs detecté après correction** :
+- **3 erreurs detecté après correction** :
   
 ![NIKTO2](https://github.com/user-attachments/assets/32aebfa4-a406-4a6c-9109-a05374c35269)
 
