@@ -164,6 +164,42 @@
 ![LYNIS13](https://github.com/user-attachments/assets/50d82d12-045e-4bfc-9c9b-a5879d8d2f76)
 
 
+---
+
+🚨🚨🚨 *Recommandations pour améliorer le score* 🚨🚨🚨 :
+
+## Installation de paquets recommandés
+
+Installez les paquets suivants pour renforcer la sécurité de votre système :
+
+``apt-get install debsums apt-listbugs needrestart apt-show-versions fail2ban unattended-upgrades clamav clamav-daemon rkhunter``
+
+- *Clamav : Antivirus.*
+- *unattend-upgrades : Mises à jour automatiques.*
+- *rkhunter : Anti-rootkit.*
+- *Fail2ban : Sécurise SSH contre les attaques par brute force.*
+
+
+- **Recommandations pour SSH** :
+
+- **Modifiez le fichier ``/etc/ssh/sshd_config`` avec les réglages suivants** :
+
+- Changez le port ``SSH`` (autre que 22).
+- Augmentez les logs à ``VERBOSE``.
+- Réglez LoginGraceTime à ``2`` minutes.
+- Activez ``strictModes`` (contrôle des fichiers utilisateurs).
+- Limitez les tentatives à ``3`` avec ``MaxAuthtries``.
+- Limitez les sessions simultanées à ``2`` avec ``MaxSessions``.
+- Activez ``PubkeyAuthentication yes`` et ``PasswordAuthentication yes``.
+- Désactivez ``PermitEmptyPasswords no`` et ``PermitRootLogin no``.
+- Désactivez ``AllowTcpForwarding no`` et ``X11Forwarding no``.
+- Réglez ``ClientAliveInterval 300`` et ``ClientAliveCountMax 0``.
+- Désactivez le ``PrintMotd no`` et ``Banner none`` pour éviter la divulgation d'informations.
+
+  
+*Ces réglages permettront d'augmenter la sécurité de votre serveur SSH*.
+
+
 </details>
 
 
