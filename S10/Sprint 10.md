@@ -2,17 +2,12 @@
 
 ## SPRINT 10 🏃‍♂️
 
-| **Tâche**                                      | **Description**                                                                                                          |
-|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **???** 📊 | ??? |
-| **???** 📊 | ??? |
-| **???** 📊 | ??? |
-| **???** 📊 | ??? |
-| **???** 📊 | ??? |
-| **???** 📊 | ??? |
-| **???** 📊 | ??? |
-| **???** 📊 | ??? |
-
+| **Tâche** 📊                                  | **Description**                                                                                                  |
+|----------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| **Audit ACTIVE DIRECTORY** 🔍                | Utilisation de PurpleKnight ([lien](https://www.purple-knight.com/fr/)) pour un audit de configuration.        |
+| **Audit SCRIPTS POWERSHELL** 💻               | Utilisation de PSScriptAnalyzer ([lien](https://learn.microsoft.com/fr-fr/powershell/module/psscriptanalyzer/)) pour vérifier la qualité du code. |
+| **Audit SERVEUR WEB** 🌐                     | Scanner les vulnérabilités avec Nikto ([lien](https://memo-linux.com/nikto-outil-scanner-de-securite-serveur-web/)). |
+| **SERVEUR RADIUS** 📡                         | Utilisation de FreeRadius pour la mise en place d’un portail captif.                                            |
 
 
 ## EQUIPES ET ROLES 🏢
