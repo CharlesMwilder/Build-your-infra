@@ -45,8 +45,12 @@
 
 ---
 
+*Erreur détecter*
+
 ![SCRIPTANALIZER1](https://github.com/user-attachments/assets/74ce178a-a1bd-46fb-b502-73fbe1f30304)<br>
 
+
+*Erreur corriger*
 
 ![SCRIPTANALIZER2](https://github.com/user-attachments/assets/d25b51b4-b9ba-47ee-9d2d-b69718f4016d)
 
