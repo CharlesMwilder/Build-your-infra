@@ -206,8 +206,10 @@
 ---
 
 <details>
-<summary><h1>🎯 Installation et test de HardenSysvol<h1></summary>
+<summary><h1>🎯 Installation et test de HardenSysvol<h1></summary>  
+  
 ### Installation du module avec PowerShell  
+
 ![Capture d'écran 2025-02-06 100535](https://github.com/user-attachments/assets/28dd46d7-5f56-4248-ac18-25bad212d7b7)  
 
 
