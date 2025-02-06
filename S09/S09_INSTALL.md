@@ -105,7 +105,7 @@ bash /tmp/sng_freepbx_debian_install.sh
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BILLU</title>
+    <title>BILLU - Logiciel de Facturation</title>
     <link href="https://fonts.googleapis.com/css?family=Exo:100" rel="stylesheet">
     <style>
         /* Background animation */
@@ -120,41 +120,59 @@ bash /tmp/sng_freepbx_debian_install.sh
             background-size: 50px 50px;
             animation: bg-scrolling-reverse 0.92s infinite linear;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: center; /* Centrer verticalement */
             align-items: center;
             height: 100vh;
             color: white;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
+        header, footer {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            text-align: center;
+            position: absolute;
+            left: 0;
+        }
+
+        header {
+            top: 0;
+        }
+
+        footer {
+            bottom: 0;
+        }
+
         .container {
             text-align: center;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 50px 60px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px 40px; /* Réduit le padding */
             border-radius: 15px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
             animation: fadeIn 2s ease-in-out;
             width: 100%;
-            max-width: 600px;
+            max-width: 400px; /* Réduit la largeur maximale de la zone */
         }
 
         h1 {
-            font-size: 4rem;
-            margin-bottom: 10px; /* Un petit ajustement pour le titre */
+            font-size: 2.5rem; /* Réduit la taille du titre */
+            margin-bottom: 10px;
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.1rem; /* Réduit la taille du texte */
             margin-top: 10px;
         }
 
         .button-wrapper {
-            margin-top: 30px; /* Ajout d'un wrapper pour espacer le bouton */
+            margin-top: 30px;
         }
 
         .button {
-            padding: 15px 30px;
-            font-size: 1.2rem;
+            padding: 12px 25px;
+            font-size: 1rem; /* Réduit la taille du bouton */
             color: white;
             background-color: #28a745;
             border: none;
@@ -170,6 +188,38 @@ bash /tmp/sng_freepbx_debian_install.sh
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
 
+        .google-search {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 30px;
+        }
+
+        .google-search input[type="text"] {
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            width: 280px; /* Réduit la largeur du champ de recherche */
+            margin-right: 10px;
+        }
+
+        .google-search input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #28a745;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .google-search input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -183,15 +233,34 @@ bash /tmp/sng_freepbx_debian_install.sh
     </style>
 </head>
 <body>
+    <header>
+        <h2>BILLU</h2>
+    </header>
     <div class="container">
-        <h1>Bienvenue chez BILLU !</h1>
-        <p>L'avenir de la facturation</p>
+        <h1>Bienvenue chez BILLU</h1>
+        <p>L'avenir de la facturation, simple et efficace.</p>
         <div class="button-wrapper">
-            <a href="next.html" class="button">Enter</a>
+            <a href="next.html" class="button">Découvrir</a>
         </div>
     </div>
+    <div class="google-search">
+        <form method="GET" action="http://www.google.be/search">
+            <div align="center">
+                <a href="http://www.google.fr/">
+                    <img src="./pictures/gif_google.gif" border="0" alt="Logo Google" align="absmiddle" width="80">
+                </a>
+                <input type="text" name="q" size="31" maxlength="255" value="">
+                <input type="hidden" name="hl" value="fr">
+                <input type="submit" name="btnG" value="recherche">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 BILLU. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
+
 ```
 ---
 
@@ -207,51 +276,47 @@ bash /tmp/sng_freepbx_debian_install.sh
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services BILLU</title>
     <style>
-        /* Exo thin font from Google. */
+        /* Exo thin font from Google */
         @import url('https://fonts.googleapis.com/css?family=Exo:100');
 
-        /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
-        /* Base64 image for background */
+        /* Body setup */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             color: white;
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC') repeat 0 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
-            justify-content: center;
-            padding: 20px 0;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 20px;
             text-align: center;
-
-            /* Applying the background animation */
-            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC') repeat 0 0;
-            animation: bg-scrolling-reverse .92s infinite;
-            animation-timing-function: linear;
+            animation: bg-scrolling-reverse 0.92s infinite linear;
         }
 
         /* Animations */
         @keyframes bg-scrolling-reverse {
             100% { background-position: 50px 50px; }
         }
-        @keyframes bg-scrolling {
-            0% { background-position: 0 0; }
-        }
 
-        /* Main styles */
+        /* Header Section */
         .header {
             text-align: center;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.8);
             padding: 15px;
-            border-radius: 10px;
+            width: 100%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            max-width: 700px;
-            margin-bottom: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
         }
 
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
+        .header h1 {
+            font-size: 2.2rem;
+            margin: 0;
+            color: white; 
         }
 
         .highlight {
@@ -259,21 +324,48 @@ bash /tmp/sng_freepbx_debian_install.sh
             font-weight: bold;
         }
 
+        /* Main Content Section */
+        .content {
+            margin-top: 100px; /* Ajouté plus d'espace au top */
+            width: 100%;
+        }
+
+        .text-section {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin-bottom: 40px; /* Plus d'espace entre les zones */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            max-width: 900px; /* Réduit la largeur de la section */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text-section p {
+            font-size: 1rem;
+            line-height: 1.4;
+            color: #fff;
+        }
+
+        /* Icons Section */
         .icon-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 20px;
-            width: 90%;
-            max-width: 1200px;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            justify-content: space-evenly;
+            gap: 8px; /* Réduit l'écart entre les icônes */
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 15px;
+            margin-bottom: 40px; /* Plus d'espace avant le bouton */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            max-width: 1000px; /* Réduit la largeur de la zone noire derrière les icônes */
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .icon {
-            width: 60px;
+            width: 45px; /* Taille réduite des icônes */
+            height: 45px;
             transition: transform 0.3s ease, filter 0.3s ease;
             cursor: pointer;
             filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
@@ -284,10 +376,15 @@ bash /tmp/sng_freepbx_debian_install.sh
             filter: drop-shadow(0px 0px 10px rgba(255, 215, 0, 0.8));
         }
 
+        /* Back Button Section */
+        .button-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
         .back-button {
-            margin-top: 15px;
             padding: 10px 25px;
-            font-size: 1rem;
+            font-size: 0.9rem;
             background-color: #ffd700;
             color: black;
             border: none;
@@ -300,30 +397,68 @@ bash /tmp/sng_freepbx_debian_install.sh
             background-color: #ffa500;
             transform: scale(1.05);
         }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            width: 100%;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+            color: white;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <div class="header">
         <h1>BILLU</h1>
-        <p>BillU, filiale du groupe international <span class="highlight">RemindMe</span>, est spécialisée dans le développement de logiciels innovants, notamment de facturation.</p>
-        <p>Avec <span class="highlight">167 collaborateurs</span> et un siège situé dans le 20e arrondissement de Paris, notre mission est de simplifier les processus financiers et d'augmenter l'efficacité opérationnelle de nos clients.</p>
-        <p>Répartie en <span class="highlight">9 départements</span>, notre équipe talentueuse mêle expertise en finance et en développement logiciel pour fournir des solutions de pointe.</p>
     </div>
 
-    <div class="icon-container">
-        <a href="http://192.168.10.254/" target="_blank"><img class="icon" src="https://wpcomputersolutions.com/wp-content/uploads/2018/07/pfsense-logo-e1534531558807.png" alt="pfSense"></a>
-        <a href="http://glpi.billu.com/glpi/" target="_blank"><img class="icon" src="https://glpi-project.org/wp-content/uploads/2021/06/logo-glpi-bleu-1.png" alt="GLPI"></a>
-        <a href="http://passbolt.billu.com/" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/p/97/passbolt.svg" alt="Passbolt"></a>
-        <a href="http://graylog.billu.com:9000/" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/g/32/graylog.svg" alt="Graylog"></a>
-        <a href="http://freepbx.billu.com/" target="_blank"><img class="icon" src="https://cp.beget.com/shared/xisQQW8k-g5QWd77x9XCtcysQ5hIWg3I/logo_freepbx2x.png" alt="FreePBX"></a>
-        <a href="https://mail.billu.com/mail/" target="_blank"><img class="icon" src="https://www.iredmail.org/images/logo.png" alt="iRedMail"></a>
-        <a href="http://zabbix.billu.com:8080/" target="_blank"><img class="icon" src="https://ssd-disclosure.com/wp-content/uploads/2022/11/1_vloEha9mTCLM_SEnXdIUIw-300x300.png" alt="Zabbix"></a>
-        <a href="http://bastion.billu.com:8080/guacamole/#/" target="_blank"><img class="icon" src="https://d7umqicpi7263.cloudfront.net/img/product/030b6dbb-cd7b-486d-af34-99d4924864a1.com/6fb7788920aacfd15ab8e000e0f750a3" alt="Guacamole Bastion"></a>
-        <a href="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/g/69/github-icon.svg" alt="GitHub"></a>
-        <a href="https://www.mailo.com/" target="_blank"><img class="icon" src="./pictures/Mailo_logo.png" alt="Mailo"></a>
+    <!-- Main Content Section -->
+    <div class="content">
+
+        <!-- Text Section -->
+        <div class="text-section">
+            <p>BillU, filiale du groupe international <span class="highlight">RemindMe</span>, est spécialisée dans le développement de logiciels innovants, notamment de facturation.</p>
+            <p>Avec <span class="highlight">167 collaborateurs</span> et un siège situé dans le 20e arrondissement de Paris, notre mission est de simplifier les processus financiers et d'augmenter l'efficacité opérationnelle de nos clients.</p>
+            <p>Répartie en <span class="highlight">9 départements</span>, notre équipe talentueuse mêle expertise en finance et en développement logiciel pour fournir des solutions de pointe.</p>
+        </div>
+
+        <!-- Icons Section -->
+        <div class="icon-container">
+            <a href="http://192.168.10.254/" target="_blank"><img class="icon" src="https://wpcomputersolutions.com/wp-content/uploads/2018/07/pfsense-logo-e1534531558807.png" alt="pfSense"></a>
+            <a href="http://glpi.billu.com/glpi/" target="_blank"><img class="icon" src="https://glpi-project.org/wp-content/uploads/2021/06/logo-glpi-bleu-1.png" alt="GLPI"></a>
+            <a href="http://passbolt.billu.com/" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/p/97/passbolt.svg" alt="Passbolt"></a>
+            <a href="http://graylog.billu.com:9000/" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/g/32/graylog.svg" alt="Graylog"></a>
+            <a href="http://freepbx.billu.com/" target="_blank"><img class="icon" src="https://cp.beget.com/shared/xisQQW8k-g5QWd77x9XCtcysQ5hIWg3I/logo_freepbx2x.png" alt="FreePBX"></a>
+            <a href="https://mail.billu.com/mail/" target="_blank"><img class="icon" src="https://www.iredmail.org/images/logo.png" alt="iRedMail"></a>
+            <a href="http://zabbix.billu.com:8080/" target="_blank"><img class="icon" src="https://ssd-disclosure.com/wp-content/uploads/2022/11/1_vloEha9mTCLM_SEnXdIUIw-300x300.png" alt="Zabbix"></a>
+            <a href="http://bastion.billu.com:8080/guacamole/#/" target="_blank"><img class="icon" src="https://d7umqicpi7263.cloudfront.net/img/product/030b6dbb-cd7b-486d-af34-99d4924864a1.com/6fb7788920aacfd15ab8e000e0f750a3" alt="Guacamole Bastion"></a>
+            <a href="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/g/69/github-icon.svg" alt="GitHub"></a>
+            <a href="https://www.mailo.com/" target="_blank"><img class="icon" src="./pictures/Mailo_logo.png" alt="Mailo"></a>
+        </div>
+
+        <!-- Back Button Section -->
+        <div class="button-section">
+            <button class="back-button" onclick="window.location.href='index.html';">Retour au menu</button>
+        </div>
     </div>
 
-    <button class="back-button" onclick="window.location.href='index.html';">Retour à l'index</button>
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 BillU | Tous droits réservés</p>
+    </div>
+
 </body>
 </html>
 ```
