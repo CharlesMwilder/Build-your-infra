@@ -208,26 +208,28 @@
 <details>
 <summary><h1>🎯 Installation et test de HardenSysvol<h1></summary>  
   
-### Installation du module avec PowerShell  
+## Installation du module avec PowerShell  
 
 ![Capture d'écran 2025-02-06 100535](https://github.com/user-attachments/assets/28dd46d7-5f56-4248-ac18-25bad212d7b7)  
 
-### Lancement de HardenSysvol  
+## Lancement de HardenSysvol  
 
 ![Capture d'écran 2025-02-06 101255](https://github.com/user-attachments/assets/7c02505e-5269-4697-b914-4f9dea775e64)  
 
-### Résultat du premier scan, en mode standard  
+## Résultat du premier scan, en mode standard  
 
 ![Capture d'écran 2025-02-06 101459](https://github.com/user-attachments/assets/836c5c4c-c4ed-451d-a2aa-65abf9152a86)  
 
-### Scan avec options étendues  
+## Scan avec options étendues  
 
 ![Capture d'écran 2025-02-06 101647](https://github.com/user-attachments/assets/8970424e-bc26-4f29-869b-fd8659750674)  
 
 
 ![Capture d'écran 2025-02-06 101712](https://github.com/user-attachments/assets/ff749af2-ffc5-41d6-adff-d9f9bc0f1aae)
 
+## Détail de l'analyse  
 
+![Capture d'écran 2025-02-06 102009](https://github.com/user-attachments/assets/16bfb031-c0ed-4a9b-9071-53b00c7fe0d9)
 
 
 </details>
