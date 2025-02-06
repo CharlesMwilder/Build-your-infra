@@ -470,10 +470,9 @@ bash /tmp/sng_freepbx_debian_install.sh
 
 ## **Le serveur web est maintenant fonctionnel, sécurisé et accessible depuis l’extérieur grâce à un reverse proxy**. 🎉
 
-![WEB1](https://github.com/user-attachments/assets/983aa8e2-3afb-490a-b05f-12f10b50b1ec)<br>
+![BILLU1](https://github.com/user-attachments/assets/a6512fd1-0c3a-4ca8-a3f5-b656bcf61fbd)<br>
 
-
-![WEB2](https://github.com/user-attachments/assets/db607603-a19a-411e-932f-bf4efcc99983)
+![BILLU2](https://github.com/user-attachments/assets/9333ef37-c5aa-4c4a-8ca7-0f9e299fb322)
 
 </details>
 
