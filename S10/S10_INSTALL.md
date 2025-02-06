@@ -225,11 +225,15 @@
 ![Capture d'écran 2025-02-06 101647](https://github.com/user-attachments/assets/8970424e-bc26-4f29-869b-fd8659750674)  
 
 
-![Capture d'écran 2025-02-06 101712](https://github.com/user-attachments/assets/ff749af2-ffc5-41d6-adff-d9f9bc0f1aae)
+![Capture d'écran 2025-02-06 101712](https://github.com/user-attachments/assets/ff749af2-ffc5-41d6-adff-d9f9bc0f1aae)  
 
 ## Détail de l'analyse  
 
-![Capture d'écran 2025-02-06 102009](https://github.com/user-attachments/assets/16bfb031-c0ed-4a9b-9071-53b00c7fe0d9)
+![Capture d'écran 2025-02-06 102009](https://github.com/user-attachments/assets/16bfb031-c0ed-4a9b-9071-53b00c7fe0d9)  
+
+## Affichage de la GPO contenant les variables incluant les mots clés "password". Nous somme à priori sur un faux positif.  
+
+![Capture d'écran 2025-02-06 103539](https://github.com/user-attachments/assets/79bb289f-20d7-45f3-b8c6-4b45c56bda1b)  
 
 
 </details>
