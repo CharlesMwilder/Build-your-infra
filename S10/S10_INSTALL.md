@@ -222,6 +222,9 @@
 
 ### Scan avec options étendues  
 
+![Capture d'écran 2025-02-06 101647](https://github.com/user-attachments/assets/8970424e-bc26-4f29-869b-fd8659750674)  
+
+
 ![Capture d'écran 2025-02-06 101712](https://github.com/user-attachments/assets/ff749af2-ffc5-41d6-adff-d9f9bc0f1aae)
 
 
