@@ -129,32 +129,33 @@ bash /tmp/sng_freepbx_debian_install.sh
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
-        /* En-tête et pied de page réduits */
         header, footer {
             width: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 0.7px 0; /* Réduction de la hauteur */
+            background: rgba(10, 10, 10, 0.9);
+            padding: 10px 0;
             text-align: center;
             position: absolute;
             left: 0;
-            font-size: 0.9rem; /* Taille de police légèrement réduite */
         }
 
         header {
             top: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         footer {
             bottom: 0;
+            font-size: 0.9rem;
         }
 
-        /* Bouton hamburger */
         .hamburger {
             position: fixed;
-            top: 15px; /* Encore légèrement baissé */
+            top: 15px;
             right: 20px;
-            width: 30px;
-            height: 25px;
+            width: 35px;
+            height: 30px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -165,25 +166,25 @@ bash /tmp/sng_freepbx_debian_install.sh
         }
 
         .hamburger div {
-            width: 30px;
-            height: 4px;
+            width: 35px;
+            height: 5px;
             background-color: white;
             border-radius: 5px;
+            transition: 0.3s;
         }
 
-        /* Menu latéral */
         .menu {
             position: fixed;
             top: 0;
             right: -250px;
-            width: 250px;
+            width: 160px;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(20, 20, 20, 0.95);
             display: flex;
             flex-direction: column;
             align-items: center;
             padding-top: 50px;
-            transition: 0.3s ease;
+            transition: right 0.3s ease;
             z-index: 999;
         }
 
@@ -192,26 +193,24 @@ bash /tmp/sng_freepbx_debian_install.sh
             text-decoration: none;
             font-size: 1.5rem;
             padding: 15px;
-            transition: background-color 0.3s ease;
+            transition: 0.3s;
         }
 
         .menu a:hover {
             background-color: #28a745;
+            border-radius: 8px;
         }
 
-        /* Ouverture du menu latéral */
         .menu.open {
             right: 0;
         }
 
-        /* Conteneur principal */
         .container {
             text-align: center;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 30px 40px;
+            background: rgba(30, 30, 30, 0.8);
+            padding: 40px;
             border-radius: 15px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-            width: 100%;
             max-width: 400px;
         }
 
@@ -221,12 +220,12 @@ bash /tmp/sng_freepbx_debian_install.sh
         }
 
         p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin-top: 10px;
         }
 
         .google-search {
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(20, 20, 20, 0.8);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -239,7 +238,8 @@ bash /tmp/sng_freepbx_debian_install.sh
             border-radius: 5px;
             border: none;
             width: 280px;
-            margin-right: 10px;
+            background: black;
+            color: white;
         }
 
         .google-search input[type="submit"] {
@@ -250,7 +250,7 @@ bash /tmp/sng_freepbx_debian_install.sh
             border: none;
             cursor: pointer;
             color: white;
-            transition: background-color 0.3s;
+            transition: 0.3s;
         }
 
         .google-search input[type="submit"]:hover {
@@ -259,23 +259,19 @@ bash /tmp/sng_freepbx_debian_install.sh
     </style>
 </head>
 <body>
-    <header>
-        <h2>BILLU</h2>
-    </header>
+    <header>BILLU</header>
     
-    <!-- Bouton hamburger -->
     <button class="hamburger" onclick="toggleMenu()">
         <div></div>
         <div></div>
         <div></div>
     </button>
 
-    <!-- Menu latéral -->
     <div class="menu" id="menu">
         <a href="next.html">Services</a> 
         <a href="games.html">Games</a>
-        <a href="#about">À propos</a>
-        <a href="#contact">Contact</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
     </div>
 
     <div class="container">
@@ -283,32 +279,29 @@ bash /tmp/sng_freepbx_debian_install.sh
         <p>L'avenir de la facturation, simple et efficace.</p>
     </div>
 
-    <!-- Barre de recherche Google -->
     <div class="google-search">
         <form method="GET" action="http://www.google.be/search">
             <div align="center">
-                <a href="http://www.google.fr/">
+		<a href="http://www.google.fr/">
                     <img src="./pictures/gif_google.gif" border="0" alt="Logo Google" align="absmiddle" width="80">
                 </a>
-                <input type="text" name="q" size="31" maxlength="255" value="">
+                <input type="text" name="q" size="31" maxlength="255" placeholder="Rechercher sur Google">
                 <input type="hidden" name="hl" value="fr">
-                <input type="submit" name="btnG" value="recherche">
+                <input type="submit" name="btnG" value="Rechercher">
             </div>
         </form>
     </div>
 
-    <footer>
-        <p>&copy; 2025 BILLU. Tous droits réservés.</p>
-    </footer>
+    <footer>&copy; 2025 BILLU. Tous droits réservés.</footer>
 
     <script>
         function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('open');
+            document.getElementById('menu').classList.toggle('open');
         }
     </script>
 </body>
 </html>
+
 ```
 ---
 
@@ -322,267 +315,202 @@ bash /tmp/sng_freepbx_debian_install.sh
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services BILLU</title>
+    <title>Dashboard BillU</title>
     <style>
-        /* Exo thin font from Google */
-        @import url('https://fonts.googleapis.com/css?family=Exo:100');
-
-        /* Body setup */
+        @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;600&display=swap');
+        
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Exo', sans-serif;
+            background-color: #1e1e1e;
             color: white;
-            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC') repeat 0 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            min-height: 100vh;
-            padding: 20px;
             text-align: center;
-            animation: bg-scrolling-reverse 0.92s infinite linear;
         }
 
-        /* Animations */
-        @keyframes bg-scrolling-reverse {
-            100% { background-position: 50px 50px; }
-        }
-
-        /* Header Section */
         .header {
-            text-align: center;
-            background: rgba(0, 0, 0, 0.8);
+            background: #222;
             padding: 15px;
-            width: 100%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 9999;
         }
 
         .header h1 {
-            font-size: 2.2rem;
             margin: 0;
-            color: white; 
-        }
-
-        .highlight {
+            font-weight: 600;
             color: #ffd700;
-            font-weight: bold;
         }
 
-        /* Main Content Section */
-        .content {
-            margin-top: 100px; /* Ajouté plus d'espace au top */
-            width: 100%;
-        }
-
-        .text-section {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            margin-bottom: 40px; /* Plus d'espace entre les zones */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            max-width: 900px; /* Réduit la largeur de la section */
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .text-section p {
-            font-size: 1rem;
-            line-height: 1.4;
-            color: #fff;
-        }
-
-        /* Icons Section */
         .icon-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-            gap: 8px; /* Réduit l'écart entre les icônes */
-            background-color: rgba(0, 0, 0, 0.7); 
-            padding: 15px;
-            margin-bottom: 40px; /* Plus d'espace avant le bouton */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+
+        .icon-wrapper {
+            background: #2a2a2a;
             border-radius: 10px;
-            max-width: 1000px; /* Réduit la largeur de la zone noire derrière les icônes */
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .icon {
-            width: 45px; /* Taille réduite des icônes */
-            height: 45px;
-            transition: transform 0.3s ease, filter 0.3s ease;
-            cursor: pointer;
-            filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
-        }
-
-        .icon:hover {
-            transform: scale(1.1);
-            filter: drop-shadow(0px 0px 10px rgba(255, 215, 0, 0.8));
-        }
-
-        /* Back Button Section */
-        .button-section {
+            padding: 20px;
+            margin: 15px;
             text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .back-button {
-            padding: 10px 25px;
-            font-size: 0.9rem;
-            background-color: #ffd700;
-            color: black;
-            border: none;
-            border-radius: 20px;
+            position: relative;
+            width: 150px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
-        .back-button:hover {
-            background-color: #ffa500;
+        .icon-wrapper:hover {
             transform: scale(1.05);
         }
 
-        /* Footer Section */
-        .footer {
-            text-align: center;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 15px;
-            width: 100%;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
-            position: fixed;
-            bottom: 0;
-            left: 0;
-        }
-
-        .footer p {
-            margin: 0;
-            font-size: 1rem;
-            color: white;
+        .icon {
+            width: 60px;
+            height: 60px;
         }
 
         .status-dot {
-            width: 15px;
-            height: 10px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
-            margin-top: 80px;
-            margin: 20% auto;
+            background-color: gray; /* Initial color */
         }
 
-        .status-dot.green {
+        .status-dot.up {
             background-color: green;
         }
 
-        .status-dot.red {
+        .status-dot.down {
             background-color: red;
+        }
+
+        .service-name {
+            font-size: 1rem;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .status-text {
+            font-size: 0.9rem;
+            color: #fff;
+        }
+
+        .status-text.up {
+            color: #28a745;
+        }
+
+        .status-text.down {
+            color: #dc3545;
+        }
+
+        .footer {
+            background: #222;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
     <div class="header">
-        <h1>BILLU</h1>
+        <h1>Dashboard BillU</h1>
     </div>
 
-    <!-- Main Content Section -->
-    <div class="content">
-
-        <!-- Text Section -->
-        <div class="text-section">
-            <p>BillU, filiale du groupe international <span class="highlight">RemindMe</span>, est spécialisée dans le développement de logiciels innovants, notamment de facturation.</p>
-            <p>Avec <span class="highlight">167 collaborateurs</span> et un siège situé dans le 20e arrondissement de Paris, notre mission est de simplifier les processus financiers et d'augmenter l'efficacité opérationnelle de nos clients.</p>
-            <p>Répartie en <span class="highlight">9 départements</span>, notre équipe talentueuse mêle expertise en finance et en développement logiciel pour fournir des solutions de pointe.</p>
-        </div>
-
-        <!-- Icons Section -->
-        <div class="icon-container">
-            <div class="icon-wrapper" data-service="http://192.168.10.254/">
-            <a href="http://192.168.10.254/" target="_blank"><img class="icon" src="https://wpcomputersolutions.com/wp-content/uploads/2018/07/pfsense-logo-e1534531558807.png" alt="pfSense"></a>
-            <div class="status-dot"></div>
-            </div>
-            <div class="icon-wrapper" data-service="http://glpi.billu.com/glpi/">
-            <a href="http://glpi.billu.com/glpi/" target="_blank"><img class="icon" src="https://glpi-project.org/wp-content/uploads/2021/06/logo-glpi-bleu-1.png" alt="GLPI"></a>
-            <div class="status-dot"></div>
-            </div>
-            <div class="icon-wrapper" data-service="http://passbolt.billu.com/">
-            <a href="http://passbolt.billu.com/" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/p/97/passbolt.svg" alt="Passbolt"></a>
-            <div class="status-dot"></div>
-            </div>
-            <div class="icon-wrapper" data-service="http://graylog.billu.com:9000/">
-            <a href="http://graylog.billu.com:9000/" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/g/32/graylog.svg" alt="Graylog"></a>
-            <div class="status-dot"></div>
-            </div>
-            <div class="icon-wrapper" data-service="http://freepbx.billu.com/">
-            <a href="http://freepbx.billu.com/" target="_blank"><img class="icon" src="https://cp.beget.com/shared/xisQQW8k-g5QWd77x9XCtcysQ5hIWg3I/logo_freepbx2x.png" alt="FreePBX"></a>
-            <div class="status-dot"></div>
-            </div>
-            <div class="icon-wrapper" data-service="https://mail.billu.com/mail/">
-            <a href="https://mail.billu.com/mail/" target="_blank"><img class="icon" src="https://www.iredmail.org/images/logo.png" alt="iRedMail"></a>
-            <div class="status-dot"></div>
-            </div>
-            <div class="icon-wrapper" data-service="http://zabbix.billu.com:8080/">
-            <a href="http://zabbix.billu.com:8080/" target="_blank"><img class="icon" src="https://ssd-disclosure.com/wp-content/uploads/2022/11/1_vloEha9mTCLM_SEnXdIUIw-300x300.png" alt="Zabbix"></a>
-            <div class="status-dot"></div>
-            </div>
-            <div class="icon-wrapper" data-service="http://bastion.billu.com:8080/guacamole/#/">
-            <a href="http://bastion.billu.com:8080/guacamole/#/" target="_blank"><img class="icon" src="https://d7umqicpi7263.cloudfront.net/img/product/030b6dbb-cd7b-486d-af34-99d4924864a1.com/6fb7788920aacfd15ab8e000e0f750a3" alt="Guacamole Bastion"></a>
-            <div class="status-dot"></div>
-            </div>
-            <div class="icon-wrapper" data-service="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra">
-            <a href="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/g/69/github-icon.svg" alt="GitHub"></a>
-            <div class="status-dot"></div>
-            </div>
-            <div class="icon-wrapper" data-service="https://www.mailo.com/">
-            <a href="https://www.mailo.com/" target="_blank"><img class="icon" src="./pictures/Mailo_logo.png" alt="Mailo"></a>
-            <div class="status-dot"></div>
-            </div>
-        </div>
-
-        <!-- Back Button Section -->
-        <div class="button-section">
-            <button class="back-button" onclick="window.location.href='index.html';">Retour au menu</button>
-        </div>
+    <div class="icon-container" id="services-container">
+        <!-- Les services seront générés dynamiquement ici -->
     </div>
 
-    <!-- Footer Section -->
     <div class="footer">
         <p>&copy; 2025 BillU | Tous droits réservés</p>
     </div>
 
     <script>
-        // Fonction pour vérifier l'état d'un service
+        const services = [
+            { name: 'pfSense', url: 'http://192.168.10.254/', img: 'https://wpcomputersolutions.com/wp-content/uploads/2018/07/pfsense-logo-e1534531558807.png' },
+            { name: 'GLPI', url: 'http://glpi.billu.com/glpi/', img: 'https://glpi-project.org/wp-content/uploads/2021/06/logo-glpi-bleu-1.png' },
+            { name: 'Passbolt', url: 'http://passbolt.billu.com/', img: 'https://static.cdnlogo.com/logos/p/97/passbolt.svg' },
+            { name: 'Graylog', url: 'http://graylog.billu.com:9000/', img: 'https://static.cdnlogo.com/logos/g/32/graylog.svg' },
+            { name: 'FreePBX', url: 'http://freepbx.billu.com/', img: 'https://cp.beget.com/shared/xisQQW8k-g5QWd77x9XCtcysQ5hIWg3I/logo_freepbx2x.png' },
+            { name: 'iRedMail', url: 'https://mail.billu.com/mail/', img: 'https://www.iredmail.org/images/logo.png' },
+            { name: 'Zabbix', url: 'http://zabbix.billu.com:8080/', img: 'https://ssd-disclosure.com/wp-content/uploads/2022/11/1_vloEha9mTCLM_SEnXdIUIw-300x300.png' },
+            { name: 'Guacamole Bastion', url: 'http://bastion.billu.com:8080/guacamole/#/', img: 'https://d7umqicpi7263.cloudfront.net/img/product/030b6dbb-cd7b-486d-af34-99d4924864a1.com/6fb7788920aacfd15ab8e000e0f750a3' },
+            { name: 'GitHub', url: 'https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra', img: 'https://static.cdnlogo.com/logos/g/69/github-icon.svg' },
+            { name: 'Mailo', url: 'https://www.mailo.com/', img: './pictures/Mailo_logo.png' }
+        ];
+
+        function createServiceCard(service) {
+            return `
+                <div class="icon-wrapper" data-service="${service.url}">
+                    <a href="${service.url}" target="_blank">
+                        <img class="icon" src="${service.img}" alt="${service.name}">
+                    </a>
+                    <div class="service-name">${service.name}</div>
+                    <div class="status-dot" id="status-${service.name}"></div>
+                    <div id="status-text-${service.name}" class="status-text">Vérification en cours...</div>
+                </div>
+            `;
+        }
+
         async function checkServiceStatus(url) {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000); // timeout 5 sec
+
             try {
-                const response = await fetch(url, { method: 'HEAD', mode: 'no-cors' });
-                return response.ok || response.type === 'opaque'; // 'opaque' pour les requêtes no-cors réussies
+                const response = await fetch(url, {
+                    method: 'HEAD',
+                    mode: 'no-cors',
+                    signal: controller.signal
+                });
+                clearTimeout(timeoutId);
+                return response.ok || response.type === 'opaque';  // 'opaque' is needed for CORS requests
             } catch (error) {
-                return false; // En cas d'erreur, le service est considéré comme indisponible
+                clearTimeout(timeoutId);
+                if (error.name === 'AbortError') {
+                    console.log(`Timeout for ${url}`);
+                }
+                return false;  // Si une erreur ou timeout, le service est hors ligne
             }
         }
 
-        // Fonction pour mettre à jour toutes les pastilles
-        async function updateStatusDots() {
-            const iconWrappers = document.querySelectorAll('.icon-wrapper');
-            iconWrappers.forEach(async (wrapper) => {
-                const serviceUrl = wrapper.getAttribute('data-service');
-                const statusDot = wrapper.querySelector('.status-dot');
-                const isServiceUp = await checkServiceStatus(serviceUrl);
-                statusDot.classList.toggle('green', isServiceUp);
-                statusDot.classList.toggle('red', !isServiceUp);
+        async function updateDashboard() {
+            const container = document.getElementById('services-container');
+            container.innerHTML = '';
+
+            // Créer les cartes de services pour tous les services
+            services.forEach(service => {
+                container.innerHTML += createServiceCard(service);
             });
+
+            // Vérifier le statut de chaque service
+            for (const service of services) {
+                try {
+                    const status = await checkServiceStatus(service.url);
+                    const statusElement = document.getElementById(`status-${service.name}`);
+                    const statusTextElement = document.getElementById(`status-text-${service.name}`);
+
+                    if (status) {
+                        statusElement.className = 'status-dot up';
+                        statusTextElement.className = 'status-text up';
+                        statusTextElement.textContent = `En ligne - Dernière vérification à ${new Date().toLocaleTimeString()}`;
+                    } else {
+                        statusElement.className = 'status-dot down';
+                        statusTextElement.className = 'status-text down';
+                        statusTextElement.textContent = `Hors ligne - Dernière vérification à ${new Date().toLocaleTimeString()}`;
+                    }
+                } catch (error) {
+                    console.error('Erreur lors de la vérification du service:', service.name, error);
+                }
+            }
         }
 
-        // Mettre à jour les pastilles toutes les secondes
-        setInterval(updateStatusDots, 1000);
-
-        // Mettre à jour les pastilles immédiatement au chargement de la page
-        updateStatusDots();
+        // Mise à jour du dashboard toutes les 5 secondes
+        setInterval(updateDashboard, 5000);
+        updateDashboard();  // Lancer immédiatement la mise à jour
     </script>
-
 </body>
 </html>
 ```
