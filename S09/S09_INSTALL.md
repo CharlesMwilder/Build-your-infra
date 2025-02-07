@@ -108,9 +108,10 @@ bash /tmp/sng_freepbx_debian_install.sh
     <title>BILLU - Logiciel de Facturation</title>
     <link href="https://fonts.googleapis.com/css?family=Exo:100" rel="stylesheet">
     <style>
-        /* Background animation */
+        /* Animation du fond */
         @keyframes bg-scrolling-reverse {
-            100% { background-position: 50px 50px; }
+            from { background-position: 0 0; }
+            to { background-position: 50px 50px; }
         }
 
         body {
@@ -118,23 +119,25 @@ bash /tmp/sng_freepbx_debian_install.sh
             font-family: Exo, Arial, sans-serif;
             background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat;
             background-size: 50px 50px;
-            animation: bg-scrolling-reverse 0.92s infinite linear;
+            animation: bg-scrolling-reverse 5s linear infinite;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Centrer verticalement */
+            justify-content: center;
             align-items: center;
             height: 100vh;
             color: white;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
+        /* En-tête et pied de page réduits */
         header, footer {
             width: 100%;
             background: rgba(0, 0, 0, 0.8);
-            padding: 15px 0;
+            padding: 0.7px 0; /* Réduction de la hauteur */
             text-align: center;
             position: absolute;
             left: 0;
+            font-size: 0.9rem; /* Taille de police légèrement réduite */
         }
 
         header {
@@ -145,47 +148,81 @@ bash /tmp/sng_freepbx_debian_install.sh
             bottom: 0;
         }
 
+        /* Bouton hamburger */
+        .hamburger {
+            position: fixed;
+            top: 15px; /* Encore légèrement baissé */
+            right: 20px;
+            width: 30px;
+            height: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .hamburger div {
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        /* Menu latéral */
+        .menu {
+            position: fixed;
+            top: 0;
+            right: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            transition: 0.3s ease;
+            z-index: 999;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #28a745;
+        }
+
+        /* Ouverture du menu latéral */
+        .menu.open {
+            right: 0;
+        }
+
+        /* Conteneur principal */
         .container {
             text-align: center;
             background: rgba(0, 0, 0, 0.7);
-            padding: 30px 40px; /* Réduit le padding */
+            padding: 30px 40px;
             border-radius: 15px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-            animation: fadeIn 2s ease-in-out;
             width: 100%;
-            max-width: 400px; /* Réduit la largeur maximale de la zone */
+            max-width: 400px;
         }
 
         h1 {
-            font-size: 2.5rem; /* Réduit la taille du titre */
+            font-size: 2.5rem;
             margin-bottom: 10px;
         }
 
         p {
-            font-size: 1.1rem; /* Réduit la taille du texte */
+            font-size: 1.1rem;
             margin-top: 10px;
-        }
-
-        .button-wrapper {
-            margin-top: 30px;
-        }
-
-        .button {
-            padding: 12px 25px;
-            font-size: 1rem; /* Réduit la taille du bouton */
-            color: white;
-            background-color: #28a745;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            text-decoration: none;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #218838;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
 
         .google-search {
@@ -201,7 +238,7 @@ bash /tmp/sng_freepbx_debian_install.sh
             font-size: 1rem;
             border-radius: 5px;
             border: none;
-            width: 280px; /* Réduit la largeur du champ de recherche */
+            width: 280px;
             margin-right: 10px;
         }
 
@@ -219,30 +256,34 @@ bash /tmp/sng_freepbx_debian_install.sh
         .google-search input[type="submit"]:hover {
             background-color: #218838;
         }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
     </style>
 </head>
 <body>
     <header>
         <h2>BILLU</h2>
     </header>
+    
+    <!-- Bouton hamburger -->
+    <button class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+
+    <!-- Menu latéral -->
+    <div class="menu" id="menu">
+        <a href="next.html">Services</a> 
+        <a href="games.html">Games</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+    </div>
+
     <div class="container">
         <h1>Bienvenue chez BILLU</h1>
         <p>L'avenir de la facturation, simple et efficace.</p>
-        <div class="button-wrapper">
-            <a href="next.html" class="button">Découvrir</a>
-        </div>
     </div>
+
+    <!-- Barre de recherche Google -->
     <div class="google-search">
         <form method="GET" action="http://www.google.be/search">
             <div align="center">
@@ -255,12 +296,19 @@ bash /tmp/sng_freepbx_debian_install.sh
             </div>
         </form>
     </div>
+
     <footer>
         <p>&copy; 2025 BILLU. Tous droits réservés.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
-
 ```
 ---
 
@@ -415,6 +463,22 @@ bash /tmp/sng_freepbx_debian_install.sh
             font-size: 1rem;
             color: white;
         }
+
+        .status-dot {
+            width: 15px;
+            height: 10px;
+            border-radius: 50%;
+            margin-top: 80px;
+            margin: 20% auto;
+        }
+
+        .status-dot.green {
+            background-color: green;
+        }
+
+        .status-dot.red {
+            background-color: red;
+        }
     </style>
 </head>
 <body>
@@ -436,16 +500,46 @@ bash /tmp/sng_freepbx_debian_install.sh
 
         <!-- Icons Section -->
         <div class="icon-container">
+            <div class="icon-wrapper" data-service="http://192.168.10.254/">
             <a href="http://192.168.10.254/" target="_blank"><img class="icon" src="https://wpcomputersolutions.com/wp-content/uploads/2018/07/pfsense-logo-e1534531558807.png" alt="pfSense"></a>
+            <div class="status-dot"></div>
+            </div>
+            <div class="icon-wrapper" data-service="http://glpi.billu.com/glpi/">
             <a href="http://glpi.billu.com/glpi/" target="_blank"><img class="icon" src="https://glpi-project.org/wp-content/uploads/2021/06/logo-glpi-bleu-1.png" alt="GLPI"></a>
+            <div class="status-dot"></div>
+            </div>
+            <div class="icon-wrapper" data-service="http://passbolt.billu.com/">
             <a href="http://passbolt.billu.com/" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/p/97/passbolt.svg" alt="Passbolt"></a>
+            <div class="status-dot"></div>
+            </div>
+            <div class="icon-wrapper" data-service="http://graylog.billu.com:9000/">
             <a href="http://graylog.billu.com:9000/" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/g/32/graylog.svg" alt="Graylog"></a>
+            <div class="status-dot"></div>
+            </div>
+            <div class="icon-wrapper" data-service="http://freepbx.billu.com/">
             <a href="http://freepbx.billu.com/" target="_blank"><img class="icon" src="https://cp.beget.com/shared/xisQQW8k-g5QWd77x9XCtcysQ5hIWg3I/logo_freepbx2x.png" alt="FreePBX"></a>
+            <div class="status-dot"></div>
+            </div>
+            <div class="icon-wrapper" data-service="https://mail.billu.com/mail/">
             <a href="https://mail.billu.com/mail/" target="_blank"><img class="icon" src="https://www.iredmail.org/images/logo.png" alt="iRedMail"></a>
+            <div class="status-dot"></div>
+            </div>
+            <div class="icon-wrapper" data-service="http://zabbix.billu.com:8080/">
             <a href="http://zabbix.billu.com:8080/" target="_blank"><img class="icon" src="https://ssd-disclosure.com/wp-content/uploads/2022/11/1_vloEha9mTCLM_SEnXdIUIw-300x300.png" alt="Zabbix"></a>
+            <div class="status-dot"></div>
+            </div>
+            <div class="icon-wrapper" data-service="http://bastion.billu.com:8080/guacamole/#/">
             <a href="http://bastion.billu.com:8080/guacamole/#/" target="_blank"><img class="icon" src="https://d7umqicpi7263.cloudfront.net/img/product/030b6dbb-cd7b-486d-af34-99d4924864a1.com/6fb7788920aacfd15ab8e000e0f750a3" alt="Guacamole Bastion"></a>
+            <div class="status-dot"></div>
+            </div>
+            <div class="icon-wrapper" data-service="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra">
             <a href="https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra" target="_blank"><img class="icon" src="https://static.cdnlogo.com/logos/g/69/github-icon.svg" alt="GitHub"></a>
+            <div class="status-dot"></div>
+            </div>
+            <div class="icon-wrapper" data-service="https://www.mailo.com/">
             <a href="https://www.mailo.com/" target="_blank"><img class="icon" src="./pictures/Mailo_logo.png" alt="Mailo"></a>
+            <div class="status-dot"></div>
+            </div>
         </div>
 
         <!-- Back Button Section -->
@@ -458,6 +552,36 @@ bash /tmp/sng_freepbx_debian_install.sh
     <div class="footer">
         <p>&copy; 2025 BillU | Tous droits réservés</p>
     </div>
+
+    <script>
+        // Fonction pour vérifier l'état d'un service
+        async function checkServiceStatus(url) {
+            try {
+                const response = await fetch(url, { method: 'HEAD', mode: 'no-cors' });
+                return response.ok || response.type === 'opaque'; // 'opaque' pour les requêtes no-cors réussies
+            } catch (error) {
+                return false; // En cas d'erreur, le service est considéré comme indisponible
+            }
+        }
+
+        // Fonction pour mettre à jour toutes les pastilles
+        async function updateStatusDots() {
+            const iconWrappers = document.querySelectorAll('.icon-wrapper');
+            iconWrappers.forEach(async (wrapper) => {
+                const serviceUrl = wrapper.getAttribute('data-service');
+                const statusDot = wrapper.querySelector('.status-dot');
+                const isServiceUp = await checkServiceStatus(serviceUrl);
+                statusDot.classList.toggle('green', isServiceUp);
+                statusDot.classList.toggle('red', !isServiceUp);
+            });
+        }
+
+        // Mettre à jour les pastilles toutes les secondes
+        setInterval(updateStatusDots, 1000);
+
+        // Mettre à jour les pastilles immédiatement au chargement de la page
+        updateStatusDots();
+    </script>
 
 </body>
 </html>
