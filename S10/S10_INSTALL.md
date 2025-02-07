@@ -127,7 +127,7 @@
 
 - **Puis lancer un audit du système** :
 
-``lynis audit system``
+``./lynis audit system``
 
 ---
 
