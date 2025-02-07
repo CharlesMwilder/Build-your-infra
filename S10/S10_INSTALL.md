@@ -243,7 +243,8 @@
 <details>
 <summary><h1>🎯 Installation et lancement de ADACL<h1></summary>
 
-## 📑 Télécharger le script depuis le dépôt GitHub :  
+## 📑 Télécharger le script depuis le dépôt GitHub depuis la page `https://github.com/canix1/ADACLScanner`. Le script a télécharger est ``ADACLScan.ps1``  
+
 
 
 
