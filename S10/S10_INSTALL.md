@@ -243,11 +243,15 @@
 <details>
 <summary><h1>🎯 Installation et lancement de ADACL<h1></summary>
 
-## 📑 Télécharger le script depuis le dépôt GitHub depuis la page `https://github.com/canix1/ADACLScanner`. Le script a télécharger est ``ADACLScan.ps1``  
+## 📑 Télécharger le script depuis le dépôt GitHub depuis la page `https://github.com/canix1/ADACLScanner`.  
+Le script a télécharger est ``ADACLScan.ps1``  
+**Exécuter le script en administrateur :**  
 
-
-
-
+![Capture d'écran 2025-02-07 111029](https://github.com/user-attachments/assets/2178189b-f683-4bbd-af7e-c56bc8d1028c)  
+![Capture d'écran 2025-02-07 111121](https://github.com/user-attachments/assets/6682e360-be7b-4a95-a9f8-6ab653c138a9)  
+![Capture d'écran 2025-02-07 111112](https://github.com/user-attachments/assets/80b5f2e1-8cc7-4500-b684-6116568780a1)  
+![Capture d'écran 2025-02-07 111216](https://github.com/user-attachments/assets/3db0b08c-c27d-4bae-a6c1-34203d227169)  
+![Capture d'écran 2025-02-07 111242](https://github.com/user-attachments/assets/d668acdd-2249-4fa8-a9ae-197da04e3606)  
 
 
 </details>
