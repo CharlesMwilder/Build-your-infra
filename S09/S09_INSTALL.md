@@ -102,16 +102,21 @@ bash /tmp/sng_freepbx_debian_install.sh
 ```html
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BILLU - Logiciel de Facturation</title>
-    <link href="https://fonts.googleapis.com/css?family=Exo:100" rel="stylesheet">
+    <title>BILLU - Accueil</title>
     <style>
         /* Animation du fond */
         @keyframes bg-scrolling-reverse {
-            from { background-position: 0 0; }
-            to { background-position: 50px 50px; }
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 50px 50px;
+            }
         }
 
         body {
@@ -122,101 +127,87 @@ bash /tmp/sng_freepbx_debian_install.sh
             animation: bg-scrolling-reverse 5s linear infinite;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
+            /* Contenu centré en haut */
             align-items: center;
             height: 100vh;
             color: white;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
-        header, footer {
+        header {
             width: 100%;
+            /* L'entête prend toute la largeur */
             background: rgba(10, 10, 10, 0.9);
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
-            position: absolute;
+            position: fixed;
+            top: 0;
             left: 0;
+            z-index: 1000;
         }
 
-        header {
-            top: 0;
-            font-size: 1.5rem;
+        header h1 {
+            font-size: 36px;
+            margin: 0;
             font-weight: bold;
             text-transform: uppercase;
         }
 
-        footer {
-            bottom: 0;
-            font-size: 0.9rem;
+        nav {
+            margin-top: 15px;
         }
 
-        .hamburger {
-            position: fixed;
-            top: 15px;
-            right: 20px;
-            width: 35px;
-            height: 30px;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            z-index: 1000;
+            justify-content: center;
         }
 
-        .hamburger div {
-            width: 35px;
-            height: 5px;
-            background-color: white;
-            border-radius: 5px;
-            transition: 0.3s;
+        nav ul li {
+            margin: 0 20px;
         }
 
-        .menu {
-            position: fixed;
-            top: 0;
-            right: -250px;
-            width: 160px;
-            height: 100%;
-            background-color: rgba(20, 20, 20, 0.95);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 50px;
-            transition: right 0.3s ease;
-            z-index: 999;
-        }
-
-        .menu a {
+        nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 1.5rem;
-            padding: 15px;
-            transition: 0.3s;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
         }
 
-        .menu a:hover {
-            background-color: #28a745;
-            border-radius: 8px;
-        }
-
-        .menu.open {
-            right: 0;
+        nav ul li a:hover {
+            color: #00aaff;
         }
 
         .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* Centre le contenu verticalement */
+            align-items: center;
+            /* Centre le contenu horizontalement */
             text-align: center;
             background: rgba(30, 30, 30, 0.8);
-            padding: 40px;
+            padding: 20px 40px;
             border-radius: 15px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
             max-width: 400px;
+	    height: auto;
+	    min-height: 200px;
+            margin-top: 200px;
+            /* Ajoute plus d'espace entre l'entête et le bloc */
         }
 
-        h1 {
+	.content {
+		flex: 1;
+	}
+
+        h2 {
             font-size: 2.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            /* Plus d'espace sous le titre */
         }
 
         p {
@@ -229,7 +220,14 @@ bash /tmp/sng_freepbx_debian_install.sh
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
             margin-top: 30px;
+            /* Espace entre le bloc "Bienvenue chez BILLU" et la barre de recherche */
+            display: flex;
+            justify-content: center;
+            /* Centre la recherche horizontalement */
+            width: fit-content;
+            /* La barre de recherche prend la largeur de son contenu */
         }
 
         .google-search input[type="text"] {
@@ -245,7 +243,7 @@ bash /tmp/sng_freepbx_debian_install.sh
         .google-search input[type="submit"] {
             padding: 10px 20px;
             font-size: 1rem;
-            background-color: #28a745;
+            background-color: #00aaff;
             border-radius: 5px;
             border: none;
             cursor: pointer;
@@ -254,35 +252,44 @@ bash /tmp/sng_freepbx_debian_install.sh
         }
 
         .google-search input[type="submit"]:hover {
-            background-color: #218838;
+            background-color: #00aaff;
+        }
+
+        footer {
+            width: 100%;
+            background: rgba(10, 10, 10, 0.9);
+            padding: 10px 0;
+            text-align: center;
+            margin-top: auto;
         }
     </style>
 </head>
+
 <body>
-    <header>BILLU</header>
-    
-    <button class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </button>
+    <!-- Header -->
+    <header>
+        <h1>BILLU</h1>
+        <nav>
+            <ul>
+                <li><a href="next.html">Services</a></li>
+                <li><a href="infra.html">Infra</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="menu" id="menu">
-        <a href="next.html">Services</a> 
-        <a href="games.html">Games</a>
-        <a href="apropos.html">À propos</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
+    <!-- Contenu principal -->
     <div class="container">
-        <h1>Bienvenue chez BILLU</h1>
+        <h2>Bienvenue chez BILLU</h2>
         <p>L'avenir de la facturation, simple et efficace.</p>
     </div>
 
+    <!-- Google Search juste en dessous du bloc "Bienvenue chez BILLU" -->
     <div class="google-search">
         <form method="GET" action="http://www.google.be/search">
             <div align="center">
-		<a href="http://www.google.fr/">
+                <a href="http://www.google.fr/">
                     <img src="./pictures/gif_google.gif" border="0" alt="Logo Google" align="absmiddle" width="80">
                 </a>
                 <input type="text" name="q" size="31" maxlength="255" placeholder="Rechercher sur Google">
@@ -292,16 +299,11 @@ bash /tmp/sng_freepbx_debian_install.sh
         </form>
     </div>
 
-    <footer>&copy; 2025 BILLU. Tous droits réservés.</footer>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById('menu').classList.toggle('open');
-        }
-    </script>
+    <!-- Footer -->
+    <footer>&copy; 2025 BILLU | Tous droits réservés.</footer>
 </body>
-</html>
 
+</html>
 ```
 ---
 
@@ -312,21 +314,22 @@ bash /tmp/sng_freepbx_debian_install.sh
 ```html
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard BillU</title>
+    <title>BillU - Services</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;600&display=swap');
-        
+
         body {
             margin: 0;
-            font-family: 'Exo', sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #1e1e1e;
             color: white;
             text-align: center;
         }
 
+        /* Entête */
         .header {
             background: #222;
             padding: 15px;
@@ -335,16 +338,40 @@ bash /tmp/sng_freepbx_debian_install.sh
 
         .header h1 {
             margin: 0;
-            font-weight: 600;
-            color: #ffd700;
+            color: white;
+            font-size: 36px;
+            letter-spacing: 2px;
         }
 
+        nav ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a:hover {
+            color: #00aaff;
+        }
+
+        /* Conteneur des services */
         .icon-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin: 40px auto;
             max-width: 1200px;
+            padding-bottom: 80px; /* Augmenter l'espace entre les services et le bas */
         }
 
         .icon-wrapper {
@@ -375,7 +402,7 @@ bash /tmp/sng_freepbx_debian_install.sh
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background-color: gray; /* Initial color */
+            background-color: gray;
         }
 
         .status-dot.up {
@@ -405,28 +432,65 @@ bash /tmp/sng_freepbx_debian_install.sh
             color: #dc3545;
         }
 
+        /* Pied de page */
         .footer {
             background: #222;
             padding: 15px;
             position: fixed;
             bottom: 0;
             width: 100%;
+            text-align: center;
+            color: #ccc;
+            margin-top: 40px; /* Augmenter l'espace entre le pied de page et les services */
+        }
+
+        /* Animation pour l'entête et les services */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .header {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .icon-wrapper {
+            animation: fadeIn 1.5s ease-out forwards;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="header">
-        <h1>Dashboard BillU</h1>
-    </div>
+    <!-- Entête -->
+    <header class="header">
+        <div>
+            <h1>BILLU</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="infra.html">Infra</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Contenu des services -->
     <div class="icon-container" id="services-container">
         <!-- Les services seront générés dynamiquement ici -->
     </div>
 
-    <div class="footer">
+    <!-- Pied de page -->
+    <footer class="footer">
         <p>&copy; 2025 BillU | Tous droits réservés</p>
-    </div>
+    </footer>
 
     <script>
         const services = [
@@ -512,6 +576,7 @@ bash /tmp/sng_freepbx_debian_install.sh
         updateDashboard();  // Lancer immédiatement la mise à jour
     </script>
 </body>
+
 </html>
 ```
 ---
@@ -522,9 +587,10 @@ bash /tmp/sng_freepbx_debian_install.sh
 
 ## **Le serveur web est maintenant fonctionnel, sécurisé et accessible depuis l’extérieur grâce à un reverse proxy**. 🎉
 
-![WEB1](https://github.com/user-attachments/assets/db406db2-6b30-493b-bc24-23189096cc4d)<br>
+![WEB1](https://github.com/user-attachments/assets/b57bfc2f-7072-4734-9348-9831d153031f)<br>
 
-![WEB2](https://github.com/user-attachments/assets/3204d37a-6d85-4d56-981a-11aff3b07fad)
+
+![WEB2](https://github.com/user-attachments/assets/3670b972-c0dc-4796-ab53-df38dfdcd256)
 
 
 </details>
