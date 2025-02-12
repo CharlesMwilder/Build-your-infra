@@ -104,3 +104,13 @@ cd medusa
 
 
 </details>
+
+---
+
+<details>
+<summary><h1>🎯 Présentation BILLU<h1></summary>
+
+[Présentation BILLU.pdf](https://github.com/user-attachments/files/18772707/Presentation.BILLU.pdf)
+
+
+</details>
