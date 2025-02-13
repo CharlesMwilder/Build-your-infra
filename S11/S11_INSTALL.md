@@ -194,7 +194,7 @@ cd medusa
 ## **Découverte d'autres machines du réseau**  
 ![Capture d'écran 2025-02-13 162114](https://github.com/user-attachments/assets/ea75011f-ea14-4ffc-af6b-6fddcaab95b0)
 
-## **Envoie d'ICMP flood** sur le LAN du PfSense**  
+## **Envoie d'ICMP flood sur le LAN du PfSense**  
 *Avant envoi :*  
 ![Capture d'écran 2025-02-13 162439](https://github.com/user-attachments/assets/19731b3d-53da-4eaa-9a79-e0e530c49ade)  
 *Pendant envoi :*
@@ -202,6 +202,12 @@ cd medusa
 *Doublement des ICMP flood (2 terminaux)*  
 ![Capture d'écran 2025-02-13 162900](https://github.com/user-attachments/assets/5880fc3b-a035-4134-b542-a6cd9340a89c)  
 
+## **Scan des ports sur DC principal**  
+![Capture d'écran 2025-02-13 164932](https://github.com/user-attachments/assets/cca91e75-adc2-436d-905e-a56bef9a6f99)  
+## **Scan des ports sur PfSense**  
+![Capture d'écran 2025-02-13 165023](https://github.com/user-attachments/assets/d6f20096-0337-449e-b04b-6dd80347a424)  
+## **Scan des ports sur FreePBX**  
+![Capture d'écran 2025-02-13 165239](https://github.com/user-attachments/assets/26e89cb5-673d-44f8-b10c-cf7547d78ff2)
 
 </details>
 
