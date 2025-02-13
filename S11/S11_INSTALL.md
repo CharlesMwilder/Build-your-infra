@@ -199,7 +199,8 @@ cd medusa
 ![Capture d'écran 2025-02-13 162439](https://github.com/user-attachments/assets/19731b3d-53da-4eaa-9a79-e0e530c49ade)  
 *Pendant envoi :*
 ![Capture d'écran 2025-02-13 162552](https://github.com/user-attachments/assets/ea3d11f2-bd6c-46ac-b529-20b592c05262)  
-
+*Doublement des ICMP flood (2 terminaux)*  
+![Capture d'écran 2025-02-13 162900](https://github.com/user-attachments/assets/5880fc3b-a035-4134-b542-a6cd9340a89c)  
 
 
 </details>
