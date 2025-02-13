@@ -171,10 +171,58 @@ cd medusa
 
 </details>
 
-
-
 ---
 
+<details>
+<summary><h1>🎯 Installation et test de hping3<h1></summary>
+   
+## 📑 Installation des paquets :  
+
+   ``sudo apt install hping3``  
+   
+## 📑 Découverte d'autres machines du réseau
+
+![Capture d'écran 2025-02-13 162114](https://github.com/user-attachments/assets/ea75011f-ea14-4ffc-af6b-6fddcaab95b0)
+
+## 📑 Envoie d'ICMP flood sur le LAN du PfSense 
+
+- *Avant envoi :*  
+
+![Capture d'écran 2025-02-13 162439](https://github.com/user-attachments/assets/19731b3d-53da-4eaa-9a79-e0e530c49ade)  
+
+- *Pendant envoi :*
+
+![Capture d'écran 2025-02-13 162552](https://github.com/user-attachments/assets/ea3d11f2-bd6c-46ac-b529-20b592c05262)  
+
+- *Doublement des ICMP flood (2 terminaux)*  
+
+![Capture d'écran 2025-02-13 162900](https://github.com/user-attachments/assets/5880fc3b-a035-4134-b542-a6cd9340a89c)  
+
+## 📑 Scan des ports sur DC principal
+
+![Capture d'écran 2025-02-13 164932](https://github.com/user-attachments/assets/cca91e75-adc2-436d-905e-a56bef9a6f99)  
+
+## 📑 Scan des ports sur PfSense
+
+![Capture d'écran 2025-02-13 165023](https://github.com/user-attachments/assets/d6f20096-0337-449e-b04b-6dd80347a424)  
+
+## 📑 Scan des ports sur FreePBX 
+
+![Capture d'écran 2025-02-13 165239](https://github.com/user-attachments/assets/26e89cb5-673d-44f8-b10c-cf7547d78ff2)
+
+## 📑 Attaque DOS de type TCP SYN Flood sur le serveur web 
+
+![Capture d'écran 2025-02-13 170756](https://github.com/user-attachments/assets/e05dca91-a148-4423-b851-befc178d4228)
+
+- *Visualisation des logs sur le PfSense*  
+
+- On voit bien le serveur Web (172.18.11.254) attaqué sur le port 80 depuis des IP sources random  
+
+![Capture d'écran 2025-02-13 170633](https://github.com/user-attachments/assets/8bc78dec-7883-4877-9bb6-4f85cf5a3f97)
+
+</details>
+
+---
 
 <details>
 <summary><h1>🎯 Présentation BILLU<h1></summary>
@@ -183,67 +231,4 @@ cd medusa
 
 
 </details>
-
----
-
-<details>
-<summary><h1>🎯 Installation et test de hping3<h1></summary>
-   
-### **Installation des paquets :**  
-   ``sudo apt install hping3``  
-## **Découverte d'autres machines du réseau**  
-![Capture d'écran 2025-02-13 162114](https://github.com/user-attachments/assets/ea75011f-ea14-4ffc-af6b-6fddcaab95b0)
-
-## **Envoie d'ICMP flood sur le LAN du PfSense**  
-*Avant envoi :*  
-![Capture d'écran 2025-02-13 162439](https://github.com/user-attachments/assets/19731b3d-53da-4eaa-9a79-e0e530c49ade)  
-*Pendant envoi :*
-![Capture d'écran 2025-02-13 162552](https://github.com/user-attachments/assets/ea3d11f2-bd6c-46ac-b529-20b592c05262)  
-*Doublement des ICMP flood (2 terminaux)*  
-![Capture d'écran 2025-02-13 162900](https://github.com/user-attachments/assets/5880fc3b-a035-4134-b542-a6cd9340a89c)  
-
-## **Scan des ports sur DC principal**  
-![Capture d'écran 2025-02-13 164932](https://github.com/user-attachments/assets/cca91e75-adc2-436d-905e-a56bef9a6f99)  
-## **Scan des ports sur PfSense**  
-![Capture d'écran 2025-02-13 165023](https://github.com/user-attachments/assets/d6f20096-0337-449e-b04b-6dd80347a424)  
-## **Scan des ports sur FreePBX**  
-![Capture d'écran 2025-02-13 165239](https://github.com/user-attachments/assets/26e89cb5-673d-44f8-b10c-cf7547d78ff2)
-
-## **Attaque DOS de type TCP SYN Flood sur le serveur web**  
-![Capture d'écran 2025-02-13 170756](https://github.com/user-attachments/assets/e05dca91-a148-4423-b851-befc178d4228)
-*Visualisation des logs sur le PfSense*  
-### On voit bien le serveur Web (172.18.11.254) attaqué sur le port 80 depuis des IP sources random  
-![Capture d'écran 2025-02-13 170633](https://github.com/user-attachments/assets/8bc78dec-7883-4877-9bb6-4f85cf5a3f97)
-
-</details>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
