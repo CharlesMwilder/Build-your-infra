@@ -89,14 +89,13 @@ cd medusa
 
 - Lancer un brute force avec la commande : 
 
-``medusa -h <cible> -u <utilisateur> -P <chemin_vers_mots_de_passe> -M <protocole> -t 1 -v``
+``medusa -h <cible> -u <utilisateur> -P <chemin_vers_mots_de_passe> -M <protocole> -t 1``
 
 ``-h <cible>`` : Spécifie l'hôte cible.<br>
 ``-u <utilisateur>`` : Spécifie le nom d'utilisateur pour l'attaque.<br>
 ``-P <chemin_vers_mots_de_passe>`` : Spécifie le fichier contenant les mots de passe à tester.<br>
 ``-M <protocole>`` : Spécifie le protocole (par exemple, ssh, ftp, http, etc.).<br>
 ``-t 1`` : Cette option permet de limiter le nombre de tentatives simultanées à 1. Cela peut aider à arrêter plus rapidement l'attaque en cas de succès.<br>
-``-v`` : Mode verbose pour afficher plus de détails pendant l'exécution.
 
 *Medusa s'arrêtera automatiquement lorsque le bon mot de passe sera trouvé, mais si tu veux être encore plus spécifique sur l'arrêt de l'attaque, tu peux aussi jouer avec les paramètres comme ``-F`` pour forcer l'arrêt en cas de succès.*
 
