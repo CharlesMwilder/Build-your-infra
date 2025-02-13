@@ -112,7 +112,7 @@ cd medusa
    
 ## 📑 1. Installation de NMAP :
 
-``apt update``
+``apt update``<br>
 ``apt install nmap``
 
 ## 📑 2. Test de scan NMAP :
