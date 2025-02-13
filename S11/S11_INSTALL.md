@@ -212,7 +212,12 @@ cd medusa
 
 ## 📑 Attaque DOS de type TCP SYN Flood sur le serveur web 
 
-![Capture d'écran 2025-02-13 170756](https://github.com/user-attachments/assets/e05dca91-a148-4423-b851-befc178d4228)
+![Capture d'écran 2025-02-13 170756](https://github.com/user-attachments/assets/e05dca91-a148-4423-b851-befc178d4228)  
+
+- **Flux passant dans PfSense, 21 Méga Octets par seconde**  
+
+![Capture d'écran 2025-02-13 172624](https://github.com/user-attachments/assets/87df935c-8b38-47aa-8a13-ca0796e7ee0e)
+
 
 - **On voit bien le serveur Web (172.18.11.254) attaqué sur le port 80 depuis des IP sources random**  
 
