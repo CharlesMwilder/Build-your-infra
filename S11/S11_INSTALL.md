@@ -214,11 +214,13 @@ cd medusa
 
 ![Capture d'écran 2025-02-13 170756](https://github.com/user-attachments/assets/e05dca91-a148-4423-b851-befc178d4228)
 
-- *Visualisation des logs sur le PfSense*  
+- **On voit bien le serveur Web (172.18.11.254) attaqué sur le port 80 depuis des IP sources random**  
 
-- On voit bien le serveur Web (172.18.11.254) attaqué sur le port 80 depuis des IP sources random  
+![Capture d'écran 2025-02-13 170650](https://github.com/user-attachments/assets/50234452-1017-42d8-930b-b2480e311802)  
 
-![Capture d'écran 2025-02-13 170633](https://github.com/user-attachments/assets/8bc78dec-7883-4877-9bb6-4f85cf5a3f97)
+- **Le PfSense n'a pas apprécié 😅**  
+![Capture d'écran 2025-02-13 170859](https://github.com/user-attachments/assets/51ba9152-7821-4fe5-97c7-c91cdd9f80c6)  
+
 
 </details>
 
