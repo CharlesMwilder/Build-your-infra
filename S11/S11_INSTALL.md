@@ -209,6 +209,12 @@ cd medusa
 ## **Scan des ports sur FreePBX**  
 ![Capture d'écran 2025-02-13 165239](https://github.com/user-attachments/assets/26e89cb5-673d-44f8-b10c-cf7547d78ff2)
 
+## **Attaque DOS de type TCP SYN Flood sur le serveur web**  
+![Capture d'écran 2025-02-13 170756](https://github.com/user-attachments/assets/e05dca91-a148-4423-b851-befc178d4228)
+*Visualisation des logs sur le PfSense*  
+### On voit bien le serveur Web (172.18.11.254) attaqué sur le port 80 depuis des IP sources random  
+![Capture d'écran 2025-02-13 170633](https://github.com/user-attachments/assets/8bc78dec-7883-4877-9bb6-4f85cf5a3f97)
+
 </details>
 
 
