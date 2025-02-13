@@ -184,8 +184,48 @@ cd medusa
 
 </details>
 
+---
+
 <details>
 <summary><h1>🎯 Installation et test de hping3<h1></summary>
+   
+### **Installation des paquets :**  
+   ``sudo apt install hping3``  
+## **Découverte d'autres machines du réseau**  
+![Capture d'écran 2025-02-13 162114](https://github.com/user-attachments/assets/ea75011f-ea14-4ffc-af6b-6fddcaab95b0)
+
+
+
 
 </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
