@@ -194,6 +194,11 @@ cd medusa
 ## **Découverte d'autres machines du réseau**  
 ![Capture d'écran 2025-02-13 162114](https://github.com/user-attachments/assets/ea75011f-ea14-4ffc-af6b-6fddcaab95b0)
 
+## **Envoie d'ICMP flood** sur le LAN du PfSense**  
+*Avant envoi :*  
+![Capture d'écran 2025-02-13 162439](https://github.com/user-attachments/assets/19731b3d-53da-4eaa-9a79-e0e530c49ade)  
+*Pendant envoi :*
+![Capture d'écran 2025-02-13 162552](https://github.com/user-attachments/assets/ea3d11f2-bd6c-46ac-b529-20b592c05262)  
 
 
 
