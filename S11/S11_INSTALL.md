@@ -120,9 +120,9 @@ cd medusa
 ![NMAP1](https://github.com/user-attachments/assets/4ae48da3-43d4-4ecb-96f4-898b9c22edbd)
 
 
-## **Rapport d'Analyse Nmap**
+## 📑 Rapport d'Analyse Nmap
 
-## **Informations Générales**
+## 📑 Informations Générales
 - **Commande utilisée :** `nmap 172.18.255.254`
 - **Version de Nmap :** 7.93
 - **Date et heure du scan :** 13 février 2025 à 11:10 CET
@@ -130,7 +130,7 @@ cd medusa
 - **Statut de l'hôte :** **Actif** (répond en 0.00048s)
 - **Nombre de ports filtrés (bloqués) :** **987**
 
-## **Ports ouverts détectés**
+## 📑 Ports ouverts détectés
 
 | Port  | Protocole | État  | Service associé |
 |-------|----------|-------|----------------|
@@ -148,22 +148,22 @@ cd medusa
 | 3269  | TCP      | Open  | Global Catalog LDAPS (sécurisé) |
 | 3389  | TCP      | Open  | Microsoft Remote Desktop (RDP) |
 
-## **Analyse et Implications**
+## 📑 Analyse et Implications
 
-### **Présence de services Windows Active Directory**
+### 📑 Présence de services Windows Active Directory
 - **LDAP (389, 636)** et **Global Catalog (3268, 3269)** indiquent que cette machine est probablement un **contrôleur de domaine (Domain Controller)**.
 - **Kerberos (88, 464)** confirme l'authentification AD.
 - **SMB (445, 139)** permet l'accès aux partages réseau.
 - **RPC (135, 593)** utilisé pour la gestion distante.
 
-### **Présence d'un accès distant**
+### 📑 Présence d'un accès distant
 - **SSH (22)** peut être utilisé pour une connexion sécurisée.
 - **RDP (3389)** permet un accès graphique à distance à la machine.
 
-### **Port DNS (53) ouvert**
+### 📑 Port DNS (53) ouvert
 - Indique que cette machine peut également jouer un rôle de serveur DNS.
 
-## **Recommandations**
+## 📑 Recommandations
 1. **Sécuriser l'accès distant :** Restreindre l'accès à SSH (22) et RDP (3389) uniquement aux adresses IP de confiance.
 2. **Vérifier la configuration LDAP et Kerberos :** S'assurer que ces services sont bien sécurisés pour éviter toute exploitation.
 3. **Surveiller SMB (445) et NetBIOS (139) :** Ces ports sont souvent ciblés par des attaques (ex: EternalBlue).
