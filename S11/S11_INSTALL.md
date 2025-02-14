@@ -276,7 +276,10 @@ cd medusa
 
 ![image](https://github.com/user-attachments/assets/b0210ae5-ce16-4fec-9051-c862e21ff49f)
 
+## 📑 7. Type de scan disponible
 
-## 📑 7. Aperçu de la map
+![image](https://github.com/user-attachments/assets/95579daa-5184-45a9-9d8d-509a6f4cc2b9)
+
+## 📑 8. Aperçu de la map
 
 ![zenmap2](https://github.com/user-attachments/assets/3b95da8c-2475-4817-8042-e9256af091a1)
