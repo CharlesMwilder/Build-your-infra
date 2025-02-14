@@ -245,3 +245,33 @@ cd medusa
 
 </details>
 
+<details>
+<summary><h1>🎯 Installation et test de ZENMAP<h1></summary>
+
+# 📑 Installation de ZENMAP sur Debian 12
+
+## 📑 1. Télécharger la clé GPG de kali linux
+
+``wget -q -O - https://archive.kali.org/archive-key.asc | sudo gpg --dearmor -o /usr/share/keyrings/kali-archive-keyring.gpg``
+
+## 📑 2. Ajouter les dépôts kali linux dans /etc/apt/sources.list
+
+``deb [signed-by=/usr/share/keyrings/kali-archive-keyring.gpg] http://http.kali.org/kali kali-rolling main non-free contrib``  
+``deb-src [signed-by=/usr/share/keyrings/kali-archive-keyring.gpg] http://http.kali.org/kali kali-rolling main non-free contrib``  
+
+## 📑 3. Mettre à jour la liste des paquets
+
+``apt update && apt upgrade -y``
+
+## 📑 4. Afficher la liste des méta-paquets disponible
+
+``apt-cache search kali-tools-``
+
+## 📑 5. Installation du méta-paquet default
+
+``apt install kali-linux-default``  
+> Plus de détails : https://www.kali.org/tools/kali-meta/#kali-linux-default  
+
+
+
+
