@@ -272,6 +272,11 @@ cd medusa
 ``apt install kali-linux-default``  
 > Plus de détails : https://www.kali.org/tools/kali-meta/#kali-linux-default  
 
+## 📑 6. Aperçu de l'interface et scan d'une adresse ip
+
+![image](https://github.com/user-attachments/assets/b0210ae5-ce16-4fec-9051-c862e21ff49f)
 
 
+## 📑 7. Aperçu de la map
 
+![zenmap2](https://github.com/user-attachments/assets/3b95da8c-2475-4817-8042-e9256af091a1)
