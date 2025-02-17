@@ -1,3 +1,5 @@
+# 🚨🚨🚨🚨🚨 JULIEN 🚨🚨🚨🚨🚨
+
 # 📑 Intro :
 
 - Bonjour à tous, aujourd'hui, nous, une équipe de 4 techniciens composée de Charles, Nicolas, William et Julien, allons vous présenter l'entreprise BILLU pour laquelle nous avons été mandatés afin de mettre en place une nouvelle infrastructure réseau complète et sécurisée.
@@ -36,6 +38,8 @@
 - Nous avons donc mis en place plusieurs serveurs ainsi que plusieurs services. Je vous laisse voir cela de plus près juste après.
 
 ---
+
+# 🚨🚨🚨🚨🚨 CHARLES 🚨🚨🚨🚨🚨 
 
 # 📑 Réalisation du projet :
 
