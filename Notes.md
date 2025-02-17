@@ -25,8 +25,8 @@
 
 - Ce qui incult :
   
-✅ La mise en place de l’infrastructure réseau
-✅ La configuration et l’intégration des différents composants
+✅ La mise en place de l’infrastructure réseau<br>
+✅ La configuration et l’intégration des différents composants<br>
 ✅ Le déploiement et l’utilisation des services essentiels
 
 - Cependant, il va nous rester encore plusieurs ajustements à effectuer, notamment au niveau de la sécurité et des recommandations, afin de garantir que l'infrastructure réseau soit totalement optimisée et sécurisée.
