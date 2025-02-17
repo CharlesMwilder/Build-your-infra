@@ -240,12 +240,11 @@ cd medusa
 <details>
 <summary><h1>🎯 Présentation BILLU<h1></summary>
 
-
 [Presentation.BILLU.pdf](https://github.com/user-attachments/files/18826053/Presentation.BILLU.pdf)
 
----
-
 </details>
+
+---
 
 <details>
 <summary><h1>🎯 Installation et test de ZENMAP<h1></summary>
