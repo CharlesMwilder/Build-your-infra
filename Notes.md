@@ -27,7 +27,7 @@
 
 # 📑 Les objectifs :
 
-- En tant qu'objectif, nous avons eu la réalisation de l'infrastructure réseau complète à faire, avec l'installation et la configuration des routeurs, des commutateurs et du DHCP pour chaque département. Nous devions aussi fournir un plan synoptique du réseau détaillé, que vous verrez mieux juste après. Nous avons également travaillé sur la sécurité et la gestion des données, en améliorant la sécurité du réseau et en utilisant des services de gestion des données. Nous avons adopté la méthode Scrum pour la gestion du projet et avons également utilisé GitHub pour documenter chaque étape d'installation et de configuration du projet.
+- En tant qu'objectif, nous avons eu la réalisation de l'infrastructure réseau complète à faire, avec l'installation et la configuration des routeurs, des commutateurs et du DHCP pour chaque département. Nous devions aussi fournir un plan synoptique du réseau détaillé. Nous avons également travaillé sur la sécurité et la gestion des données, en améliorant la sécurité du réseau et en utilisant des services de gestion des données. Nous avons adopté la méthode Scrum pour la gestion du projet et avons également utilisé GitHub pour documenter chaque étape d'installation et de configuration du projet.
 
 ---
 
