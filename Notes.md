@@ -16,8 +16,15 @@
 - Et la société prévoit un budget important pour renforcer son développement.
 
 - L'entreprise emploie actuellement 167 personnes, réparties dans 9 départements, avec des collaborateurs externes qui interviennent ponctuellement ou à temps plein dans certains services.
-  
+
 ---
+
+# Sommaire :
+
+- Nous allons voir 3 points, donc en 1 les objectifs, en 2 nos réalisations et en 3 notre conclusion.
+
+---
+
 
 # Réalisation du projet :
 
