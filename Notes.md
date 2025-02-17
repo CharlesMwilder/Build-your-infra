@@ -1,10 +1,10 @@
-# Intro :
+# 📑 Intro :
 
 - Bonjour à tous, aujourd'hui, nous, une équipe de 4 techniciens composée de Charles, Nicolas, William et Julien, allons vous présenter l'entreprise BILLU pour laquelle nous avons été mandatés afin de mettre en place une nouvelle infrastructure réseau complète et sécurisée.
 
 ---
 
-# BILLU ??? :
+# 📑 BILLU ??? :
 
 - Qu'est-ce que BILLU ???
   
@@ -19,25 +19,25 @@
 
 ---
 
-# Sommaire :
+# 📑 Sommaire :
 
 - Nous allons voir 3 points, donc en 1 les objectifs, en 2 nos réalisations et en 3 notre conclusion.
 
 ---
 
-# Les objectifs :
+# 📑 Les objectifs :
 
 - En tant qu'objectif, nous avons eu la réalisation de l'infrastructure réseau complète à faire, avec l'installation et la configuration des routeurs, des commutateurs et du DHCP pour chaque département. Nous devions aussi fournir un plan synoptique du réseau détaillé, que vous verrez mieux juste après. Nous avons également travaillé sur la sécurité et la gestion des données, en améliorant la sécurité du réseau et en utilisant des services de gestion des données. Nous avons adopté la méthode Scrum pour la gestion du projet et avons également utilisé GitHub pour documenter chaque étape d'installation et de configuration du projet.
 
 ---
 
-# Nos réalisation :
+# 📑 Nos réalisation :
 
 - Nous avons donc mis en place plusieurs serveurs ainsi que plusieurs services. Je vous laisse voir cela de plus près juste après.
 
 ---
 
-# Réalisation du projet :
+# 📑 Réalisation du projet :
 
 - Nous estimons avoir terminé le projet à 80%.
 
