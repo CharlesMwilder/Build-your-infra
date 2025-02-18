@@ -63,10 +63,12 @@
 
 Voici le schéma synoptique de notre infrastructure. Lorsque l'on arrive depuis internet, nous avons un routeur avec un firewall PfSense qui permet de filter le trafic entrant et sortant.  
 Nous avons un réseau LAN en 192.168.10.248/29 pour administrer le firewall.  
-Un réseau initial en 172.18.0.0/16 découpé en VLANs 172.18.X.0/24 pour implémenter de la sécurité et de la QoS. 1 VLAN par service, 1 VLAN isolé pour la DMZ contenant notre serveur Web et 1 VLAN dédié pour tous les serveurs.
+Un réseau initial en 172.18.0.0/16 découpé en VLANs 172.18.X.0/24 pour implémenter de la sécurité et de la QoS.  
+- 1 VLAN par service  
+- 1 VLAN isolé pour la DMZ contenant notre serveur Web  
+- 1 VLAN dédié pour tous les serveurs linux, windows et nos contrôleurs de domaine Active Directory avec les rôles FSMO répartis.
 
 
+# 📑 Présentation du GitHub dpeuis site Web  
 
-  On a fait le projet 3 c'était cool.  
-  Merci au revoir.  
-  Rejoignez le côté obscur de Billu, on fait du Pentest. :-)  
+
