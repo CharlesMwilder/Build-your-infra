@@ -41,6 +41,12 @@
 
 # 🚨🚨🚨🚨🚨 CHARLES 🚨🚨🚨🚨🚨 
 
+# 📑 Présentation rapide des services :
+
+- A toi de joué Charles !
+
+---
+
 # 📑 Réalisation du projet :
 
 - Nous estimons avoir terminé le projet à 80%.
