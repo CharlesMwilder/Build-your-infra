@@ -70,5 +70,5 @@ Un réseau initial en 172.18.0.0/16 découpé en VLANs 172.18.X.0/24 pour implé
 
 # 📑 Présentation du GitHub dpeuis site Web  
 
-Sur le site, on peut également avoir accès à chaque installation de serveurs spécifiques sur notre Github, et également au menu principal de notre projet avec les tâches effectuées et documentées.  
+Sur le site, on peut également avoir accès au menu principal de notre projet avec les tâches effectuées et documentées, ainsi que chaque installation de serveurs spécifiques sur notre Github.  
 
