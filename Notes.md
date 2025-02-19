@@ -45,34 +45,43 @@
 
 *A toi de joué Charles !*
 
-- **pfSense :** Un pare-feu et routeur open-source pour sécuriser et gérer un réseau.
-- **GLPI :** Un outil de gestion de parc informatique et de helpdesk.
-- **Passbolt :** Un gestionnaire de mots de passe sécurisé pour les équipes.
-- **Graylog :** Un système de gestion et d’analyse des logs centralisés.
-- **FreePBX :** Une solution téléphonique open-source basée sur Asterisk.
-- **iRedMail :** Un serveur de messagerie complet et open-source.
-- **Zabbix :** Un outil de supervision pour surveiller l’état des serveurs et réseaux.
-- **Guacamole :** Un accès à distance aux ordinateurs via un navigateur web.
-- **GitHub :** Une plateforme pour héberger et gérer du code en collaboration.
-- **Mailo :** Un service de messagerie respectueux de la vie privée.
+📑 **Présentation des services**
 
----
+Pour répondre aux besoins de BillU, nous avons déployé une infrastructure complète avec plusieurs services essentiels :
 
-# 📑 Réalisation du projet :
+🔹 **pfSense** : Sécurise et gère le trafic réseau avec un pare-feu robuste.
 
-- Nous estimons avoir terminé le projet à 80%.
+🔹 **GLPI** : Centralise la gestion du parc informatique et des demandes d’assistance.
 
-- Ce qui incult :
-  
-✅ La mise en place de l’infrastructure réseau<br>
-✅ La configuration et l’intégration des différents composants<br>
+🔹 **Passbolt** : Protège les mots de passe en équipe de manière sécurisée.
+
+🔹 **Graylog** : Assure une gestion efficace des logs pour l’analyse des événements.
+
+🔹 **FreePBX** : Fournit une solution de téléphonie complète et open-source.
+
+🔹 **iRedMail** : Gère la messagerie professionnelle de l’entreprise.
+
+🔹 **Zabbix** : Supervise en temps réel les serveurs et équipements réseau.
+
+🔹 **Guacamole** : Permet un accès distant sécurisé aux machines via un navigateur web.
+
+🔹 **GitHub** : Héberge et documente notre travail pour assurer la traçabilité.
+
+🔹 **Mailo** : Garantit une communication sécurisée et respectueuse de la vie privée.
+
+Nous estimons avoir terminé le projet à 80%, ce qui inclut :
+
+✅ La mise en place de l’infrastructure réseau
+
+✅ La configuration et l’intégration des différents composants
+
 ✅ Le déploiement et l’utilisation des services essentiels
 
-- Cependant, il va nous rester encore plusieurs ajustements à effectuer, notamment au niveau de la sécurité et des recommandations, afin de garantir que l'infrastructure réseau soit totalement optimisée et sécurisée.
+Mais il reste encore plusieurs ajustements à effectuer, notamment **au niveau de la sécurité et des recommandations**, afin de garantir que l’infrastructure soit totalement **optimisée et sécurisée**.
 
-- Ce projet a été une expérience très enrichissante pour nous tous. Nous avons beaucoup appris. Malgré plusieurs défis techniques rencontrés, notamment sur certains serveurs et services, nous avons su les surmonter grâce à notre travail d’équipe et à notre persévérance.
+Ce projet a été **une expérience extrêmement enrichissante**, où nous avons rencontré et surmonté de nombreux défis techniques grâce à **notre travail d’équipe et notre persévérance**.
 
-- Nous sommes fiers du chemin parcouru, car nous avons mis en place une base solide et fonctionnelle pour l'infrastructure réseau qui nous avait été confiée.
+Nous sommes fiers du résultat, et pour mieux comprendre comment tout cela est structuré, voici Nicolas.
 
   # 🚨🚨🚨🚨🚨 NICOLAS 🚨🚨🚨🚨🚨
 
