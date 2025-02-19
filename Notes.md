@@ -41,7 +41,7 @@
 - Nous avons donc mis en place plusieurs serveurs ainsi que plusieurs services. Je vous laisse voir cela de plus près juste après.
   
 ---
-
+ # 📑 Conlusion :
 Nous estimons avoir terminé le projet à 80%, ce qui inclut :
 
 ✅ La mise en place de l’infrastructure réseau
