@@ -27,17 +27,6 @@
 
 ---
 
-# 📑 Les objectifs :
-
-- En tant qu'objectif, nous avons eu la réalisation de l'infrastructure réseau complète à faire, avec l'installation et la configuration des routeurs, des commutateurs et du DHCP pour chaque département. Nous devions aussi fournir un plan synoptique du réseau détaillé. Nous avons également travaillé sur la sécurité et la gestion des données, en améliorant la sécurité du réseau et en utilisant des services de gestion des données. Nous avons adopté la méthode Scrum pour la gestion du projet et avons également utilisé GitHub pour documenter chaque étape d'installation et de configuration du projet.
-
----
-
-# 📑 Nos réalisation :
-
-- Nous avons donc mis en place plusieurs serveurs ainsi que plusieurs services. Je vous laisse voir cela de plus près juste après.
-
----
 
 # 🚨🚨🚨🚨🚨 CHARLES 🚨🚨🚨🚨🚨 
 
@@ -45,29 +34,13 @@
 
 *A toi de joué Charles !*
 
-📑 **Présentation des services**
+- En tant qu'objectif, nous avons eu la réalisation de l'infrastructure réseau complète à faire, avec l'installation et la configuration des routeurs, des commutateurs et du DHCP pour chaque département. Nous devions aussi fournir un plan synoptique du réseau détaillé. Nous avons également travaillé sur la sécurité et la gestion des données, en améliorant la sécurité du réseau et en utilisant des services de gestion des données. Nous avons adopté la méthode Scrum pour la gestion du projet et avons également utilisé GitHub pour documenter chaque étape d'installation et de configuration du projet.
 
-Pour répondre aux besoins de BillU, nous avons déployé une infrastructure complète avec plusieurs services essentiels :
+# 📑 Nos réalisation :
 
-🔹 **pfSense** : Sécurise et gère le trafic réseau avec un pare-feu robuste.
-
-🔹 **GLPI** : Centralise la gestion du parc informatique et des demandes d’assistance.
-
-🔹 **Passbolt** : Protège les mots de passe en équipe de manière sécurisée.
-
-🔹 **Graylog** : Assure une gestion efficace des logs pour l’analyse des événements.
-
-🔹 **FreePBX** : Fournit une solution de téléphonie complète et open-source.
-
-🔹 **iRedMail** : Gère la messagerie professionnelle de l’entreprise.
-
-🔹 **Zabbix** : Supervise en temps réel les serveurs et équipements réseau.
-
-🔹 **Guacamole** : Permet un accès distant sécurisé aux machines via un navigateur web.
-
-🔹 **GitHub** : Héberge et documente notre travail pour assurer la traçabilité.
-
-🔹 **Mailo** : Garantit une communication sécurisée et respectueuse de la vie privée.
+- Nous avons donc mis en place plusieurs serveurs ainsi que plusieurs services. Je vous laisse voir cela de plus près juste après.
+  
+---
 
 Nous estimons avoir terminé le projet à 80%, ce qui inclut :
 
