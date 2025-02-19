@@ -54,7 +54,7 @@ Un réseau initial en 172.18.0.0/16 découpé en VLANs 172.18.X.0/24 pour implé
 - 1 VLAN isolé pour la DMZ contenant notre serveur Web  
 - 1 VLAN dédié pour tous les serveurs Linux, Windows et nos 2 contrôleurs de domaine Active Directory avec les rôles FSMO répartis ainsi qu'un DC Server Core en RODC pour assurer également la redondance de service au sein du domaine.
 
-# 📑 Présentation du GitHub dpeuis site Web  
+# 📑 Présentation du GitHub depuis site Web  
 
 Sur le site, on peut également avoir accès au menu principal de notre projet avec les tâches effectuées et documentées, ainsi que chaque installation de serveurs spécifiques sur notre Github.  
 
