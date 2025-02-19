@@ -78,7 +78,7 @@
 
 # 📑 Présentation du schéma synoptique depuis site Web  
 
-Lorsque l'on présente une Infrastructure, il est très important de présenter le schéma synoptique pour avoir une vision claire et concise de ce que l'on parle.  
+Lorsque l'on veut présenter une Infrastructure de manière claire et concise, il est très important de présenter le schéma synoptique.  
 Lorsque l'on arrive depuis internet, nous avons un routeur avec un firewall PfSense qui permet de filter le trafic entrant et sortant.  
 Nous avons un réseau LAN en 192.168.10.248/29 pour administrer le firewall.  
 Un réseau initial en 172.18.0.0/16 découpé en VLANs 172.18.X.0/24 pour implémenter de la sécurité et de la QoS.  
