@@ -81,7 +81,7 @@ Mais il reste encore plusieurs ajustements à effectuer, notamment **au niveau d
 
 Ce projet a été **une expérience extrêmement enrichissante**, où nous avons rencontré et surmonté de nombreux défis techniques grâce à **notre travail d’équipe et notre persévérance**.
 
-Nous sommes fiers du résultat, et pour mieux comprendre comment tout cela est structuré, voici Nicolas.
+Nous sommes fiers du chemin parcouru, car nous avons mis en place une base solide et fonctionnelle pour l'infrastructure réseau qui nous avait été confiée..
 
   # 🚨🚨🚨🚨🚨 NICOLAS 🚨🚨🚨🚨🚨
 
