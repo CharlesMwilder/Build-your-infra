@@ -34,7 +34,7 @@
 
 *A toi de joué Charles !*
 
-- En tant qu'objectif, nous avons eu la réalisation de l'infrastructure réseau complète à faire, avec l'installation et la configuration des routeurs, des commutateurs et du DHCP pour chaque département. Nous devions aussi fournir un plan synoptique du réseau détaillé. Nous avons également travaillé sur la sécurité et la gestion des données, en améliorant la sécurité du réseau et en utilisant des services de gestion des données. Nous avons adopté la méthode Scrum pour la gestion du projet et avons également utilisé GitHub pour documenter chaque étape d'installation et de configuration du projet.
+- Notre mission était de concevoir une infrastructure réseau complète, incluant l’installation et la configuration des routeurs, des commutateurs et du DHCP pour chaque département. Nous devions également fournir un plan synoptique détaillé du réseau. Par ailleurs, nous avons renforcé la sécurité et optimisé la gestion des données grâce à des services dédiés. Pour structurer notre travail, nous avons adopté la méthode Scrum et utilisé GitHub afin de documenter chaque étape d’installation et de configuration.
 
 # 📑 Nos réalisation :
 
