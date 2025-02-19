@@ -41,22 +41,8 @@
 - Nous avons donc mis en place plusieurs serveurs ainsi que plusieurs services. Je vous laisse voir cela de plus près juste après.
   
 ---
- # 📑 Conlusion :
-Nous estimons avoir terminé le projet à 80%, ce qui inclut :
 
-✅ La mise en place de l’infrastructure réseau
-
-✅ La configuration et l’intégration des différents composants
-
-✅ Le déploiement et l’utilisation des services essentiels
-
-Mais il reste encore plusieurs ajustements à effectuer, notamment **au niveau de la sécurité et des recommandations**, afin de garantir que l’infrastructure soit totalement **optimisée et sécurisée**.
-
-Ce projet a été **une expérience extrêmement enrichissante**, où nous avons rencontré et surmonté de nombreux défis techniques grâce à **notre travail d’équipe et notre persévérance**.
-
-Nous sommes fiers du chemin parcouru, car nous avons mis en place une base solide et fonctionnelle pour l'infrastructure réseau qui nous avait été confiée..
-
-  # 🚨🚨🚨🚨🚨 NICOLAS 🚨🚨🚨🚨🚨
+ # 🚨🚨🚨🚨🚨 NICOLAS 🚨🚨🚨🚨🚨
 
 # 📑 Présentation du schéma synoptique depuis site Web  
 
@@ -72,3 +58,21 @@ Un réseau initial en 172.18.0.0/16 découpé en VLANs 172.18.X.0/24 pour implé
 
 Sur le site, on peut également avoir accès au menu principal de notre projet avec les tâches effectuées et documentées, ainsi que chaque installation de serveurs spécifiques sur notre Github.  
 
+---
+
+# 🚨🚨🚨🚨🚨 CHARLES 🚨🚨🚨🚨🚨 
+
+# 📑 Conlusion :
+Nous estimons avoir terminé le projet à 80%, ce qui inclut :
+
+✅ La mise en place de l’infrastructure réseau
+
+✅ La configuration et l’intégration des différents composants
+
+✅ Le déploiement et l’utilisation des services essentiels
+
+Mais il reste encore plusieurs ajustements à effectuer, notamment **au niveau de la sécurité et des recommandations**, afin de garantir que l’infrastructure soit totalement **optimisée et sécurisée**.
+
+Ce projet a été **une expérience extrêmement enrichissante**, où nous avons rencontré et surmonté de nombreux défis techniques grâce à **notre travail d’équipe et notre persévérance**.
+
+Nous sommes fiers du chemin parcouru, car nous avons mis en place une base solide et fonctionnelle pour l'infrastructure réseau qui nous avait été confiée..
