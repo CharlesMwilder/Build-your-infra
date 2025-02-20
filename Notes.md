@@ -56,8 +56,11 @@ ainsi que chaque installation documentée de nos serveurs sur notre Github [CLIC
 
 [CLIC] Nous avons également accès à notre schéma synoptique qui permet de présenter de manière claire et concise notre infrastructure.   
 Lorsque l'on arrive depuis internet, nous avons un routeur avec un firewall PfSense qui permet de filter le trafic entrant et sortant.  
+
 Nous avons un réseau LAN dédié pour administrer le firewall.  
+
 Un réseau initial en 172.18.0.0/16 a été découpé en VLANs 172.18.X.0/24 pour implémenter de la sécurité et de la QoS.  
+
 - Il y a notamment un VLAN pour une DMZ contenant le serveur Web avec des règles de filtrage spécifique.  
 - Il y a 1 VLAN par service avec 254 adresses disponibles.  
 - Et 1 VLAN dédié pour tous les serveurs Linux comme FreePBX ou IredMail, mais également des serveurs Windows avec plusieurs contrôleurs de domaine Active Directory avec une répartition rôles FSMO, de la redondance, du load balancing, ainsi qu'un Windows Server Core en RODC, pour assurer de la disponibilité au sein de l'infrastructure.  
