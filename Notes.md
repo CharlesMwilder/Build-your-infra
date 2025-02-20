@@ -65,7 +65,7 @@ Un réseau initial large, nous a été fourni en 172.18.0.0/16 et a été décou
 - Nous avons 1 VLAN par service avec 254 adresses disponibles.  
 - Et 1 VLAN dédié pour tous les serveurs Linux comme FreePBX ou IredMail, mais également des serveurs Windows avec plusieurs contrôleurs de domaine Active Directory avec une répartition des rôles FSMO, de la redondance, du load balancing, ainsi qu'un Windows Server Core en RODC, pour assurer de la disponibilité au sein de l'infrastructure.  
 
-Je repasse la main à mon frère d'arme Charles.  
+Je repasse la main à mon collègue Charles.  
 
 ---
 
