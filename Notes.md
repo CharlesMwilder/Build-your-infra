@@ -28,7 +28,7 @@
 
 - Nous allons voir 3 points, donc en 1 les objectifs, en 2 nos réalisations et en 3 notre conclusion.
 
-- Je vous laisse maintenant avec mon frêre d'arme Charles pour vous présentez la suite.
+- Je vous laisse maintenant avec mon collègue Charles pour vous présentez la suite.
 
 ---
 
