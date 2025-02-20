@@ -48,7 +48,7 @@
 
 # 📑 Présentation du GitHub depuis site Web  
 
-- Sur notre site, on peut également avoir accès au menu principal de notre projet avec les tâches effectuées et documentées [CLIC].  
+- Sur notre site Web, on peut également avoir accès au menu principal de notre projet avec les tâches effectuées et documentées [CLIC].  
 - Nous avons également un accès à chaque installation documentée de nos serveurs sur notre Github [CLIC].  
 
 
