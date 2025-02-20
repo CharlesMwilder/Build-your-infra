@@ -48,8 +48,8 @@
 
 # 📑 Présentation du GitHub depuis site Web  
 
-Sur notre site, on peut également avoir accès au menu principal de notre projet avec les tâches effectuées et documentées [CLIC].  
-ainsi que chaque l'installation documentée de nos serveurs sur notre Github [CLIC].  
+- Sur notre site, on peut également avoir accès au menu principal de notre projet avec les tâches effectuées et documentées [CLIC].  
+- Nous avons également un accès à chaque installation documentée de nos serveurs sur notre Github [CLIC].  
 
 
 # 📑 Présentation du schéma synoptique depuis site Web  
