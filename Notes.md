@@ -44,6 +44,11 @@
 
  # 🚨🚨🚨🚨🚨 NICOLAS 🚨🚨🚨🚨🚨
 
+# 📑 Présentation du GitHub depuis site Web  
+
+Sur le site, on peut également avoir accès au menu principal de notre projet avec les tâches effectuées et documentées, ainsi que chaque installation de serveurs spécifiques sur notre Github.  
+
+
 # 📑 Présentation du schéma synoptique depuis site Web  
 
 Lorsque l'on veut présenter une Infrastructure de manière claire et concise, il est très important de présenter le schéma synoptique.  
@@ -53,10 +58,6 @@ Un réseau initial en 172.18.0.0/16 découpé en VLANs 172.18.X.0/24 pour implé
 - 1 VLAN par service  
 - 1 VLAN isolé pour la DMZ contenant notre serveur Web  
 - 1 VLAN dédié pour tous les serveurs Linux, Windows et nos 2 contrôleurs de domaine Active Directory avec les rôles FSMO répartis ainsi qu'un DC Server Core en RODC pour assurer également la redondance de service au sein du domaine.
-
-# 📑 Présentation du GitHub depuis site Web  
-
-Sur le site, on peut également avoir accès au menu principal de notre projet avec les tâches effectuées et documentées, ainsi que chaque installation de serveurs spécifiques sur notre Github.  
 
 ---
 
