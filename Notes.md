@@ -1,3 +1,6 @@
+
+[Presentation.BILLU.pdf](https://github.com/user-attachments/files/18885276/Presentation.BILLU.pdf)
+
 # 🚨🚨🚨🚨🚨 JULIEN 🚨🚨🚨🚨🚨
 
 # 📑 Intro :
