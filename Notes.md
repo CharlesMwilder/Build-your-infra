@@ -48,22 +48,24 @@
 
 # 📑 Présentation du GitHub depuis site Web  
 
-Sur le site, on peut également avoir accès au menu principal de notre projet avec les tâches effectuées et documentées [CLIC].  
-ainsi que chaque installation documentée de nos serveurs sur notre Github [CLIC].   
+Sur notre site, on peut également avoir accès au menu principal de notre projet avec les tâches effectuées et documentées [CLIC].  
+ainsi que chaque l'installation documentée de nos serveurs sur notre Github [CLIC].  
 
 
 # 📑 Présentation du schéma synoptique depuis site Web  
 
-[CLIC] Nous avons également accès à notre schéma synoptique qui permet de présenter de manière claire et concise notre infrastructure.   
+[CLIC] Nous avons également accès à notre schéma synoptique qui permet de présenter de manière claire et concise notre infrastructure.  
 Lorsque l'on arrive depuis internet, nous avons un routeur avec un firewall PfSense qui permet de filter le trafic entrant et sortant.  
 
 Nous avons un réseau LAN dédié pour administrer le firewall.  
 
-Un réseau initial en 172.18.0.0/16 a été découpé en VLANs 172.18.X.0/24 pour implémenter de la sécurité et de la QoS.  
+Un réseau initial nous a été fourni en 172.18.0.0/16 et a été découpé en VLANs pour implémenter de la sécurité et de la QoS.  
 
 - Il y a notamment un VLAN pour une DMZ contenant le serveur Web avec des règles de filtrage spécifique.  
 - Il y a 1 VLAN par service avec 254 adresses disponibles.  
-- Et 1 VLAN dédié pour tous les serveurs Linux comme FreePBX ou IredMail, mais également des serveurs Windows avec plusieurs contrôleurs de domaine Active Directory avec une répartition rôles FSMO, de la redondance, du load balancing, ainsi qu'un Windows Server Core en RODC, pour assurer de la disponibilité au sein de l'infrastructure.  
+- Et 1 VLAN dédié pour tous les serveurs Linux comme FreePBX ou IredMail, mais également des serveurs Windows avec plusieurs contrôleurs de domaine Active Directory avec une répartition des rôles FSMO, de la redondance, du load balancing, ainsi qu'un Windows Server Core en RODC, pour assurer de la disponibilité au sein de l'infrastructure.  
+
+Je repasse la main à mon frère d'arme Charles.  
 
 ---
 
