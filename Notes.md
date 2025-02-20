@@ -59,7 +59,7 @@ Lorsque l'on arrive depuis internet, nous avons un routeur avec un firewall PfSe
 
 Nous avons un réseau LAN dédié pour administrer le firewall.  
 
-Un réseau initial nous a été fourni en 172.18.0.0/16 et a été découpé en VLANs pour implémenter de la sécurité et de la QoS.  
+Un réseau initial large, nous a été fourni en 172.18.0.0/16 et a été découpé en VLANs pour implémenter de la sécurité et de la QoS.  
 
 - Il y a notamment un VLAN pour une DMZ contenant le serveur Web avec des règles de filtrage spécifique.  
 - Il y a 1 VLAN par service avec 254 adresses disponibles.  
