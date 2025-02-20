@@ -102,395 +102,487 @@ bash /tmp/sng_freepbx_debian_install.sh
 ```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BILLU - Accueil</title>
     <style>
-        /* Animation du fond */
-        @keyframes bg-scrolling-reverse {
-            from {
-                background-position: 0 0;
-            }
-
-            to {
-                background-position: 50px 50px;
-            }
-        }
-
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
         body {
+            font-family: 'Orbitron', sans-serif;
             margin: 0;
-            font-family: Exo, Arial, sans-serif;
-            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat;
-            background-size: 50px 50px;
-            animation: bg-scrolling-reverse 5s linear infinite;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f5f5, #dcdcdc); /* Dégradé de fond */
+            color: black;
+            overflow-x: hidden;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            /* Contenu centré en haut */
+            justify-content: space-between;
             align-items: center;
-            height: 100vh;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            position: relative;
+            overflow: hidden;
         }
 
-        header {
-            width: 100%;
-            /* L'entête prend toute la largeur */
-            background: rgba(10, 10, 10, 0.9);
-            padding: 20px 0;
+        /* Animation des particules */
+        @keyframes moveParticles {
+            0% {
+                transform: translate(0, 0) scale(0.8);
+                opacity: 0.5;
+            }
+            50% {
+                transform: translate(100px, 100px) scale(1);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translate(-100px, -100px) scale(0.8);
+                opacity: 0.5;
+            }
+        }
+
+        /* Particules en fond */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(60, 60, 60, 0.6); /* Gris foncé */
+            animation: moveParticles 5s infinite ease-in-out;
+            opacity: 0.6;
+        }
+
+        /* Configuration de la taille et de la durée des particules */
+        .particle:nth-child(odd) {
+            width: 8px;
+            height: 8px;
+            animation-duration: 6s;
+        }
+
+        .particle:nth-child(even) {
+            width: 12px;
+            height: 12px;
+            animation-duration: 5s;
+        }
+
+        /* Diffusion des particules sur toute la page */
+        .particle:nth-child(1) { top: 5%; left: 15%; animation-delay: 0s; }
+        .particle:nth-child(2) { top: 10%; left: 70%; animation-delay: 0.5s; }
+        .particle:nth-child(3) { top: 30%; left: 50%; animation-delay: 1.5s; }
+        .particle:nth-child(4) { top: 20%; left: 80%; animation-delay: 2s; }
+        .particle:nth-child(5) { top: 45%; left: 20%; animation-delay: 0.3s; }
+        .particle:nth-child(6) { top: 65%; left: 90%; animation-delay: 1s; }
+        .particle:nth-child(7) { top: 50%; left: 10%; animation-delay: 1.7s; }
+        .particle:nth-child(8) { top: 40%; left: 60%; animation-delay: 0.9s; }
+        .particle:nth-child(9) { top: 60%; left: 35%; animation-delay: 2.2s; }
+        .particle:nth-child(10) { top: 80%; left: 5%; animation-delay: 1.4s; }
+        .particle:nth-child(11) { top: 90%; left: 55%; animation-delay: 1.8s; }
+        .particle:nth-child(12) { top: 75%; left: 85%; animation-delay: 0.6s; }
+        .particle:nth-child(13) { top: 10%; left: 90%; animation-delay: 1.1s; }
+        .particle:nth-child(14) { top: 90%; left: 25%; animation-delay: 2.5s; }
+        .particle:nth-child(15) { top: 30%; left: 40%; animation-delay: 1.2s; }
+        .particle:nth-child(16) { top: 60%; left: 75%; animation-delay: 2.7s; }
+        .particle:nth-child(17) { top: 20%; left: 25%; animation-delay: 1.6s; }
+        .particle:nth-child(18) { top: 80%; left: 50%; animation-delay: 2s; }
+
+        header, footer {
             text-align: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-
-        header h1 {
-            font-size: 36px;
-            margin: 0;
-            font-weight: bold;
-            text-transform: uppercase;
+            font-size: 1em;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            color: white;
+            width: 100%;
         }
 
         nav {
-            margin-top: 15px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
             display: flex;
             justify-content: center;
+            gap: 15px;
+            padding: 15px 0; /* Augmente la marge pour descendre le menu */
+            margin-top: 10px; /* Ajout pour descendre le menu */
         }
 
-        nav ul li {
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            color: white;
+        nav a {
+            color: black;
             text-decoration: none;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
+            padding: 6px 12px;
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.2);
+            transition: transform 0.15s ease-out, background 0.15s ease-out; /* Transition plus rapide */
+            font-size: 0.9em;
+        }
+	
+	nav a.active,
+        nav a:hover {
+            transform: scale(1.1);
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
         }
 
-        nav ul li a:hover {
-            color: #00aaff;
-        }
-
-        .container {
+        .center-content {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            /* Centre le contenu verticalement */
             align-items: center;
-            /* Centre le contenu horizontalement */
+            justify-content: center;
+            flex: 1;
+            width: 100%;
+            margin-top: -30px;
+        }
+
+        /* Animation de rebond pour le texte "BILLU" */
+        @keyframes bounceBillu {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+            30% {
+                transform: translateY(-20px) scale(1.1); /* Monte un peu et grossit */
+            }
+            50% {
+                transform: translateY(0) scale(1); /* Redescend et revient à sa taille */
+            }
+            70% {
+                transform: translateY(-10px) scale(1.05); /* Un petit rebond */
+            }
+            100% {
+                transform: translateY(0) scale(1); /* Retour à la position d'origine */
+            }
+        }
+
+        .big-billu {
+            font-size: 10em;
+            font-weight: 700;
+            color: black;
             text-align: center;
-            background: rgba(30, 30, 30, 0.8);
-            padding: 20px 40px;
-            border-radius: 15px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-            max-width: 400px;
-	    height: auto;
-	    min-height: 200px;
-            margin-top: 200px;
-            /* Ajoute plus d'espace entre l'entête et le bloc */
+            margin: 50px 0;
+            animation: bounceBillu 3s ease infinite; /* Applique l'animation de rebond */
+           margin-top: -50px;
         }
 
-	.content {
-		flex: 1;
-	}
-
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            /* Plus d'espace sous le titre */
-        }
-
-        p {
-            font-size: 1.2rem;
+        .search-container {
             margin-top: 10px;
-        }
-
-        .google-search {
-            background-color: rgba(20, 20, 20, 0.8);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            margin-bottom: 40px;
-            margin-top: 30px;
-            /* Espace entre le bloc "Bienvenue chez BILLU" et la barre de recherche */
             display: flex;
             justify-content: center;
-            /* Centre la recherche horizontalement */
-            width: fit-content;
-            /* La barre de recherche prend la largeur de son contenu */
+            align-items: center;
+            position: relative;
         }
 
-        .google-search input[type="text"] {
-            padding: 10px;
-            font-size: 1rem;
-            border-radius: 5px;
+        .search-box {
+            width: 200px;
+            padding: 6px;
+            border-radius: 20px;
             border: none;
-            width: 280px;
-            background: black;
-            color: white;
+            outline: none;
+            font-size: 0.85em;
+            transition: width 0.3s;
         }
 
-        .google-search input[type="submit"] {
-            padding: 10px 20px;
-            font-size: 1rem;
-            background-color: #00aaff;
-            border-radius: 5px;
+        .search-box:focus {
+            width: 250px;
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 10px;
+            background: none;
             border: none;
             cursor: pointer;
-            color: white;
-            transition: 0.3s;
-        }
-
-        .google-search input[type="submit"]:hover {
-            background-color: #00aaff;
-        }
-
-        footer {
-            width: 100%;
-            background: rgba(10, 10, 10, 0.9);
-            padding: 10px 0;
-            text-align: center;
-            margin-top: auto;
+            color: black;
+            font-size: 1em;
         }
     </style>
 </head>
-
 <body>
-    <!-- Header -->
+    <!-- Création des particules -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+
     <header>
-        <h1>BILLU</h1>
-        <nav>
-            <ul>
-                <li><a href="next.html">Services</a></li>
-                <li><a href="infra.html">Infra</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        BILLU
     </header>
-
-    <!-- Contenu principal -->
-    <div class="container">
-        <h2>Bienvenue chez BILLU</h2>
-        <p>L'avenir de la facturation, simple et efficace.</p>
+    <nav>
+        <a href="index.html" class="active">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="plan.html">Plan</a>
+        <a href="github.html">GitHub</a>
+        <a href="apropos.html">À propos</a>
+        <a href="http://web.billu.com:5000">Assistance</a>
+    </nav>
+    <div class="center-content">
+        <!-- Remplacement du conteneur "Bienvenue chez BILLU" -->
+        <h1 class="big-billu">BILLU</h1>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Rechercher sur Google...">
+            <button class="search-btn" onclick="searchGoogle()">🔍</button>
+        </div>
     </div>
+    <footer>
+        &copy; 2025 BILLU - Tous droits réservés
+    </footer>
+    <script>
+        function searchGoogle() {
+            let query = document.querySelector('.search-box').value;
+            if (query) {
+                window.location.href = `https://www.google.fr/search?q=${encodeURIComponent(query)}`;
+                document.querySelector('.search-box').value = ''; // Vider la barre de recherche après avoir lancé la recherche
+            }
+        }
 
-    <!-- Google Search juste en dessous du bloc "Bienvenue chez BILLU" -->
-    <div class="google-search">
-        <form method="GET" action="http://www.google.be/search">
-            <div align="center">
-                <a href="http://www.google.fr/">
-                    <img src="./pictures/gif_google.gif" border="0" alt="Logo Google" align="absmiddle" width="80">
-                </a>
-                <input type="text" name="q" size="31" maxlength="255" placeholder="Rechercher sur Google">
-                <input type="hidden" name="hl" value="fr">
-                <input type="submit" name="btnG" value="Rechercher">
-            </div>
-        </form>
-    </div>
+        // Permet de lancer la recherche en appuyant sur la touche 'Entrée'
+        document.querySelector('.search-box').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                searchGoogle();
+	}
 
-    <!-- Footer -->
-    <footer>&copy; 2025 BILLU | Tous droits réservés.</footer>
+	 document.addEventListener("DOMContentLoaded", function () {
+                let currentPage = window.location.pathname.split("/").pop();
+                let links = document.querySelectorAll("nav a");
+
+                links.forEach(link => {
+                        let linkPage = link.getAttribute("href");
+                        if (linkPage === currentPage) {
+                                link.classList.add("active");
+                        }
+                });
+        });
+
+
+
+    </script>
 </body>
-
 </html>
 ```
 ---
 
-- **Ajouter un fichier ``next.html`` dans le dossier ``/var/www/html/``** (exemple ci-dessous) :
+- **Ajouter un fichier ``services.html`` dans le dossier ``/var/www/html/``** (exemple ci-dessous) :
 
 ---
 
 ```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BillU - Services</title>
+    <title>BILLU - Services</title>
     <style>
-
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
         body {
+            font-family: 'Orbitron', sans-serif;
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #1e1e1e;
-            color: white;
-            text-align: center;
-        }
-
-        /* Entête */
-        .header {
-            background: #222;
-            padding: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .header h1 {
-            margin: 0;
-            color: white;
-            font-size: 36px;
-            letter-spacing: 2px;
-        }
-
-        nav ul {
-            list-style: none;
-            margin-top: 20px;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 30px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            letter-spacing: 1px;
-        }
-
-        nav ul li a:hover {
-            color: #00aaff;
-        }
-
-        /* Conteneur des services */
-        .icon-container {
+            padding: 0;
+            background: linear-gradient(135deg, #f5f5f5, #dcdcdc); /* Dégradé de fond */
+            color: black;
+            overflow-x: hidden;
+            min-height: 100vh;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header, footer {
+            text-align: center;
+            font-size: 1em;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            color: white;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
             justify-content: center;
-            margin: 40px auto;
-            max-width: 1200px;
-            padding-bottom: 80px; /* Augmenter l'espace entre les services et le bas */
+            gap: 15px;
+            padding: 15px 0; /* Augmente la marge pour descendre le menu */
+            margin-top: 10px; /* Ajout pour descendre le menu */
+        }
+
+	nav a.active,
+        nav a:hover {
+            transform: scale(1.1);
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+}
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.2);
+            transition: transform 0.15s ease-out, background 0.15s ease-out; /* Transition plus rapide */
+            font-size: 0.9em;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            width: 100%;
+            margin-top: -30px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-direction: column; /* Aligne les lignes de cartes verticalement */
+            gap: 50px;
+            margin-top: 20px;
+            width: 100%; /* Assurez-vous que la largeur est 100% pour bien occuper l'espace */
+        }
+
+        .row {
+            display: flex;
+            justify-content: center; /* Espace entre les cartes */
+            gap: 50px; /* Espacement entre les cartes */
+            width: 80%; /* Limiter la largeur de la ligne de cartes */
+            margin: 0 auto; /* Centrer la ligne de cartes */
         }
 
         .icon-wrapper {
-            background: #2a2a2a;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 15px;
             text-align: center;
+            width: 200px; /* Largeur fixe */
+            height: 150px; /* Hauteur fixe */
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             position: relative;
-            width: 150px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centre le contenu verticalement */
+            align-items: center; /* Centre le contenu horizontalement */
         }
 
         .icon-wrapper:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* effet au survol */
         }
 
-        .icon {
+        .icon-wrapper img {
             width: 60px;
             height: 60px;
+            margin-bottom: 10px;
         }
 
-        .status-dot {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: gray;
+        /* Halo autour de la carte */
+        .icon-wrapper.up {
+            box-shadow: 0 0 15px 5px green; /* Halo vert pour service en ligne */
         }
 
-        .status-dot.up {
-            background-color: green;
-        }
-
-        .status-dot.down {
-            background-color: red;
-        }
-
-        .service-name {
-            font-size: 1rem;
-            margin: 10px 0;
-            font-weight: bold;
+        .icon-wrapper.down {
+            box-shadow: 0 0 15px 5px red; /* Halo rouge pour service hors ligne */
         }
 
         .status-text {
-            font-size: 0.9rem;
-            color: #fff;
+            font-size: 0.8em;
+            color: #333;
         }
 
         .status-text.up {
-            color: #28a745;
+            color: green;
+            font-weight: bold;
         }
 
         .status-text.down {
-            color: #dc3545;
+            color: red;
+            font-weight: bold;
         }
 
-        /* Pied de page */
-        .footer {
-            background: #222;
-            padding: 15px;
-            position: fixed;
-            bottom: 0;
+        .timestamp {
+            font-size: 0.7em;
+            color: #888;
+        }
+
+        /* Styles pour les particules */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            text-align: center;
-            color: #ccc;
-            margin-top: 40px; /* Augmenter l'espace entre le pied de page et les services */
+            height: 100%;
+            pointer-events: none; /* Empêche d'interagir avec les particules */
+            overflow: hidden;
         }
 
-        /* Animation pour l'entête et les services */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(60, 60, 60, 0.6); /* Couleur jaune plus voyante */
+            opacity: 0.6; /* Particules opaques */
+            animation: particle-animation 2s infinite; /* Animation plus rapide */
+        }
 
-            to {
+        @keyframes particle-animation {
+            0% {
+                transform: scale(0) translateX(0) translateY(0);
                 opacity: 1;
             }
-        }
-
-        .header {
-            animation: fadeIn 1s ease-out forwards;
-        }
-
-        .icon-wrapper {
-            animation: fadeIn 1.5s ease-out forwards;
+            100% {
+                transform: scale(1) translateX(var(--x)) translateY(var(--y));
+                opacity: 0;
+            }
         }
     </style>
 </head>
-
 <body>
-
-    <!-- Entête -->
-    <header class="header">
-        <div>
-            <h1>BILLU</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="infra.html">Infra</a></li>
-                    <li><a href="apropos.html">À propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        BILLU
     </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="plan.html">Plan</a>
+        <a href="github.html">GitHub</a>
+        <a href="apropos.html">À propos</a>
+        <a href="http://web.billu.com:5000">Assistance</a>
+    </nav>
 
-    <!-- Contenu des services -->
-    <div class="icon-container" id="services-container">
-        <!-- Les services seront générés dynamiquement ici -->
+    <div class="center-content">
+        <div class="services-container" id="services-container">
+            <!-- 5 cartes du haut -->
+            <div class="row" id="top-row">
+                <!-- Les services seront ajoutés ici par JavaScript -->
+            </div>
+            <!-- 5 cartes du bas -->
+            <div class="row" id="bottom-row">
+                <!-- Les services seront ajoutés ici par JavaScript -->
+            </div>
+        </div>
     </div>
 
-    <!-- Pied de page -->
-    <footer class="footer">
-        <p>&copy; 2025 BillU | Tous droits réservés</p>
+    <footer>
+        &copy; 2025 BILLU - Tous droits réservés
     </footer>
+
+    <div class="particles" id="particles"></div>
 
     <script>
         const services = [
@@ -501,7 +593,7 @@ bash /tmp/sng_freepbx_debian_install.sh
             { name: 'FreePBX', url: 'http://freepbx.billu.com/', img: 'https://cp.beget.com/shared/xisQQW8k-g5QWd77x9XCtcysQ5hIWg3I/logo_freepbx2x.png' },
             { name: 'iRedMail', url: 'https://mail.billu.com/mail/', img: 'https://www.iredmail.org/images/logo.png' },
             { name: 'Zabbix', url: 'http://zabbix.billu.com:8080/', img: 'https://ssd-disclosure.com/wp-content/uploads/2022/11/1_vloEha9mTCLM_SEnXdIUIw-300x300.png' },
-            { name: 'Guacamole Bastion', url: 'http://bastion.billu.com:8080/guacamole/#/', img: 'https://d7umqicpi7263.cloudfront.net/img/product/030b6dbb-cd7b-486d-af34-99d4924864a1.com/6fb7788920aacfd15ab8e000e0f750a3' },
+            { name: 'Guacamole', url: 'http://bastion.billu.com:8080/guacamole/#/', img: 'https://d7umqicpi7263.cloudfront.net/img/product/030b6dbb-cd7b-486d-af34-99d4924864a1.com/6fb7788920aacfd15ab8e000e0f750a3' },
             { name: 'GitHub', url: 'https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G1-build-your-infra', img: 'https://static.cdnlogo.com/logos/g/69/github-icon.svg' },
             { name: 'Mailo', url: 'https://www.mailo.com/', img: './pictures/Mailo_logo.png' }
         ];
@@ -513,8 +605,8 @@ bash /tmp/sng_freepbx_debian_install.sh
                         <img class="icon" src="${service.img}" alt="${service.name}">
                     </a>
                     <div class="service-name">${service.name}</div>
-                    <div class="status-dot" id="status-${service.name}"></div>
-                    <div id="status-text-${service.name}" class="status-text">Vérification en cours...</div>
+                    <div class="status-text">Vérification en cours...</div>
+                    <div class="timestamp"></div>
                 </div>
             `;
         }
@@ -540,43 +632,85 @@ bash /tmp/sng_freepbx_debian_install.sh
             }
         }
 
-        async function updateDashboard() {
-            const container = document.getElementById('services-container');
-            container.innerHTML = '';
+        async function updateServiceStatus() {
+            const timestamp = new Date().toLocaleString();
+            for (let i = 0; i < services.length; i++) {
+                const service = services[i];
+                const status = await checkServiceStatus(service.url);
+                const statusElement = document.querySelectorAll('.icon-wrapper')[i];
+                const statusTextElement = statusElement.querySelector('.status-text');
+                const timestampElement = statusElement.querySelector('.timestamp');
 
-            // Créer les cartes de services pour tous les services
-            services.forEach(service => {
-                container.innerHTML += createServiceCard(service);
-            });
-
-            // Vérifier le statut de chaque service
-            for (const service of services) {
-                try {
-                    const status = await checkServiceStatus(service.url);
-                    const statusElement = document.getElementById(`status-${service.name}`);
-                    const statusTextElement = document.getElementById(`status-text-${service.name}`);
-
-                    if (status) {
-                        statusElement.className = 'status-dot up';
-                        statusTextElement.className = 'status-text up';
-                        statusTextElement.textContent = `En ligne - Dernière vérification à ${new Date().toLocaleTimeString()}`;
-                    } else {
-                        statusElement.className = 'status-dot down';
-                        statusTextElement.className = 'status-text down';
-                        statusTextElement.textContent = `Hors ligne - Dernière vérification à ${new Date().toLocaleTimeString()}`;
-                    }
-                } catch (error) {
-                    console.error('Erreur lors de la vérification du service:', service.name, error);
+                // Met à jour l'état de la carte
+                if (status) {
+                    statusElement.classList.add('up');
+                    statusElement.classList.remove('down');
+                    statusTextElement.classList.add('up');
+                    statusTextElement.classList.remove('down');
+                    statusTextElement.textContent = 'ON';
+                } else {
+                    statusElement.classList.add('down');
+                    statusElement.classList.remove('up');
+                    statusTextElement.classList.add('down');
+                    statusTextElement.classList.remove('up');
+                    statusTextElement.textContent = 'OFF';
                 }
+
+                // Affiche la date et l'heure de la vérification
+                timestampElement.textContent = `${timestamp}`;
             }
         }
 
-        // Mise à jour du dashboard toutes les 5 secondes
-        setInterval(updateDashboard, 5000);
-        updateDashboard();  // Lancer immédiatement la mise à jour
-    </script>
-</body>
+        function displayServices() {
+            const topRow = document.getElementById("top-row");
+            const bottomRow = document.getElementById("bottom-row");
 
+            for (let i = 0; i < 5; i++) {
+                topRow.innerHTML += createServiceCard(services[i]);
+            }
+            for (let i = 5; i < 10; i++) {
+                bottomRow.innerHTML += createServiceCard(services[i]);
+            }
+        }
+
+        displayServices();
+        updateServiceStatus();  // Vérification initiale
+        setInterval(updateServiceStatus, 5000);  // Vérification toutes les 5 secondes
+
+        // Ajout des particules
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            const size = Math.random() * 10 + 5;  // Taille plus petite
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.left = Math.random() * window.innerWidth + 'px';
+            particle.style.top = Math.random() * window.innerHeight + 'px';
+            particle.style.setProperty('--x', (Math.random() - 0.5) * 300 + 'px');  // Mouvement plus grand
+            particle.style.setProperty('--y', (Math.random() - 0.5) * 300 + 'px');
+            document.getElementById('particles').appendChild(particle);
+
+            setTimeout(() => {
+                particle.remove();
+            }, 3000); // La particule disparaît après 3 secondes
+        }
+
+        setInterval(createParticle, 100); // Crée des particules toutes les 100ms
+ 
+	document.addEventListener("DOMContentLoaded", function () {
+                let currentPage = window.location.pathname.split("/").pop();
+                let links = document.querySelectorAll("nav a");
+
+                links.forEach(link => {
+                        let linkPage = link.getAttribute("href");
+                        if (linkPage === currentPage) {
+                                link.classList.add("active");
+                        }
+                });
+        });
+
+   </script>
+</body>
 </html>
 ```
 ---
